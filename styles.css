@@ -8,7 +8,7 @@ body {
 	font-family: Calibri, 'Trebuchet MS', sans-serif;
 	font-size: medium;
 	display: grid;
-	grid-template-columns: 1fr 6fr;
+	grid-template-columns: 200px auto;
 	grid-template-areas: "head head" "aside main" "foot foot";
 	background-color: #efefef;
 }
@@ -50,6 +50,7 @@ nav a {
 main {
 	grid-area: main;
 	padding: 1rem 1.5rem;
+	max-width: 1380px;
 }
 
 footer {
@@ -67,6 +68,7 @@ p {
 h2 {
 	position: relative;
 	margin-top: 3rem;
+	clear: both;
 }
 
 h2::before {
@@ -231,7 +233,9 @@ main span {
 
 	.inset {
 		max-width: 100%;
+		padding: 0 .5rem .5rem;
 		margin: 1rem 0;
+		float:none;
 	}
 
 	.inset h3 {
