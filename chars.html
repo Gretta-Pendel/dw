@@ -4,184 +4,45 @@
 <head>
 	<title>Characters | Dungeon World</title>
 	<meta charset="utf-8">
-	<style>
-		body {
-			margin: 0;
-			color: black;
-			font-family: Calibri, 'Trebuchet MS', sans-serif;
-			font-size: medium;
-			display: grid;
-			grid-template-columns: 1fr 6fr;
-			grid-template-areas: "head head" "aside main" "foot foot";
-			background-color: #efefef;
-		}
-
-		header {
-			grid-area: head;
-		}
-
-		nav {
-			grid-area: aside;
-			background-color: #333;
-			padding: .5rem 2rem 1rem 0;
-			width: 200px;
-			color: #efefef;
-		}
-
-		nav>div {
-			position: fixed;
-			width: 200px;
-			padding-left: .75rem;
-			top: 0;
-			bottom: 0;
-			overflow-y: auto;
-		}
-
-		nav ul {
-			padding: .25rem 0;
-			list-style: none;
-		}
-
-		nav li {
-			margin-bottom: .75rem;
-		}
-
-		nav a {
-			color: #efefef;
-			text-decoration: none;
-		}
-
-		main {
-			grid-area: main;
-			padding: 1rem 1.5rem;
-		}
-
-		footer {
-			grid-area: foot;
-		}
-
-		table {
-			border-collapse: collapse;
-		}
-
-		p {
-			margin: .25rem 0 .5rem 0;
-		}
-
-		h2 {
-			border-top: 1px dotted #999;
-			margin-top: 3rem;
-		}
-
-		h2 a {
-			text-decoration: none;
-		}
-
-		h3,
-		h4 {
-			margin: 1rem 0 .25rem 0;
-		}
-
-		b {
-			font-weight: 600;
-		}
-
-		ul {
-			margin: 0;
-			padding-left: 32px;
-		}
-
-		p+ul {
-			margin-top: -.5rem;
-		}
-
-		th,
-		td {
-			padding: 0 .5rem;
-			border-bottom: 1px solid #999;
-		}
-
-		.gear {
-			display: grid;
-			gap: 1rem;
-			grid-template-columns: 1fr 1fr;
-			grid-template-areas: "div div";
-			font-size: small;
-		}
-
-		.moves {
-			display: grid;
-			gap: 1rem;
-			grid-template-columns: 1fr 1fr;
-			grid-template-areas: "div div";
-		}
-
-		.inset {
-			font-size: small;
-			margin: 1rem;
-			padding: 0 1rem .5rem;
-			background-color: #ddd;
-			float: right;
-			max-width: 300px;
-		}
-
-		.collapse {
-			cursor: pointer;
-		}
-
-		.collapse::after {
-			display: inline;
-			width: 15px;
-			height: 10px;
-			content: ' 👁️';
-		}
-
-		.collapse+* {
-			display: none;
-			border: 1px solid #ccc;
-			padding: 0 1rem .5rem;
-			margin-top: .5rem;
-		}
-
-		i {
-			color: #dd3300;
-		}
-
-		span {
-			border-bottom: 1px dotted #000;
-			font-weight: 600;
-		}
-	</style>
+	<link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 	<header></header>
 	<nav>
 		<div>
-			<a href="chars.html">PC</a> | <a href="actions.html">Actions</a> | <a href="index.html">Rules</a>
-			<h3>Персонажи</h3>
-			<ul>
-				<li><a href="#chars">Характеристики</a></li>
-				<li><a href="#bard">Бард</a></li>
-				<li><a href="#cleric">Жрец</a></li>
-				<li><a href="#druid">Друид</a></li>
-				<li><a href="#fighter">Воин</a></li>
-				<li><a href="#paladin">Паладин</a></li>
-				<li><a href="#ranger">Следопыт</a></li>
-				<li><a href="#rogue">Вор</a></li>
-				<li><a href="#wizard">Маг</a></li>
-			</ul>
-			<h3>Наемники</h3>
-			<ul>
-				<li><a href="#create">Создание</a></li>
-				<li><a href="#mwizard">Ученик чародея</a></li>
-				<li><a href="#mrogue">Взломщик</a></li>
-				<li><a href="#mbard">Менестрель</a></li>
-				<li><a href="#mcleric">Послушник</a></li>
-				<li><a href="#mpaladin">Телохранитель</a></li>
-				<li><a href="#mranger">Охотник</a></li>
-				<li><a href="#mfighter">Боец</a></li>
-			</ul>
+			<div class="menu">
+				<div><a href="chars.html">PC</a> |
+					<a href="actions.html">Actions</a> |
+					<a href="index.html">Rules</a>
+				</div>
+				<span></span>
+			</div>
+			<div id="mmenu">
+				<h3>Персонажи</h3>
+				<ul>
+					<li><a href="#chars">Характеристики</a></li>
+					<li><a href="#bard">Бард</a></li>
+					<li><a href="#cleric">Жрец</a></li>
+					<li><a href="#druid">Друид</a></li>
+					<li><a href="#fighter">Воин</a></li>
+					<li><a href="#paladin">Паладин</a></li>
+					<li><a href="#ranger">Следопыт</a></li>
+					<li><a href="#rogue">Вор</a></li>
+					<li><a href="#wizard">Маг</a></li>
+				</ul>
+				<h3>Наемники</h3>
+				<ul>
+					<li><a href="#create">Создание</a></li>
+					<li><a href="#mwizard">Ученик чародея</a></li>
+					<li><a href="#mrogue">Взломщик</a></li>
+					<li><a href="#mbard">Менестрель</a></li>
+					<li><a href="#mcleric">Послушник</a></li>
+					<li><a href="#mpaladin">Телохранитель</a></li>
+					<li><a href="#mranger">Охотник</a></li>
+					<li><a href="#mfighter">Боец</a></li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 	<main>
@@ -191,7 +52,7 @@
 
 		<div data-name="bard">
 			<h2 id="bard">Бард <a href="https://gretta-pendel.github.io/dw/bard.pdf" target="_blank">📄</a></h2>
-			<p><b>🗡️ к6 &nbsp; &nbsp; ❤️ 6+Телосложение &nbsp; &nbsp;💰 9+СИЛ</b></p>
+			<p><b>🗡️&nbsp;к6 &nbsp; &nbsp; ❤️&nbsp;6+Телосложение &nbsp; &nbsp;💰&nbsp;9+СИЛ</b></p>
 			<div class="inset">
 				<h3>Имя</h3>
 				<p><i>Эльф:</i> Астрафель, Дэльвин, Фелиана, Дамарра, Ситранель, Эндрель, Меллиандр,
@@ -353,7 +214,7 @@
 
 		<div data-name="cleric">
 			<h2 id="cleric">Жрец <a href="https://gretta-pendel.github.io/dw/cleric.pdf" target="_blank">📄</a></h2>
-			<p><b>🗡️ к6 &nbsp; &nbsp; ❤️ 6+Телосложение &nbsp; &nbsp; 💰 10+СИЛ</b></p>
+			<p><b>🗡️&nbsp;к6 &nbsp; &nbsp; ❤️&nbsp;6+Телосложение &nbsp; &nbsp; 💰&nbsp;10+СИЛ</b></p>
 			<div class="inset">
 				<h3>Имя</h3>
 				<p><i>Гном:</i> Дарга, Эльфар, Герда, Рургош, Бьёрн, Драммонд, Хельга, Сиггруг, Фрея<br>
@@ -644,7 +505,7 @@
 
 		<div data-name="druid">
 			<h2 id="druid">Друид <a href="https://gretta-pendel.github.io/dw/druid.pdf" target="_blank">📄</a></h2>
-			<p><b>🗡️ к6 &nbsp; &nbsp; ❤️ 6+Телосложение &nbsp; &nbsp; 💰 6+СИЛ</b></p>
+			<p><b>🗡️&nbsp;к6 &nbsp; &nbsp; ❤️&nbsp;6+Телосложение &nbsp; &nbsp; 💰&nbsp;6+СИЛ</b></p>
 			<div class="inset">
 				<h3>Имя</h3>
 				<p><i>Эльф:</i> Гикоракс, Этанви, Синатель, Деманор, Менолиир, Митралан, Таэрос, Эгор<br>
@@ -818,7 +679,7 @@
 
 		<div data-name="fighter">
 			<h2 id="fighter">Воин <a href="https://gretta-pendel.github.io/dw/fighter.pdf" target="_blank">📄</a></h2>
-			<p><b>🗡️ к10 &nbsp; &nbsp; ❤️ 10+Телосложение &nbsp; &nbsp; 💰 12+СИЛ</b></p>
+			<p><b>🗡️&nbsp;к10 &nbsp; &nbsp; ❤️&nbsp;10+Телосложение &nbsp; &nbsp; 💰&nbsp;12+СИЛ</b></p>
 			<div class="inset">
 				<h3>Имя</h3>
 				<p><i>Гном:</i> Озрук, Сурт, Брунгильда, Анника, Янос, Грета, Дим, Рундриг, Ярл, Зоток<br>
@@ -982,7 +843,7 @@
 
 		<div data-name="paladin">
 			<h2 id="paladin">Паладин <a href="https://gretta-pendel.github.io/dw/paladin.pdf" target="_blank">📄</a></h2>
-			<p><b>🗡️ к10 &nbsp; &nbsp; ❤️ 10+Телосложение &nbsp; &nbsp; 💰 12+СИЛ</b></p>
+			<p><b>🗡️&nbsp;к10 &nbsp; &nbsp; ❤️&nbsp;10+Телосложение &nbsp; &nbsp; 💰&nbsp;12+СИЛ</b></p>
 			<div class="inset">
 				<h3>Имя</h3>
 				<p>Таддеус, Августин, Люкс, Кассий, Адриан, Лючия, Октавия, Регул, Валерия, Сангвиний, Титаний</p>
@@ -1130,7 +991,7 @@
 
 		<div data-name="ranger">
 			<h2 id="ranger">Следопыт <a href="https://gretta-pendel.github.io/dw/ranger.pdf" target="_blank">📄</a></h2>
-			<p><b>🗡️ к8 &nbsp; &nbsp; ❤️ 8+Телосложение &nbsp; &nbsp; 💰 11+СИЛ</b></p>
+			<p><b>🗡️&nbsp;к8 &nbsp; &nbsp; ❤️&nbsp;8+Телосложение &nbsp; &nbsp; 💰&nbsp;11+СИЛ</b></p>
 			<div class="inset">
 				<h3>Имя</h3>
 				<p><i>Эльф:</i> Трондир, Эльросин, Аранви, Келион, Дамбрат, Лейнет<br>
@@ -1431,7 +1292,7 @@
 
 		<div data-name="wizard">
 			<h2 id="wizard">Маг <a href="https://gretta-pendel.github.io/dw/wizard.pdf" target="_blank">📄</a></h2>
-			<p><b>🗡️ к4 &nbsp; &nbsp; ❤️ 4+Телосложение &nbsp; &nbsp; 💰 7+СИЛ</b></p>
+			<p><b>🗡️&nbsp;к4 &nbsp; &nbsp; ❤️&nbsp;4+Телосложение &nbsp; &nbsp; 💰&nbsp;7+СИЛ</b></p>
 			<div class="inset">
 				<h3>Имя</h3>
 				<p><i>Эльф:</i> Галадийр, Фенферил, Лиллиейстр, Фиросейл, Энкираш, Эльвир<br>
@@ -1776,16 +1637,7 @@
 		<br>
 	</main>
 
-	<script>
-		let cols = document.getElementsByClassName('collapse');
-		for (let i = 0; i < cols.length; i++) {
-			let block = cols[i].nextElementSibling;
-			cols[i].addEventListener("click", (event) => {
-				console.log(block.style.display);
-				block.style.display === 'none' || block.style.display === '' ? block.style.display = 'block' : block.style.display = 'none';
-			});
-		}
-	</script>
+	<script src="js.js"></script>
 
 </body>
 

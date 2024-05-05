@@ -4,179 +4,40 @@
 <head>
 	<title>Rules | Dungeon World</title>
 	<meta charset="utf-8">
-	<style>
-		body {
-			margin: 0;
-			color: black;
-			font-family: Calibri, 'Trebuchet MS', sans-serif;
-			font-size: medium;
-			display: grid;
-			grid-template-columns: 1fr 6fr;
-			grid-template-areas: "head head" "aside main" "foot foot";
-			background-color: #efefef;
-		}
+	<link rel="stylesheet" href="styles.css" />
 
-		header {
-			grid-area: head;
-		}
-
-		nav {
-			grid-area: aside;
-			background-color: #333;
-			padding: .5rem 2rem 1rem 0;
-			width: 200px;
-			color: #efefef;
-		}
-
-		nav>div {
-			position: fixed;
-			width: 200px;
-			padding-left: .75rem;
-			top: 0;
-			bottom: 0;
-			overflow-y: auto;
-		}
-
-		nav ul {
-			padding: .25rem 0;
-			list-style: none;
-		}
-
-		nav li {
-			margin-bottom: .75rem;
-		}
-
-		nav a {
-			color: #efefef;
-			text-decoration: none;
-		}
-
-		main {
-			grid-area: main;
-			padding: 1rem 1.5rem;
-		}
-
-		footer {
-			grid-area: foot;
-		}
-
-		table {
-			border-collapse: collapse;
-		}
-
-		p {
-			margin: .25rem 0 .5rem 0;
-		}
-
-		h2 {
-			border-top: 1px dotted #999;
-			margin-top: 3rem;
-		}
-
-		h2 a {
-			text-decoration: none;
-		}
-
-		h3,
-		h4 {
-			margin: 1rem 0 .25rem 0;
-		}
-
-		b {
-			font-weight: 600;
-		}
-
-		ul {
-			margin: 0;
-			padding-left: 32px;
-		}
-
-		p+ul {
-			margin-top: -.5rem;
-		}
-
-		th,
-		td {
-			padding: 0 .5rem;
-			border-bottom: 1px solid #999;
-		}
-
-		.gear {
-			display: grid;
-			gap: 1rem;
-			grid-template-columns: 1fr 1fr;
-			grid-template-areas: "div div";
-			font-size: small;
-		}
-
-		.moves {
-			display: grid;
-			gap: 1rem;
-			grid-template-columns: 1fr 1fr;
-			grid-template-areas: "div div";
-		}
-
-		.inset {
-			font-size: small;
-			margin: 1rem;
-			padding: 0 1rem .5rem;
-			background-color: #ddd;
-			float: right;
-			max-width: 300px;
-		}
-
-		.collapse {
-			cursor: pointer;
-		}
-
-		.collapse::after {
-			display: inline;
-			width: 15px;
-			height: 10px;
-			content: ' 👁️';
-		}
-
-		.collapse+* {
-			display: none;
-			border: 1px solid #ccc;
-			padding: 0 1rem .5rem;
-			margin-top: .5rem;
-		}
-
-		i {
-			color: #dd3300;
-		}
-
-		span {
-			border-bottom: 1px dotted #000;
-			font-weight: 600;
-		}
-	</style>
 </head>
 
 <body>
 	<header></header>
 	<nav>
 		<div>
-			<a href="chars.html">PC</a> | <a href="actions.html">Actions</a> | <a href="index.html">Rules</a>
-
-			<h3>Правила</h3>
-			<ul>
-				<li><a href="#hp">ОЗ персонажа</a></li>
-				<li><a href="#dmg">Урон</a></li>
-				<li><a href="#cover">Укрытие</a></li>
-				<li><a href="#heal">Лечение</a></li>
-				<li><a href="#injuries">Травмы</a></li>
-				<li><a href="#death">Смерть</a></li>
-				<li><a href="#afterdeath">После Смерти</a></li>
-			</ul>
-			<h3>Снаряжение</h3>
-			<ul>
-				<li><a href="#tags">Свойства</a></li>
-				<li><a href="#weapon">Оружие</a></li>
-				<li><a href="#armor">Броня</a></li>
-				<li><a href="#gear">Снаряга</a></li>
-			</ul>
+			<div class="menu">
+				<div><a href="chars.html">PC</a> |
+					<a href="actions.html">Actions</a> |
+					<a href="index.html">Rules</a>
+				</div>
+				<span></span>
+			</div>
+			<div id="mmenu">
+				<h3>Правила</h3>
+				<ul>
+					<li><a href="#hp">ОЗ персонажа</a></li>
+					<li><a href="#dmg">Урон</a></li>
+					<li><a href="#cover">Укрытие</a></li>
+					<li><a href="#heal">Лечение</a></li>
+					<li><a href="#injuries">Травмы</a></li>
+					<li><a href="#death">Смерть</a></li>
+					<li><a href="#afterdeath">После Смерти</a></li>
+				</ul>
+				<h3>Снаряжение</h3>
+				<ul>
+					<li><a href="#tags">Свойства</a></li>
+					<li><a href="#weapon">Оружие</a></li>
+					<li><a href="#armor">Броня</a></li>
+					<li><a href="#gear">Снаряга</a></li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 	<main>
@@ -443,7 +304,7 @@
 				<td>4</td>
 			</tr>
 			<tr>
-				<td><b>Сумка с книгами</b><br>Если в сумке персонажа есть нужная книга, то, копаясь в памяти, он может проконсультироваться с книгой и получить +1 на этот бросок.</td>
+				<td><b>Сумка с книгами</b><br>Если в сумке персонажа есть нужная книга, то, копаясь в памяти, он может проконсуль&shy;тироваться с книгой и получить +1 на этот бросок.</td>
 				<td>5 исп.</td>
 				<td>10</td>
 				<td>2</td>
@@ -477,16 +338,7 @@
 		<br>
 	</main>
 
-	<script>
-		let cols = document.getElementsByClassName('collapse');
-		for (let i = 0; i < cols.length; i++) {
-			let block = cols[i].nextElementSibling;
-			cols[i].addEventListener("click", (event) => {
-				console.log(block.style.display);
-				block.style.display === 'none' || block.style.display === '' ? block.style.display = 'block' : block.style.display = 'none';
-			});
-		}
-	</script>
+	<script src="js.js"></script>
 
 </body>
 

@@ -4,193 +4,54 @@
 <head>
 	<title>Actions | Dungeon World</title>
 	<meta charset="utf-8">
-	<style>
-		body {
-			margin: 0;
-			color: black;
-			font-family: Calibri, 'Trebuchet MS', sans-serif;
-			font-size: medium;
-			display: grid;
-			grid-template-columns: 1fr 6fr;
-			grid-template-areas: "head head" "aside main" "foot foot";
-			background-color: #efefef;
-		}
-
-		header {
-			grid-area: head;
-		}
-
-		nav {
-			grid-area: aside;
-			background-color: #333;
-			padding: .5rem 2rem 1rem 0;
-			width: 200px;
-			color: #efefef;
-		}
-
-		nav>div {
-			position: fixed;
-			width: 200px;
-			padding-left: .75rem;
-			top: 0;
-			bottom: 0;
-			overflow-y: auto;
-		}
-
-		nav ul {
-			padding: .25rem 0;
-			list-style: none;
-		}
-
-		nav li {
-			margin-bottom: .75rem;
-		}
-
-		nav a {
-			color: #efefef;
-			text-decoration: none;
-		}
-
-		main {
-			grid-area: main;
-			padding: 1rem 1.5rem;
-		}
-
-		footer {
-			grid-area: foot;
-		}
-
-		table {
-			border-collapse: collapse;
-		}
-
-		p {
-			margin: .25rem 0 .5rem 0;
-		}
-
-		h2 {
-			border-top: 1px dotted #999;
-			margin-top: 3rem;
-		}
-
-		h2 a {
-			text-decoration: none;
-		}
-
-		h3,
-		h4 {
-			margin: 1rem 0 .25rem 0;
-		}
-
-		b {
-			font-weight: 600;
-		}
-
-		ul {
-			margin: 0;
-			padding-left: 32px;
-		}
-
-		p+ul {
-			margin-top: -.5rem;
-		}
-
-		th,
-		td {
-			padding: 0 .5rem;
-			border-bottom: 1px solid #999;
-		}
-
-		.gear {
-			display: grid;
-			gap: 1rem;
-			grid-template-columns: 1fr 1fr;
-			grid-template-areas: "div div";
-			font-size: small;
-		}
-
-		.moves {
-			display: grid;
-			gap: 1rem;
-			grid-template-columns: 1fr 1fr;
-			grid-template-areas: "div div";
-		}
-
-		.inset {
-			font-size: small;
-			margin: 1rem;
-			padding: 0 1rem .5rem;
-			background-color: #ddd;
-			float: right;
-			max-width: 300px;
-		}
-
-		.collapse {
-			cursor: pointer;
-		}
-
-		.collapse::after {
-			display: inline;
-			width: 15px;
-			height: 10px;
-			content: ' 👁️';
-		}
-
-		.collapse+* {
-			display: none;
-			border: 1px solid #ccc;
-			padding: 0 1rem .5rem;
-			margin-top: .5rem;
-		}
-
-		i {
-			color: #dd3300;
-		}
-
-		span {
-			border-bottom: 1px dotted #000;
-			font-weight: 600;
-		}
-	</style>
+	<link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 	<header></header>
 	<nav>
 		<div>
-			<a href="chars.html">PC</a> | <a href="actions.html">Actions</a> | <a href="index.html">Rules</a>
+			<div class="menu">
+				<div><a href="chars.html">PC</a> |
+					<a href="actions.html">Actions</a> |
+					<a href="index.html">Rules</a>
+				</div>
+				<span></span>
+			</div>
+			<div id="mmenu">
 
-			<h3>Основные</h3>
-			<ul>
-				<li><a href="#hackslash">Руби и кромсай</a></li>
-				<li><a href="#volley">Дать залп</a></li>
-				<li><a href="#parley">Договориться</a></li>
-				<li><a href="#defydanger">Спастись от угрозы</a></li>
-				<li><a href="#defend">Встать на защиту</a></li>
-				<li><a href="#discernrealities">Изучить обстановку</a></li>
-				<li><a href="#spoutlore">Покопаться в памяти</a></li>
-				<li><a href="#aidorinterfere">Помочь или помешать</a></li>
-			</ul>
-			<h3>Особые</h3>
-			<ul>
-				<li><a href="#lastbreath">Последний вздох</a></li>
-				<li><a href="#encumbrance">Тяжкая ноша</a></li>
-				<li><a href="#makecamp">Разбить лагерь</a></li>
-				<li><a href="#takewatch">Нести дозор</a></li>
-				<li><a href="#bolster">Усердно заниматься</a></li>
-				<li><a href="#supply">Пополнить припасы</a></li>
-				<li><a href="#undertakeaperilousjouney">Опасное путешествие</a></li>
-				<li><a href="#recover">Восстановить силы</a></li>
-				<li><a href="#carouse">Пирушка</a></li>
-				<li><a href="#recruit">Найм</a></li>
-				<li><a href="#endofsession">Конец сессии</a></li>
-				<li><a href="#levelup">Повысить уровень</a></li>
-				<li><a href="#outstandingwarrants">Неоплаченный долг</a></li>
-			</ul>
-			<h3>Наемники</h3>
-			<ul>
-				<li><a href="#orderthemercenaries">Приказать наёмникам</a></li>
-			</ul>
+				<h3>Основные</h3>
+				<ul>
+					<li><a href="#hackslash">Руби и кромсай</a></li>
+					<li><a href="#volley">Дать залп</a></li>
+					<li><a href="#parley">Договориться</a></li>
+					<li><a href="#defydanger">Спастись от угрозы</a></li>
+					<li><a href="#defend">Встать на защиту</a></li>
+					<li><a href="#discernrealities">Изучить обстановку</a></li>
+					<li><a href="#spoutlore">Покопаться в памяти</a></li>
+					<li><a href="#aidorinterfere">Помочь или помешать</a></li>
+				</ul>
+				<h3>Особые</h3>
+				<ul>
+					<li><a href="#lastbreath">Последний вздох</a></li>
+					<li><a href="#encumbrance">Тяжкая ноша</a></li>
+					<li><a href="#makecamp">Разбить лагерь</a></li>
+					<li><a href="#takewatch">Нести дозор</a></li>
+					<li><a href="#bolster">Усердно заниматься</a></li>
+					<li><a href="#supply">Пополнить припасы</a></li>
+					<li><a href="#undertakeaperilousjouney">Опасное путешествие</a></li>
+					<li><a href="#recover">Восстановить силы</a></li>
+					<li><a href="#carouse">Пирушка</a></li>
+					<li><a href="#recruit">Найм</a></li>
+					<li><a href="#endofsession">Конец сессии</a></li>
+					<li><a href="#levelup">Повысить уровень</a></li>
+					<li><a href="#outstandingwarrants">Неоплаченный долг</a></li>
+				</ul>
+				<h3>Наемники</h3>
+				<ul>
+					<li><a href="#orderthemercenaries">Приказать наёмникам</a></li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 	<main>
@@ -353,16 +214,7 @@
 		<br>
 	</main>
 
-	<script>
-		let cols = document.getElementsByClassName('collapse');
-		for (let i = 0; i < cols.length; i++) {
-			let block = cols[i].nextElementSibling;
-			cols[i].addEventListener("click", (event) => {
-				console.log(block.style.display);
-				block.style.display === 'none' || block.style.display === '' ? block.style.display = 'block' : block.style.display = 'none';
-			});
-		}
-	</script>
+	<script src="js.js"></script>
 
 </body>
 
