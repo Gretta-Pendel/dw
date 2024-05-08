@@ -114,7 +114,7 @@ td {
 
 .inset {
 	font-size: small;
-	margin: 1rem;
+	margin: 1rem 0 1rem 1rem;
 	padding: 0 1rem .5rem;
 	background-color: #ddd;
 	float: right;
