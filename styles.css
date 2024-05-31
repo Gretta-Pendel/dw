@@ -92,7 +92,7 @@ b {
 	font-weight: 600;
 }
 
-ul {
+ul, ol {
 	margin: 0;
 	padding-left: 32px;
 }
