@@ -21,6 +21,5 @@ mmopen.addEventListener("click", (event) => {
 });
 window.addEventListener("resize", (event) => {
 	let mmenu = document.getElementById('mmenu');
-	console.log(window.innerWidth)
 	window.innerWidth > 768 ? mmenu.style.display = 'block' : mmenu.style.display = 'none';
 });

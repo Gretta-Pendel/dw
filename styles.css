@@ -47,6 +47,10 @@ nav a {
 	text-decoration: none;
 }
 
+nav li a + div {
+	padding-left: 1em;;
+}
+
 main {
 	grid-area: main;
 	padding: 1rem 1.5rem;
