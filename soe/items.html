@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rules | Dungeon World</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<style>
+		tr:nth-child(2n) td {
+			background-color: #ddd;
+		}
+	</style>
+  </head>
+
+  <body>
+    <header></header>
+    <nav>
+		<!-- <div class="menu">
+			<div><a href="chars.html">PC</a> |
+				<a href="actions.html">Actions</a> |
+				<a href="index.html">Rules</a>
+			</div>
+			<span></span>
+		</div> -->
+		<div id="mmenu">
+			<h3>Правила</h3>
+			<ul>
+				<li><a href="#currency">Валюта</a></li>
+				<li><a href="#availability">Доступность</a></li>
+				<li><a href="#wages">Доход</a></li>
+				<li><a href="#services">Услуги</a></li>
+			</ul>
+			<h3>Снаряжение</h3>
+			<ul>
+				<li><a href="#inns">Таверна</a></li>
+				<li><a href="#foodstuffs">Еда</a></li>
+				<li><a href="#medicine">Медицина</a></li>
+				<li><a href="#clothing">Одежда</a></li>
+				<li><a href="#containers">Емкости и блюда</a></li>
+				<li><a href="#furniture">Мебель</a></li>
+				<li><a href="#rent">Аренда</a></li>
+				<li><a href="#survivalTools">Снаряжение</a></li>
+				<li><a href="#variousTools">Инструменты</a></li>
+				<li><a href="#lighting">Освещение</a></li>
+				<li><a href="#writing">Письмо</a></li>
+				<li><a href="#musical">Музыка</a></li>
+				<li><a href="#transportation">Транспорт</a></li>
+				<li><a href="#traveling">Извоз</a></li>
+				<li><a href="#materials">Материалы</a></li>
+				<li><a href="#livestock">Животные</a></li>
+				<li><a href="#rangedWeapons">Оружие (дист)</a></li>
+				<li><a href="#meleeWeapons">Оружие</a></li>
+				<li><a href="#artifacts">Артефакты</a></li>
+				<li><a href="#flux">Флюкс</a></li>
+				<li><a href="#armors">Защита</a></li>
+			</ul>
+		</div>
+	</nav>
+    <main>
+		<h2 id="inns">Таверна</h2>
+		<table>
+<tr><td>Frugal meal (broth, meager soup, dry bread)</td><td>Простая еда</td><td>3Ed</td></tr>
+<tr><td>Nourishing meal (hearty soup, bread, cheese or omelet, dried fish)</td><td>Сытная еда</td><td>5Ed</td></tr>
+<tr><td>Wholesome meal (soup, bread, chicken or roast, pâté or pie)</td><td>Хорошая еда</td><td>7Ed</td></tr>
+<tr><td>Ale</td><td>Эль</td><td>2Ed</td></tr>
+<tr><td>Cider</td><td>Сидр</td><td>2Ed</td></tr>
+<tr><td>Beer</td><td>Пиво</td><td>2Ed</td></tr>
+<tr><td>Brandy</td><td>Бренди</td><td>1Ed</td></tr>
+<tr><td>Liquor</td><td>Ликер</td><td>3Ed</td></tr>
+<tr><td>Pastry</td><td>Выпечка</td><td>3Ed</td></tr>
+<tr><td>Dormitory or common room</td><td>Спальное место</td><td>2Ed</td></tr>
+<tr><td>Bedroom</td><td>Комната</td><td>5Ed</td></tr>
+<tr><td>Luxury bedroom (with a servant)</td><td>Аппартаменты (с прислугой)</td><td>1Ad</td></tr>
+<tr><td>Hot bath</td><td>Горячая ванна</td><td>3Ed</td></tr>
+<tr><td>Stable and fodder</td><td>Конюшня и корм</td><td>2Ed</td></tr>
+</table>
+		<h2 id="foodstuffs">Еда</h2>
+		<table>
+<tr><td>Ham or dried meat</td><td>Ветчина или вяленое мясо</td><td>8Ed</td><td>FR</td></tr>
+<tr><td>Fresh fish</td><td>Свежая рыба</td><td>7Ed</td><td>CO</td></tr>
+<tr><td>Smoked fish</td><td>Копченая рыба</td><td>6Ed</td><td>CO</td></tr>
+<tr><td>Pie or pâté</td><td>Пирог или паштет</td><td>5Ed</td><td>FR</td></tr>
+<tr><td>Two pints of ale</td><td>Две пинты эля</td><td>6Ed</td><td>FR</td></tr>
+<tr><td>Two pints of beer or cider</td><td>Две пинты пива или сидра</td><td>7Ed</td><td>FR</td></tr>
+<tr><td>Wheel of cheese</td><td>Головка сыра</td><td>7Ed</td><td>FR</td></tr>
+<tr><td>Two pints of milk (goat, Boernac)</td><td>Две пинты молока (козьего, Boernac)</td><td>5Ed</td><td>FR</td></tr>
+<tr><td>Two pints of oil</td><td>Две пинты масла</td><td>4Ed</td><td>CO</td></tr>
+<tr><td>Jar of honey</td><td>Банка меда</td><td>1Ad</td><td>EX</td></tr>
+<tr><td>Butter, per two pounds</td><td>Масло, на два фунта</td><td>7Ed</td><td>FR</td></tr>
+<tr><td>Bread or biscuits</td><td>Хлеб или печенье</td><td>2Ed</td><td>FR</td></tr>
+<tr><td>Fresh fruits or vegetables</td><td>Свежие фрукты или овощи</td><td>6Ed</td><td>CO</td></tr>
+<tr><td>Oats</td><td>Овес</td><td>3Ed</td><td>FR</td></tr>
+<tr><td>Flour, per two pounds</td><td>Мука, ​​на два фунта</td><td>3Ed</td><td>FR</td></tr>
+<tr><td>Tobacco, a jar</td><td>Табак, банка</td><td>1Ad</td><td>FR</td></tr>
+		</table>
+		<h2 id="medicine">Медицина</h2>
+		<table>
+<tr><td>Healing balm</td><td>Лечебный бальзам</td><td>4Ed</td><td>CO</td></tr>
+<tr><td>Herbs for headaches</td><td>Травы от головной боли</td><td>2Ed</td><td>CO</td></tr>
+<tr><td>Purgative</td><td>Слабительное</td><td>3Ed</td><td>CO</td></tr>
+<tr><td>Analgesic herbs</td><td>Обезболивающие травы</td><td>2Ed</td><td>CO</td></tr>
+<tr><td>Fortifying infusion</td><td>Укрепляющий настой</td><td>1Ed</td><td>FR</td></tr>
+<tr><td>Febrifuge (fever-reducing) tea</td><td>Жаропонижающий чай</td><td>1Ed</td><td>FR</td></tr>
+<tr><td>Clean bandages</td><td>Чистые бинты</td><td>1Ed</td><td>FR</td></tr>
+<tr><td>Surgeon kit</td><td>Набор хирурга</td><td>3Ad</td><td>CO</td></tr>
+		</table>
+		<h2 id="clothing">Одежда</h2>
+		<table>
+<tr><td>Hemp tunic</td><td>Конопляная туника</td><td>3Ed</td><td>FR</td></tr>
+<tr><td>Linen tunic</td><td>Льняная туника</td><td>4Ed</td><td>FR</td></tr>
+<tr><td>Wool tunic</td><td>Шерстяная туника</td><td>6Ed</td><td>FR</td></tr>
+<tr><td>Linen cloak</td><td>Льняной плащ</td><td>4Ed</td><td>FR</td></tr>
+<tr><td>Wool cloak</td><td>Шерстяной плащ</td><td>6Ed</td><td>FR</td></tr>
+<tr><td>Fur coat</td><td>Шуба</td><td>1Ad</td><td>CO</td></tr>
+<tr><td>Clogs</td><td>Сабо</td><td>1Ed</td><td>FR</td></tr>
+<tr><td>Rope sandals</td><td>Веревочные сандалии</td><td>1Ed</td><td>FR</td></tr>
+<tr><td>Leather sandals</td><td>Кожаные сандалии</td><td>3Ed</td><td>FR</td></tr>
+<tr><td>Galoshes (leather shoes with a wooden sole)</td><td>Галоши (кожаные туфли на деревянной подошве)</td><td>5Ed</td><td>FR</td></tr>
+<tr><td>Traveling boots</td><td>Дорожные ботинки</td><td>8Ed</td><td>FR</td></tr>
+<tr><td>Riding boots</td><td>Сапоги для верховой езды</td><td>8Ed</td><td>CO</td></tr>
+<tr><td>High boots, waders</td><td>Высокие сапоги, болотные сапоги</td><td>1Ad</td><td>CO</td></tr>
+<tr><td>Linen belt</td><td>Льняной ремень</td><td>3Ed</td><td>FR</td></tr>
+<tr><td>Leather belt</td><td>Кожаный ремень</td><td>4Ed</td><td>FR</td></tr>
+<tr><td>Linen pants</td><td>Льняные брюки</td><td>3Ed</td><td>FR</td></tr>
+<tr><td>Wool pants</td><td>Шерстяные брюки</td><td>5Ed</td><td>FR</td></tr>
+<tr><td>Kilt</td><td>килт</td><td>4Ed</td><td>CO</td></tr>
+<tr><td>Chasuble</td><td>Чезюбл</td><td>9Ed</td><td>CO</td></tr>
+<tr><td>Linen shirt</td><td>Льняная рубашка</td><td>3Ed</td><td>FR</td></tr>
+<tr><td>Corset</td><td>Корсеты</td><td>6Ed</td><td>CO</td></tr>
+<tr><td>Wool scarf</td><td>Шерстяной шарф</td><td>3Ed</td><td>FR</td></tr>
+<tr><td>Hemp dress</td><td>Платье из конопли</td><td>4Ed</td><td>FR</td></tr>
+<tr><td>Linen dress</td><td>Льняное платье</td><td>6Ed</td><td>FR</td></tr>
+<tr><td>Underskirt</td><td>Нижняя юбка</td><td>3Ed</td><td>FR</td></tr>
+<tr><td>Apron</td><td>Фартук</td><td>2Ed</td><td>FR</td></tr>
+<tr><td>Leather apron</td><td>Кожаный фартук</td><td>7Ed</td><td>FR</td></tr>
+<tr><td>Cap or bonnet</td><td>Шапка или чепец</td><td>1Ed</td><td>FR</td></tr>
+<tr><td>Hide hat</td><td>Шляпа из шкуры</td><td>2Ed</td><td>FR</td></tr>
+<tr><td>Furred hat</td><td>Шляпа из меха</td><td>3Ed</td><td>FR</td></tr>
+<tr><td>Leather gloves</td><td>Кожаные перчатки</td><td>4Ed</td><td>FR</td></tr>
+<tr><td>Hide gloves</td><td>Перчатки из шкуры</td><td>3Ed</td><td>FR</td></tr>
+<tr><td>Wool jacket</td><td>Шерстяная куртка</td><td>5Ed</td><td>FR</td></tr>
+<tr><td>Fur jacket</td><td>Меховая куртка</td><td>8Ed</td><td>FR</td></tr>
+<tr><td>Leather jacket</td><td>Кожаная куртка</td><td>6Ed</td><td>FR</td></tr>
+<tr><td>Makeup, cream</td><td>Макияж, крем</td><td>3Ed</td><td>CO</td></tr>
+<tr><td>Hair dye</td><td>Краска для волос</td><td>2Ed</td><td>RA</td></tr>
+<tr><td>Wig</td><td>Парик</td><td>1Ad</td><td>RA</td></tr>
+<tr><td>Perfume</td><td>Духи</td><td>6Ed</td><td>CO</td></tr>
+<tr><td>Washcloth</td><td>Мочалка</td><td>1Ed</td><td>FR</td></tr>
+<tr><td>Bar of soap</td><td>Кусок мыла</td><td>1Ed</td><td>CO</td></tr>
+<tr><td>Mirror (brushed copper)</td><td>Зеркало (матовая медь)</td><td>6Ad</td><td>CO</td></tr>
+<tr><td>Mirror (polished silver)</td><td>Зеркало (полированное серебро)</td><td>1Fd</td><td>RA</td></tr>
+<tr><td>Tall mirror (polished silver and glass)</td><td>Высокое зеркало (полированное серебро и стекло)</td><td>4Fd</td><td>EX</td></tr>
+<tr><td>Hairbrush</td><td>Расческа</td><td>1Ed</td><td>FR</td></tr>
+		</table>
+		<h2 id="containers">Емкости и блюда</h2>
+		<table>
+<tr><td>Willow basket</td><td>Корзина из ивы</td><td>3Ed</td><td>FR</td></tr>
+<tr><td>Backpack</td><td>Рюкзак</td><td>1Ad</td><td>FR</td></tr>
+<tr><td>Handbag</td><td>Сумка</td><td>6Ed</td><td>FR</td></tr>
+<tr><td>Water skin (4 pints)</td><td>Буржуйка (4 пинты)</td><td>3Ed</td><td>FR</td></tr>
+<tr><td>Hide pouch</td><td>Кошелек из шкуры</td><td>1Ed</td><td>FR</td></tr>
+<tr><td>Large cloth bag</td><td>Большая тканевая сумка</td><td>1Ed</td><td>FR</td></tr>
+<tr><td>Quiver</td><td>Колчан</td><td>8Ed</td><td>FR</td></tr>
+<tr><td>Bottle (ceramic)</td><td>Бутылка (керамическая)</td><td>2Ed</td><td>FR</td></tr>
+<tr><td>Bottle (glass)</td><td>Бутылка (стеклянная)</td><td>8Ed</td><td>RA</td></tr>
+<tr><td>Bowl (wood or ceramic)</td><td>Миска (деревянная или керамическая)</td><td>1Ed</td><td>FR</td></tr>
+<tr><td>Glass (wood or ceramic)</td><td>Стакан (деревянная или керамическая)</td><td>1Ed</td><td>FR</td></tr>
+<tr><td>Tin cup</td><td>Жестяная кружка</td><td>2Ed</td><td>CO</td></tr>
+<tr><td>Glass</td><td>Стакан</td><td>1Ad</td><td>RA</td></tr>
+<tr><td>Tureen or dish</td><td>Супница или блюдо</td><td>5Ed</td><td>FR</td></tr>
+<tr><td>Plate (wood or ceramic)</td><td>Тарелка (деревянная или керамическая)</td><td>1Ed</td><td>FR</td></tr>
+<tr><td>Plate (porcelain)</td><td>Тарелка (фарфоровая)</td><td>3Ed</td><td>CO</td></tr>
+<tr><td>Cooking pot</td><td>Кастрюля</td><td>1Ad</td><td>FR</td></tr>
+<tr><td>Frying pan or saucepan</td><td>Сковорода или кастрюля</td><td>7Ed</td><td>FR</td></tr>
+<tr><td>Metal flask (1 pint)</td><td>Металлическая фляжка (1 пинта)</td><td>3Ed</td><td>FR</td></tr>
+<tr><td>Small chest</td><td>Маленький сундук</td><td>1Ad</td><td>FR</td></tr>
+<tr><td>Trunk</td><td>Сундук</td><td>2Ad</td><td>FR</td></tr>
+<tr><td>Small cask</td><td>Маленькая бочка</td><td>3Ad</td><td>FR</td></tr>
+<tr><td>Barrel</td><td>Бочка</td><td>6Ad</td><td>CO</td></tr>
+<tr><td>Bucket</td><td>Ведро</td><td>2Ed</td><td>FR</td></tr>
+<tr><td>Wooden dishes</td><td>Деревянная посуда</td><td>1Ed</td><td>FR</td></tr>
+<tr><td>Kitchen knife</td><td>Кухонный нож</td><td>4Ed</td><td>FR</td></tr>
+<tr><td>Big ladle</td><td>Большой половник</td><td>2Ed</td><td>FR</td></tr>
+		</table>
+		<h2 id="furniture">Мебель</h2>
+		<table>	
+<tr><td>Kitchen table</td><td>Кухонный стол</td><td>4Ad</td></tr>
+<tr><td>Willow chair</td><td>Ивовый стул</td><td>1Ad</td></tr>
+<tr><td>Large armchair</td><td>Большое кресло</td><td>3Ad</td></tr>
+<tr><td>Shelf</td><td>Полка</td><td>6Ed</td></tr>
+<tr><td>Rack</td><td>Стеллаж</td><td>5Ed</td></tr>
+<tr><td>Cupboard or chest of drawers</td><td>Шкаф или комод</td><td>1Ad</td></tr>
+<tr><td>Feather mattress</td><td>Перьевой матрас</td><td>6Ed</td></tr>
+<tr><td>Straw or bran mattress</td><td>Матрас из соломы или отрубей</td><td>3Ed</td></tr>
+<tr><td>Feather pillow</td><td>Перьевая подушка</td><td>4Ed</td></tr>
+<tr><td>Straw pillow</td><td>Соломенная подушка</td><td>1Ed</td></tr>
+<tr><td>Linen sheets</td><td>Льняные простыни</td><td>5Ed</td></tr>
+<tr><td>Wool blanket</td><td>Шерстяное одеяло</td><td>1Ad</td></tr>
+<tr><td>Coal stove</td><td>Угольная печь</td><td>1Ad</td></tr>
+<tr><td>Wood oven</td><td>Дровяная печь</td><td>2Ad</td></tr>
+		</table>
+		<h2 id="rent">Аренда</h2>
+		<table>
+<tr><td>Bedroom, shack</td><td>Спальня, хижина</td><td>7Ad</td></tr>
+<tr><td>Cottage, small apartment</td><td>Коттедж, маленькая квартира</td><td>1Fd</td></tr>
+<tr><td>Large apartment</td><td>Большая квартира</td><td>2Fd</td></tr>
+<tr><td>Private house (with two floors)</td><td>Частный дом (двухэтажный)</td><td>4Fd</td></tr>
+<tr><td>Comfortable house (with a courtyard or a garden)</td><td>Уютный дом (с двором или садом)</td><td>8Fd</td></tr>
+<tr><td>Farm (with a lean-to, a courtyard, and a stable)</td><td>Ферма (с навесом, двором и конюшней)</td><td>8Fd</td></tr>
+		</table>
+		<h2 id="survivalTools">Снаряжение</h2>
+		<table>
+<tr><td>Bear trap</td><td>Медвежий капкан</td><td>2Ad</td><td>FR</td></tr>
+<tr><td>Tent (for one or two people)</td><td>Палатка (для одного или двух человек)</td><td>1Ad</td><td>FR</td></tr>
+<tr><td>Tent (for six people)</td><td>Палатка (для шести человек)</td><td>5Ad</td><td>FR</td></tr>
+<tr><td>Tent (pavilion)</td><td>Палатка (павильон)</td><td>1Fd</td><td>CO</td></tr>
+<tr><td>Sleeping bag</td><td>Спальный мешок</td><td>4Ed</td><td>FR</td></tr>
+<tr><td>Fishhooks and reed rod</td><td>Рыболовные крючки и тростниковая удочка</td><td>1Ed</td><td>FR</td></tr>
+<tr><td>Grappling hook</td><td>Крюк для захвата</td><td>7Ed</td><td>FR</td></tr>
+<tr><td>Three feet of rope</td><td>Три фута веревки</td><td>1Ed</td><td>FR</td></tr>
+<tr><td>Tinderbox</td><td>Трутница</td><td>4Ed</td><td>FR</td></tr>
+<tr><td>Saddle and stirrups (for a Caernide)</td><td>Седло и стремена (для каэрнида)</td><td>3Ad</td><td>FR</td></tr>
+<tr><td>Saddle and stirrups (for a horse)</td><td>Седло и стремена (для лошади)</td><td>5Ad</td><td>CO</td></tr>
+		</table>
+		<h2 id="variousTools">Инструменты</h2>
+		<table>
+<tr><td>Spade, pickaxe</td><td>Лопата, кирка</td><td>9Ed</td><td>FR</td></tr>
+<tr><td>Hammer, sledgehammer</td><td>Молот, кувалда</td><td>1Ad</td><td>FR</td></tr>
+<tr><td>Sickle</td><td>Серп</td><td>9Ed</td><td>FR</td></tr>
+<tr><td>Saw</td><td>Пила</td><td>9Ed</td><td>FR</td></tr>
+<tr><td>Scythe</td><td>Коса</td><td>1Ad</td><td>FR</td></tr>
+<tr><td>Crowbar</td><td>Лом</td><td>4Ed</td><td>FR</td></tr>
+<tr><td>Lumberjack axe</td><td>Топор лесоруба</td><td>8Ed</td><td>FR</td></tr>
+<tr><td>Sewing kit</td><td>Швейный набор</td><td>2Ed</td><td>FR</td></tr>
+<tr><td>Precision toolkit (for watchmaking, locksmithing, etc.)</td><td>Набор прецизионных инструментов (для часового, слесарного дела и т.п.)</td><td>2Ad</td><td>RA</td></tr>
+<tr><td>Pitchfork</td><td>Вилы</td><td>8Ed</td><td>FR</td></tr>
+<tr><td>Smithing tongs</td><td>Кузнечные щипцы</td><td>3Ed</td><td>FR</td></tr>
+<tr><td>Anvil</td><td>Наковальня</td><td>6Ad</td><td>FR</td></tr>
+<tr><td>Trowel</td><td>Мастерок</td><td>2Ed</td><td>FR</td></tr>
+<tr><td>Wheelbarrow</td><td>Тачка</td><td>5Ed</td><td>FR</td></tr>
+<tr><td>Plough</td><td>Плуг</td><td>1Ad</td><td>FR</td></tr>
+<tr><td>Bellows</td><td>Сильфоны</td><td>7Ed</td><td>FR</td></tr>
+		</table>
+		<h2 id="lighting">Освещение</h2>
+		<table>
+<tr><td>Candle (lasts 2 hours)</td><td>Свеча (работает 2 часа)</td><td>1Ed</td><td>FR</td></tr>
+<tr><td>Resin torch (lasts 2 hours)</td><td>Смоляной факел (работает 2 часа)</td><td>3Ed</td><td>FR</td></tr>
+<tr><td>Oil lamp (lasts 4 hours/2 pints)</td><td>Масляная лампа (работает 4 часа/2 пинты)</td><td>4Ed</td><td>CO</td></tr>
+<tr><td>Oil lantern (lasts 2 hours/2 pints)</td><td>Масляный фонарь (работает 2 часа/2 пинты)</td><td>1Ad</td><td>CO</td></tr>
+<tr><td>Two pints of oil</td><td>Две пинты масла</td><td>4Ed</td><td>CO</td></tr>
+		</table>
+		<h2 id="writing">Письмо</h2>
+		<table>
+<tr><td>Quill</td><td>Перо</td><td></td><td></td></tr>
+<tr><td>Paintbrush</td><td>Кисть</td><td></td><td></td></tr>
+<tr><td>Charcoal</td><td>Уголь</td><td></td><td></td></tr>
+<tr><td>Chalk</td><td>Мел</td><td></td><td></td></tr>
+<tr><td>Black ink (a vial)</td><td>Черные чернила (флакон)</td><td></td><td></td></tr>
+<tr><td>Colored ink (a vial)</td><td>Цветные чернила (флакон)</td><td></td><td></td></tr>
+<tr><td>Ink for illuminations (a vial)</td><td>Чернила для иллюминации (флакон)</td><td></td><td></td></tr>
+<tr><td>Parchment (a sheet)	</td><td>Пергамент (лист)</td><td></td><td></td></tr>
+<tr><td>Paper (a sheet)</td><td>Бумага (лист)</td><td></td><td></td></tr>
+<tr><td>Blank notebook (with about 50 pages)</td><td>Чистая тетрадь (примерно 50 страниц)</td><td></td><td></td></tr>
+<tr><td>Blank book (with a simple cover, and about 300 pages)</td><td>Чистая книга (с простой обложкой, около 300 страниц)</td><td></td><td></td></tr>
+<tr><td>Ruler and compasses</td><td>Линейка и циркуль</td><td></td><td></td></tr>
+<tr><td>Small chalkboard</td><td>Маленькая меловая доска</td><td></td><td></td></tr>
+<tr><td>Chalkboard</td><td>Меловая доска</td><td></td><td></td></tr>
+<tr><td>Magnifying glass</td><td>Увеличительное стекло</td><td></td><td></td></tr>
+		</table>
+		<h2 id="musical">Музыка</h2>
+		<table>
+<tr><td>Bagpipes</td><td>Волынка</td><td>1Ad</td><td>FR</td></tr>
+<tr><td>Horn or trumpet</td><td>Рог или труба</td><td>8Ed</td><td>FR</td></tr>
+<tr><td>Flute</td><td>Флейта</td><td>5Ed</td><td>FR</td></tr>
+<tr><td>Harp or lyre</td><td>Арфа или лира</td><td>2Ad</td><td>FR</td></tr>
+<tr><td>Tambourine</td><td>Тамбурин</td><td>6Ed</td><td>FR</td></tr>
+<tr><td>Rebec (an instrument similar to a violin)</td><td>Ребек (инструмент, похожий на скрипку)</td><td>3Ad</td><td>CO</td></tr>
+<tr><td>Lute (a Tarish instrument)</td><td>Лютня (инструмент таришей)</td><td>1Fd</td><td>RA</td></tr>
+		</table>
+		<h2 id="transportation">Транспорт</h2>
+		<table>
+<tr><td colspan="2"><b>Транспортные средства</b></td><td><b>Цена</b></td><td><b>Аренда</b></td></tr>
+<tr><td>Cart</td><td>Тележка</td><td>1Ad</td><td>2Ed</td></tr>
+<tr><td>Small boat</td><td>Маленькая лодка</td><td>2Ad</td><td>2Ed</td></tr>
+<tr><td>Fishing boat</td><td>Рыбацкая лодка</td><td>1Fd</td><td>4Ed</td></tr>
+<tr><td>Carriage</td><td>Карета</td><td>8Ad</td><td>3Ed</td></tr>
+<tr><td>Stagecoach</td><td>Дилижанс</td><td>1Fd</td><td>3Ed</td></tr>
+<tr><td>Sedan chair</td><td>Кресло-палантин</td><td>3Ad</td><td>1Ed</td></tr>
+		</table>
+		<h2 id="traveling">Извоз</h2>
+		<table>
+<tr><td>Crossing a river in a ferryboat</td><td>Переправа через реку на пароме</td><td>1Ed</td></tr>
+<tr><td>Traveling in a boat (per day)</td><td>Путешествие на лодке (в день)</td><td>2Ad</td></tr>
+<tr><td>Bridge or road toll</td><td>Плата за проезд по мосту или дороге</td><td>2Ed</td></tr>
+<tr><td>Ticket for a stagecoach (per day)</td><td>Билет на дилижанс (в день)</td><td>1Ad</td></tr>
+		</table>
+		<h2 id="materials">Материалы</h2>
+		<table>
+<tr><td>Charcoal</td><td>Древесный уголь</td><td>4Ed</td><td>FR</td></tr>
+<tr><td>Firewood</td><td>Дрова</td><td>3Ed</td><td>FR</td></tr>
+<tr><td>Timber (common)</td><td>Лес (обычный)</td><td>4Ed</td><td>FR</td></tr>
+<tr><td>Timber (exceptional)</td><td>Лес (исключительный)</td><td>8Ed</td><td>CO</td></tr>
+<tr><td>Log (per piece)</td><td>Бревно (за штуку)</td><td>1Ad</td><td>FR</td></tr>
+<tr><td>Linen</td><td>Лен</td><td>3Ed</td><td>FR</td></tr>
+<tr><td>Wool</td><td>Шерсть</td><td>2Ed</td><td>FR</td></tr>
+<tr><td>Common dye (red, blue, green, black, yellow…)</td><td>Обычный краситель (красный, синий, зеленый, черный, желтый…)</td><td>2Ed</td><td>CO</td></tr>
+<tr><td>Rare dye (purple, gold, silver)</td><td>Редкий краситель (фиолетовый, золотой, серебряный)</td><td>1Ad</td><td>RA</td></tr>
+<tr><td>Mortar</td><td>Раствор</td><td>1Ed</td><td>FR</td></tr>
+<tr><td>Carved rubblestone, per 35 cubic feet (made of sandstone or granite)</td><td>Резной бутовый камень, за 35 кубических футов (из песчаника или гранита)</td><td>6Ed</td><td>FR</td></tr>
+<tr><td>Brick, per 35 cubic feet</td><td>Кирпич, за 35 кубических футов</td><td>5Ed</td><td>FR</td></tr>
+<tr><td>Tile, per 10 square feet</td><td>Плитка, за 10 квадратных футов</td><td>2Ed</td><td>CO</td></tr>
+<tr><td>Chalk, per 10 square feet</td><td>Мел, за 10 квадратных футов</td><td>5Ed</td><td>CO</td></tr>
+<tr><td>Straw, per bale</td><td>Солома, за тюк</td><td>1Ed</td><td>CO</td></tr>
+<tr><td>Glass (for a small window)</td><td>Стекло (для маленького окна)</td><td>1Ad</td><td>RA</td></tr>
+<tr><td>Glass (for a large window)</td><td>Стекло (для большого окна)</td><td>4Ad</td><td>EX</td></tr>
+<tr><td>Bronze ingot (one pound)</td><td>Бронзовый слиток (один фунт)</td><td>2Ad</td><td>CO</td></tr>
+<tr><td>Iron ingot (one pound)</td><td>Железный слиток (один фунт)</td><td>3Ad</td><td>CO</td></tr>
+<tr><td>Steel ingot (one pound)</td><td>Стальной слиток (один фунт)</td><td>5Ad</td><td>CO</td></tr>
+<tr><td>Copper or tin ingot (one pound)</td><td>Медный или оловянный слиток (один фунт)</td><td>2Ad</td><td>CO</td></tr>
+<tr><td>Silver ingot (one pound)</td><td>Серебряный слиток (один фунт)</td><td>1Fd</td><td>RA</td></tr>
+<tr><td>Gold ingot (one pound)</td><td>Золотой слиток (один фунт)</td><td>2Fd</td><td>RA</td></tr>
+<tr><td>Retort or glass bottle</td><td>Реторта или стеклянная бутылка</td><td>1Ad</td><td>RA</td></tr>
+<tr><td>Acetic or hydrochloric acid</td><td>Уксусная или соляная кислота</td><td>8Ed</td><td>CO</td></tr>
+<tr><td>Cinnabar (mercuric sulfide)</td><td>Киноварь (сульфид ртути)</td><td>2Ad</td><td>CO</td></tr>
+<tr><td>Sulfur</td><td>Сера</td><td>3Ad</td><td>RA</td></tr>
+<tr><td>Saltpeter</td><td>Селитра</td><td>2Ad</td><td>CO</td></tr>
+		</table>
+<p>Если не указано иначе, количество: 2 фунта, 2 пинты или 10 квадратных футов.</p>
+		<h2 id="livestock">Животные</h2>
+		<table>
+<tr><td>Sheep</td><td>Овца</td><td>1Fd</td></tr>
+<tr><td>Caernide</td><td>Каэрнид</td><td>2Fd</td></tr>
+<tr><td>Boernac</td><td>Бернак</td><td>2Fd</td></tr>
+<tr><td>Pig</td><td>Свинья</td><td>1Fd</td></tr>
+<tr><td>Ox</td><td>Бык</td><td>2Fd</td></tr>
+<tr><td>Chicken</td><td>Курица</td><td>2Ad</td></tr>
+<tr><td>Mule</td><td>Мул</td><td>1Fd</td></tr>
+<tr><td>Horse</td><td>Лошадь</td><td>3Fd</td></tr>
+<tr><td>Shepherd or hunting dog</td><td>Пастух или охотничья собака</td><td>7Ad</td></tr>
+<tr><td>Guard dog</td><td>Сторожевая собака</td><td>9Ad</td></tr>
+<tr><td>Trained falcon</td><td>Дрессированный сокол</td><td>1Fd</td></tr>
+		</table>
+		<h2 id="rangedWeapons">Оружие (дист)</h2>
+		<table>
+<tr><td colspan="2"><b>Дистанционное оружие</b></td><td><b>Урон</b></td><td><b>Дистанция</b></td><td><b>Цена</b></td><td><b>Редкость</b></td></tr>
+<tr><td>Dagger</td><td>Кинжал</td><td>1</td><td>3 yd</td><td>4Ed</td><td>FR</td></tr>
+<tr><td>Sling</td><td>Праща</td><td>1</td><td>8 yd</td><td>2Ed</td><td>FR</td></tr>
+<tr><td>Javelin</td><td>Копье</td><td>2</td><td>4 yd</td><td>8Ed</td><td>CO</td></tr>
+<tr><td>Bow</td><td>Лук</td><td>2</td><td>20 yd</td><td>3Ad</td><td>FR</td></tr>
+<tr><td>Crossbow </td><td>Арбалет</td><td>2</td><td>24 yd</td><td>5Ad</td><td>CO</td></tr>
+<tr><td>Francisca</td><td>Топор</td><td>2</td><td>2 yd</td><td>2Ad</td><td>FR</td></tr>
+<tr><td>Short spear</td><td>Короткое копье</td><td>2</td><td>3 yd</td><td>2Ad</td><td>FR</td></tr>
+<tr><td>Lead pellet (ten of them)</td><td>Свинцовые пули (десяток)</td><td>/<td>/</td><td>5Ed</td><td>FR</td></tr>
+<tr><td>Arrow (a dozen)</td><td>Стрелы (дюжина)</td><td>/<td>/</td><td>7Ed</td><td>FR</td></tr>
+<tr><td>Bolt (a dozen)</td><td>Болты (дюжина)</td><td>/<td>/</td><td>9Ed</td><td>CO</td></tr>
+		</table>
+<p>Указана базовая дистанция. Средняя равна удвоенное базовой, штраф -2 к броску Атаки. Дальняя равна пятикратной базовой, штраф -5.</p>		
+		<h2 id="armors">Защита</h2>
+		<table>
+<tr><td colspan="2"><b>Броня и щиты</b></td><td><b>Броня</b></td><td><b>Цена</b></td><td><b>Редкость</b></td></tr>
+<tr><td>Round shield (made of metal and hardened wood)</td><td>Круглый щит (из металла и закаленного дерева)</td><td>1</td><td>2Ad</td><td>FR</td></tr>
+<tr><td>Osag shield (of rectangular shape, made of wood with metal reinforcements)</td><td>Щит осага (прямоугольной формы, из дерева с металлическими усилениями)</td><td>1</td><td>2Ad</td><td>CO</td></tr>
+<tr><td>Hilderin shield (of triangular shape, made of metal)</td><td>Щит хильдерина (треугольной формы, из металла)</td><td>1</td><td>3Ad</td><td>RA</td></tr>
+<tr><td>Leather tunic</td><td>Кожаная туника</td><td>1</td><td>2Ad</td><td>FR</td></tr>
+<tr><td>Studded leather tunic</td><td>Кожаная туника с заклепками</td><td>2</td><td>3Ad</td><td>CO</td></tr>
+<tr><td>Chain mail</td><td>Кольчуга</td><td>3</td><td>7Ad</td><td>CO</td></tr>
+<tr><td>Reed cuirass</td><td>Тростниковая кираса</td><td>2</td><td>1Ad</td><td>RA</td></tr>
+<tr><td>Continental lamellar cuirass (of leather and metal)</td><td>Континентальная пластинчатая кираса (из кожи и металла)</td><td>3</td><td>1Fd</td><td>RA</td></tr>
+<tr><td>Plate armor</td><td>Пластинчатый доспех</td><td>4</td><td>3Fd</td><td>EX</td></tr>
+<tr><td>Leather coif*</td><td>Кожаный чепец*</td><td>/</td><td>4Ed</td><td>FR</td></tr>
+<tr><td>Chain coif*</td><td>Кольчужный чепец*</td><td>/</td><td>8Ed</td><td>CO</td></tr>
+<tr><td>Osag helmet (only covers the skull)*</td><td>Шлем Осаг (закрывает только череп)*</td><td>/</td><td>1Ad</td><td>FR</td></tr>
+<tr><td>Open helmet (protects the skull, the cheeks and the neck)*</td><td>Открытый шлем (защищает череп, щеки и шею)*</td><td>/</td><td>2Ad</td><td>CO</td></tr>
+<tr><td>Helm*</td><td>Шлем*</td><td>/</td><td>4Ad</td><td>RA</td></tr>
+		</table>
+		<h2 id="meleeWeapons">Оружие</h2>
+		<table>
+<tr><td colspan="2"><b>Оружие</b></td><td><b>Урон</b></td><td><b>Цена</b></td><td><b>Редкость</b></td></tr>
+<tr><td>Dagger, knife*</td><td>Кинжал, нож*</td><td>1</td><td>4Ed</td><td>FR</td></tr>
+<tr><td>Club</td><td>Дубинка</td><td>1</td><td>2Ed</td><td>FR</td></tr>
+<tr><td>Crafting hammer</td><td>Ремесленный молот</td><td>2</td><td>1Ad</td><td>FR</td></tr>
+<tr><td>Mace</td><td>Булава</td><td>2</td><td>2Ad</td><td>CO</td></tr>
+<tr><td>Iron-shod walking staff (Carath)</td><td>Окованный железом походный посох (карат)</td><td>2</td><td>8Ed</td><td>FR</td></tr>
+<tr><td>Francisca* (a light axe, traditional in Tri-Kazel)</td><td>Франциска* (легкий топор, традиционный в Три-Казеле)</td><td>2</td><td>2Ad</td><td>FR</td></tr>
+<tr><td>Short spear*</td><td>Короткое копье*</td><td>2</td><td>2Ad</td><td>FR</td></tr>
+<tr><td>Battleaxe</td><td>Боевой топор</td><td>3</td><td>5Ad</td><td>CO</td></tr>
+<tr><td>Long sword (straight-bladed sword of Osag origin)</td><td>Длинный меч (прямой меч осагского происхождения)</td><td>3</td><td>7Ad</td><td>CO</td></tr>
+<tr><td>Gladius (short sword of Continental origin)</td><td>Гладиус (короткий меч континентального происхождения)</td><td>2</td><td>5Ad</td><td>CO</td></tr>
+<tr><td>Polearm (halberd, etc. Two-handed weapon)</td><td>Древковое оружие (алебарда и т. д. Двуручное оружие)</td><td>3</td><td>8Ad</td><td>RA</td></tr>
+<tr><td>Long spear (Two-handed weapon)</td><td>Длинное копье (двуручное оружие)</td><td>3</td><td>4Ad</td><td>CO</td></tr>
+<tr><td>Javelin*</td><td>Джавелин*</td><td>2</td><td>8Ed</td><td>CO</td></tr>
+<tr><td>Maul (large two-handed hammer)</td><td>Кувалда (большой двуручный молот)</td><td>4</td><td>1Fd</td><td>RA</td></tr>
+<tr><td>Claymore (two-handed sword)</td><td>Клеймор (двуручный меч)</td><td>4</td></td><td>1Fd</td><td>RA</td></tr>
+		</table>
+		<h2 id="artifacts">Артефакты</h2>
+		<table>		
+<tr><td>Crushing Pliers</td><td>Дробящие клещи</td><td>1Fd</td><td>CO</td></tr>
+<tr><td>Lighter</td><td>Зажигалка</td><td>2Ad</td><td>CO</td></tr>
+<tr><td>Portative Nebular</td><td>Портативный туманный</td><td>3Ad</td><td>CO</td></tr>
+<tr><td>Magientist Pulley</td><td>Шкив Магионика</td><td>4Ad</td><td>CO</td></tr>
+<tr><td>Driller-hammerer</td><td>Дрель-молоток</td><td>8Ad</td><td>CO</td></tr>
+<tr><td>Mechanical Saw</td><td>Механическая пила</td><td>8Ad</td><td>CO</td></tr>
+<tr><td>Vision Glasses</td><td>Очки зрения</td><td>1Fd</td><td>RA</td></tr>
+<tr><td>Tonic</td><td>Тоник</td><td>5Ad</td><td>RA</td></tr>
+<tr><td>Mobile Flux Extractor</td><td>Мобильный экстрактор флюса</td><td>1Fd</td><td>RA</td></tr>
+<tr><td>Energetic Gauntlet</td><td>Энергетическая перчатка</td><td>1Fd</td><td>EX</td></tr>
+		</table>
+		<h2 id="flux">Флюкс</h2>
+		<table>
+<tr><td colspan="2"><b>Картридж флюкса (1 использование)</b></td><td><b>Рейж</b></td><td><b>Редкость</b></td><td><b>Таол</b></td><td><b>Редкость</b></td><td><b>Гвидре</b></td><td><b>Редкость</b></td></tr>
+<tr><td>Cartridge–mineral</td><td>Картридж–минеральный</td><td>7Ed</td><td>CO</td><td>1Ad</td><td>CO</td><td>12Ed</td><td>RA</td></tr>
+<tr><td>Cartridge–vegetal</td><td>Картридж–растительный</td><td>9Ed</td><td>CO</td><td>11Ed</td><td>CO</td><td>15Ed</td><td>RA</td></tr>
+<tr><td>Cartridge–organic</td><td>Картридж–органический</td><td>1Ad</td><td>CO</td><td>15Ed</td><td>RA</td><td>18Ed</td><td>RA</td></tr>
+<tr><td>Cartridge–fossil</td><td>Картридж–ископаемый</td><td>3Ad</td><td>RA</td><td>5Ad</td><td>EX</td><td>6Ad</td><td>EX</td></tr>
+		</table>
+	</main>
+    <script src="js.js"></script>
+  </body>
+</html>
