@@ -1,0 +1,92 @@
+/*
+Исходные, из pdf:
+Цитата в начале раздела H1 [block quote]
+Таблицы: голубой/салатовый заголовок [h5+table]
+Сайд: с голубым заголовком, как таблицы h5+p [block inside]
+Сайд: на хитром фоне, с черным заголовком h5+p [block side]
+В тексте: с синим/зеленым заголовком h5+p [block inside]
+Примеры: италик, красивые бордеры сверху, снизу p [block example]
+*/
+
+.block.quote {
+  margin: 0 0 1rem 0;
+  padding: 0.25rem 0;
+  border: 0px double #999;
+  border-width: 3px 0;
+  font-family: "PTSerif-Italic", Calibri, sans-serif;
+  font-style: italic;
+}
+.block.side {
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  background-color: #ddd;
+  font-size: smaller;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+.block.inside {
+  margin: 1rem 0;
+  /*margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  background-color: #ddd;
+  font-size: smaller;*/
+}
+.block.inside h5 {
+  border-bottom: 1px dotted #333;
+  padding: 0 0 0 0.25rem;
+  background-color: #ddd;
+}
+.block.example {
+  margin: 0 0 1rem 0;
+  padding: 0.5rem 1rem;
+  background-color: #ddd;
+  font-size: smaller;
+  font-style: italic;
+}
+
+/*.quote_side {
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  background-color: #ddd;
+  font-size: smaller;
+}
+blockquote {
+  margin: 0;
+  padding: 1rem 0 1rem 2.5rem;
+}
+blockquote h5 {
+  background-color: #ddd;
+  padding: 0 0 0 0.25rem;
+}
+.quote_side_tech {
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  background-color: #ddd;
+  font-size: smaller;
+}
+.quote_side_tech h5 {
+  border-bottom: 1px dotted #333;
+}
+.quote_table {
+  margin: 1rem 0;
+}
+.quote_table h5 {
+  background-color: #ddd;
+  padding: 0 0 0 0.25rem;
+}
+.quote_tech {
+  margin: 1rem 0;
+}
+.quote_tech h5 {
+  background-color: #ddd;
+  border-bottom: 1px dotted #333;
+  padding: 0 0 0 0.25rem;
+}
+.quote_example {
+  margin: 0 0 1rem 0;
+  padding: 0.5rem 1rem;
+  background-color: #ddd;
+  font-size: smaller;
+  font-style: italic;
+}
+*/
