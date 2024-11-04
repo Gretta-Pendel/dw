@@ -87,8 +87,7 @@ nav .h2 {
   border-bottom: 1px dotted #efefef;
 }
 nav .h3 {
-  margin-left: 0.5rem;
-  border-bottom: 1px dotted #efefef;
+  margin: 0.25rem 0 0.25rem 0.5rem;
 }
 nav .h4 {
   margin-left: 1rem;
@@ -161,6 +160,15 @@ h5 {
   font-size: 0.9rem;
 }
 
+a {
+  border-bottom: 1px solid #003366;
+  text-decoration: none;
+  color: #003366;
+}
+a:hover {
+  border-bottom: 1px dotted transparent;
+}
+
 table {
   border-collapse: collapse;
   margin: 0 0 1rem;
@@ -206,14 +214,14 @@ p sup {
 main ul {
   padding-left: 25px;
 }
-main ul li {
+/*main ul li {
   list-style: none;
 }
 main ul li:before {
   content: "⁜ ";
   position: relative;
   margin-left: -0.75rem;
-}
+}*/
 dl {
 }
 dt {
@@ -222,6 +230,10 @@ dt {
 dd {
   margin-left: 25px;
   margin-bottom: 0.5rem;
+}
+
+i {
+  color: #2775bc;
 }
 
 .term {
