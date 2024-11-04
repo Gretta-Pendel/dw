@@ -24,6 +24,32 @@ window.addEventListener("resize", (event) => {
   window.innerWidth > 768 ? (mmenu.style.display = "block") : (mmenu.style.display = "none");
 });
 
+// set ids
+let h2s = document.querySelectorAll("main h2");
+let h3s = document.querySelectorAll("main h3");
+let h4s = document.querySelectorAll("main h4");
+let h5s = document.querySelectorAll("main h5");
+
+if (h2s && h2s.length) {
+  for (let index = 0; index < h2s.length; index++) {
+    if (!h2s[index].id) h2s[index].id = "h2_" + index;
+  }
+}
+if (h3s && h3s.length) {
+  for (let index = 0; index < h3s.length; index++) {
+    if (!h3s[index].id) h3s[index].id = "h3_" + index;
+  }
+}
+if (h4s && h4s.length) {
+  for (let index = 0; index < h4s.length; index++) {
+    if (!h4s[index].id) h4s[index].id = "h4_" + index;
+  }
+}
+if (h5s && h5s.length) {
+  for (let index = 0; index < h5s.length; index++) {
+    if (!h5s[index].id) h5s[index].id = "h5_" + index;
+  }
+}
 let levels = [];
 for (let index = 0; index < main.children.length; index++) {
   const el = main.children[index];
