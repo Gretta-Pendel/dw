@@ -189,7 +189,7 @@ td {
 ul,
 ol {
   margin: 0;
-  padding-left: 32px;
+  padding-left: 2rem;
 }
 
 p + ul {
@@ -212,7 +212,7 @@ p sup {
 }
 
 main ul {
-  padding-left: 25px;
+  padding-left: 2rem;
 }
 /*main ul li {
   list-style: none;
