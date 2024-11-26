@@ -1,3 +1,5 @@
+@import url(fonts/fonts.css);
+@import url(blocks.css);
 * {
   box-sizing: border-box;
 }
@@ -15,7 +17,7 @@ body {
 }
 
 /* ---------- LAYOUT ---------- */
-/*header {
+header {
   grid-area: head;
   position: fixed;
   left: 0;
@@ -36,6 +38,7 @@ header .menu > div {
 }
 header .menu > div a {
   display: block;
+  font-size: smaller;
 }
 .submenu {
   position: relative;
@@ -43,12 +46,15 @@ header .menu > div a {
 .submenu > ul {
   display: none;
   position: absolute;
-  padding: 1rem;
+  padding: 2rem 1rem 1rem;
   list-style: none;
   background-color: #333;
   left: -1rem;
   z-index: 300;
   transition: all 1s ease-out;
+  min-width: 180px;
+  border: 1px solid #000;
+  border-top: none;
 }
 .submenu > ul li {
   padding-bottom: 0.5rem;
@@ -56,7 +62,7 @@ header .menu > div a {
 
 .submenu > ul a:hover {
   text-decoration: underline;
-}*/
+}
 
 nav {
   grid-area: aside;
@@ -79,21 +85,24 @@ nav > div > div {
   margin-bottom: 0.25rem;
 }
 nav .h1 {
-  display: none;
+  font-size: medium;
+  border-bottom: 1px solid #efefef;
 }
 nav .h2 {
-  margin-left: 0rem;
-  font-weight: 600;
-  border-bottom: 1px dotted #efefef;
+  font-size: larger;
+  margin-left: 0.25rem;
+  border-bottom: 1px dotted #666;
 }
 nav .h3 {
-  margin: 0.25rem 0 0.25rem 0.5rem;
+  margin-left: 0.75rem;
+  border-bottom: 1px dotted #666;
 }
 nav .h4 {
   margin-left: 1rem;
 }
 nav .h5 {
   margin-left: 1.5rem;
+  margin-bottom: 0.05rem;
 }
 
 header a,
@@ -109,7 +118,7 @@ nav a.active {
 
 main {
   grid-area: main;
-  padding: 1rem 1.5rem 1rem;
+  padding: 3rem 1.5rem 1rem;
   max-width: 1380px;
 }
 
@@ -119,27 +128,33 @@ footer {
 
 /* ---------- TIPOGRAPHY ----------*/
 
-main h1,
-main h2,
-main h3,
-main h4,
-main h5,
+h1,
+h2,
+h3,
+h4,
+h5,
 main .h1,
+h5,
 main .h2,
+h5,
 main .h3,
+h5,
 main .h4,
+h5,
 main .h5 {
   font-family: "Tektur-SemiBold", Calibri, sans-serif;
   font-weight: 400;
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
 }
-h2 {
+h2,
+main .h2 {
   position: relative;
   margin-top: 3rem;
   clear: both;
 }
-h2::before {
+h2::before,
+main .h2::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -149,7 +164,8 @@ h2::before {
 h2 a {
   text-decoration: none;
 }
-h3 {
+h3,
+main .h3 {
   border-bottom: 1px dotted #666;
 }
 h3,
@@ -159,22 +175,14 @@ main .h4 {
   margin: 1rem 0 0.25rem 0;
 }
 h4,
-.h4 {
-  font-size: 0.95rem;
+main .h4 {
+  font-size: 1rem;
 }
-h5 {
+h5,
+main .h5 {
   /* ֎  */
-  margin: 0 0 0.25rem;
+  margin: 0.5rem 0 0.25rem;
   font-size: 0.9rem;
-}
-
-main a {
-  border-bottom: 1px solid #003366;
-  text-decoration: none;
-  color: #003366;
-}
-a:hover {
-  border-bottom: 1px dotted transparent;
 }
 
 table {
@@ -193,11 +201,25 @@ tr:nth-child(2n) td {
 td {
   font-size: smaller;
 }
+tr.base td {
+  font-weight: 100;
+  background-color: #ccc;
+  font-family: "Tektur-SemiBold", Calibri, sans-serif;
+  font-size: 0.7rem;
+}
+tr.base td b {
+  text-decoration: underline;
+}
 
 ul,
 ol {
   margin: 0;
-  padding-left: 2rem;
+  padding-left: 32px;
+}
+main ul,
+main dl,
+main ol {
+  margin-bottom: 0.5rem;
 }
 
 p + ul {
@@ -212,24 +234,30 @@ b {
   font-weight: 600;
 }
 
+i {
+  font-family: "PTSerif-Italic", Calibri, sans-serif;
+  font-size: small;
+}
+
 td sup {
   font-size: xx-small;
 }
-p sup {
+p sup,
+li sup {
   font-size: x-small;
 }
 
 main ul {
-  padding-left: 2rem;
+  padding-left: 25px;
 }
-/*main ul li {
+main ul li {
   list-style: none;
 }
 main ul li:before {
   content: "⁜ ";
   position: relative;
   margin-left: -0.75rem;
-}*/
+}
 dl {
 }
 dt {
@@ -238,10 +266,6 @@ dt {
 dd {
   margin-left: 25px;
   margin-bottom: 0.5rem;
-}
-
-i {
-  color: #2775bc;
 }
 
 .term {
@@ -271,32 +295,12 @@ i {
   gap: 20px;
 }
 
-.gear {
-  font-size: small;
-}
-
-.grey {
-  background-color: #ddd;
-  padding: 0 1rem 0.5rem;
-  margin: 1rem 0;
-}
-
-.inset {
-  font-size: small;
-  margin: 1rem 0 1rem 1rem;
-  padding: 0 1rem 0.5rem;
-  background-color: #ddd;
-  float: right;
-  max-width: 300px;
-}
-
 @media (min-width: 768.02px) {
   nav > div {
     position: fixed;
     width: 250px;
     padding-left: 0.75rem;
-    top: 0;
-    /*top: 3rem;*/
+    top: 3rem;
     bottom: 0;
     /*overflow-y: auto;*/
     direction: rtl;
@@ -348,7 +352,7 @@ i {
     height: 2.5rem;
     padding-right: 0;
     position: fixed;
-    /*top: 5rem;*/
+    top: 5rem;
     z-index: 100;
   }
 

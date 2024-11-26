@@ -1,0 +1,98 @@
+/*@font-face {
+  font-family: "Tektur_Condensed-Black";
+  src: url(Tektur_Condensed-Black.ttf);
+}
+@font-face {
+  font-family: "Tektur_Condensed-Bold";
+  src: url(Tektur_Condensed-Bold.ttf);
+}
+@font-face {
+  font-family: "Tektur_Condensed-ExtraBold";
+  src: url(Tektur_Condensed-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Tektur_Condensed-Medium";
+  src: url(Tektur_Condensed-Medium.ttf);
+}
+@font-face {
+  font-family: "Tektur_Condensed-Regular";
+  src: url(Tektur_Condensed-Regular.ttf);
+}
+@font-face {
+  font-family: "Tektur_Condensed-SemiBold";
+  src: url(Tektur_Condensed-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Tektur_SemiCondensed-Black";
+  src: url(Tektur_SemiCondensed-Black.ttf);
+}
+@font-face {
+  font-family: "Tektur_SemiCondensed-Bold";
+  src: url(Tektur_SemiCondensed-Bold.ttf);
+}
+@font-face {
+  font-family: "Tektur_SemiCondensed-ExtraBold";
+  src: url(Tektur_SemiCondensed-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Tektur_SemiCondensed-Medium";
+  src: url(Tektur_SemiCondensed-Medium.ttf);
+}
+@font-face {
+  font-family: "Tektur_SemiCondensed-Regular";
+  src: url(Tektur_SemiCondensed-Regular.ttf);
+}
+@font-face {
+  font-family: "Tektur_SemiCondensed-SemiBold";
+  src: url(Tektur_SemiCondensed-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Tektur-Black";
+  src: url(Tektur-Black.ttf);
+}
+@font-face {
+  font-family: "Tektur-Bold";
+  src: url(Tektur-Bold.ttf);
+}
+@font-face {
+  font-family: "Tektur-ExtraBold";
+  src: url(Tektur-ExtraBold.ttf);
+}*/
+@font-face {
+  font-family: "Tektur-Medium";
+  src: url(Tektur-Medium.ttf);
+}
+/*@font-face {
+  font-family: "Tektur-Regular";
+  src: url(Tektur-Regular.ttf);
+}*/
+@font-face {
+  font-family: "Tektur-SemiBold";
+  src: url(Tektur-SemiBold.ttf);
+}
+
+/*@font-face {
+  font-family: "Play-Bold";
+  src: url(Play-Bold.ttf);
+}
+@font-face {
+  font-family: "Play-Regular";
+  src: url(Play-Regular.ttf);
+}*/
+
+/*@font-face {
+  font-family: "PTSerif-Bold";
+  src: url(PTSerif-Bold.ttf);
+}
+@font-face {
+  font-family: "PTSerif-BoldItalic";
+  src: url(PTSerif-BoldItalic.ttf);
+}*/
+@font-face {
+  font-family: "PTSerif-Italic";
+  src: url(PTSerif-Italic.ttf);
+}
+/*@font-face {
+  font-family: "PTSerif-Regular";
+  src: url(PTSerif-Regular.ttf);
+}*/
