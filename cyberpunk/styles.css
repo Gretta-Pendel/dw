@@ -289,6 +289,10 @@ dd {
   text-align: right;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .columns {
   display: flex;
   flex-wrap: wrap;

@@ -120,7 +120,7 @@ let menu = [
   {
     name: "Доводим до конца",
     title: "=Решения",
-    page: 125,
+    url: "solutions",
     sections: [
       { title: "Подготовка сцены", page: 126 },
       {
@@ -179,7 +179,7 @@ let menu = [
   {
     name: "Повседневная Жизнь",
     title: "Жизнь",
-    page: 315,
+    url: "life",
     sections: [
       { title: "Не Попасть в Неприятности", page: 316 },
       { title: "Как Вы Остаётесь На Связи", page: 319 },
