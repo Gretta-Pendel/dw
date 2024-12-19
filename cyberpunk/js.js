@@ -115,17 +115,19 @@ menu.forEach((item) => {
       let sLink = document.createElement("a");
       sLink.innerText = s.title;
       sLink.setAttribute("href", url + ".html#" + s.url);
-      sLink.addEventListener("click", (ev) => {
-        if (document.getElementById(s.url)) {
-          ev.preventDefault();
-          let y = document.getElementById(s.url).offsetTop - 65;
-          window.scrollTo({
-            top: y,
-            behavior: "smooth",
-          });
-          window.history.pushState(null, null, `#${s.url}`);
-        }
-      });
+      if (url === s.url) {
+        sLink.addEventListener("click", (ev) => {
+          if (document.getElementById(s.url)) {
+            ev.preventDefault();
+            let y = document.getElementById(s.url).offsetTop - 65;
+            window.scrollTo({
+              top: y,
+              behavior: "smooth",
+            });
+            window.history.pushState(null, null, `#${s.url}`);
+          }
+        });
+      }
       sLi.appendChild(sLink);
       sUl.appendChild(sLi);
     });
