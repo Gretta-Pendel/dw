@@ -98,7 +98,7 @@ let menu = [
   },
   {
     name: "Доводим до конца",
-    title: "=Решения",
+    title: "Навыки",
     url: "solutions",
     sections: [
       { title: "Дистанция и Передвижение", url: "h5_0" },
@@ -108,7 +108,7 @@ let menu = [
   },
   {
     title: "Перестрелка в пятницу вечером",
-    title: "=Комбат",
+    title: "Комбат",
     url: "combat",
     sections: [
       { title: "Во время битвы", url: "h3_0" },
@@ -136,19 +136,19 @@ let menu = [
   //     { title: "Создание Архитектуры Сети", url: "" },
   //   ],
   // },
-  // {
-  //   name: "TraumaTeam",
-  //   title: "TraumaTeam",
-  //   page: 219,
-  //   sections: [
-  //     { title: "Состояния Ранений и Критические Травмы", url: "" },
-  //     { title: "Стабилизация и Лечение", url: "" },
-  //     { title: "Trauma Team", url: "" },
-  //     { title: "Уличные наркотики", url: "" },
-  //     { title: "Терапия и Ты", url: "" },
-  //     { title: "Киберпсихоз", url: "" },
-  //   ],
-  // },
+  {
+    name: "TraumaTeam",
+    title: "TraumaTeam",
+    url: "traumateam",
+    sections: [
+      { title: "Состояния Ранений и Критические Травмы", url: "" },
+      { title: "Стабилизация и Лечение", url: "" },
+      { title: "Trauma Team", url: "" },
+      { title: "Уличные наркотики", url: "" },
+      { title: "Терапия и Ты", url: "" },
+      { title: "Киберпсихоз", url: "" },
+    ],
+  },
   {
     name: "Повседневная Жизнь",
     title: "Жизнь",
