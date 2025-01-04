@@ -1,10 +1,9 @@
 .block.quote {
-  margin: 0 0 1rem 0;
+  margin: 0 auto;
   padding: 0.25rem 0;
-  border: 0px double #999;
-  border-width: 3px 0;
-  font-family: "PTSerif-Italic", Calibri, sans-serif;
-  font-style: italic;
+  width: 70%;
+  font-family: "Tektur-SemiBold", Calibri, sans-serif;
+  font-size: 0.75rem;
 }
 .block.side {
   margin: 0 0 1rem 0;
@@ -37,5 +36,16 @@
 .block.border {
   max-width: 280px;
   padding: 12px;
-  border: 3px solid #000;
+  border: 3px solid #E02028;
+}
+.block.path {
+  max-width: 280px;
+  padding: 0 4px;
+  border: 1px solid #E02028;
+  margin: 4px 0;
+  font-size: smaller;
+}
+.block.path table {
+  margin-bottom: 0.25rem;
+  width: 100%;
 }

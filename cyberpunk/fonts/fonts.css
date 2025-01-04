@@ -37,12 +37,12 @@
 @font-face {
   font-family: "Tektur_SemiCondensed-Medium";
   src: url(Tektur_SemiCondensed-Medium.ttf);
-}
+}*/
 @font-face {
   font-family: "Tektur_SemiCondensed-Regular";
   src: url(Tektur_SemiCondensed-Regular.ttf);
 }
-@font-face {
+/*@font-face {
   font-family: "Tektur_SemiCondensed-SemiBold";
   src: url(Tektur_SemiCondensed-SemiBold.ttf);
 }
@@ -69,6 +69,10 @@
 @font-face {
   font-family: "Tektur-SemiBold";
   src: url(Tektur-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Tektur-VariableFont_wdth,wght";
+  src: url(Tektur-VariableFont_wdth,wght.ttf);
 }
 
 /*@font-face {

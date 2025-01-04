@@ -16,6 +16,10 @@ body {
   background-color: #efefef;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* ---------- LAYOUT ---------- */
 header {
   grid-area: head;
@@ -28,7 +32,7 @@ header {
 header .menu {
   background-color: #333;
   width: 100%;
-  padding: 0.75rem 2rem 1rem 0.75rem;
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
   border-bottom: 1px dotted #efefef;
 }
 header .menu > div {
@@ -52,7 +56,7 @@ header .menu > div a {
   left: -1rem;
   z-index: 300;
   transition: all 1s ease-out;
-  min-width: 180px;
+  min-width: 220px;
   border: 1px solid #000;
   border-top: none;
 }
@@ -67,13 +71,13 @@ header .menu > div a {
 nav {
   grid-area: aside;
   background-color: #333;
-  padding: 0.5rem 2rem 1rem 0;
+  padding: 0 0.5rem 1rem 0;
   width: 250px;
   color: #efefef;
   font-size: smaller;
 }
 nav > div {
-  padding: 0.5rem 0.25rem 2rem 0.5rem;
+  padding: 0.5rem 0.25rem 1.5rem 0.5rem;
   overflow-y: auto;
 }
 nav .menu span {
@@ -104,8 +108,8 @@ nav .h5 {
   margin-bottom: 0.05rem;
 }
 
-header a,
-nav a {
+header a,header span,
+nav a, nav span {
   color: #efefef;
   text-decoration: none;
 }
@@ -117,7 +121,7 @@ nav a.active {
 
 main {
   grid-area: main;
-  padding: 3rem 1.5rem 1rem;
+  padding: 2rem 1.5rem 1rem;
   max-width: 1380px;
 }
 
@@ -145,6 +149,7 @@ main .h5 {
   font-weight: 400;
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
+  clear:both;
 }
 h2,
 main .h2 {
@@ -165,7 +170,17 @@ h2 a {
 }
 h3,
 main .h3 {
-  border-bottom: 1px dotted #666;
+  border-bottom: 6px solid #E02028;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+h3::first-letter,
+main .h3::first-letter {
+  font-size: 1.75rem;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: -10px;
+  display: block;
 }
 h3,
 h4,
@@ -176,6 +191,7 @@ main .h4 {
 h4,
 main .h4 {
   font-size: 1rem;
+  border-bottom: 2px solid #E02028;
 }
 h5,
 main .h5 {
@@ -187,6 +203,7 @@ main .h5 {
 table {
   border-collapse: collapse;
   margin: 0 0 1rem;
+  max-width: 100%;
 }
 th,
 td {
@@ -208,6 +225,21 @@ tr.base td {
 }
 tr.base td b {
   text-decoration: underline;
+}
+table.logo {
+  width: 100%;
+}
+table.logo td:last-child {
+  text-align: right;
+}
+table.logo img {
+  max-width: 200px;
+  border:2px solid #999;
+  max-height: 100px;
+}
+tr.dark td, td.dark {
+  color:#eee;
+  background-color:#333 !important;
 }
 
 ul,
@@ -265,10 +297,19 @@ dl {
 }
 dt {
   font: smaller "Tektur-SemiBold", Calibri, sans-serif;
+  font-weight: 500;
 }
 dd {
   margin-left: 25px;
   margin-bottom: 0.5rem;
+}
+
+main a {
+  color:#b3161b;
+  text-decoration: none;
+}
+main a:hover {
+  color:#E02028;
 }
 
 .term {
@@ -288,6 +329,13 @@ dd {
   margin-left: -1rem;
 }
 
+.map {
+  max-width:400px;
+  border:2px solid #999;
+  float: right;
+  margin-left: 10px;
+}
+
 .text-right {
   text-align: right;
 }
@@ -300,14 +348,19 @@ dd {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  align-items: flex-start;
+}
+
+.small {
+  font-size:smaller;
 }
 
 @media (min-width: 768.02px) {
   nav > div {
     position: fixed;
     width: 250px;
-    padding-left: 0.75rem;
-    top: 3rem;
+    padding-left: 0.5rem;
+    top: 2rem;
     bottom: 0;
     /*overflow-y: auto;*/
     direction: rtl;

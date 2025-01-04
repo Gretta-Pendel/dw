@@ -8,8 +8,8 @@ let pagetitle = menu.find((el) => {
   return el.url == "chars";
 })
   ? menu.find((el) => {
-      return el.url == "chars";
-    }).title
+    return el.url == "chars";
+  }).title
   : "Rules";
 
 // set ids
@@ -71,7 +71,7 @@ levels.forEach((item) => {
   sLink.addEventListener("click", (ev) => {
     if (document.getElementById(item.id)) {
       ev.preventDefault();
-      let y = document.getElementById(item.id).offsetTop - 65;
+      let y = document.getElementById(item.id).offsetTop - 36;
       window.scrollTo({
         top: y,
         behavior: "smooth",
@@ -80,6 +80,25 @@ levels.forEach((item) => {
     }
   });
   mmenu.appendChild(sLi);
+});
+
+let a = document.querySelectorAll("a");
+a.forEach((link) => {
+  if (link.getAttribute("href").startsWith("#")) {
+    let id = link.getAttribute("href").split("#")[1];
+    link.addEventListener("click", (ev) => {
+      if (document.getElementById(id)) {
+        ev.preventDefault();
+        let y = document.getElementById(id).offsetTop - 36;
+        window.scrollTo({
+          top: y,
+          behavior: "smooth",
+        });
+        window.history.pushState(null, null, `#${id}`);
+      }
+    }
+    );
+  }
 });
 
 mmopen.addEventListener("click", (event) => {
@@ -112,14 +131,14 @@ menu.forEach((item) => {
     let sUl = document.createElement("ul");
     item.sections.forEach((s) => {
       let sLi = document.createElement("li");
-      let sLink = document.createElement("a");
+      let sLink = s.url ? document.createElement("a") : document.createElement("span");
       sLink.innerText = s.title;
-      sLink.setAttribute("href", url + ".html#" + s.url);
-      if (url === s.url) {
+      if (s.url) sLink.setAttribute("href", url + ".html#" + s.url);
+      if (url === item.url) {
         sLink.addEventListener("click", (ev) => {
           if (document.getElementById(s.url)) {
             ev.preventDefault();
-            let y = document.getElementById(s.url).offsetTop - 65;
+            let y = document.getElementById(s.url).offsetTop - 36;
             window.scrollTo({
               top: y,
               behavior: "smooth",
@@ -228,7 +247,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 window.addEventListener("load", () => {
   if (document.location.hash && document.getElementById(document.location.hash.split("#")[1])) {
     window.scrollTo({
-      top: document.getElementById(document.location.hash.split("#")[1]).offsetTop - 65,
+      top: document.getElementById(document.location.hash.split("#")[1]).offsetTop - 36,
       behavior: "smooth",
     });
   }
@@ -237,7 +256,7 @@ window.addEventListener("load", () => {
 /*window.addEventListener("scroll", () => {
   if (document.location.hash && document.getElementById(document.location.hash.split("#")[1])) {
     window.scrollTo({
-      top: document.getElementById(document.location.hash.split("#")[1]).offsetTop - 65,
+      top: document.getElementById(document.location.hash.split("#")[1]).offsetTop - 36,
       behavior: "smooth",
     });
   }
