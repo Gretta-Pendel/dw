@@ -8,8 +8,8 @@ let pagetitle = menu.find((el) => {
   return el.url == "chars";
 })
   ? menu.find((el) => {
-    return el.url == "chars";
-  }).title
+      return el.url == "chars";
+    }).title
   : "Rules";
 
 // set ids
@@ -76,6 +76,13 @@ levels.forEach((item) => {
         top: y,
         behavior: "smooth",
       });
+      if (window.innerWidth > 768) {
+        mmenu.style.display = "block";
+        nav.style.height = "auto";
+      } else {
+        mmenu.style.display = "none";
+        nav.style.height = "2.5rem";
+      }
       window.history.pushState(null, null, `#${item.id}`);
     }
   });
@@ -96,8 +103,7 @@ a.forEach((link) => {
         });
         window.history.pushState(null, null, `#${id}`);
       }
-    }
-    );
+    });
   }
 });
 

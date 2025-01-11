@@ -36,16 +36,21 @@
 .block.border {
   max-width: 280px;
   padding: 12px;
-  border: 3px solid #E02028;
+  border: 3px solid #e02028;
 }
 .block.path {
   max-width: 280px;
   padding: 0 4px;
-  border: 1px solid #E02028;
+  border: 1px solid #e02028;
   margin: 4px 0;
   font-size: smaller;
 }
 .block.path table {
   margin-bottom: 0.25rem;
   width: 100%;
+}
+@media (max-width: 768px) {
+  .block.quote {
+    width: 90%;
+  }
 }

@@ -108,8 +108,10 @@ nav .h5 {
   margin-bottom: 0.05rem;
 }
 
-header a,header span,
-nav a, nav span {
+header a,
+header span,
+nav a,
+nav span {
   color: #efefef;
   text-decoration: none;
 }
@@ -149,7 +151,7 @@ main .h5 {
   font-weight: 400;
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
-  clear:both;
+  clear: both;
 }
 h2,
 main .h2 {
@@ -170,7 +172,7 @@ h2 a {
 }
 h3,
 main .h3 {
-  border-bottom: 6px solid #E02028;
+  border-bottom: 6px solid #e02028;
   font-size: 1.25rem;
   line-height: 1;
 }
@@ -191,7 +193,7 @@ main .h4 {
 h4,
 main .h4 {
   font-size: 1rem;
-  border-bottom: 2px solid #E02028;
+  border-bottom: 2px solid #e02028;
 }
 h5,
 main .h5 {
@@ -234,12 +236,13 @@ table.logo td:last-child {
 }
 table.logo img {
   max-width: 200px;
-  border:2px solid #999;
+  border: 2px solid #999;
   max-height: 100px;
 }
-tr.dark td, td.dark {
-  color:#eee;
-  background-color:#333 !important;
+tr.dark td,
+td.dark {
+  color: #eee;
+  background-color: #333 !important;
 }
 
 ul,
@@ -305,11 +308,11 @@ dd {
 }
 
 main a {
-  color:#b3161b;
+  color: #b3161b;
   text-decoration: none;
 }
 main a:hover {
-  color:#E02028;
+  color: #e02028;
 }
 
 .term {
@@ -330,8 +333,8 @@ main a:hover {
 }
 
 .map {
-  max-width:400px;
-  border:2px solid #999;
+  max-width: 400px;
+  border: 2px solid #999;
   float: right;
   margin-left: 10px;
 }
@@ -352,7 +355,7 @@ main a:hover {
 }
 
 .small {
-  font-size:smaller;
+  font-size: smaller;
 }
 
 @media (min-width: 768.02px) {
@@ -412,13 +415,14 @@ main a:hover {
     height: 2.5rem;
     padding-right: 0;
     position: fixed;
-    top: 5rem;
+    top: 1rem;
     z-index: 100;
   }
 
   nav > div {
     position: inherit;
     width: calc(100% - 0.75rem);
+    padding-top: 3rem;
     /*overflow-y: hidden;*/
     /*background-color: #333;*/
   }
@@ -427,6 +431,7 @@ main a:hover {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 0.5rem;
   }
 
   header .menu > div {
@@ -435,7 +440,7 @@ main a:hover {
 
   header .menu span {
     display: block;
-    width: 30px;
+    width: 25px;
     height: 10px;
   }
 
@@ -480,12 +485,25 @@ main a:hover {
     margin-top: 1.5rem;
     border-top: 1px #333 dotted;
   }
-
-  table {
-    max-width: calc(100% - 2rem) !important;
+  .map {
+    max-width: 100%;
   }
 
+  table {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  th,
   td {
+    padding: 0 0.25rem;
     font-size: smaller;
+  }
+  table.mobile td {
+    font-size: 12px;
+    padding: 0 0.2rem;
+  }
+  table.mobile tr.base td {
+    font-size: 10px;
   }
 }
