@@ -44,7 +44,7 @@ let menu = [
   },
   {
     name: "Добро Пожаловать В Найт-Сити",
-    title: "Найт-Сити [data]",
+    title: "Найт-Сити",
     url: "night-city",
     sections: [
       { title: "Найт-сити в Красное Время", url: "ncred" },

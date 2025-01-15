@@ -17,8 +17,8 @@ let h1s = document.querySelectorAll("main h1");
 let h2s = document.querySelectorAll("main h2");
 let h3s = document.querySelectorAll("main h3");
 let h4s = document.querySelectorAll("main h4");
-let h5s = document.querySelectorAll("main h5");
-
+let h5s = document.querySelectorAll("main h5, main .char h5");
+console.log(h5s);
 if (h1s && h1s.length) {
   for (let index = 0; index < h1s.length; index++) {
     if (!h1s[index].id) h1s[index].id = "h1_" + index;
@@ -57,6 +57,11 @@ for (let index = 0; index < main.children.length; index++) {
         levels.push(e);
       }
     }
+  }
+}
+if (document.querySelectorAll("main h5, main .char h5").length) {
+  for (let index = 0; index < document.querySelectorAll("main h5, main .char h5").length; index++) {
+    levels.push(document.querySelectorAll("main h5, main .char h5")[index]);
   }
 }
 levels.forEach((item) => {

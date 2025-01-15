@@ -405,6 +405,46 @@ main a:hover {
   margin-top: 0.5rem;
 }
 
+.tableBox {
+  /*max-height: calc(100vh - 150px - 3rem);*/
+  overflow: auto;
+  /*width: 1220px;*/
+  max-width: 100%;
+  /*scrollbar-color: var(--bg-accent) transparent;*/
+  scrollbar-width: thin;
+}
+.tableBox table {
+  width: 100%;
+  min-width: 550px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.tableBox thead {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 2;
+}
+.tableBox tbody td:first-child,
+.tableBox thead td:first-child {
+  position: sticky;
+  position: -webkit-sticky;
+  left: 0;
+  background-color: #efefef;
+  z-index: 1;
+}
+.tableBox tbody tr:nth-child(2n) td:first-child,
+.tableBox thead tr:nth-child(2n) th:first-child {
+  background-color: #ddd;
+}
+.tableBox th,
+.tableBox td {
+  text-align: left;
+}
+.tableBox table tr td:first-child {
+  text-align: left;
+}
+
 @media (max-width: 768px) {
   body {
     display: block;
@@ -505,5 +545,10 @@ main a:hover {
   }
   table.mobile tr.base td {
     font-size: 10px;
+  }
+
+  .tableBox tbody td:first-child,
+  .tableBox thead th:first-child {
+    border-right: 1px solid #999;
   }
 }
