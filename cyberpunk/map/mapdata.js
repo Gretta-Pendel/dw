@@ -1,7 +1,7 @@
 // TODO:
-// Gangs by checkbox
-// Gangs Ru
 // POI type (cube-hotel, appartments, bars...)
+// Gangs: popup with description
+// Ru-En switcher
 const poi = [
   {
     area: "The Island",
@@ -74,7 +74,7 @@ const poi = [
         districtDescRu: "Оживленный район, сочетающий в себе старые промышленные зоны и облагороженные кварталы, построенные вокруг ряда доков и небольших пристаней для яхт.",
         cityManager: "Kabria Chung (elected by property owners)",
         securityProvider: "NCPD",
-        gangsPresent: ["Maelstrom", "Prime-Time Players", "Street Queens"],
+        gangsPresent: ["Maelstrom", "Prime-Time Players, The", "Street Queens, The"],
         locations: [
           { label: "B1", y: 5875, x: 3412, name: "The Afterlife", desc: "The premiere edgerunner bar in Night City. Owned by the legendary Solo, Rogue.", descCore: "The premiere Solo bar in Night City, built in the remains of an old morgue on the outskirts of the Hot Zone, and run by the legendary Solo, Rogue. Every Solo in the city dreams of getting a drink at the Afterlife named after them—even if it only happens post-mortem.", nameRu: "Посмертие", descRu: "главный бар Соло в Найт Сити, построенный в останках старого морга на окраине Зоны Поражения и управляемый легендарным Соло, Бейстией. Каждый Соло в городе мечтает иметь коктейль в Посмертии, названный в его честь, даже если это произойдет только после смерти." },
           { label: "B2", y: 6047, x: 2941, name: "Buffalo’s", desc: "The latest in a long line of failing restaurants opened in this location. Serves global fusion cuisine.", nameRu: "У Буффало", descRu: "Последний из длинной череды неудачных ресторанов, открытых в этом месте. Предлагает блюда международной кухни фьюжн." },
@@ -365,7 +365,7 @@ const poi = [
         districtDescRu: "Большая часть этнического японского населения Найт-Сити перебралась на север, но достаточно много людей все еще держатся здесь, образуя островки цивилизации в море хаоса зоны боевых действий.",
         cityManager: "Adriane Casselle (elected by local family heads)",
         securityProvider: "Kimen-Gumi",
-        gangsPresent: ["Iron Sights", "Maelstrom", "Red Chrome Legion", "The Shroomers", "Tyger Claws"],
+        gangsPresent: ["Iron Sights", "Maelstrom", "Red Chrome Legion", "Shroomers, The", "Tyger Claws"],
         locations: [
           { label: "H1", y: 4902, x: 3505, name: "Crisis Medical Center", desc: "A no-questions asked medical center supplied with surprisingly advanced technology. Multiple Corps use it as a staging ground to run medical experiments.", descCore: "A no-questions asked medical center supplied with the most advanced technology and frequented by Edgerunner, Solos, and boosters alike, Crisis Medical is neutral ground for all factions.", nameRu: "Кризисный медицинский центр", descRu: "медицинский центр, где не задают вопросов, оснащенный самыми передовыми технологиями и посещаемый эджранерами, Соло и бустерами. Кризисный медицинский центр является нейтральной территорией для всех фракций." },
           { label: "H2", y: 5189, x: 3548, name: "Highcourt Plaza Hotel", desc: "A classy and well-defended hotel providing excellent service. Most guests arrive via AV to avoid driving through a combat zone.", descCore: "A decidedly classy and well-defended hotel nestled between Old Japantown and Little China featuring glass elevators, excellent service, and 1920s decor.", nameRu: "Отель Хайкорт Плаза", descRu: "безусловно стильный и хорошо защищенный отель, расположенный между Старым Джапантауном и Маленьким Китаем, со стеклянными лифтами, отличным сервисом и декором 1920-х годов." },
@@ -402,7 +402,7 @@ const poi = [
         districtDescRu: "Разросшаяся смесь промышленных и жилых зданий. Это <b>зона боевых действий</b>, в первую очередь потому, что городской управляющий Гавен Хаакенсен больше заботится о набивании своих карманов, чем о выполнении своей работы. Это не делает его необычным, но он более откровенен в этом, чем большинство.",
         cityManager: "Gar ven Haakensen (self-appointed)",
         securityProvider: "Scythe Security",
-        gangsPresent: ["Bozos, DeadWoods", "The Enhanced", "Kanzaki Family", "Kill Krashers", "The Reckoners", "The Sinful Adams", "Tyger Claws", "The Zoners"],
+        gangsPresent: ["Bozos, The", "DeadWoods", "Enhanced, The", "Kanzaki Family", "Kill Krashers", "The Reckoners", "Sinful Adams, The", "Tyger Claws", "Zoners, The"],
         locations: [
           { label: "I1", y: 5034, x: 2481, name: "The Boneyard", desc: "Formerly the Night City Garden of Rest. Now a shanty town and home to the Sinful Adams. They run an annual festival on Halloween for the district’s residents.", nameRu: "Могильник", descRu: "Раньше это был Сад отдыха Ночного города. Теперь это трущобы и дом Грешных Адамов. Они проводят ежегодный фестиваль на Хэллоуин для жителей района." },
           { label: "I2", y: 5060, x: 2378, name: "MindNutz Lover", desc: "The hottest braindance club in South Night City.", nameRu: "MindNutz Lover", descRu: "Самый крутой клуб брейнданса в Саут Найт Сити" },
@@ -530,7 +530,7 @@ const poi = [
         districtDescRu: "В конце 2010-х и начале 2020-х годов Найт-Сити начал расширять Остров, заполняя земли на юго-востоке. После 4-й Корпоративной войны то, что должно было стать ярким маяком промышленной мощи, превратилось в худшую <b>зону боевых действий</b>, которую когда-либо видел Найт-Сити. Медленно, дюйм за дюймом, группы эджраннеров стремились восстановить его.",
         cityManager: "Brick Coleman (as leader of Edgerunners Inc)",
         securityProvider: "Edgerunners Inc",
-        gangsPresent: ["Edgerunners Inc", "The Faded", "Generation Red", "Iron Sights", "The Shroomers"],
+        gangsPresent: ["Edgerunners Inc", "Faded, The", "Generation Red", "Iron Sights", "Shroomers, The"],
         locations: [
           { label: "L1", y: 4756, x: 3388, name: "From the Ashes", desc: "A sliding scale clinic run by Phoenix Redwyne.", nameRu: "Из Пепла", descRu: "Клиника с скользящими масштабами, которой управляет Феникс Редвин." },
           { label: "L2", y: 4263, x: 3226, name: "Jesse James’ Kosher Deli", desc: "More of a saloon than a deli, though for a small fortune you can get a pretty good corned beef on rye.", descCore: "A popular hangout for Nomads and Boosters alike, the deli's really more of a saloon with a nightly body count to rival the Totentanz—but for a small fortune you can get a pretty good corned beef on rye.", nameRu: "Кошерный гастроном Джесси Джеймса", descRu: "популярное место встречи как кочевников, так и бустеров, гастроном на самом деле больше похож на салун с еженощным подсчетом трупов, соперничающим с Тотентацем, но за небольшое состояние вы можете получить довольно хорошую солонину на ржи." },
@@ -725,7 +725,7 @@ const poi = [
         districtDescRu: "Городская застройка, построенная на руинах престижного пригорода. Он сочетает блеск и гламур с палаточными городками и недорогим жильем. Большая часть северной части района занята огороженным фальшивым городом, где Network 54 управляет и снимает The Combat Zone, «игровое шоу» в жанре королевской битвы, в котором участвуют пятьдесят человек, и только один может выйти живым с годовым запасом настоящих куриных обедов в качестве приза.",
         cityManager: "Belkis Abera (appointed by WorldSat and Network 54)",
         securityProvider: "NCPD",
-        gangsPresent: ["Arzin Tynon", "Prime-Time Players", "Street Queens", "Tombstone Preservers"],
+        gangsPresent: ["Arzin Tynon", "Prime-Time Players, The", "Street Queens, The", "Tombstone Preservers"],
         locations: [
           { label: "P1", y: 5349, x: 4721, name: "Canalside Plaza", desc: "A strip mall. Home to the Sizzle Jams Talent Agency, a Rickshaws, a Capitán Caliente restaurant, the Mane Event hair and nail salon, and an Oasis.", nameRu: "Плаза Каналсайд", descRu: "Торговый центр. Здесь находится агентство талантов Sizzle Jams, рикши, ресторан Capitán Caliente, парикмахерская и маникюрный салон Mane Event, а также Oasis." },
           { label: "P2", y: 6641, x: 4263, name: "Chatelaine’s", desc: "An early 20th-century style cabaret and burlesque queer club so popular it attracts a number of straight tourists.", nameRu: "У Шатлена", descRu: "Кабаре и бурлеск-квир-клуб в стиле начала XX века, настолько популярный, что привлекает множество туристов-натуралов." },
@@ -793,7 +793,7 @@ const poi = [
         districtDescRu: "Небольшое, но влиятельное сообщество. В ясный день жители Charter Hill могут видеть стены Exec Zone и мечтать подняться еще выше по корпоративной лестнице.",
         cityManager: "Symon Featherstonehaugh (elected by property owners)",
         securityProvider: "Militech",
-        gangsPresent: ["Prime-Time Players", "Tombstone Preservers", "Tyger Claws"],
+        gangsPresent: ["Prime-Time Players, The", "Tombstone Preservers", "Tyger Claws"],
         locations: [
           { label: "Q1", y: 6197, x: 4536, name: "Anjelika’s", desc: "A host and hostess bar catering to clients with a heavy cyberware fetish.", nameRu: "У Анжелики", descRu: "Бар с хозяином и хозяйкой, обслуживающий клиентов с сильным фетишем киберпрограмм." },
           { label: "Q2", y: 6302, x: 4561, name: "Bella Mia", desc: "A club where the affluent and most fashionable residents of Night City go to be seen.", nameRu: "Белла Миа", descRu: "Клуб, куда приходят покрасоваться самые богатые и модные жители Найт-Сити." },
@@ -913,7 +913,7 @@ const poi = [
         districtDescRu: "За последнее десятилетие Хейвуд разделился на два района. На севере живут обычные жители, многие из которых нашли работу в близлежащей промышленной зоне Хейвуд.",
         cityManager: "Barry “Big Deal” Delvecchio (appointed by district council)",
         securityProvider: "6th Street",
-        gangsPresent: ["6th Street", "Inquisitors", "The Muses", "The Toecutters"],
+        gangsPresent: ["6th Street", "Inquisitors", "Muses, The", "Toecutters, The"],
         locations: [
           { label: "T1", y: 5090, x: 5029, name: "Acorn Towers", desc: "A dual-tower apartment complex housing Dynalar employees.", nameRu: "Башни-Желуди", descRu: "Двухэтажный жилой комплекс, в котором проживают сотрудники Dynalar." },
           { label: "T2", y: 4567, x: 4566, name: "The Armory", desc: "A former National Guard armory transformed into the headquarters of 6th Street.", nameRu: "Оружейная палата", descRu: "Бывший арсенал Национальной гвардии, переоборудованный в штаб-квартиру 6-й улицы" },
@@ -967,7 +967,7 @@ const poi = [
         districtDescRu: "Крупнейшая промышленная зона в Найт-Сити, переполненная складами, строительной техникой, заводами и даже несколькими заброшенными грузовыми судами.",
         cityManager: "Theo Walker (appointed by the Arroyo Concern)",
         securityProvider: "NCPD",
-        gangsPresent: ["Consortium", "DeadWoods", "The Enhanced", "Fixie’s Couriers"],
+        gangsPresent: ["Consortium", "DeadWoods", "Enhanced, The", "Fixie’s Couriers"],
         locations: [
           { label: "U1", y: 3965, x: 3954, name: "D.V. Rambling Rose", desc: "An ancient vessel stuck in dry dock. Home base for Fixie’s Couriers.", nameRu: "Д. В. Рамблинг Роуз", descRu: "Древнее судно застряло в сухом доке. База для Fixie's Couriers" },
           { label: "U2", y: 3930, x: 4045, name: "Old Ironworks Building", desc: "The inside has been converted into apartments, and the landlords have stacked cargo container housing on the roof.", nameRu: "Старое здание металлургического завода", descRu: "Внутреннее пространство переоборудовали в квартиры, а на крыше хозяева разместили грузовые контейнеры." },
@@ -1063,7 +1063,7 @@ const poi = [
         districtDescRu: "Район, построенный вокруг парка развлечений.",
         cityManager: "Elliot Kane (appointed by Playland by the Sea management)",
         securityProvider: "Militech",
-        gangsPresent: ["6th Street", "The Andersons", "The Enhanced", "Mudang Gumi", "Piranhas", "Voodoo Boys"],
+        gangsPresent: ["6th Street", "Andersons, The", "Enhanced, The", "Mudang Gumi", "Piranhas", "Voodoo Boys"],
         locations: [
           { label: "W1", y: 3569, x: 2714, name: "Bits’n’Bolts", desc: "A hole-in-the-wall tech shop with connections to weaponsmith and inventor Faisal.", nameRu: "Биты и болты", descRu: "Небольшой магазин техники, связанный с оружейником и изобретателем Фейсалом." },
           { label: "W2", y: 3657, x: 2330, name: "Cubeland by the Sea", desc: "A shoddy cube hotel a stone’s throw away from Playland by the Sea.", nameRu: "Кубленд у моря", descRu: "Неприметный кубический отель в двух шагах от парка развлечений Playland by the Sea." },
@@ -1128,7 +1128,7 @@ const poi = [
         districtDescRu: "Технически являясь частью Найт-Сити, никто пока не удосужился выложить деньги на покупку места Ранчо Коронадо в городском совете. В результате в районе не хватает практически всех ресурсов, от коммунальных служб до пожарной и полицейской служб.",
         cityManager: "None",
         securityProvider: "NCPD (in theory)",
-        gangsPresent: ["6th Street", "Albino Alligators", "Dirty Hippies", "Steel Vaqueros", "Voodoo Boys"],
+        gangsPresent: ["6th Street", "Albino Alligators", "Dirty Hippies, The", "Steel Vaqueros", "Voodoo Boys"],
         locations: [
           { label: "X1", y: 2734, x: 3646, name: "Albino Alligator Carwash", desc: "Home base for the Albino Alligators. Also one of the most reliable places to find clean drinking water in the district.", nameRu: "Автомойка Albino Alligator", descRu: "Место обитания Albino Alligators. Также одно из самых надежных мест в округе, где можно найти чистую питьевую воду." },
           { label: "X2", y: 3151, x: 2636, name: "Coronado Heights", desc: "An apartment building so close to Pacifica that it might as well be part of it.", nameRu: "Коронадо-Хайтс", descRu: "Многоквартирный дом, расположенный так близко к Пасифике, что вполне мог бы быть ее частью." },
@@ -1176,9 +1176,9 @@ const poi = [
         letter: "Y",
         districtRu: "Morro Rock",
         district: "Скала Морро",
-        districtDesc: "",
-        districtDescRu: "",
-        locations: [{ label: "Y1", y: 0, x: 0, name: "Orbital Air Massdriver", descCore: "A tremendous construction site on the Morro Rock, put in place to build the first orbital massdriver in Night City.", nameRu: "Ускорители массы Орбитал Эир", descRu: "грандиозная стройка на скале Морро, затеянная для сооружения первого орбитального ускорителя масс в Найт-Сити." }], //TODO
+        districtDesc: "Morro Rock",
+        districtDescRu: "Скала Морро",
+        locations: [{ label: "Y1", y: 6320, x: 1555, name: "Orbital Air Massdriver", descCore: "A tremendous construction site on the Morro Rock, put in place to build the first orbital massdriver in Night City.", nameRu: "Ускорители массы Орбитал Эир", descRu: "грандиозная стройка на скале Морро, затеянная для сооружения первого орбитального ускорителя масс в Найт-Сити." }],
         geometry: {
           type: "Polygon",
           coordinates: [
@@ -1231,7 +1231,7 @@ const gangs = {
       desc: "A party gang with a surprisingly significant influence on Rancho Coronado. Famous for their white alligator cartoon mascot and popped shirt collars.",
     },
     {
-      name: "The Andersons",
+      name: "Andersons, The",
       desc: "An aging yogang with a family theme. In danger of being swallowed up by the Piranhas.",
     },
     {
@@ -1239,7 +1239,7 @@ const gangs = {
       desc: "An older boostergang operating on the northern edges of Night City.",
     },
     {
-      name: "The Bozos",
+      name: "Bozos, The",
       desc: "A prankster gang (for a certain deadly definition of prankster) with a clown theme. Currently engaged in a civil war of pranks and mayhem.",
       descCore: "When they first appeared, the Bozos were a prankster gang. Biosculpted to look like circus clowns with red bulbous noses, wild red hair, and long flat feet (no, not shoes) and costumed to the part, the Bozos became impromptu slapstick. But soon the Bozos became the ultimate killer clown gang. People living on Bozo turf learned the hard way that if you see a pack of Bozos, just run. Bozos enjoy playing on people's greatest fears: lurking in apartments in the dark, locking victims in small spaces filled with rats, stopping elevators midway and filling them with water. They are not funny.",
       nameRu: "Бозос",
@@ -1258,7 +1258,7 @@ const gangs = {
       desc: "A cowboy-themed gang. They act as self-appointed protectors of Night City’s railways.",
     },
     {
-      name: "The Dirty Hippies",
+      name: "Dirty Hippies, The",
       desc: "A group of guerilla gardeners who specialize in the growing and sale of herbs laced with various drugs, collectively known as ganga.",
     },
     {
@@ -1267,7 +1267,7 @@ const gangs = {
     },
     {
       name: "Eastern Tigers Triad",
-      desc: ": An organized crime ring recently arrived from China.",
+      desc: "An organized crime ring recently arrived from China.",
     },
     {
       name: "Edgerunners Inc",
@@ -1278,7 +1278,7 @@ const gangs = {
       desc: "A Mexican criminal organization establishing itself in Night City. Said to be connected to Theresa Valentino, the Santo Domingo City Manager.",
     },
     {
-      name: "The Enhanced",
+      name: "Enhanced, The",
       desc: "A cult that believes cyberpsychosis represents the next stage of human evolution.",
     },
     {
@@ -1286,7 +1286,7 @@ const gangs = {
       desc: "A party gang in Little Europe. All members speak with a “European” accent no one can identify.",
     },
     {
-      name: "The Faded",
+      name: "Faded, The",
       desc: "A group of older edgerunners who want to keep Night City from interfering with the Old Combat Zone.",
     },
     {
@@ -1343,7 +1343,7 @@ const gangs = {
       desc: "A gang of Netrunners and burglars focused on data theft.",
     },
     {
-      name: "The Muses",
+      name: "Muses, The",
       desc: "A poser gang and roller derby squad with a fusion disco/Greek mythology theme.",
     },
     {
@@ -1359,6 +1359,13 @@ const gangs = {
       desc: "Night City’s premiere party gang. These days they don’t just attend the best parties. They throw them.",
       descCore: 'The Piranhas are a typical party gang. They party, drink Smash, take and deal drugs, and mug people, all as part of a "just because" lifestyle. To these guys, the Party is everything.',
       descRu: 'Пираньи — типичная банда тусовщиков. Они веселятся, пьют Смэш, принимают и продают наркотики, грабят людей — всё это часть их образа жизни "потому что могу". Для этих парней вечеринка — это всё.',
+    },
+    {
+      name: "Prime-Time Players, The",
+      nameRu: "Игроки Прайм-Тайма",
+      desc: "A poser gang, usually inspired by old sitcoms and television shows. Broken up into a number of different factions based on theme.",
+      descCore: "The Players are a poser gang who use biosculpting to look like members of old sitcoms and TV shows from bygone eras. They are an extended family gang which protects their neighborhood and longs for a bygone time. The Players are broken up into a number of different factions based on various shows. They are territorial and fiercely protective of their members.",
+      descRu: "Игроки — банда позеров, использующих бодискульптинг, чтобы выглядеть как участники старых ситкомов и телешоу ушедших эпох. Это банда-семья, которая защищает свой район и тоскует по ушедшим временам. Игроки разбиты на несколько различных фракций, основанных на различных шоу. Они территориальны и яростно защищают своих членов.",
     },
     {
       name: "Princesses of Justice",
@@ -1390,7 +1397,7 @@ const gangs = {
       descCore: "Scavengers aren't a gang per se, but the desperate homeless who squat in the ruined City Zones left behind by the War. They scour the treacherous debris for salable items such as copper, platinum, old tech, and even abandoned weapons. Many die doing so. Not least of all because these urban battlegrounds have been pretty picked over in the last seventeen years, and scavvers are constantly forced to dig deeper and deeper into unsafe terrain for anything of value.",
     },
     {
-      name: "The Sinful Adams",
+      name: "Sinful Adams, The",
       desc: "A goth poser gang living in the South Night City boneyard.",
     },
     {
@@ -1405,22 +1412,15 @@ const gangs = {
       descRu: "Стая кочевников из Салинаса. Их разношерстные караваны курсируют по прибрежным шоссе от сельскохозяйственных районов Санта-Круз до южных городов. Они примут к себе всех, кто проявит мастерство, надежность и сумеет не отставать. Умные и относительно честные, они заключили договоры о поставках с несколькими группами реставраторов Найт-Сити.",
     },
     {
-      name: "The Prime-Time Players",
-      nameRu: "Игроки Прайм-Тайма",
-      desc: "A poser gang, usually inspired by old sitcoms and television shows. Broken up into a number of different factions based on theme.",
-      descCore: "The Players are a poser gang who use biosculpting to look like members of old sitcoms and TV shows from bygone eras. They are an extended family gang which protects their neighborhood and longs for a bygone time. The Players are broken up into a number of different factions based on various shows. They are territorial and fiercely protective of their members.",
-      descRu: "Игроки — банда позеров, использующих бодискульптинг, чтобы выглядеть как участники старых ситкомов и телешоу ушедших эпох. Это банда-семья, которая защищает свой район и тоскует по ушедшим временам. Игроки разбиты на несколько различных фракций, основанных на различных шоу. Они территориальны и яростно защищают своих членов.",
-    },
-    {
-      name: "The Shroomers",
+      name: "Shroomers, The",
       desc: "Part survivalist group, part guerilla gardener collective. The Shroomers live beneath the streets of the Old Combat Zone, where they grow various fungi.",
     },
     {
-      name: "The Street Queens",
+      name: "Street Queens, The",
       desc: "A guardian gang dedicated to protecting the queer residents and neighborhoods of Night City.",
     },
     {
-      name: "The Toecutters",
+      name: "Toecutters, The",
       desc: "A Raffen Shiv clan operating on the eastern edges of Night City. Said by some to be cannibals.",
     },
     {
@@ -1462,12 +1462,8 @@ const gangs = {
       desc: "A poser gang modeled after The Wizard of Oz.",
     },
     {
-      name: "The Zoners",
+      name: "Zoners, The",
       desc: "A movement dedicated to improving the living conditions in South Night City through community organization and protest.",
-    },
-    {
-      nameRu: "Мусорщики",
-      descRu: "это не как таковая банда, а отчаявшиеся бездомные, которые ютятся в разрушенных городских зонах, оставшихся после войны. Они рыщут среди обломков в поисках пригодных для продажи предметов, меди, платины, старых технологий и даже брошенного оружия. Многие при этом погибают. Не в последнюю очередь потому, что за последние семнадцать лет эти места городских сражений были изрядно перерыты и мусорщикам постоянно приходится копать все глубже и глубже в опасных мастах в поисках чего-нибудь ценного.",
     },
   ],
 };
