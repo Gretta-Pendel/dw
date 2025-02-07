@@ -49,13 +49,15 @@ const getPOI = () => {
     area.districts.forEach((d, i) => {
       var _districts = [];
       d.locations.forEach((l) => {
-        var myIcon = L.divIcon({ className: "label-icon", html: l.label });
-        const marker = L.marker([l.y, l.x], { icon: myIcon }).addTo(map);
-        let desc = l.descRu ? l.desc + "<hr>" + l.descRu : l.desc;
-        let name = l.nameRu ? l.name + " | " + l.nameRu : l.name;
-        marker.bindTooltip(name).openTooltip();
-        marker.bindPopup(desc).openPopup();
-        _districts.push(marker);
+        if (l.x && l.y) {
+          var myIcon = L.divIcon({ className: "label-icon", html: l.label });
+          const marker = L.marker([l.y, l.x], { icon: myIcon }).addTo(map);
+          let desc = l.descRu ? l.desc + "<hr>" + l.descRu : l.desc;
+          let name = l.nameRu ? l.name + " | " + l.nameRu : l.name;
+          marker.bindTooltip(name).openTooltip();
+          marker.bindPopup(desc).openPopup();
+          _districts.push(marker);
+        }
       });
       let districtGroup = L.layerGroup(_districts);
       groups["<b>" + d.letter + "</b> " + d.district] = districtGroup;
