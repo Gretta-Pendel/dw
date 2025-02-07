@@ -50,7 +50,8 @@ const getPOI = () => {
       var _districts = [];
       d.locations.forEach((l) => {
         if (l.x && l.y) {
-          var myIcon = L.divIcon({ className: "label-icon", html: l.label });
+          var ic = l.type && types[l.type] && types[l.type].icon ? types[l.type].icon : "";
+          var myIcon = L.divIcon({ className: `ic ${ic}`, html: l.label });
           const marker = L.marker([l.y, l.x], { icon: myIcon }).addTo(map);
           let desc = l.descRu ? l.desc + "<hr>" + l.descRu : l.desc;
           let name = l.nameRu ? l.name + " | " + l.nameRu : l.name;
@@ -234,6 +235,12 @@ document.getElementById("gangSelect").addEventListener("change", function (e) {
       }
     }
   });
+});
+
+map.on("zoomend", function () {
+  let paneClass = document.getElementsByClassName("leaflet-marker-pane")[0];
+  var curZoom = map.getZoom();
+  paneClass.setAttribute("class", `leaflet-pane leaflet-marker-pane zoom${curZoom}`);
 });
 // ***** end Gangs
 
