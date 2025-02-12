@@ -34,20 +34,26 @@
   font-style: italic;
 }
 .block.border {
-  max-width: 280px;
+  max-width: clamp(280px, 50vw, 560px);
   padding: 12px;
   border: 3px solid #e02028;
 }
 .block.path {
-  max-width: 280px;
+  max-width: 285px;
   padding: 0 4px;
   border: 1px solid #e02028;
   margin: 4px 0;
-  font-size: smaller;
+  font-size: clamp(0.75rem, 1.1vw, 0.9rem);
+}
+.columns > div + div > .block.path {
+  max-width: 100%;
 }
 .block.path table {
   margin-bottom: 0.25rem;
   width: 100%;
+}
+.block.path table tr td:first-child {
+  width: clamp(30px, 40px, 50px);
 }
 .block.char {
   margin: 1rem 0;
