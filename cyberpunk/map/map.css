@@ -16,7 +16,8 @@ hr {
 .grid-icon {
   color: #fff;
 }
-.info {
+.info,
+.gangsBox {
   padding: 6px 8px;
   background: white;
   background: rgba(255, 255, 255, 0.8);
@@ -25,7 +26,8 @@ hr {
   max-width: 200px;
   width: 200px;
 }
-.info h4 {
+.info h4,
+.gangsBox h4 {
   margin: 0 0 5px;
   color: #777;
 }

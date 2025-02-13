@@ -151,19 +151,6 @@ info.addTo(map);
 // ************** end tiles
 
 // ***** Gangs
-// const getGangs = () => {
-//   var _gangs = [];
-//   gangs.gangs.forEach((d) => {
-//     const marker = L.marker([0, 0]).addTo(map);
-//     marker.bindTooltip(d.name).openTooltip();
-//     marker.bindPopup(d.name).openPopup();
-//     _gangs.push(marker);
-//     let gangGroup = L.layerGroup(_gangs);
-//     gangsGroups["<b>" + d.name + "</b> "] = gangGroup;
-//     gangGroup.addTo(map);
-//   });
-// };
-// getGangs();
 var GangsControl = L.Control.extend({
   onAdd: function (map) {
     var div = L.DomUtil.create("div", "leaflet-bar leaflet-control");
@@ -189,7 +176,23 @@ document.getElementById("gangSelect").addEventListener("change", function (e) {
       }
     }
   });
+  gangsBox.update(selectedName);
 });
+var gangsBox = L.control({ position: "topright" });
+gangsBox.onAdd = function (map) {
+  this._div = L.DomUtil.create("div", "gangsBox");
+  this.update();
+  return this._div;
+};
+gangsBox.update = function (name) {
+  gang = gangs.gangs.filter((g) => {
+    return g.name === name;
+  })[0];
+  let text = !name ? "Select the gang" : `<b>${gang.name}</b><br>${gang.desc}<hr><b>${gang.nameRu}</b><br>${gang.descRu}`;
+  this._div.innerHTML = "<h4>Gang</h4>" + text;
+};
+gangsBox.addTo(map);
+
 // ***** end Gangs
 
 map.on("zoomend", function () {
