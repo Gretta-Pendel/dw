@@ -124,10 +124,10 @@ mmopen.addEventListener("click", (event) => {
 });
 window.addEventListener("resize", (event) => {
   let mmenu = document.getElementById("mmenu");
-  if (window.innerWidth > 768) {
+  if (mmenu && window.innerWidth > 768) {
     mmenu.style.display = "block";
     nav.style.height = "auto";
-  } else {
+  } else if (mmenu) {
     mmenu.style.display = "none";
     nav.style.height = "2.5rem";
   }

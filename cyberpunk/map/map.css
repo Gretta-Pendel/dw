@@ -45,6 +45,12 @@ hr {
 .leaflet-tooltip {
   font-weight: 600;
 }
+.leaflet-popup-content {
+  margin: 10px 15px 10px 10px;
+  padding-right: 5px;
+  max-height: 400px;
+  overflow-y: auto;
+}
 .gangs {
   height: 200px;
   overflow-y: auto;
@@ -55,6 +61,9 @@ hr {
 
 .leaflet-top.leaflet-right .leaflet-control-layers-expanded {
   width: 200px;
+}
+.leaflet-control-attribution.leaflet-control {
+  display: none;
 }
 .label-icon {
   width: 20px !important;
@@ -159,4 +168,162 @@ hr {
 }
 .ic.dphideouts {
   background-image: url('data:image/svg+xml,<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 0L0 10V20H7V14L10.03 12L13 14V20H20V10L10 0Z" fill="darkgoldenrod"/></svg>');
+}
+
+/* ************ POI page ******************* */
+
+.poiPage {
+  grid-template-areas: "head" "main" "foot";
+  grid-template-columns: auto;
+  grid-template-rows: minmax(32px, 36px) auto 0;
+  font-family: Calibri, sans-serif;
+  height: 100%;
+}
+.poiPage main {
+  grid-area: main;
+  padding: 0 0 1rem;
+  max-width: 100%;
+  height: 100%;
+}
+.poiPage .tableBox,
+#poiContent {
+  scrollbar-color: #e02028 #999;
+  height: calc(100vh - 66px - 3rem);
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;
+}
+.poiPage .tableBox {
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: clamp(200px, 70vw, 1000px);
+}
+.poiPage .tableBox #poiList {
+  max-width: 1400px;
+}
+.poiPage .wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+#poiContent {
+  flex-shrink: 1;
+  flex-grow: 0;
+  width: 100%;
+  padding: 0.5rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+#poiList thead {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 2;
+}
+#poiList thead td {
+  cursor: pointer;
+  background-color: #999 !important;
+}
+#poiList td {
+  white-space: nowrap;
+  padding: 0 0.45rem;
+  cursor: pointer;
+}
+#poiList td[name] {
+  position: relative;
+  max-width: 210px;
+  width: 25%;
+  overflow-x: clip;
+  white-space: nowrap;
+  cursor: pointer;
+}
+#poiList td[name]::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: clamp(0.85rem, 1.2vw, 1.1rem);
+  z-index: 50;
+  background-image: linear-gradient(90deg, transparent, #efefef);
+}
+#poiList tr:nth-child(2n) td[name]::after {
+  background-image: linear-gradient(90deg, transparent, #ddd);
+}
+#poiList td[name]:hover:before {
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 20px;
+  width: 190px;
+  content: attr(name);
+  background-color: #ddd;
+  border: 1px solid #666;
+  padding: 0.25rem;
+  z-index: 100;
+  white-space: break-spaces;
+}
+
+.poiPage h4 {
+  display: flex;
+  margin-top: 0;
+}
+
+.poiPage article {
+  padding-bottom: 2rem;
+}
+
+.poiPage .ic {
+  display: block;
+  margin: 0 10px 0 0 !important;
+  width: 20px !important;
+  height: 20px !important;
+  padding-top: 8px;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 600;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.poi-name {
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  font-style: italic;
+}
+.poi-link {
+  font-size: clamp(0.85rem, 1vw, 0.9rem);
+}
+.poi-type {
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  font-weight: 600;
+  color: #666;
+}
+.poi-location {
+  display: flex;
+  gap: 16px;
+  border-bottom: 1px solid #999;
+}
+.poi-area,
+.poi-district {
+  font-size: clamp(0.85rem, 1vw, 0.9rem);
+  font-weight: 600;
+  padding-bottom: 0.25rem;
+}
+.poi-desc {
+  font-size: clamp(0.95rem, 1.2vw, 1rem);
+}
+.poi-safety,
+.poi-rent {
+  font-size: clamp(0.85rem, 1vw, 0.9rem);
+  color: #666;
+}
+@media (max-width: 768px) {
+  .poiPage main {
+    grid-area: main;
+    padding: 3.5rem 0 1rem;
+    max-width: 100%;
+    height: 100%;
+  }
 }

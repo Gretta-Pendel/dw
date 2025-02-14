@@ -174,6 +174,7 @@ let menu = [
       { title: "Кочевник", url: "nomad" },
     ],
   },
+  { name: "POI", title: "POI", url: "poi" },
 
   /*{
     name: "Запускаем Киберпанк",

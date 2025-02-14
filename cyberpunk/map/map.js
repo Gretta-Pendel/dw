@@ -53,8 +53,10 @@ poi.forEach((l) => {
     var myIcon = L.divIcon({ className: `ic ${ic}`, html: l.label });
     const searchText = `${l.name} ${l.desc} ${l.descCore} ${l.nameRu} ${l.descRu}`;
     const marker = L.marker(new L.latLng([l.y, l.x]), { icon: myIcon, title: l.name || "", type: l.type || "", data: searchText });
-    let desc = l.descRu ? l.desc + "<hr>" + l.descRu : l.desc;
-    let name = l.nameRu ? l.name + " | " + l.nameRu : l.name;
+    let desc = l.descRu ? l.descRu : l.desc;
+    desc += l.safety ? `<br>Безопасность: ${l.safety}` : "";
+    desc += l.rent ? `<br>Аренда: ${l.rent}` : "";
+    let name = l.nameRu ? l.name + "<br>" + l.nameRu : l.name;
     marker.bindTooltip(name).openTooltip();
     marker.bindPopup(desc).openPopup();
     markersLayer.addLayer(marker);
@@ -195,11 +197,29 @@ gangsBox.addTo(map);
 
 // ***** end Gangs
 
+var linkToPoi = L.control({ position: "bottomleft" });
+linkToPoi.onAdd = () => {
+  this._div = L.DomUtil.create("div", "info");
+  this._div.innerHTML = "<h4>All POI</h4><a href='../poi.html'>All points with descriptions</a><br>Desktop only...";
+  return this._div;
+};
+linkToPoi.addTo(map);
+
 map.on("zoomend", function () {
   let paneClass = document.getElementsByClassName("leaflet-marker-pane")[0];
   var curZoom = map.getZoom();
   paneClass.setAttribute("class", `leaflet-pane leaflet-marker-pane zoom${curZoom}`);
 });
+
+function toPoi() {
+  let params = window.location.search ? window.location.search.substring(1).split("&") : null;
+  if (params && params.length == 2) {
+    let lat = params[0].split("=")[1];
+    let lng = params[1].split("=")[1];
+    map.flyTo([lat, lng], 1);
+  }
+}
+map.whenReady(toPoi);
 
 // Устанавливаем границы карты (соответствуют изображению)
 map.fitBounds(bounds);
