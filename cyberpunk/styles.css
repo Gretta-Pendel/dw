@@ -22,6 +22,11 @@ img {
   max-width: 100%;
 }
 
+sub {
+  font-size: small;
+  vertical-align: baseline;
+}
+
 /* ---------- LAYOUT ---------- */
 header {
   grid-area: head;

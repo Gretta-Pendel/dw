@@ -13,7 +13,6 @@ const areaStyle = {
   fillColor: "white",
   fillOpacity: 0.3,
 };
-// -----------------------
 const style = () => ({
   weight: 0,
   fillOpacity: 0,
@@ -23,10 +22,10 @@ let groups = {};
 let gangsGroups = {};
 let districtsData = { type: "FeatureCollection", features: [] };
 var polygons = {};
+// -----------------------
 
 // ***** MAP settings
 const poiLayer = L.imageOverlay(mapUrl, bounds, { minZoom: -3, maxZoom: 1 });
-const gangsLayer = L.imageOverlay(mapUrl, bounds, { minZoom: -3, maxZoom: 1 });
 var map = L.map("map", {
   crs: L.CRS.Simple,
   center: [0, 0],
@@ -34,14 +33,8 @@ var map = L.map("map", {
   maxZoom: 1,
   layers: [poiLayer],
 });
-var baseMaps = {
-  POI: poiLayer.addTo(map),
-  Gangs: gangsLayer,
-};
 const image = L.imageOverlay(mapUrl, bounds, { opacity: 1 }).addTo(map);
 // ***** end MAP settings
-// poiLayerId = poiLayer._leaflet_id;
-// gangsLayerId = gangsLayer._leaflet_id;
 
 // ***** POI
 var markersLayer = new L.LayerGroup();
@@ -137,7 +130,6 @@ info.onAdd = function (map) {
   this.update();
   return this._div;
 };
-// method that we will use to update the control based on feature properties passed
 info.update = function (props) {
   let gangs = "";
   if (props && props.gangs && props.gangs.length) {
@@ -194,9 +186,9 @@ gangsBox.update = function (name) {
   this._div.innerHTML = "<h4>Gang</h4>" + text;
 };
 gangsBox.addTo(map);
-
 // ***** end Gangs
 
+// ***** link to POI table page
 var linkToPoi = L.control({ position: "bottomleft" });
 linkToPoi.onAdd = () => {
   this._div = L.DomUtil.create("div", "info");
@@ -205,12 +197,14 @@ linkToPoi.onAdd = () => {
 };
 linkToPoi.addTo(map);
 
+// ***** Icons with zoom
 map.on("zoomend", function () {
   let paneClass = document.getElementsByClassName("leaflet-marker-pane")[0];
   var curZoom = map.getZoom();
   paneClass.setAttribute("class", `leaflet-pane leaflet-marker-pane zoom${curZoom}`);
 });
 
+// ***** focus on POI when load
 function toPoi() {
   let params = window.location.search ? window.location.search.substring(1).split("&") : null;
   if (params && params.length == 2) {
@@ -221,11 +215,9 @@ function toPoi() {
 }
 map.whenReady(toPoi);
 
-// Устанавливаем границы карты (соответствуют изображению)
 map.fitBounds(bounds);
 
 // **********************************************************
-
 // map.on("baselayerchange", function (e) {
 //   currentLayerID = e.layer._leaflet_id;
 //   layerControl.remove();
