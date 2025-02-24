@@ -2,6 +2,8 @@ let nav = document.querySelector("nav");
 let main = document.querySelector("main");
 let mmopen = document.querySelector("header .menu span");
 let mmenu = document.getElementById("mmenu");
+let tmenu = document.getElementById("tmenu");
+let alltablesBox = document.getElementById("alltables");
 let menuTop = document.querySelector(".menu>div");
 let pageurl = document.location.pathname.split("/")[document.location.pathname.split("/").length - 1].slice(0, -5);
 let pagetitle = menu.find((el) => {
@@ -64,6 +66,32 @@ if (document.querySelectorAll("main .char h5").length) {
     levels.push(document.querySelectorAll("main .char h5")[index]);
   }
 }
+const menuResize = (m) => {
+  window.addEventListener("resize", (event) => {
+    if (m && window.innerWidth > 768) {
+      m.style.display = "block";
+      nav.style.height = "auto";
+    } else if (m) {
+      m.style.display = "none";
+      nav.style.height = "2.5rem";
+    }
+  });
+};
+
+const sideMenu = (m) => {
+  mmopen.addEventListener("click", (event) => {
+    if ((m && m.style.display === "none") || "") {
+      m.style.display = "block";
+      nav.style.height = m.offsetHeight + 16 + "px";
+    } else {
+      m.style.display = "none";
+      nav.style.height = "2.5rem";
+    }
+  });
+  menuResize(m);
+};
+mmenu ? sideMenu(mmenu) : undefined;
+tmenu ? sideMenu(tmenu) : undefined;
 
 levels.forEach((item) => {
   let sLi = document.createElement("div");
@@ -82,17 +110,11 @@ levels.forEach((item) => {
         top: y,
         behavior: "smooth",
       });
-      if (window.innerWidth > 768) {
-        mmenu.style.display = "block";
-        nav.style.height = "auto";
-      } else {
-        mmenu.style.display = "none";
-        nav.style.height = "2.5rem";
-      }
+      mmenu ? menuResize(mmenu) : undefined;
       window.history.pushState(null, null, `#${item.id}`);
     }
   });
-  mmenu.appendChild(sLi);
+  if (mmenu) mmenu.appendChild(sLi);
 });
 
 let a = document.querySelectorAll("a");
@@ -110,26 +132,6 @@ a.forEach((link) => {
         window.history.pushState(null, null, `#${id}`);
       }
     });
-  }
-});
-
-mmopen.addEventListener("click", (event) => {
-  if (mmenu.style.display === "none" || mmenu.style.display === "") {
-    mmenu.style.display = "block";
-    nav.style.height = mmenu.offsetHeight + 16 + "px";
-  } else {
-    mmenu.style.display = "none";
-    nav.style.height = "2.5rem";
-  }
-});
-window.addEventListener("resize", (event) => {
-  let mmenu = document.getElementById("mmenu");
-  if (mmenu && window.innerWidth > 768) {
-    mmenu.style.display = "block";
-    nav.style.height = "auto";
-  } else if (mmenu) {
-    mmenu.style.display = "none";
-    nav.style.height = "2.5rem";
   }
 });
 
@@ -179,6 +181,94 @@ menu.forEach((item) => {
   menuTop.appendChild(itembox);
 });
 
+let getSection = (page) => {
+  let _pages = menu.filter((m) => {
+    return m.url.replace("-", "") === page;
+  });
+  if (_pages.length) return _pages[0].title;
+  return page;
+};
+
+/* tables menu build */
+if (typeof alltables !== "undefined" && typeof pages !== "undefined" && tmenu && alltablesBox) {
+  pages.forEach((item) => {
+    let pageBox = document.createElement("div");
+    pageBox.className = "side-menu-box";
+    pageBox.dataset.page = item;
+    let itembox = document.createElement("div");
+    itembox.classList.add("h2", "closed");
+    itembox.innerText = " " + getSection(item);
+    tmenu.appendChild(itembox);
+    tmenu.appendChild(pageBox);
+    itembox.addEventListener("click", (e) => {
+      if (pageBox.style.display === "block") {
+        pageBox.style.display = "none";
+        itembox.classList.remove("closed");
+      } else {
+        pageBox.style.display = "block";
+        itembox.classList.add("closed");
+      }
+    });
+  });
+  alltables.forEach((item) => {
+    if (~pages.indexOf(item.page) && !item.data && item.data !== "example") {
+      let pageBoxDiv = document.querySelector(`.side-menu-box[data-page=${item.page}]`);
+      if (pageBoxDiv) {
+        let itembox = document.createElement("div");
+        itembox.className = "submenu";
+        let itemLink = document.createElement("a");
+        itemLink.innerText = item.name;
+        itemLink.setAttribute("href", "#" + item.id);
+        itembox.appendChild(itemLink);
+        pageBoxDiv.appendChild(itembox);
+      }
+    }
+  });
+  pages.forEach((p) => {
+    let itembox = document.createElement("h4");
+    itembox.innerText = " " + getSection(p);
+    alltablesBox.appendChild(itembox);
+    let pageTablesBox = document.createElement("div");
+    alltables.forEach((item) => {
+      if (item.page === p && !item.data && item.data !== "example") {
+        let tablebox = document.createElement("div");
+        tablebox.classList.add("tableBox");
+        tablebox.innerHTML = item.table;
+        pageTablesBox.appendChild(tablebox);
+      }
+    });
+    alltablesBox.appendChild(pageTablesBox);
+    itembox.addEventListener("click", (e) => {
+      if (pageTablesBox.style.display === "block" || pageTablesBox.style.display === "") {
+        pageTablesBox.style.display = "none";
+        itembox.classList.add("closed");
+      } else {
+        pageTablesBox.style.display = "block";
+        itembox.classList.remove("closed");
+      }
+    });
+  });
+}
+
+// insert tables        <div data-insert-table="char_1"></div>
+let tableDiv = document.getElementsByTagName("div");
+let tableDivArray = [...tableDiv].filter((d) => d.dataset.insertTable);
+const insertTable = (tableId) => {
+  if (typeof alltables !== "undefined") {
+    let item = alltables.filter((t) => t.table && t.id === tableId)[0];
+    if (item) {
+      let tablebox = document.createElement("div");
+      tablebox.classList.add("tableBox");
+      tablebox.innerHTML = item.table;
+      return tablebox;
+    }
+  }
+};
+tableDivArray.forEach((a) => {
+  let tableId = a.dataset.insertTable;
+  a.append(insertTable(tableId));
+});
+
 //🔻🔺
 
 let cols = document.getElementsByClassName("collapse");
@@ -200,3 +290,13 @@ window.addEventListener("load", () => {
     });
   }
 });
+
+// footer
+const footer = document.createElement("footer");
+footer.innerHTML = `<a href="">Terms</a> | <a href="tables.html">Tables</a> | <a href="poi.html">POI</a> | <a href="start.html">Start</a>`;
+main.after(footer);
+
+// dictionary
+// let sections = {
+//   "char":"Персонаж", "combat":"Бой", "economy":"Экономика", "life":"", "netrunning":"", "nightcity":"", "poiList":"", "roles":"", "skills":"", "start":"", "traumateam":""
+// }

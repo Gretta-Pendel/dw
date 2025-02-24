@@ -36,12 +36,12 @@
 .block.border {
   max-width: clamp(280px, 50vw, 560px);
   padding: 12px;
-  border: 3px solid #e02028;
+  border: 3px solid var(--base-red);
 }
 .block.path {
   max-width: 285px;
   padding: 0 4px;
-  border: 1px solid #e02028;
+  border: 1px solid var(--base-red);
   margin: 4px 0;
   font-size: clamp(0.75rem, 1.1vw, 0.9rem);
 }
@@ -55,17 +55,21 @@
 .block.path table tr td:first-child {
   width: clamp(30px, 40px, 50px);
 }
+.block.path th {
+  background-color: var(--table-bg-dark);
+  text-align: left;
+}
 .block.char {
   margin: 1rem 0;
   font-size: smaller;
-  border-top: 1px solid #e02028;
-  border-bottom: 1px solid #e02028;
+  border-top: 1px solid var(--base-red);
+  border-bottom: 1px solid var(--base-red);
   background-color: #fff;
   padding: 0;
 }
 .block.char h5 {
   color: #fff;
-  background-color: #e02028;
+  background-color: var(--base-red);
   padding: 0.25rem;
   margin: 0;
 }
@@ -92,7 +96,7 @@
   background-color: #fff;
 }
 .block.char td[colspan="10"] {
-  border-top: 3px solid #e02028;
+  border-top: 3px solid var(--base-red);
   font-weight: 400;
 }
 .block.char tr:last-child td {

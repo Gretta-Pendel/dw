@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cyberpunk | POI</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="map/map.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body class="poiPage">
+    <header>
+      <div class="menu">
+        <div></div>
+        <span></span>
+      </div>
+    </header>
+    <main>
+      <div style="padding: 0.25rem 50px"><a href="map/index.html">To map >></a></div>
+      <div class="wrapper">
+        <div class="tableBox">
+          <table id="poi">
+            <thead>
+              <tr id="sortTalbe">
+                <td data-param="label"><b>⇅ L</b></td>
+                <td data-param="nameRu"><b>⇅ Имя</b></td>
+                <td data-param="name"><b>⇅ Name</b></td>
+                <td data-param="type"><b>⇅ Тип</b></td>
+                <td data-param="district"><b>⇅ Район</b></td>
+              </tr>
+            </thead>
+            <tbody id="poiListBody"></tbody>
+          </table>
+        </div>
+        <div id="poiContent"></div>
+      </div>
+    </main>
+    <script src="map/mapdata.js"></script>
+    <script src="menu.js"></script>
+    <script src="js.js"></script>
+    <script src="map/poi.js"></script>
+  </body>
+</html>

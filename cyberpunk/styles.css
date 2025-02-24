@@ -9,6 +9,8 @@
   --menu-color: #efefef;
   --base-font-color: #333;
   --base-red: #e02028;
+  --table-bg: #efefef;
+  --table-bg-dark: #ccc;
 }
 
 body {
@@ -45,6 +47,7 @@ footer {
   color: #fff;
   font-size: smaller;
   padding: 0.25rem 0;
+  z-index: 500;
 }
 footer a {
   color: var(--menu-color);
@@ -247,6 +250,11 @@ caption {
   font-weight: 600;
   padding-bottom: 1rem;
 }
+th {
+  font-size: clamp(0.85rem, 1.1vw, 1.05rem);
+  font-weight: normal;
+  background-color: var(--table-bg-dark);
+}
 th,
 td {
   padding: 0 0.5rem;
@@ -268,17 +276,6 @@ tr.base td {
 tr.base td b {
   text-decoration: underline;
 }
-table.logo {
-  width: 100%;
-}
-table.logo td:last-child {
-  text-align: right;
-}
-table.logo img {
-  max-width: 200px;
-  border: 2px solid #999;
-  max-height: 100px;
-}
 tr.dark td,
 td.dark {
   color: #eee;
@@ -288,6 +285,22 @@ td.dark {
   display: none;
 }
 /* ---------- end  TABLES ---------- */
+
+article.logo {
+  width: 100%;
+  display: flex;
+  font-size: clamp(0.75rem, 1.1vw, 1rem);
+  gap: 1rem;
+}
+article.logo div:last-child {
+  text-align: right;
+  flex-basis: 200px;
+}
+article.logo img {
+  max-width: 200px;
+  border: 2px solid #999;
+  max-height: 100px;
+}
 
 ul,
 ol {
@@ -489,6 +502,31 @@ main a:hover {
   text-align: left;
 }
 
+/* alltables */
+nav .side-menu-box {
+  display: none;
+}
+
+#alltables h4,
+#tmenu .h2 {
+  cursor: pointer;
+  margin-left: 0;
+}
+#alltables h4::before,
+#tmenu .h2::before {
+  content: "‒";
+  display: inline-block;
+}
+#alltables h4.closed::before,
+#tmenu .h2.closed::before {
+  content: "+";
+  display: inline-block;
+}
+
+#alltables .tableBox {
+  margin-bottom: 2rem;
+}
+
 @media (max-width: 768px) {
   body {
     display: block;
@@ -533,7 +571,8 @@ main a:hover {
     content: " 👁️";
   }
 
-  #mmenu {
+  #mmenu,
+  #tmenu {
     display: none;
   }
 
