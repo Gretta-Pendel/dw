@@ -173,11 +173,18 @@ hr {
 /* ************ POI page ******************* */
 
 .poiPage {
-  grid-template-areas: "head" "main" "foot";
+  grid-template-areas: "main" "foot";
   grid-template-columns: auto;
-  grid-template-rows: minmax(32px, 36px) auto 0;
+  grid-template-rows: 0 auto 0;
   font-family: Calibri, sans-serif;
   height: 100%;
+}
+.poiPage body {
+  grid-template-areas: "main" "foot";
+}
+.poiPage footer {
+  left: 0;
+  padding: 0.25rem 0.5rem;
 }
 .poiPage main {
   grid-area: main;
@@ -188,7 +195,7 @@ hr {
 .poiPage .tableBox,
 #poiContent {
   scrollbar-color: var(--base-red) #999;
-  height: calc(100vh - 66px - 3rem);
+  height: calc(100vh - 40px);
   border-bottom: 1px solid #999;
   border-top: 1px solid #999;
 }
@@ -197,7 +204,7 @@ hr {
   flex-shrink: 0;
   width: clamp(200px, 70vw, 1000px);
 }
-.poiPage .tableBox #poiList {
+.poiPage .tableBox #poi {
   max-width: 1400px;
 }
 .poiPage .wrapper {
@@ -213,22 +220,22 @@ hr {
   overflow-y: auto;
   scrollbar-width: thin;
 }
-#poiList thead {
+#poi thead {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
   z-index: 2;
 }
-#poiList thead td {
+#poi thead td {
   cursor: pointer;
   background-color: #999 !important;
 }
-#poiList td {
+#poi td {
   white-space: nowrap;
   padding: 0 0.45rem;
   cursor: pointer;
 }
-#poiList td[name] {
+#poi td[name] {
   position: relative;
   max-width: 210px;
   width: 25%;
@@ -236,7 +243,7 @@ hr {
   white-space: nowrap;
   cursor: pointer;
 }
-#poiList td[name]::after {
+#poi td[name]::after {
   display: block;
   content: "";
   position: absolute;
@@ -247,10 +254,10 @@ hr {
   z-index: 50;
   background-image: linear-gradient(90deg, transparent, #efefef);
 }
-#poiList tr:nth-child(2n) td[name]::after {
+#poi tr:nth-child(2n) td[name]::after {
   background-image: linear-gradient(90deg, transparent, #ddd);
 }
-#poiList td[name]:hover:before {
+#poi td[name]:hover:before {
   display: block;
   position: absolute;
   top: 2px;

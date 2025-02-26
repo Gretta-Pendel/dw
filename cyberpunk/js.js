@@ -136,50 +136,52 @@ a.forEach((link) => {
 });
 
 /* menu build */
-menu.forEach((item) => {
-  var url = item.url ? item.url : item.page;
-  var itembox = document.createElement("div");
-  itembox.className = "submenu";
-  let itemLink = document.createElement("a");
-  itemLink.innerText = item.title;
-  itemLink.setAttribute("href", url + ".html");
-  if (pageurl == item.url) {
-    itemLink.setAttribute("class", "active");
-  }
-  itembox.appendChild(itemLink);
-  if (item.sections && item.sections.length) {
-    let sUl = document.createElement("ul");
-    item.sections.forEach((s) => {
-      let sLi = document.createElement("li");
-      let sLink = s.url ? document.createElement("a") : document.createElement("span");
-      sLink.innerText = s.title;
-      if (s.url) sLink.setAttribute("href", url + ".html#" + s.url);
-      if (url === item.url) {
-        sLink.addEventListener("click", (ev) => {
-          if (document.getElementById(s.url)) {
-            ev.preventDefault();
-            let y = document.getElementById(s.url).offsetTop - 36;
-            window.scrollTo({
-              top: y,
-              behavior: "smooth",
-            });
-            window.history.pushState(null, null, `#${s.url}`);
-          }
-        });
-      }
-      sLi.appendChild(sLink);
-      sUl.appendChild(sLi);
-    });
-    itembox.appendChild(sUl);
-    itembox.addEventListener("mouseover", () => {
-      sUl.style.display = "block";
-    });
-    itembox.addEventListener("mouseout", () => {
-      sUl.style.display = "none";
-    });
-  }
-  menuTop.appendChild(itembox);
-});
+if (menuTop) {
+  menu.forEach((item) => {
+    var url = item.url ? item.url : item.page;
+    var itembox = document.createElement("div");
+    itembox.className = "submenu";
+    let itemLink = document.createElement("a");
+    itemLink.innerText = item.title;
+    itemLink.setAttribute("href", url + ".html");
+    if (pageurl == item.url) {
+      itemLink.setAttribute("class", "active");
+    }
+    itembox.appendChild(itemLink);
+    if (item.sections && item.sections.length) {
+      let sUl = document.createElement("ul");
+      item.sections.forEach((s) => {
+        let sLi = document.createElement("li");
+        let sLink = s.url ? document.createElement("a") : document.createElement("span");
+        sLink.innerText = s.title;
+        if (s.url) sLink.setAttribute("href", url + ".html#" + s.url);
+        if (url === item.url) {
+          sLink.addEventListener("click", (ev) => {
+            if (document.getElementById(s.url)) {
+              ev.preventDefault();
+              let y = document.getElementById(s.url).offsetTop - 36;
+              window.scrollTo({
+                top: y,
+                behavior: "smooth",
+              });
+              window.history.pushState(null, null, `#${s.url}`);
+            }
+          });
+        }
+        sLi.appendChild(sLink);
+        sUl.appendChild(sLi);
+      });
+      itembox.appendChild(sUl);
+      itembox.addEventListener("mouseover", () => {
+        sUl.style.display = "block";
+      });
+      itembox.addEventListener("mouseout", () => {
+        sUl.style.display = "none";
+      });
+    }
+    menuTop.appendChild(itembox);
+  });
+}
 
 let getSection = (page) => {
   let _pages = menu.filter((m) => {
@@ -203,10 +205,10 @@ if (typeof alltables !== "undefined" && typeof pages !== "undefined" && tmenu &&
     itembox.addEventListener("click", (e) => {
       if (pageBox.style.display === "block") {
         pageBox.style.display = "none";
-        itembox.classList.remove("closed");
+        itembox.classList.add("closed");
       } else {
         pageBox.style.display = "block";
-        itembox.classList.add("closed");
+        itembox.classList.remove("closed");
       }
     });
   });
@@ -221,6 +223,17 @@ if (typeof alltables !== "undefined" && typeof pages !== "undefined" && tmenu &&
         itemLink.setAttribute("href", "#" + item.id);
         itembox.appendChild(itemLink);
         pageBoxDiv.appendChild(itembox);
+        itemLink.addEventListener("click", (ev) => {
+          if (document.getElementById(item.id)) {
+            ev.preventDefault();
+            let y = document.getElementById(item.id).offsetTop - 36;
+            window.scrollTo({
+              top: y,
+              behavior: "smooth",
+            });
+            window.history.pushState(null, null, `#${item.id}`);
+          }
+        });
       }
     }
   });
@@ -294,8 +307,7 @@ window.addEventListener("load", () => {
 // footer
 const footer = document.createElement("footer");
 footer.innerHTML = `<a href="">Terms</a> | <a href="tables.html">Tables</a> | <a href="poi.html">POI</a> | <a href="start.html">Start</a>`;
-main.after(footer);
-
+pageurl !== "poi" ? main.after(footer) : undefined;
 // dictionary
 // let sections = {
 //   "char":"Персонаж", "combat":"Бой", "economy":"Экономика", "life":"", "netrunning":"", "nightcity":"", "poiList":"", "roles":"", "skills":"", "start":"", "traumateam":""

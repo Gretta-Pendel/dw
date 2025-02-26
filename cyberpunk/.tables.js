@@ -1,10 +1,4 @@
-const pages = ["char", "combat", "economy", "life", "netrunning", "nightcity", "roles", "skills", "start", "traumateam"];
-const alltables = [
-  {
-    id: "char_1",
-    name: "Культурное происхождение: Бросьте 1d10 или выберите одно.",
-    page: "char",
-    table: `<table id="char_1"><caption>Культурное происхождение: Бросьте 1d10 или выберите одно.</caption><tbody><tr>
+const pages = ["char","combat","economy","life","netrunning","nightcity","roles","skills","start","traumateam",];const alltables = [{id:"char_1",name:"Культурное происхождение",page:"char",table:`<table id="char_1"><caption>Культурное происхождение</caption><tbody><tr>
         <td><b>1d10</b></td>
         <td><b>Ваш регион</b></td>
         <td>
@@ -60,13 +54,7 @@ const alltables = [
         <td>10</td>
         <td>Океания/ Тихоокеанские острова</td>
         <td>Английский, французский, гавайский, маори, Пама-Ньюнган, таитянский</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "char_2",
-    name: "Бросьте 1d10 или выберите одно.",
-    page: "char",
-    table: `<table id="char_2"><caption>Бросьте 1d10 или выберите одно.</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"char_2",name:"Ваша личность",page:"char",table:`<table id="char_2"><caption>Ваша личность</caption><tbody><tr>
         <td><b>1d10</b></td>
         <td><b>Какой ты?</b></td>
       </tr>
@@ -109,13 +97,7 @@ const alltables = [
       <tr>
         <td>10</td>
         <td>Дружелюбный и общительный</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "char_3",
-    name: "Одежда и личный стиль: Бросьте 1d10 или выберите одно.",
-    page: "char",
-    table: `<table id="char_3"><caption>Одежда и личный стиль: Бросьте 1d10 или выберите одно.</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"char_3",name:"Одежда и личный стиль",page:"char",table:`<table id="char_3"><caption>Одежда и личный стиль</caption><tbody><tr>
         <td>1d10</td>
         <td>Стиль одежды</td>
         <td>Прическа</td>
@@ -169,13 +151,7 @@ const alltables = [
         <td>10</td>
         <td>Asia Pop /Яркая, Костюмированная, Молодежная/</td>
         <td>Длинные прямые волосы</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "char_4",
-    name: "Бросьте 1d10 или выберите по одному из каждой колонки.",
-    page: "char",
-    table: `<table id="char_4"><caption>Бросьте 1d10 или выберите по одному из каждой колонки.</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"char_4",name:"Ваши пристрастия",page:"char",table:`<table id="char_4"><caption>Ваши пристрастия</caption><tbody><tr>
         <td><b>Roll</b></td>
         <td><b>Пристарстия, без которых вы не появляетесь</b></td>
       </tr>
@@ -218,13 +194,7 @@ const alltables = [
       <tr>
         <td>10</td>
         <td>Цветные контактные линзы на весь глаз</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "char_5",
-    name: "Ваши мотивы и отношения: Бросьте 1d10 или выберите по одному из каждой колонки.",
-    page: "char",
-    table: `<table id="char_5"><caption>Ваши мотивы и отношения: Бросьте 1d10 или выберите по одному из каждой колонки.</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"char_5",name:"Ваши мотивы и отношения",page:"char",table:`<table id="char_5"><caption>Ваши мотивы и отношения</caption><tbody><tr>
         <td><b>1d10</b></td>
         <td><b>Что для вас ценнее всего</b></td>
         <td><b>Ваше отношение к большенству людей?</b></td>
@@ -278,13 +248,7 @@ const alltables = [
         <td>10</td>
         <td>Дружба</td>
         <td>ЛЮДИ ПРЕКРАСНЫ!</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "char_6",
-    name: "Наибольшие ваши ценности: Бросьте 1d10 или выберите одно.",
-    page: "char",
-    table: `<table id="char_6"><caption>Наибольшие ваши ценности: Бросьте 1d10 или выберите одно.</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"char_6",name:"Самый близкий человек в жизни",page:"char",table:`<table id="char_6"><caption>Самый близкий человек в жизни</caption><tbody><tr>
         <td><b>1d10</b></td>
         <td><b>Самый близкий человек в жизни?</b></td>
       </tr>
@@ -327,13 +291,7 @@ const alltables = [
       <tr>
         <td>10</td>
         <td>Никто</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "char_7",
-    name: "Бросьте 1d10 или выберите одно.",
-    page: "char",
-    table: `<table id="char_7"><caption>Бросьте 1d10 или выберите одно.</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"char_7",name:"Самое ценное, чем вы обладаете",page:"char",table:`<table id="char_7"><caption>Самое ценное, чем вы обладаете</caption><tbody><tr>
         <td><b>1d10</b></td>
         <td><b>Самое ценное, чем вы обладаете?</b></td>
       </tr>
@@ -376,13 +334,7 @@ const alltables = [
       <tr>
         <td>10</td>
         <td>Письмо</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "char_8",
-    name: "Ваше окружение: Бросьте 1d10 или выберите одно.",
-    page: "char",
-    table: `<table id="char_8"><caption>Ваше окружение: Бросьте 1d10 или выберите одно.</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"char_8",name:"Ваше окружение",page:"char",table:`<table id="char_8"><caption>Ваше окружение</caption><tbody><tr>
         <td><b>1d10</b></td>
         <td><b>Ваше детство</b></td>
       </tr>
@@ -425,13 +377,7 @@ const alltables = [
       <tr>
         <td>10</td>
         <td>В корпоративной роскоши, "звёздоскрёбе", возвышаясь над остальным кишашим сбродом.</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "char_9",
-    name: "Ваш семейный кризис: Бросьте 1d10 или выберите одно.",
-    page: "char",
-    table: `<table id="char_9"><caption>Ваш семейный кризис: Бросьте 1d10 или выберите одно.</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"char_9",name:"Ваш семейный кризис",page:"char",table:`<table id="char_9"><caption>Ваш семейный кризис</caption><tbody><tr>
         <td><b>1d10</b></td>
         <td><b>Биография</b></td>
       </tr>
@@ -474,13 +420,7 @@ const alltables = [
       <tr>
         <td>10</td>
         <td>Вам достались в наследство семейные долги. Вы должны выплатить этот долг, прежде чем двигаться дальше по жизни</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "char_10",
-    name: "Ваши друзья: Бросте 1d10 и вычтите 7 (мин 0) - количество друзей.",
-    page: "char",
-    table: `<table id="char_10"><caption>Ваши друзья: Бросте 1d10 и вычтите 7 (мин 0) - количество друзей.</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"char_10",name:"Ваши друзья",page:"char",table:`<table id="char_10"><caption>Ваши друзья</caption><tbody><tr>
         <td><b>1d10</b></td>
         <td><b>Отношение друга к вам</b></td>
       </tr>
@@ -523,13 +463,7 @@ const alltables = [
       <tr>
         <td>10</td>
         <td>Кто-то с общим интересом или целью</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "char_11",
-    name: "Ваши враги: Бросьте 1d10 и вычтите 7 (мин 0) - количество врагов. Затем для каждого из них бросьте по одному разу на каждый из столбцов.",
-    page: "char",
-    table: `<table id="char_11"><caption>Ваши враги: Бросьте 1d10 и вычтите 7 (мин 0) - количество врагов. Затем для каждого из них бросьте по одному разу на каждый из столбцов.</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"char_11",name:"Ваши враги",page:"char",table:`<table id="char_11"><caption>Ваши враги</caption><tbody><tr>
         <td><b>1d10</b></td>
         <td><b>Враг</b></td>
         <td>
@@ -596,13 +530,7 @@ const alltables = [
         <td>Бустер</td>
         <td>Подставили его за преступление, которого он не совершал</td>
         <td>Целый город, правительство или агентство.</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "char_12",
-    name: "Сладкая месть! Бросьте 1d10 или выберите одно.",
-    page: "char",
-    table: `<table id="char_12"><caption>Сладкая месть! Бросьте 1d10 или выберите одно.</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"char_12",name:"Сладкая месть",page:"char",table:`<table id="char_12"><caption>Сладкая месть</caption><tbody><tr>
         <td><b>1d10</b></td>
         <td><b>Что вы/они собираетесь делать??</b></td>
       </tr>
@@ -629,13 +557,7 @@ const alltables = [
       <tr>
         <td>10</td>
         <td>Просто убейте или покаленте их</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "char_13",
-    name: "Ваш трагический роман(-ы): Бросьте 1d10 и вычтите 7 (минимум 0), чтобы узнать, сколько у вас было трагических любовных связей, а затем используйте таблицу ниже, чтобы узнать, чем они закончились.",
-    page: "char",
-    table: `<table id="char_13"><caption>Ваш трагический роман(-ы): Бросьте 1d10 и вычтите 7 (минимум 0), чтобы узнать, сколько у вас было трагических любовных связей, а затем используйте таблицу ниже, чтобы узнать, чем они закончились.</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"char_13",name:"Ваш трагический роман",page:"char",table:`<table id="char_13"><caption>Ваш трагический роман</caption><tbody><tr>
         <td><b>1d10</b></td>
         <td><b>Что случилось?</b></td>
       </tr>
@@ -678,13 +600,7 @@ const alltables = [
       <tr>
         <td>10</td>
         <td>Вашего любовника посадили в тюрьму</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "char_14",
-    name: "Подведение итогов: Бросьте 1d10 или выберите одно.",
-    page: "char",
-    table: `<table id="char_14"><caption>Подведение итогов: Бросьте 1d10 или выберите одно.</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"char_14",name:"Жизненные цели",page:"char",table:`<table id="char_14"><caption>Жизненные цели</caption><tbody><tr>
         <td><b>1d10</b></td>
         <td><b>Жизненные цели</b></td>
       </tr>
@@ -727,13 +643,7 @@ const alltables = [
       <tr>
         <td>10</td>
         <td>Чтобы все вас боялись и уважали</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "char_15",
-    name: "Жизненные цели: Рокербой",
-    page: "char",
-    table: `<table id="char_15"><caption>Жизненные цели: Рокербой</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"char_15",name:"Жизненные цели: Рокербой",page:"char",table:`<table id="char_15"><caption>Жизненные цели: Рокербой</caption><tbody><tr>
               <th><b>d10</b></th>
               <th><b>#1 Тип: Какой вы Рокербой?</b></th>
             </tr>
@@ -860,13 +770,7 @@ const alltables = [
             <tr>
               <td>6</td>
               <td>Романтический интерес или медийный деятель, который хочет отомстить по личным причинам</td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "char_19",
-    name: "Жизненные цели: Соло",
-    page: "char",
-    table: `<table id="char_19"><caption>Жизненные цели: Соло</caption><tbody><tr>
+            </tr></tbody></table>`},{id:"char_16",name:"Жизненные цели: Соло",page:"char",table:`<table id="char_16"><caption>Жизненные цели: Соло</caption><tbody><tr>
               <th><b>d6</b></th>
               <th><b>#1 Тип: Какой вы соло?</b></th>
             </tr>
@@ -977,13 +881,7 @@ const alltables = [
             <tr>
               <td>6</td>
               <td>Соло, который видит в вас врага</td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "char_23",
-    name: "Жизненные цели: Нетраннер",
-    page: "char",
-    table: `<table id="char_23"><caption>Жизненные цели: Нетраннер</caption><tbody><tr>
+            </tr></tbody></table>`},{id:"char_17",name:"Жизненные цели: Нетраннер",page:"char",table:`<table id="char_17"><caption>Жизненные цели: Нетраннер</caption><tbody><tr>
               <th><b>d6</b></th>
               <th><b>#1 Тип: Какой вы нетраннер?</b></th>
             </tr>
@@ -1150,13 +1048,7 @@ const alltables = [
             <tr>
               <td>6</td>
               <td>Фиксеры или другие клиенты, которому нужны исключительно ваши услуги</td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "char_29",
-    name: "Жизненные цели: Техник",
-    page: "char",
-    table: `<table id="char_29"><caption>Жизненные цели: Техник</caption><tbody><tr>
+            </tr></tbody></table>`},{id:"char_18",name:"Жизненные цели: Техник",page:"char",table:`<table id="char_18"><caption>Жизненные цели: Техник</caption><tbody><tr>
               <th><b>d10</b></th>
               <th><b>#1 Тип: Какой вы специалист?</b></th>
             </tr>
@@ -1339,13 +1231,7 @@ const alltables = [
             <tr>
               <td>6</td>
               <td>Конкуренты пытаются выбить у вас ресурсы и запчасти</td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "char_35",
-    name: "Жизненные цели: Медтехник",
-    page: "char",
-    table: `<table id="char_35"><caption>Жизненные цели: Медтехник</caption><tbody><tr>
+            </tr></tbody></table>`},{id:"char_19",name:"Жизненные цели: Медтехник",page:"char",table:`<table id="char_19"><caption>Жизненные цели: Медтехник</caption><tbody><tr>
               <th><b>d10</b></th>
               <th><b>#1 Тип: В какой области вы специалист?</b></th>
             </tr>
@@ -1500,13 +1386,7 @@ const alltables = [
             <tr>
               <td>6</td>
               <td>Вы посещаете ночные рынка и покупаете материалы когда можете</td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "char_40",
-    name: "Жизненные цели: Медиа",
-    page: "char",
-    table: `<table id="char_40"><caption>Жизненные цели: Медиа</caption><tbody><tr>
+            </tr></tbody></table>`},{id:"char_20",name:"Жизненные цели: Медиа",page:"char",table:`<table id="char_20"><caption>Жизненные цели: Медиа</caption><tbody><tr>
               <th><b>d6</b></th>
               <th><b>#1 Тип: Какое Медиа вы представляете?</b></th>
             </tr>
@@ -1617,13 +1497,7 @@ const alltables = [
             <tr>
               <td>6</td>
               <td>Пропаганда</td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "char_44",
-    name: "Жизненные цели: Корпорат",
-    page: "char",
-    table: `<table id="char_44"><caption>Жизненные цели: Корпорат</caption><tbody><tr>
+            </tr></tbody></table>`},{id:"char_21",name:"Жизненные цели: Корпорат",page:"char",table:`<table id="char_21"><caption>Жизненные цели: Корпорат</caption><tbody><tr>
               <th><b>d10</b></th>
               <th><b>#1 Тип: Чем занимается корпа в которой вы работаете?</b></th>
             </tr>
@@ -1810,13 +1684,7 @@ const alltables = [
             <tr>
               <td>6</td>
               <td>Вашему боссу угрожает ваш стремительный взлёт. Он хочет зарезать вас.</td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "char_50",
-    name: "Жизненные цели: Законник",
-    page: "char",
-    table: `<table id="char_50"><caption>Жизненные цели: Законник</caption><tbody><tr>
+            </tr></tbody></table>`},{id:"char_22",name:"Жизненные цели: Законник",page:"char",table:`<table id="char_22"><caption>Жизненные цели: Законник</caption><tbody><tr>
               <th><b>d6</b></th>
               <th><b>#1 Должность: Должность в силовой структуре</b></th>
             </tr>
@@ -1955,13 +1823,7 @@ const alltables = [
             <tr>
               <td>6</td>
               <td>Уличное отребье</td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "char_55",
-    name: "Жизненные цели: Фиксер",
-    page: "char",
-    table: `<table id="char_55"><caption>Жизненные цели: Фиксер</caption><tbody><tr>
+            </tr></tbody></table>`},{id:"char_23",name:"Жизненные цели: Фиксер",page:"char",table:`<table id="char_23"><caption>Жизненные цели: Фиксер</caption><tbody><tr>
               <th><b>d10</b></th>
               <th><b>#1 Тип: Какой вы фиксер?</b></th>
             </tr>
@@ -2116,13 +1978,7 @@ const alltables = [
             <tr>
               <td>6</td>
               <td>Конкурирующий фиксер пытается убить вас из-за ресурсов и запчастей</td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "char_60",
-    name: "Жизненные цели: Кочевник",
-    page: "char",
-    table: `<table id="char_60"><caption>Жизненные цели: Кочевник</caption><tbody><tr>
+            </tr></tbody></table>`},{id:"char_24",name:"Жизненные цели: Кочевник",page:"char",table:`<table id="char_24"><caption>Жизненные цели: Кочевник</caption><tbody><tr>
               <th><b>d6</b></th>
               <th><b>#1 Размер: Какого размера стая?</b></th>
             </tr>
@@ -2333,14 +2189,7 @@ const alltables = [
             <tr>
               <td>6</td>
               <td>Грязные копы</td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "char_67",
-    name: "#1: Уличная крыса (Шаблоны). Пример",
-    page: "char",
-    data: "example",
-    table: `<table id="char_67"><caption>#1: Уличная крыса (Шаблоны). Пример</caption><tbody><tr>
+            </tr></tbody></table>`},{id:"char_25",name:"#1: Уличная крыса (Шаблоны). Пример",page:"char",data:"example",table:`<table id="char_25"><caption>#1: Уличная крыса (Шаблоны). Пример</caption><tbody><tr>
           <td><b>1d10</b></td>
           <td><b>ИНТ</b></td>
           <td><b>РЕА</b></td>
@@ -2482,14 +2331,7 @@ const alltables = [
           <td>6</td>
           <td>6</td>
           <td>5</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "char_68",
-    name: "#1: Уличная крыса (Шаблоны). Пример",
-    page: "char",
-    data: "example",
-    table: `<table id="char_68"><caption>#1: Уличная крыса (Шаблоны). Пример</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"char_26",name:"#1: Уличная крыса (Шаблоны). Пример",page:"char",data:"example",table:`<table id="char_26"><caption>#1: Уличная крыса (Шаблоны). Пример</caption><tbody><tr>
           <td>ИНТ 7</td>
           <td>РЕА 7</td>
           <td>ЛВК 6</td>
@@ -2500,13 +2342,7 @@ const alltables = [
           <td>СКО 7</td>
           <td>ТЕЛ 7</td>
           <td>ЭМП 5</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "char_69",
-    name: "#1: Уличная крыса (Шаблоны).",
-    page: "char",
-    table: `<table id="char_69"><caption>#1: Уличная крыса (Шаблоны).</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"char_27",name:"#1: Уличная крыса (Шаблоны).",page:"char",table:`<table id="char_27"><caption>#1: Уличная крыса (Шаблоны).</caption><tbody><tr>
         <th colspan="11"><b>Рокербой</b></th>
       </tr>
       <tr>
@@ -3965,14 +3801,7 @@ const alltables = [
         <td>7</td>
         <td>7</td>
         <td>4</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "char_79",
-    name: "#2: Эджраннер (Быстро и грязно). Пример",
-    page: "char",
-    data: "example",
-    table: `<table id="char_79"><caption>#2: Эджраннер (Быстро и грязно). Пример</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"char_28",name:"#2: Эджраннер (Быстро и грязно). Пример",page:"char",data:"example",table:`<table id="char_28"><caption>#2: Эджраннер (Быстро и грязно). Пример</caption><tbody><tr>
             <td><b>1d10</b></td>
             <td><b>ИНТ</b></td>
             <td><b>РЕА</b></td>
@@ -4114,14 +3943,7 @@ const alltables = [
             <td>6</td>
             <td>6</td>
             <td>5</td>
-          </tr></tbody></table>`,
-  },
-  {
-    id: "char_80",
-    name: "#2: Эджраннер (Быстро и грязно). Пример",
-    page: "char",
-    data: "example",
-    table: `<table id="char_80"><caption>#2: Эджраннер (Быстро и грязно). Пример</caption><tbody><tr>
+          </tr></tbody></table>`},{id:"char_29",name:"#2: Эджраннер (Быстро и грязно). Пример",page:"char",data:"example",table:`<table id="char_29"><caption>#2: Эджраннер (Быстро и грязно). Пример</caption><tbody><tr>
           <td>ИНТ 6</td>
           <td>РЕА 7</td>
           <td>ЛВК 7</td>
@@ -4132,13 +3954,7 @@ const alltables = [
           <td>СКО 7</td>
           <td>ТЕЛ 8</td>
           <td>ЭМП 5</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "char_81",
-    name: "#3: Полный пакет (Калькуляция). Очки СТАТ",
-    page: "char",
-    table: `<table id="char_81"><caption>#3: Полный пакет (Калькуляция). Очки СТАТ</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"char_30",name:"#3: Полный пакет. Очки СТАТ",page:"char",table:`<table id="char_30"><caption>#3: Полный пакет. Очки СТАТ</caption><tbody><tr>
           <td><b>Ранг персонажа</b></td>
           <td><b>Очки СТАТ</b></td>
         </tr>
@@ -4161,14 +3977,7 @@ const alltables = [
         <tr>
           <td>Главный герой</td>
           <td>80</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "char_82",
-    name: "#3: Полный пакет (Калькуляция). Очки СТАТ. Пример",
-    page: "char",
-    data: "example",
-    table: `<table id="char_82"><caption>#3: Полный пакет (Калькуляция). Очки СТАТ. Пример</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"char_31",name:"#3: Полный пакет (Калькуляция). Очки СТАТ. Пример",page:"char",data:"example",table:`<table id="char_31"><caption>#3: Полный пакет (Калькуляция). Очки СТАТ. Пример</caption><tbody><tr>
           <td>ИНТ 5</td>
           <td>РЕА 7</td>
           <td>ЛВК 8</td>
@@ -4179,13 +3988,7 @@ const alltables = [
           <td>СКО 8</td>
           <td>ТЕЛ 8</td>
           <td>ЭМП 4</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "char_83",
-    name: "#1: Уличная крыса (Шаблоны). Навыки",
-    page: "char",
-    table: `<table id="char_83"><caption>#1: Уличная крыса (Шаблоны). Навыки</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"char_32",name:"#1: Уличная крыса. Навыки",page:"char",table:`<table id="char_32"><caption>#1: Уличная крыса. Навыки</caption><tbody><tr>
           <th colspan="2"><b>Рокербой</b></th>
           <th colspan="2"><b>Соло</b></th>
           <th colspan="2"><b>Нетраннер</b></th>
@@ -4702,14 +4505,7 @@ const alltables = [
           <td>6</td>
           <td>Выживание в пустыне</td>
           <td>6</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "char_85",
-    name: "#1: Уличная крыса (Шаблоны). Навыки. Пример",
-    page: "char",
-    data: "example",
-    table: `<table id="char_85"><caption>#1: Уличная крыса (Шаблоны). Навыки. Пример</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"char_33",name:"#1: Уличная крыса (Шаблоны). Навыки. Пример",page:"char",data:"example",table:`<table id="char_33"><caption>#1: Уличная крыса (Шаблоны). Навыки. Пример</caption><tbody><tr>
           <td><b>Навык</b></td>
           <td><b>Ур</b></td>
         </tr>
@@ -4792,13 +4588,7 @@ const alltables = [
         <tr>
           <td>Тактика</td>
           <td>6</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "char_87",
-    name: "#2: Эджранер (Быстро и грязно). Навыки",
-    page: "char",
-    table: `<table id="char_87"><caption>#2: Эджранер (Быстро и грязно). Навыки</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"char_34",name:"#2: Эджранер. Навыки",page:"char",table:`<table id="char_34"><caption>#2: Эджранер. Навыки</caption><tbody><tr>
           <th><b>Рокербой</b></th>
           <th><b>Соло</b></th>
           <th><b>Нетраннер</b></th>
@@ -5091,14 +4881,7 @@ const alltables = [
           <td>Уход за собой</td>
           <td>Торговля</td>
           <td>Выживание в пустыне</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "char_89",
-    name: "#2: Эджранер (Быстро и грязно). Навыки. Пример",
-    page: "char",
-    data: "example",
-    table: `<table id="char_89"><caption>#2: Эджранер (Быстро и грязно). Навыки. Пример</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"char_35",name:"#2: Эджранер (Быстро и грязно). Навыки. Пример",page:"char",data:"example",table:`<table id="char_35"><caption>#2: Эджранер (Быстро и грязно). Навыки. Пример</caption><tbody><tr>
           <td><b>Навык</b></td>
           <td><b>Ур</b></td>
           <td><b>Цена</b></td>
@@ -5207,14 +4990,7 @@ const alltables = [
           <td>Тактика</td>
           <td>4</td>
           <td>4</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "char_91",
-    name: "#3: Полный Пакет (Калькуляция). Навыки. Пример",
-    page: "char",
-    data: "example",
-    table: `<table id="char_91"><caption>#3: Полный Пакет (Калькуляция). Навыки. Пример</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"char_36",name:"#3: Полный Пакет (Калькуляция). Навыки. Пример",page:"char",data:"example",table:`<table id="char_36"><caption>#3: Полный Пакет (Калькуляция). Навыки. Пример</caption><tbody><tr>
           <td><b>Навык</b></td>
           <td><b>Уровень</b></td>
           <td><b>Цена</b></td>
@@ -5353,13 +5129,7 @@ const alltables = [
           <td>Выживание в пустыне</td>
           <td>4</td>
           <td>4</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "char_93",
-    name: "Как получить Оружие и Броню Для #1 Крысы, #2 Эджраннеры.",
-    page: "char",
-    table: `<table id="char_93"><caption>Как получить Оружие и Броню Для #1 Крысы, #2 Эджраннеры.</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"char_37",name:"Оружие и Броня Для #1 Крысы, #2 Эджраннеры",page:"char",table:`<table id="char_37"><caption>Оружие и Броня Для #1 Крысы, #2 Эджраннеры</caption><tbody><tr>
           <th>
             <b>Рокербой</b> <br>
             Оружие/Броня
@@ -5527,13 +5297,7 @@ const alltables = [
             <br>
             Легкая броня для головы (ОС11)
           </td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "char_95",
-    name: "Как получить свой стаф Для #1 Крысы, #2 Эджраннеры.",
-    page: "char",
-    table: `<table id="char_95"><caption>Как получить свой стаф Для #1 Крысы, #2 Эджраннеры.</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"char_38",name:"Стаф Для #1 Крысы, #2 Эджраннеры",page:"char",table:`<table id="char_38"><caption>Стаф Для #1 Крысы, #2 Эджраннеры</caption><tbody><tr>
           <th>
             <b>Рокербой</b> <br>
             Снаряжение
@@ -5756,13 +5520,7 @@ const alltables = [
             <br>
             Leathers: верх х4, штаны х2, обувь х2, куртка, шляпа
           </td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "char_97",
-    name: "Как вы получаете свой стаф: Оружие, Броня, Снаряжение, и Киберимпланты Для метода «Полный пакет» (калькуляция)",
-    page: "char",
-    table: `<table id="char_97"><caption>Как вы получаете свой стаф: Оружие, Броня, Снаряжение, и Киберимпланты Для метода «Полный пакет» (калькуляция)</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"char_39",name:"Стаф для метода «Полный пакет»",page:"char",table:`<table id="char_39"><caption>Стаф для метода «Полный пакет»</caption><tbody><tr>
           <td><b>Название</b></td>
           <td><b>Цена</b></td>
         </tr>
@@ -5841,13 +5599,7 @@ const alltables = [
         <tr>
           <td>Верёвка (60 метров)</td>
           <td>20€$</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "char_98",
-    name: "Как мне получить свой стаф: Киберснаряжение Для #1 Крысы, #2 Эджраннеры",
-    page: "char",
-    table: `<table id="char_98"><caption>Как мне получить свой стаф: Киберснаряжение Для #1 Крысы, #2 Эджраннеры</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"char_40",name:"Киберснаряжение Для #1 Крысы, #2 Эджраннеры",page:"char",table:`<table id="char_40"><caption>Киберснаряжение Для #1 Крысы, #2 Эджраннеры</caption><tbody><tr>
           <th><b>Рокербой</b></th>
           <th><b>Соло</b></th>
           <th><b>Нетраннер</b></th>
@@ -5968,13 +5720,7 @@ const alltables = [
           <td>12 Потеря человечности (-2 ЭМП)</td>
           <td>16 Потеря человечности (-2 ЭМП)</td>
           <td>14 Потеря человечности (-2 ЭМП)</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "combat_1",
-    name: "Способ передвижения",
-    page: "combat",
-    table: `<table id="combat_1"><caption>Способ передвижения</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"combat_1",name:"Способ передвижения",page:"combat",table:`<table id="combat_1"><caption>Способ передвижения</caption><tbody><tr>
         <td><b>Способ передвижения</b></td>
         <td><b>м/ч</b></td>
         <td><b>км/ч</b></td>
@@ -5988,13 +5734,7 @@ const alltables = [
         <td>Бег</td>
         <td>5</td>
         <td>11</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "combat_2",
-    name: "Список Действий в Бою",
-    page: "combat",
-    table: `<table id="combat_2"><caption>Список Действий в Бою</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"combat_2",name:"Список Действий в Бою",page:"combat",table:`<table id="combat_2"><caption>Список Действий в Бою</caption><tbody><tr>
         <td><b>Действие</b></td>
         <td><b>Информация</b></td>
       </tr>
@@ -6081,13 +5821,7 @@ const alltables = [
       <tr>
         <td><a href="combat.html#maneuver">Маневрирование на Транспорте</a></td>
         <td>Используйте Действие во время вождения, чтобы сосредоточиться на выполнении опасного маневра.</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "combat_3",
-    name: "Прицельный выстрел",
-    page: "combat",
-    table: `<table id="combat_3"><caption>Прицельный выстрел</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"combat_3",name:"Прицельный выстрел",page:"combat",table:`<table id="combat_3"><caption>Прицельный выстрел</caption><tbody><tr>
         <td><b>Прицелиться в...</b></td>
         <td><b>Эффект</b></td>
       </tr>
@@ -6102,13 +5836,7 @@ const alltables = [
       <tr>
         <td>Ногу</td>
         <td>Если хотябы одно очко урона пробивает броню цели, ваша цель также получает критическое повреждение "Сломанная нога", если у нее остались не сломанные ноги.</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "combat_5",
-    name: "Сложность Одиночного Выстрела в Зависимости от Дальности до Цели",
-    page: "combat",
-    table: `<table id="combat_5"><caption>Сложность Одиночного Выстрела в Зависимости от Дальности до Цели</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"combat_4",name:"DV Одиночного Выстрела от Дальности",page:"combat",table:`<table id="combat_4"><caption>DV Одиночного Выстрела от Дальности</caption><tbody><tr>
         <td><b>Тип Оружия</b></td>
         <td><b>0-6 м</b></td>
         <td><b>7- 12 м</b></td>
@@ -6206,13 +5934,7 @@ const alltables = [
         <td>20</td>
         <td>25</td>
         <td>30</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "combat_6",
-    name: "СЛ Автоматического Огня в зависимости от Дальности",
-    page: "combat",
-    table: `<table id="combat_6"><caption>СЛ Автоматического Огня в зависимости от Дальности</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"combat_5",name:"DV Автоматического Огня от Дальности",page:"combat",table:`<table id="combat_5"><caption>DV Автоматического Огня от Дальности</caption><tbody><tr>
         <td><b>Тип Оружия</b></td>
         <td><b>0-6 м</b></td>
         <td><b>7- 12 м</b></td>
@@ -6235,13 +5957,7 @@ const alltables = [
         <td>17</td>
         <td>20</td>
         <td>25</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "combat_8",
-    name: "Рукопашный бой. Урон",
-    page: "combat",
-    table: `<table id="combat_8"><caption>Рукопашный бой. Урон</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"combat_6",name:"Рукопашный бой. Урон",page:"combat",table:`<table id="combat_6"><caption>Рукопашный бой. Урон</caption><tbody><tr>
         <td><b>ТЕЛ</b></td>
         <td><b>4 и меньше</b></td>
         <td><b>5-6 (или 4-6 с кибер рукой)</b></td>
@@ -6254,13 +5970,7 @@ const alltables = [
         <td>2d6</td>
         <td>3d6</td>
         <td>4d6</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "combat_9",
-    name: "Урон от Боевых Искусств",
-    page: "combat",
-    table: `<table id="combat_9"><caption>Урон от Боевых Искусств</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"combat_7",name:"Урон от Боевых Искусств",page:"combat",table:`<table id="combat_7"><caption>Урон от Боевых Искусств</caption><tbody><tr>
         <td><b>ТЕЛ</b></td>
         <td><b>&lt;4</b></td>
         <td><b>5-6</b></td>
@@ -6273,13 +5983,7 @@ const alltables = [
         <td>2d6</td>
         <td>3d6</td>
         <td>4d6</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "combat_10",
-    name: "Урон от нахождения в огне",
-    page: "combat",
-    table: `<table id="combat_10"><caption>Урон от нахождения в огне</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"combat_8",name:"Урон от нахождения в огне",page:"combat",table:`<table id="combat_8"><caption>Урон от нахождения в огне</caption><tbody><tr>
         <td><b>Интенсивность</b></td>
         <td><b>Пример</b></td>
         <td><b>Эффект</b></td>
@@ -6298,13 +6002,7 @@ const alltables = [
         <td>Смертельный</td>
         <td>Термит</td>
         <td>6 урона напрямую в ПЗ</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "combat_11",
-    name: "Яды и наркотики",
-    page: "combat",
-    table: `<table id="combat_11"><caption>Яды и наркотики</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"combat_9",name:"Яды и наркотики",page:"combat",table:`<table id="combat_9"><caption>Яды и наркотики</caption><tbody><tr>
         <th colspan="4"><b>Яды</b></th>
       </tr>
       <tr>
@@ -6358,13 +6056,7 @@ const alltables = [
         <td>Дизайнерские Наркотики</td>
         <td>15</td>
         <td>Намерения дизайнера</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "combat_13",
-    name: "Параметры укрытий",
-    page: "combat",
-    table: `<table id="combat_13"><caption>Параметры укрытий</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"combat_10",name:"Параметры укрытий",page:"combat",table:`<table id="combat_10"><caption>Параметры укрытий</caption><tbody><tr>
         <td><b>Тип Укрытия</b></td>
         <td><b>ПЗ Толстого</b></td>
         <td><b>ПЗ Тонкого</b></td>
@@ -6398,13 +6090,7 @@ const alltables = [
         <td>Гипсокартон/Строй Пена/ Полимеры</td>
         <td>15 ПЗ</td>
         <td>0 ПЗ (Нет укрытия)</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "combat_14",
-    name: "Примеры Материалов и Толщины Укрытий",
-    page: "combat",
-    table: `<table id="combat_14"><caption>Примеры Материалов и Толщины Укрытий</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"combat_11",name:"Укрытия. Материал и толщина",page:"combat",table:`<table id="combat_11"><caption>Укрытия. Материал и толщина</caption><tbody><tr>
         <td><b>Пример</b></td>
         <td><b>Материал и Толщина</b></td>
         <td><b>ПЗ</b></td>
@@ -6528,13 +6214,7 @@ const alltables = [
         <td>Деревянная Дверь</td>
         <td>Тонкая Древесина</td>
         <td>5ПЗ</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "combat_15",
-    name: "Щиты",
-    page: "combat",
-    table: `<table id="combat_15"><caption>Щиты</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"combat_12",name:"Щиты",page:"combat",table:`<table id="combat_12"><caption>Щиты</caption><tbody><tr>
         <td><b>Тип Щита</b></td>
         <td><b>Описание Щита</b></td>
         <td><b>Пункты Здоровья (ПЗ)</b></td>
@@ -6551,13 +6231,7 @@ const alltables = [
         <td>Мясной Щит. До этого был личностью.</td>
         <td>ТЕЛ СТАТ при жизни.</td>
         <td>Зависит от количества всаженных пуль.</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "combat_23",
-    name: "Ситуации, требующие маневра",
-    page: "combat",
-    table: `<table id="combat_23"><caption>Ситуации, требующие маневра</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"combat_13",name:"Ситуации, требующие маневра",page:"combat",table:`<table id="combat_13"><caption>Ситуации, требующие маневра</caption><tbody><tr>
         <td><b>Манёвр</b></td>
         <td><b>СЛ</b></td>
       </tr>
@@ -6588,13 +6262,7 @@ const alltables = [
       <tr>
         <td>Высшего пилотаж (Воздушный ТС)</td>
         <td>17</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "combat_24",
-    name: "Уровень репутации",
-    page: "combat",
-    table: `<table id="combat_24"><caption>Уровень репутации</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"combat_14",name:"Уровень репутации",page:"combat",table:`<table id="combat_14"><caption>Уровень репутации</caption><tbody><tr>
         <td><b>Уровень</b></td>
         <td><b>Кто знает про вас</b></td>
       </tr>
@@ -6637,13 +6305,7 @@ const alltables = [
       <tr>
         <td>10</td>
         <td>Вас знают во всем мире.</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_1",
-    name: "Тип ночного рынка",
-    page: "economy",
-    table: `<table id="economy_1"><caption>Тип ночного рынка</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_1",name:"Тип ночного рынка",page:"economy",table:`<table id="economy_1"><caption>Тип ночного рынка</caption><tbody><tr>
         <td><b>1d6</b></td>
         <td><b>Тип Продающихся Товаров</b></td>
         <td><b>Описание</b></td>
@@ -6677,13 +6339,7 @@ const alltables = [
         <td>6</td>
         <td>Экипировка для выживания</td>
         <td>Всё необходимое снаряжение, чтобы пережить Красное время.</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_2",
-    name: "Содержимое ночного рынка",
-    page: "economy",
-    table: `<table id="economy_2"><caption>Содержимое ночного рынка</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_2",name:"Содержимое ночного рынка",page:"economy",table:`<table id="economy_2"><caption>Содержимое ночного рынка</caption><tbody><tr>
           <td><b>d100</b></td>
           <td><b>Еда и Наркотики</b></td>
           <td><b>Персональная Электроника</b></td>
@@ -6871,13 +6527,7 @@ const alltables = [
           <td>Любые киберимпланты на выбор ГМ</td>
           <td>Gang Colors</td>
           <td>Аэрогиппо 50€$ (Ценное)</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "economy_3",
-    name: "Оружие ближнего боя",
-    page: "economy",
-    table: `<table id="economy_3"><caption>Оружие ближнего боя</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"economy_3",name:"Оружие ближнего боя",page:"economy",table:`<table id="economy_3"><caption>Оружие ближнего боя</caption><tbody><tr>
         <td><b>Тип оружия ближ. боя</b></td>
         <td><b>Пример оружия</b></td>
         <td><b># кол-во рук</b></td>
@@ -6937,13 +6587,7 @@ const alltables = [
           <br>
           Дорогое
         </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_4",
-    name: "Оружие дальнего боя",
-    page: "economy",
-    table: `<table id="economy_4"><caption>Оружие дальнего боя</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_4",name:"Оружие дальнего боя",page:"economy",table:`<table id="economy_4"><caption>Оружие дальнего боя</caption><tbody><tr>
           <td><b>Тип оружия</b></td>
           <td><b>Оружейный навык</b></td>
           <td><b>Урон 1-го выстрела</b></td>
@@ -7139,13 +6783,7 @@ const alltables = [
         </tr>
         <tr>
           <td colspan="8">Альтернативные режимы огня и фичи: Взрывы</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "economy_5",
-    name: "Оружие Выского и Низкого качества",
-    page: "economy",
-    table: `<table id="economy_5"><caption>Оружие Выского и Низкого качества</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"economy_5",name:"Оружие Выского и Низкого качества",page:"economy",table:`<table id="economy_5"><caption>Оружие Выского и Низкого качества</caption><tbody><tr>
         <td><b>Цена Обычного Качества</b></td>
         <td><b>Цена Низкого Качества</b></td>
         <td><b>Цена Высокого Качества</b></td>
@@ -7164,13 +6802,7 @@ const alltables = [
         <td>500€$ Дорогое</td>
         <td>100€$ Премиум</td>
         <td>1,000€$ Очень дорогое</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_6",
-    name: "Модификации Оружия",
-    page: "economy",
-    table: `<table id="economy_6"><caption>Модификации Оружия</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_6",name:"Модификации Оружия",page:"economy",table:`<table id="economy_6"><caption>Модификации Оружия</caption><tbody><tr>
         <td><b>Модификации</b></td>
         <td><b>Цена</b></td>
       </tr>
@@ -7205,13 +6837,7 @@ const alltables = [
       <tr>
         <td>Снайперский прицел</td>
         <td>100€$ Премиум</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_7",
-    name: "Таблица Магазинов",
-    page: "economy",
-    table: `<table id="economy_7"><caption>Таблица Магазинов</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_7",name:"Таблица Магазинов",page:"economy",table:`<table id="economy_7"><caption>Таблица Магазинов</caption><tbody><tr>
         <td><b>Тип</b></td>
         <td><b>Стандартный</b></td>
         <td><b>Увеличенный</b></td>
@@ -7276,13 +6902,7 @@ const alltables = [
         <td>1</td>
         <td>2</td>
         <td>3</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_8",
-    name: "Боеприпасы",
-    page: "economy",
-    table: `<table id="economy_8"><caption>Боеприпасы</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_8",name:"Боеприпасы",page:"economy",table:`<table id="economy_8"><caption>Боеприпасы</caption><tbody><tr>
         <td><b>Тип Боеприпасов</b></td>
         <td><b>Цена</b></td>
       </tr>
@@ -7337,13 +6957,7 @@ const alltables = [
       <tr>
         <td>Слезоточивый газ</td>
         <td>50€$ Ценное</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_9",
-    name: "Экзотическое Оружие",
-    page: "economy",
-    table: `<table id="economy_9"><caption>Экзотическое Оружие</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_9",name:"Экзотическое Оружие",page:"economy",table:`<table id="economy_9"><caption>Экзотическое Оружие</caption><tbody><tr>
         <td><b>Оружие</b></td>
         <td><b>Цена</b></td>
       </tr>
@@ -7402,13 +7016,7 @@ const alltables = [
       <tr>
         <td>Tsunami Arms Helix</td>
         <td>5,000€$ Роскошь</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_10",
-    name: "Бронезащита",
-    page: "economy",
-    table: `<table id="economy_10"><caption>Бронезащита</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_10",name:"Бронезащита",page:"economy",table:`<table id="economy_10"><caption>Бронезащита</caption><tbody><tr>
         <td><b>Тип Брони</b></td>
         <td>
           <b>
@@ -7507,13 +7115,7 @@ const alltables = [
         </td>
         <td>Нет, но занимает одну руку</td>
         <td>100€$ Премиум</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_11",
-    name: "Снаряжение",
-    page: "economy",
-    table: `<table id="economy_11"><caption>Снаряжение</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_11",name:"Снаряжение",page:"economy",table:`<table id="economy_11"><caption>Снаряжение</caption><tbody><tr>
         <td><b>Название</b></td>
         <td><b>Цена</b></td>
       </tr>
@@ -7728,13 +7330,7 @@ const alltables = [
       <tr>
         <td>Электрогитара или другой инструмент</td>
         <td>500€$ Дорогое</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_12",
-    name: "Стиль",
-    page: "economy",
-    table: `<table id="economy_12"><caption>Стиль</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_12",name:"Стиль",page:"economy",table:`<table id="economy_12"><caption>Стиль</caption><tbody><tr>
           <td></td>
           <td><b>Штаны</b></td>
           <td><b>Верх</b></td>
@@ -7895,13 +7491,7 @@ const alltables = [
           <td>1,000 €$</td>
           <td>1,000 €$</td>
           <td>5,000 €$</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "economy_13",
-    name: "Стилевые импланты (7 слотов)",
-    page: "economy",
-    table: `<table id="economy_13"><caption>Стилевые импланты (7 слотов)</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"economy_13",name:"Стилевые импланты (7 слотов)",page:"economy",table:`<table id="economy_13"><caption>Стилевые импланты (7 слотов)</caption><tbody><tr>
         <td><b>Название</b></td>
         <td><b>Установка</b></td>
         <td><b>Информация</b></td>
@@ -7984,13 +7574,7 @@ const alltables = [
           Премиум
         </td>
         <td>0 (нет)</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_14",
-    name: "Нейронные имплантаты [Нейролинк...]",
-    page: "economy",
-    table: `<table id="economy_14"><caption>Нейронные имплантаты [Нейролинк...]</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_14",name:"Нейронные имплантаты [Нейролинк...]",page:"economy",table:`<table id="economy_14"><caption>Нейронные имплантаты [Нейролинк...]</caption><tbody><tr>
         <td><b>Название</b></td>
         <td><b>Установка</b></td>
         <td><b>Информация</b></td>
@@ -8162,13 +7746,7 @@ const alltables = [
         </td>
         <td>100€$(Премиум)</td>
         <td>7 (2d6)</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_15",
-    name: "Кибероптика [Киберглаз...]",
-    page: "economy",
-    table: `<table id="economy_15"><caption>Кибероптика [Киберглаз...]</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_15",name:"Кибероптика [Киберглаз...]",page:"economy",table:`<table id="economy_15"><caption>Кибероптика [Киберглаз...]</caption><tbody><tr>
           <td><b>Название</b></td>
           <td><b>Установка</b></td>
           <td><b>Информация</b></td>
@@ -8317,13 +7895,7 @@ const alltables = [
           </td>
           <td>100€$(Премиум)</td>
           <td>2 (1d6/2🠉)</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "economy_16",
-    name: "Кибераудио [Комплект Кибераудио...]",
-    page: "economy",
-    table: `<table id="economy_16"><caption>Кибераудио [Комплект Кибераудио...]</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"economy_16",name:"Кибераудио [Комплект Кибераудио...]",page:"economy",table:`<table id="economy_16"><caption>Кибераудио [Комплект Кибераудио...]</caption><tbody><tr>
           <td><b>Название</b></td>
           <td><b>Установка</b></td>
           <td><b>Информация</b></td>
@@ -8489,13 +8061,7 @@ const alltables = [
             Премиум
           </td>
           <td>3 (1d6)</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "economy_17",
-    name: "Внутренние киберимпланты [7 слотов]",
-    page: "economy",
-    table: `<table id="economy_17"><caption>Внутренние киберимпланты [7 слотов]</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"economy_17",name:"Внутренние киберимпланты [7 слотов]",page:"economy",table:`<table id="economy_17"><caption>Внутренние киберимпланты [7 слотов]</caption><tbody><tr>
           <td><b>Название</b></td>
           <td><b>Установка</b></td>
           <td><b>Информация</b></td>
@@ -8656,13 +8222,7 @@ const alltables = [
             Дорогое
           </td>
           <td>14 (4d6)</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "economy_18",
-    name: "Внешние Киберимпланты [7 слотов]",
-    page: "economy",
-    table: `<table id="economy_18"><caption>Внешние Киберимпланты [7 слотов]</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"economy_18",name:"Внешние Киберимпланты [7 слотов]",page:"economy",table:`<table id="economy_18"><caption>Внешние Киберимпланты [7 слотов]</caption><tbody><tr>
         <td><b>Название</b></td>
         <td><b>Установка</b></td>
         <td><b>Информация</b></td>
@@ -8720,13 +8280,7 @@ const alltables = [
         <td>Размер 5х10 см с молнией Realskinn™. Содержимое можно успешно скрыть без проверки.</td>
         <td>100€$(Премиум)</td>
         <td>3 (1d6)</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_19",
-    name: "Киберконечности [Киберрука... или Кибернога...]",
-    page: "economy",
-    table: `<table id="economy_19"><caption>Киберконечности [Киберрука... или Кибернога...]</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_19",name:"Киберконечности [Киберрука... Кибернога...]",page:"economy",table:`<table id="economy_19"><caption>Киберконечности [Киберрука... Кибернога...]</caption><tbody><tr>
           <td><b>Название</b></td>
           <td><b>Установка</b></td>
           <td><b>Информация</b></td>
@@ -9144,13 +8698,7 @@ const alltables = [
             О. дорогое
           </td>
           <td>0 (нет)</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "economy_20",
-    name: "Боргирование",
-    page: "economy",
-    table: `<table id="economy_20"><caption>Боргирование</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"economy_20",name:"Боргирование",page:"economy",table:`<table id="economy_20"><caption>Боргирование</caption><tbody><tr>
           <td><b>Название</b></td>
           <td><b>Установка</b></td>
           <td><b>Информация</b></td>
@@ -9242,570 +8790,513 @@ const alltables = [
             О. дорогое
           </td>
           <td>14 (4d6)</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "economy_21",
-    name: "Оборудование Кибердеки",
-    page: "economy",
-    table: `<table id="economy_21"><caption>Оборудование Кибердеки</caption><tbody><tr>
-        <td><b>Название</b></td>
-        <td><b>Информация</b></td>
+        </tr></tbody></table>`},{id:"economy_21",name:"Кибердеки",page:"economy",table:`<table id="economy_21"><caption>Кибердеки</caption><tbody><tr>
+        <td><b>Тип</b></td>
         <td><b>Цена</b></td>
+        <td><b>Слоты</b></td>
       </tr>
       <tr>
-        <td>Резервный Диск</td>
-        <td>
-          Установленный на Кибердеке Резервный Диск "сохраняет" Программы (Кроме Чёрного ЛЬДА), которые уничтожаются, помещая их на Резервный Диск за мгновение до их кончины. Мясным Действием, Нетраннер может переустановить все сохраненные Программы, на свою деку, если на ней есть свободные Слоты. Если снять с Кибердеки Резервный Диск, с него автоматически всё сотрется. Предустановленные Программы действующие "один раз за нетран" и тому подобное, переустанавливаются в том же состоянии, в каком были "сохранены" перед уничтожением, поэтому вы не сможете уничтожить свою Броню, чтобы восстановить её.
-          <b>Требуется 2 Слота для Оборудования.</b>
-        </td>
-        <td>
-          100€$
-          <br>
-          Премиум
-        </td>
-      </tr>
-      <tr>
-        <td>ДНК Замок</td>
-        <td>
-          Кибердека с ДНК Замком, может блокироваться и разблокироваться с помощью отпечатка пальца, радужной оболочки, капли крови или любого другого биометрического метода, по желанию. Метод зависит от модели ДНК Замка. К заблокированной Кибердеке невозможно получить доступ без биометрического ключа. Ну или пройти проверку Злектроника/Безопасность СЛ17.
-          <b>Требуется 2 Слота для Оборудования</b>.
-        </td>
-        <td>
-          100€$
-          <br>
-          Премиум
-        </td>
-      </tr>
-      <tr>
-        <td>Закалённая схема</td>
-        <td>Кибердеку с Закаленной Схемой, нельзя временно отключить, вывести из строя или уничтожить ЗМИ Зффектами, такими как импульсом СБЧ Пистолета, или Зффектами от Программ (кроме Чёрного ЛЬДА).</td>
-        <td>
-          100€$
-          <br>
-          Премиум
-        </td>
-      </tr>
-      <tr>
-        <td>Теплоизоляция Проводки</td>
-        <td>Кибердека с Теплоизоляцией Проводки, не может загореться и поджечь одежду пользователя из-за Зффекта Программы.</td>
-        <td>
-          100€$
-          <br>
-          Премиум
-        </td>
-      </tr>
-      <tr>
-        <td>КРАШ Барьер</td>
-        <td>
-          На Кибердеку с КРАШ Барьером, не действуют Зффекты Программ, которые заставляют Нетраннера Отключится.
-          <b>Требуется 2 Слота для Оборудования</b>.
-        </td>
-        <td>
-          100€$
-          <br>
-          Премиум
-        </td>
-      </tr>
-      <tr>
-        <td>Увеличение радиуса</td>
-        <td>Кибердека с Увеличенным радиусом может подключаться к точке доступа на расстоянии до 8 метров.</td>
-        <td>
-          100€$
-          <br>
-          Премиум
-        </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_22",
-    name: "Программы. Усиления",
-    page: "economy",
-    table: `<table id="economy_22"><caption>Программы. Усиления</caption><tbody><tr>
-        <td><b>Название</b></td>
-        <td><b>Класс</b></td>
-        <td><b>АТК</b></td>
-        <td><b>ЗАЩ</b></td>
-        <td><b>REZ</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td>Стиратель</td>
-        <td>Усилитель</td>
-        <td>0</td>
-        <td>0</td>
-        <td>7</td>
-        <td>20€$ (Обычное)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Розовый шарик, испускающий крошечные мыльные пузыри.
-          <br>
-          <b>Эффект:</b> +2 к проверке "Плащ", пока эта программа Активна.
-        </td>
-      </tr>
-      <tr>
-        <td>Найдёмся!</td>
-        <td>Усилитель</td>
-        <td>0</td>
-        <td>0</td>
-        <td>7</td>
-        <td>20€$ (Обычное)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Сверкающее серебряное увеличительное стекло медленно вращается на месте.
-          <br>
-          <b>Эффект:</b> +2 к проверке "Первопроходец", пока эта программа Активна.
-        </td>
-      </tr>
-
-      <tr>
-        <td>Быстрый Гонзалес</td>
-        <td>Усилитель</td>
-        <td>0</td>
-        <td>0</td>
-        <td>7</td>
+        <td>Кибердека плохого качества</td>
         <td>100€$ (Премиум)</td>
+        <td>5</td>
       </tr>
       <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Поднимающийся столб пыли за Нетраннером.
-          <br>
-          <b>Эффект:</b> Повышает Скорость на +2 до тех пор, пока эта программа Активна.
-        </td>
-      </tr>
-      <tr>
-        <td>Червь</td>
-        <td>Усилитель</td>
-        <td>0</td>
-        <td>0</td>
-        <td>7</td>
-        <td>50€$ (Ценное)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Золотой механический червь с неоново-зелеными глазами.
-          <br>
-          <b>Эффект:</b> +2 к проверке "Бэкдор", пока эта программа Активна.
-        </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_23",
-    name: "Программы. Защитные",
-    page: "economy",
-    table: `<table id="economy_23"><caption>Программы. Защитные</caption><tbody><tr>
-        <td><b>Название</b></td>
-        <td><b>Класс</b></td>
-        <td><b>АТК</b></td>
-        <td><b>ЗАЩ</b></td>
-        <td><b>REZ</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td>Доспехи</td>
-        <td>Защита</td>
-        <td>0</td>
-        <td>0</td>
-        <td>7</td>
-        <td>50€$ (Ценное)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Прозрачные золотые доспехи, Нетраннера.
-          <br>
-          <b>Эффект:</b> Снижает урон мозгу на 4, пока она Активна. Одновременно может быть запущена только 1 копия этой Программы. Каждую копию этой Программы можно использовать только 1 раз за подключение.
-        </td>
-      </tr>
-      <tr>
-        <td>Зенитка</td>
-        <td>Защита</td>
-        <td>0</td>
-        <td>0</td>
-        <td>7</td>
-        <td>50€$ (Ценное)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Облако ослепляющих, сияющих, разноцветных огней кружащих вокруг Нетраннера.
-          <br>
-          <b>Эффект:</b> Уменьшает АТК, всех Программ против вас до 0 (кроме Программ Чёрного ЛЬДА), пока она Активна. Одновременно может быть запущена только 1 копия этой Программы. Каждую копию этой Программы можно использовать только один раз за подключение.
-        </td>
-      </tr>
-      <tr>
-        <td>Щит</td>
-        <td>Защита</td>
-        <td>0</td>
-        <td>0</td>
-        <td>7</td>
-        <td>20€$ (Обычное)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Мерцающий серебряный энергетический барьер, окружающий Нетраннера.
-          <br>
-          <b>Эффект:</b> Обнуляет 1-й успешный Эффект Программы (Не Чёрного ЛЬДА) наносящий урон мозгу. Обнулив урон Щит Деактивируется. Одновременно запускается 1 копия Программы. Копию этой Программы можно использовать только 1 раз за подключение.
-        </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_24",
-    name: "Программы. Атакующие",
-    page: "economy",
-    table: `<table id="economy_24"><caption>Программы. Атакующие</caption><tbody><tr>
-        <td><b>Название</b></td>
-        <td><b>Класс</b></td>
-        <td><b>АТК</b></td>
-        <td><b>ЗАЩ</b></td>
-        <td><b>REZ</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td>Банхаммер</td>
-        <td>Против Программ</td>
-        <td>1</td>
-        <td>0</td>
-        <td>0</td>
-        <td>50€$ (Ценное)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Гигантский пылающий белый молот, в руках Нетраннера.
-          <br>
-          <b>Эффект:</b> Наносит 2d6 урона Программам Чёрного ЛЬДА, остальным 1 Программам наносит 3d6.
-        </td>
-      </tr>
-      <tr>
-        <td>Меч</td>
-        <td>Против Программ</td>
-        <td>1</td>
-        <td>0</td>
-        <td>0</td>
-        <td>50€$ (Ценное)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Светящаяся энергетическая катана, появляющаяся в руке Нетраннера.
-          <br>
-          <b>Эффект:</b> Наносит 3d6 урона Программам Чёрного ЛЬДА, остальным Программам наносит 2d6.
-        </td>
-      </tr>
-      <tr>
-        <td>ДекаЛОМ</td>
-        <td>Против Людей</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>100€$ (Премиум)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Мультяшная динамитная шашка, брошенная Нетраннером.
-          <br>
-          <b>Эффект:</b> Выбрасывает вражеского Нетраннера из Архитектуры. Нетраннер испытывает все Эффекты Активированного Чёрного ЛЬДА, с которым он столкнулся в Архитектуре.
-        </td>
-      </tr>
-      <tr>
-        <td>Адская стрела</td>
-        <td>Против Людей</td>
-        <td>2</td>
-        <td>0</td>
-        <td>0</td>
-        <td>100€$ (Премиум)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Нетраннер из руки выпускает огненную стрелу
-          <br>
-          <b>Эффект:</b> Наносит 2d6 Урона мозгу Нетраннера. Кибердека без теплоизоляции загорается вместе с одеждой Нетраннера. В конце каждого своего хода, Нетраннер получает 2 урона, пока не потратит Мясное действие, чтобы потушить себя. Данный эффект не складывается.
-        </td>
-      </tr>
-      <tr>
-        <td>Нервотрёп</td>
-        <td>Против Людей</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>100€$ (Премиум)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Хромированный шар, брошенный Нетраннером, искрящийся от электричества.
-          <br>
-          <b>Эффект:</b> ИНТ, РЕА, ЛВК вражеского Нетраннера, в течении следующего часа снижается на 1d6 (минимум 1). Воздействие в основном психосоматическое и спустя час, проходит.
-        </td>
-      </tr>
-      <tr>
-        <td>Смертельный Яд</td>
-        <td>Против Людей</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>100€$ (Премиум)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Нетраннер из пальца "стреляет" неоново-зеленым лучом.
-          <br>
-          <b>Эффект:</b> Уничтожает одну случайную Программу из Кибердеки Нетраннера (Кроме Чёрного ЛЬДА).
-        </td>
-      </tr>
-      <tr>
-        <td>Суперклей</td>
-        <td>Против Людей</td>
-        <td>2</td>
-        <td>0</td>
-        <td>0</td>
-        <td>100€$ (Премиум)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Из руки Нетраннера вылетела масса липкой красной слизи.
-          <br>
-          <b>Эффект:</b> В течение ld6 Раундов Нетраннер не может двигаться вглубь Архитектуры, а также безопасно Отключится (но может не безопасно). Каждую копию этой Программы можно использовать только один раз за подключение.
-        </td>
-      </tr>
-      <tr>
-        <td>Спираль</td>
-        <td>Против Людей</td>
-        <td>1</td>
-        <td>0</td>
-        <td>0</td>
-        <td>50€$ (Ценное)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Из пальца Нетраннера исходит мерцающая неоновым светом двойная спираль.
-          <br>
-          <b>Эффект:</b> Наносит ld6 Урона мозгу Нетраннера и уменьшает количество Сетевых Действий, которые Нетраннер может совершить в свой следующий Ход на l (минимум 2).
-        </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_25",
-    name: "Программы. Чёрный лёд",
-    page: "economy",
-    table: `<table id="economy_25"><caption>Программы. Чёрный лёд</caption><tbody><tr>
-        <td><b>Имя</b></td>
-        <td><b>Класс</b></td>
-        <td><b>ВСП</b></td>
-        <td><b>СКО</b></td>
-        <td><b>АТК</b></td>
-        <td><b>ЗАЩ</b></td>
-        <td><b>REZ</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td>Аспид</td>
-        <td>Чёрный ЛЁД Против Людей</td>
-        <td>4</td>
-        <td>6</td>
-        <td>2</td>
-        <td>2</td>
-        <td>15</td>
-        <td>100€$ (Премиум)</td>
-      </tr>
-      <tr>
-        <td colspan="9">
-          <b>Иконка:</b> Золотая Египетская кобра, извергающая лучи неонового зеленого света.
-          <br>
-          <b>Эффект:</b> Уничтожает одну случайную Программу из Кибердеки Нетраннера.
-        </td>
-      </tr>
-      <tr>
-        <td>Великан</td>
-        <td>Чёрный ЛЁД Против Людей</td>
-        <td>2</td>
-        <td>2</td>
-        <td>8</td>
-        <td>4</td>
-        <td>25</td>
-        <td>1,000€$ (О. дорогое)</td>
-      </tr>
-      <tr>
-        <td colspan="9">
-          <b>Иконка:</b> Гигантская пара ног возвышается над вражеским Нетраннером.
-          <br>
-          <b>Эффект:</b> Наносит 3d6 Урона мозгу Нетраннера. Выбрасывает Нетраннера из текущего "забега". Нетраннер испытывает все Эффекты Активированного Чёрного ЛЬДА, с которым он столкнулся в Архитектуре кроме Великана.
-        </td>
-      </tr>
-      <tr>
-        <td>Адская Гончая</td>
-        <td>Чёрный ЛЁД Против Людей</td>
-        <td>6</td>
-        <td>6</td>
-        <td>6</td>
-        <td>2</td>
-        <td>20</td>
+        <td>Кибердека</td>
         <td>500€$ (Дорогое)</td>
+        <td>7</td>
       </tr>
       <tr>
-        <td colspan="9">
-          <b>Иконка:</b> Огромный черный металлический волк. С Белыми пылающими глазами и пламенем, проносящимся волнами по всему телу. Скрежещущим металлическим голосом, повторяет имя вражеского Нетраннера.
-          <br>
-          <b>Эффект:</b> Наносит 2d6 урона мозгу Нетраннера. Кибердека без теплоизоляции загорается вместе с одеждой Нетраннера. В конце каждого своего хода, Нетраннер получает 2 урона, пока не потратит Мясное действие, чтобы потушить себя. Данный эффект не складывается.
-        </td>
-      </tr>
-      <tr>
-        <td>Кракен</td>
-        <td>Чёрный ЛЁД Против Людей</td>
-        <td>6</td>
-        <td>2</td>
-        <td>8</td>
-        <td>4</td>
-        <td>30</td>
+        <td>Кибердека отличного качества</td>
         <td>1,000€$ (О. дорогое)</td>
-      </tr>
-      <tr>
-        <td colspan="9">
-          <b>Иконка:</b> Множество извивающихся оранжевых щупалец, торчащих из стен. Их присоски покрыты липкой красной слизью.
-          <br>
-          <b>Эффект:</b> Наносит 3d6 Урона мозгу Нетраннера. В течении двух Ходов Нетраннер не может двигаться в глубь Архитектуры а также безопасно Отключится (Нетраннер всё ещё может небезопасно Отключится).
-        </td>
-      </tr>
-      <tr>
-        <td>Лич</td>
-        <td>Чёрный ЛЁД Против Людей</td>
-        <td>8</td>
-        <td>2</td>
-        <td>6</td>
-        <td>2</td>
-        <td>25</td>
-        <td>500€$ (Дорогое)</td>
-      </tr>
-      <tr>
-        <td colspan="9">
-          <b>Иконка:</b> Металлический скелет, завернутый в черную мантию. Его руки украшены кольцами, которые искрятся от электричества.
-          <br>
-          <b>Эффект:</b> ИНТ, РЕА, и ЛВК вражеского Нетраннера, в течение следующего часа снижается на ld6 (минимум 1). Воздействие в основном психосоматическое и спустя час, проходит.
-        </td>
-      </tr>
-      <tr>
-        <td>Ворон</td>
-        <td>Чёрный ЛЁД Против Людей</td>
-        <td>6</td>
-        <td>4</td>
-        <td>4</td>
-        <td>2</td>
-        <td>15</td>
-        <td>50€$ (Денное)</td>
-      </tr>
-      <tr>
-        <td colspan="9">
-          <b>Иконка:</b> Ворон в латных доспехах держащий светящееся белое копьё.
-          <br>
-          <b>Эффект:</b> Отключает 1 случайную Защитную Программу из Активированных Прог. вражеского Нетраннера, затем наносит 1d6 урона мозгу Раннеру.
-        </td>
-      </tr>
-      <tr>
-        <td>Скорпион</td>
-        <td>Чёрный ЛЁД Против Людей</td>
-        <td>2</td>
-        <td>6</td>
-        <td>2</td>
-        <td>2</td>
-        <td>15</td>
-        <td>100€$ (Премиум)</td>
-      </tr>
-      <tr>
-        <td colspan="9">
-          <b>Иконка:</b> Крохотный чёрный скорпион, который очень громко шипит, когда вражеский Нетраннер говорит.
-          <br>
-          <b>Эффект:</b> СКО вражеского Нетраннера, в течение часа снижается на 1d6 (минимум 1). Воздействие психологческое и спустя час, проходит.
-        </td>
-      </tr>
-      <tr>
-        <td>Скунс</td>
-        <td>Чёрный ЛЁД Против Людей</td>
-        <td>2</td>
-        <td>4</td>
-        <td>4</td>
-        <td>2</td>
-        <td>10</td>
-        <td>500€$ (Дорогое)</td>
-      </tr>
-      <tr>
-        <td colspan="9">
-          <b>Иконка:</b> Мультяшный скунс, который ходит на задних лапах и очень пристально следит за Нетраннером.
-          <br>
-          <b>Эффект:</b> Вражеский Раннер поражённый Эффектом, получает минус 2 ко всем Проверкам “Ускользнуть", пока эта Программа Активирована. Каждый Скунс за один раз может воздействовать только на одного Нетраннера, но эффекты нескольких Скунсов могут складываться.
-        </td>
-      </tr>
-      <tr>
-        <td>Висп</td>
-        <td>Чёрный ЛЁД Против Людей</td>
-        <td>4</td>
-        <td>4</td>
-        <td>4</td>
-        <td>2</td>
-        <td>15</td>
-        <td>50€$ (Денное)</td>
-      </tr>
-      <tr>
-        <td colspan="9">
-          <b>Иконка:</b> Светящийся шар с одним крошечным глазом, потрескивающим энергией.
-          <br>
-          <b>Эффект:</b> Наносит 1d6 Урона мозгу Нетраннера и уменьшает количество Сетевых Действий, которые Нетраннер может сделать в следующий ход на 1 (минимум 2).
-        </td>
-      </tr>
-      <tr>
-        <td>Дракон</td>
-        <td>Чёрный ЛЁД Против Программ</td>
-        <td>6</td>
-        <td>4</td>
-        <td>6</td>
-        <td>6</td>
-        <td>30</td>
-        <td>1,000€$ (О. дорогое)</td>
-      </tr>
-      <tr>
-        <td colspan="9">
-          <b>Иконка:</b> Робот-дракон с золотой чешуей, окутанный электрическими разрядами.
-          <br>
-          <b>Эффект:</b> Наносит 6d6 урона Программе. Если этого урона хватает, чтобы отключить программу, то она уничтожается.
-        </td>
-      </tr>
-      <tr>
-        <td>Убийца</td>
-        <td>Чёрный ЛЁД Против Программ</td>
-        <td>4</td>
-        <td>8</td>
-        <td>6</td>
-        <td>2</td>
-        <td>20</td>
-        <td>500€$ (Дорогое)</td>
-      </tr>
-      <tr>
-        <td colspan="9">
-          <b>Иконка:</b> Робот-самурай с красными глазами, держащий светящуюся катану.
-          <br>
-          <b>Эффект:</b> Наносит 4d6 урона Программе. Если этого урона хватает, чтобы отключить программу, то она уничтожается.
-        </td>
-      </tr>
-      <tr>
-        <td>Саблезубый</td>
-        <td>Чёрный ЛЁД Против Программ</td>
-        <td>8</td>
-        <td>6</td>
-        <td>6</td>
-        <td>2</td>
-        <td>25</td>
-        <td>1,000€$ (О. дорогое)</td>
-      </tr>
-      <tr>
-        <td colspan="9">
-          <b>Иконка:</b> Огромный неуклюжий кот со светящимися белыми клыками.
-          <br>
-          <b>Эффект:</b> Наносит 6d6 урона Программе. Если этого урона хватает, чтобы Отключить программу, то она уничтожается.
-        </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_26",
-    name: "Покупка Сетевой Архетиктуры. Количество этажей",
-    page: "economy",
-    table: `<table id="economy_26"><caption>Покупка Сетевой Архетиктуры. Количество этажей</caption><tbody><tr>
+        <td>9</td>
+      </tr></tbody></table>`},{id:"economy_22",name:"Оборудование для Кибердеки",page:"economy",table:`<table id="economy_22"><caption>Оборудование для Кибердеки</caption><tbody><tr>
+          <td><b>Название</b></td>
+          <td><b>Информация</b></td>
+          <td><b>Цена</b></td>
+        </tr>
+        <tr>
+          <td><b>Резервный Диск</b></td>
+          <td>
+            Установленный на Кибердеке Резервный Диск "сохраняет" Программы (Кроме Чёрного ЛЬДА), которые уничтожаются, помещая их на Резервный Диск за мгновение до их кончины. Мясным Действием, Нетраннер может переустановить все сохраненные Программы, на свою деку, если на ней есть свободные Слоты. Если снять с Кибердеки Резервный Диск, с него автоматически всё сотрется. Предустановленные Программы действующие "один раз за нетран" и тому подобное, переустанавливаются в том же состоянии, в каком были "сохранены" перед уничтожением, поэтому вы не сможете уничтожить свою броню, чтобы восстановить её.
+            <b>Требуется 2 Слота для Оборудования.</b>
+          </td>
+          <td>100€$ (Премиум)</td>
+        </tr>
+        <tr>
+          <td><b>ДНК Замок</b></td>
+          <td>
+            Кибердека с ДНК Замком, может блокироваться и разблокироваться с помощью отпечатка пальца, радужной оболочки, капли крови или любого другого биометрического метода, по желанию. Метод зависит от модели ДНК Замка. К заблокированной Кибердеке невозможно получить доступ без биометрического ключа. Ну или пройти проверку Электроника/Безопасность СЛ17.
+            <b>Требуется 2 Слота для Оборудования.</b>
+          </td>
+          <td>100€$ (Премиум)</td>
+        </tr>
+        <tr>
+          <td><b>Закалённая схема</b></td>
+          <td>Кибердеку с Закаленной Схемой, нельзя временно вывести из строя или уничтожить ЭМИ Эффектами, например импульсом СВЧ Пистолета или Эффектами от Программ (кроме Чёрного ЛЬДА).</td>
+          <td>100€$ (Премиум)</td>
+        </tr>
+        <tr>
+          <td><b>Теплоизоляция Проводки</b></td>
+          <td>Кибердека с Теплоизоляцией Проводки, не может загореться и поджечь одежду пользователя из-за Эффекта Программы.</td>
+          <td>100€$ (Премиум)</td>
+        </tr>
+        <tr>
+          <td><b>КРАШ Барьер</b></td>
+          <td>
+            На Кибердеку с КРАШ Барьером, не действуют Эффекты Программ, которые заставляют Нетраннера Отключится.
+            <b>Требуется 2 Слота для Оборудования.</b>
+          </td>
+          <td>100€$ (Премиум)</td>
+        </tr>
+        <tr>
+          <td><b>Увеличение радиуса</b></td>
+          <td>Кибердека с Увеличенным радиусом может подключаться к точке доступа на расстоянии до 8 метров.</td>
+          <td>100€$ (Премиум)</td>
+        </tr></tbody></table>`},{id:"economy_23",name:"Программы. Усиления",page:"economy",table:`<table id="economy_23"><caption>Программы. Усиления</caption><tbody><tr>
+          <td><b>Название</b></td>
+          <td><b>Класс</b></td>
+          <td><b>АТК</b></td>
+          <td><b>ЗАЩ</b></td>
+          <td><b>REZ</b></td>
+          <td><b>Цена</b></td>
+        </tr>
+        <tr>
+          <td><b>Стиратель</b></td>
+          <td>Усилитель</td>
+          <td>0</td>
+          <td>0</td>
+          <td>7</td>
+          <td>20€$ (Обычное)</td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <b>Иконка:</b> Розовый шарик, испускающий крошечные мыльные пузыри.<br>
+            <b>Эффект:</b> +2 к проверке "Плащ", пока эта программа Активна.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Найдёмся!</b></td>
+          <td>Усилитель</td>
+          <td>0</td>
+          <td>0</td>
+          <td>7</td>
+          <td>20€$ (Обычное)</td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <b>Иконка:</b> Сверкающее серебряное увеличительное стекло медленно вращается на месте.<br>
+            <b>Эффект:</b> +2 к проверке "Первопроходец", пока эта программа Активна.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Быстрый Гонзалес</b></td>
+          <td>Усилитель</td>
+          <td>0</td>
+          <td>0</td>
+          <td>7</td>
+          <td>100€$ (Премиум)</td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <b>Иконка:</b> Поднимающийся столб пыли за Нетраннером.<br>
+            <b>Эффект:</b> Повышает Скорость на +2 до тех пор, пока эта программа Активна.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Червь</b></td>
+          <td>Усилитель</td>
+          <td>0</td>
+          <td>0</td>
+          <td>7</td>
+          <td>50€$ (Ценное)</td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <b>Иконка:</b> Золотой механический червь с неоново-зелеными глазами.<br>
+            <b>Эффект:</b> +2 к проверке "Бэкдор", пока эта программа Активна.
+          </td>
+        </tr></tbody></table>`},{id:"economy_24",name:"Программы. Защитные",page:"economy",table:`<table id="economy_24"><caption>Программы. Защитные</caption><tbody><tr>
+          <td><b>Название</b></td>
+          <td><b>Класс</b></td>
+          <td><b>АТК</b></td>
+          <td><b>ЗАЩ</b></td>
+          <td><b>REZ</b></td>
+          <td><b>Цена</b></td>
+        </tr>
+        <tr>
+          <td><b>Доспехи</b></td>
+          <td>Защита</td>
+          <td>0</td>
+          <td>0</td>
+          <td>7</td>
+          <td>50€$ (Ценное)</td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <b>Иконка:</b> Прозрачные золотые доспехи, Нетраннера.<br>
+            <b>Эффект:</b> Снижает урон мозгу на 4, пока она Активна. Одновременно может быть запущена только 1 копия этой Программы. Каждую копию этой Программы можно использовать только 1 раз за подключение.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Зенитка</b></td>
+          <td>Защита</td>
+          <td>0</td>
+          <td>0</td>
+          <td>7</td>
+          <td>50€$ (Ценное)</td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <b>Иконка:</b> Облако ослепляющих, сияющих, разноцветных огней кружащих вокруг Нетраннера.<br>
+            <b>Эффект:</b> Уменьшает АТК, всех Программ против вас до 0 (кроме Программ Чёрного ЛЬДА), пока она Активна. Одновременно может быть запущена только 1 копия этой Программы. Каждую копию этой Программы можно использовать только один раз за подключение.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Щит</b></td>
+          <td>Защита</td>
+          <td>0</td>
+          <td>0</td>
+          <td>7</td>
+          <td>20€$ (Обычное)</td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <b>Иконка:</b> Мерцающий серебряный энергетический барьер, окружающий Нетраннера.<br>
+            <b>Эффект:</b> Обнуляет 1-й успешный Эффект Программы (Не Чёрного ЛЬДА) наносящий урон мозгу. Обнулив урон Щит Деактивируется. Одновременно запускается 1 копия Программы. Копию этой Программы можно использовать только 1 раз за подключение.
+          </td>
+        </tr></tbody></table>`},{id:"economy_25",name:"Программы. Атакующие",page:"economy",table:`<table id="economy_25"><caption>Программы. Атакующие</caption><tbody><tr>
+          <td><b>Название</b></td>
+          <td><b>Класс</b></td>
+          <td><b>АТК</b></td>
+          <td><b>ЗАЩ</b></td>
+          <td><b>REZ</b></td>
+          <td><b>Цена</b></td>
+        </tr>
+        <tr>
+          <td><b>Банхаммер</b></td>
+          <td>Против Программ</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>50€$ (Ценное)</td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <b>Иконка:</b> Гигантский пылающий белый молот, в руках Нетраннера.<br>
+            <b>Эффект:</b> Наносит 2d6 урона Программам Чёрного ЛЬДА, остальным 1 Программам наносит 3d6.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Меч</b></td>
+          <td>Против Программ</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>50€$ (Ценное)</td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <b>Иконка:</b> Светящаяся энергетическая катана, появляющаяся в руке Нетраннера.<br>
+            <b>Эффект:</b> Наносит 3d6 урона Программам Чёрного ЛЬДА, остальным Программам наносит 2d6.
+          </td>
+        </tr>
+        <tr>
+          <td><b>ДекаЛОМ</b></td>
+          <td>Против Людей</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>100€$ (Премиум)</td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <b>Иконка:</b> Мультяшная динамитная шашка, брошенная Нетраннером.<br>
+            <b>Эффект:</b> Выбрасывает вражеского Нетраннера из Архитектуры. Нетраннер испытывает все Эффекты Активированного Чёрного ЛЬДА, с которым он столкнулся в Архитектуре.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Адская стрела</b></td>
+          <td>Против Людей</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>100€$ (Премиум)</td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <b>Иконка:</b> Нетраннер из руки выпускает огненную стрелу<br>
+            <b>Эффект:</b> Наносит 2d6 Урона мозгу Нетраннера. Кибердека без теплоизоляции загорается вместе с одеждой Нетраннера. В конце каждого своего хода, Нетраннер получает 2 урона, пока не потратит Мясное действие, чтобы потушить себя. Данный эффект не складывается.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Нервотрёп</b></td>
+          <td>Против Людей</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>100€$ (Премиум)</td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <b>Иконка:</b> Хромированный шар, брошенный Нетраннером, искрящийся от электричества.<br>
+            <b>Эффект:</b> ИНТ, РЕА, ЛВК вражеского Нетраннера, в течении следующего часа снижается на 1d6 (минимум 1). Воздействие в основном психосоматическое и спустя час, проходит.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Смертельный Яд</b></td>
+          <td>Против Людей</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>100€$ (Премиум)</td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <b>Иконка:</b> Нетраннер из пальца "стреляет" неоново-зеленым лучом.<br>
+            <b>Эффект:</b> Уничтожает одну случайную Программу из Кибердеки Нетраннера (Кроме Чёрного ЛЬДА).
+          </td>
+        </tr>
+        <tr>
+          <td><b>Суперклей</b></td>
+          <td>Против Людей</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>100€$ (Премиум)</td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <b>Иконка:</b> Из руки Нетраннера вылетела масса липкой красной слизи.<br>
+            <b>Эффект:</b> В течение ld6 Раундов Нетраннер не может двигаться вглубь Архитектуры, а также безопасно Отключится (но может не безопасно). Каждую копию этой Программы можно использовать только один раз за подключение.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Спираль</b></td>
+          <td>Против Людей</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>50€$ (Ценное)</td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <b>Иконка:</b> Из пальца Нетраннера исходит мерцающая неоновым светом двойная спираль.<br>
+            <b>Эффект:</b> Наносит ld6 Урона мозгу Нетраннера и уменьшает количество Сетевых Действий, которые Нетраннер может совершить в свой следующий Ход на l (минимум 2).
+          </td>
+        </tr></tbody></table>`},{id:"economy_26",name:"Чёрный лёд",page:"economy",table:`<table id="economy_26"><caption>Чёрный лёд</caption><tbody><tr>
+          <td><b>Имя</b></td>
+          <td><b>Класс</b></td>
+          <td><b>ВСП</b></td>
+          <td><b>СКО</b></td>
+          <td><b>АТК</b></td>
+          <td><b>ЗАЩ</b></td>
+          <td><b>REZ</b></td>
+          <td><b>Цена</b></td>
+        </tr>
+        <tr>
+          <td><b>Аспид</b></td>
+          <td>Чёрный ЛЁД Против Людей</td>
+          <td>4</td>
+          <td>6</td>
+          <td>2</td>
+          <td>2</td>
+          <td>15</td>
+          <td>100€$ (Премиум)</td>
+        </tr>
+        <tr>
+          <td colspan="9">
+            <b>Иконка:</b> Золотая Египетская кобра, извергающая лучи неонового зеленого света.
+            <br>
+            <b>Эффект:</b> Уничтожает одну случайную Программу из Кибердеки Нетраннера.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Великан</b></td>
+          <td>Чёрный ЛЁД Против Людей</td>
+          <td>2</td>
+          <td>2</td>
+          <td>8</td>
+          <td>4</td>
+          <td>25</td>
+          <td>1,000€$ (О. дорогое)</td>
+        </tr>
+        <tr>
+          <td colspan="9">
+            <b>Иконка:</b> Гигантская пара ног возвышается над вражеским Нетраннером.
+            <br>
+            <b>Эффект:</b> Наносит 3d6 Урона мозгу Нетраннера. Выбрасывает Нетраннера из текущего "забега". Нетраннер испытывает все Эффекты Активированного Чёрного ЛЬДА, с которым он столкнулся в Архитектуре кроме Великана.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Адская Гончая</b></td>
+          <td>Чёрный ЛЁД Против Людей</td>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>2</td>
+          <td>20</td>
+          <td>500€$ (Дорогое)</td>
+        </tr>
+        <tr>
+          <td colspan="9">
+            <b>Иконка:</b> Огромный черный металлический волк. С Белыми пылающими глазами и пламенем, проносящимся волнами по всему телу. Скрежещущим металлическим голосом, повторяет имя вражеского Нетраннера.
+            <br>
+            <b>Эффект:</b> Наносит 2d6 урона мозгу Нетраннера. Кибердека без теплоизоляции загорается вместе с одеждой Нетраннера. В конце каждого своего хода, Нетраннер получает 2 урона, пока не потратит Мясное действие, чтобы потушить себя. Данный эффект не складывается.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Кракен</b></td>
+          <td>Чёрный ЛЁД Против Людей</td>
+          <td>6</td>
+          <td>2</td>
+          <td>8</td>
+          <td>4</td>
+          <td>30</td>
+          <td>1,000€$ (О. дорогое)</td>
+        </tr>
+        <tr>
+          <td colspan="9">
+            <b>Иконка:</b> Множество извивающихся оранжевых щупалец, торчащих из стен. Их присоски покрыты липкой красной слизью.
+            <br>
+            <b>Эффект:</b> Наносит 3d6 Урона мозгу Нетраннера. В течении двух Ходов Нетраннер не может двигаться в глубь Архитектуры а также безопасно Отключится (Нетраннер всё ещё может небезопасно Отключится).
+          </td>
+        </tr>
+        <tr>
+          <td><b>Лич</b></td>
+          <td>Чёрный ЛЁД Против Людей</td>
+          <td>8</td>
+          <td>2</td>
+          <td>6</td>
+          <td>2</td>
+          <td>25</td>
+          <td>500€$ (Дорогое)</td>
+        </tr>
+        <tr>
+          <td colspan="9">
+            <b>Иконка:</b> Металлический скелет, завернутый в черную мантию. Его руки украшены кольцами, которые искрятся от электричества.
+            <br>
+            <b>Эффект:</b> ИНТ, РЕА, и ЛВК вражеского Нетраннера, в течение следующего часа снижается на ld6 (минимум 1). Воздействие в основном психосоматическое и спустя час, проходит.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Ворон</b></td>
+          <td>Чёрный ЛЁД Против Людей</td>
+          <td>6</td>
+          <td>4</td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+          <td>50€$ (Денное)</td>
+        </tr>
+        <tr>
+          <td colspan="9">
+            <b>Иконка:</b> Ворон в латных доспехах держащий светящееся белое копьё.
+            <br>
+            <b>Эффект:</b> Отключает 1 случайную Защитную Программу из Активированных Прог. вражеского Нетраннера, затем наносит 1d6 урона мозгу Раннеру.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Скорпион</b></td>
+          <td>Чёрный ЛЁД Против Людей</td>
+          <td>2</td>
+          <td>6</td>
+          <td>2</td>
+          <td>2</td>
+          <td>15</td>
+          <td>100€$ (Премиум)</td>
+        </tr>
+        <tr>
+          <td colspan="9">
+            <b>Иконка:</b> Крохотный чёрный скорпион, который очень громко шипит, когда вражеский Нетраннер говорит.
+            <br>
+            <b>Эффект:</b> СКО вражеского Нетраннера, в течение часа снижается на 1d6 (минимум 1). Воздействие психологческое и спустя час, проходит.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Скунс</b></td>
+          <td>Чёрный ЛЁД Против Людей</td>
+          <td>2</td>
+          <td>4</td>
+          <td>4</td>
+          <td>2</td>
+          <td>10</td>
+          <td>500€$ (Дорогое)</td>
+        </tr>
+        <tr>
+          <td colspan="9">
+            <b>Иконка:</b> Мультяшный скунс, который ходит на задних лапах и очень пристально следит за Нетраннером.
+            <br>
+            <b>Эффект:</b> Вражеский Раннер поражённый Эффектом, получает минус 2 ко всем Проверкам “Ускользнуть", пока эта Программа Активирована. Каждый Скунс за один раз может воздействовать только на одного Нетраннера, но эффекты нескольких Скунсов могут складываться.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Висп</b></td>
+          <td>Чёрный ЛЁД Против Людей</td>
+          <td>4</td>
+          <td>4</td>
+          <td>4</td>
+          <td>2</td>
+          <td>15</td>
+          <td>50€$ (Денное)</td>
+        </tr>
+        <tr>
+          <td colspan="9">
+            <b>Иконка:</b> Светящийся шар с одним крошечным глазом, потрескивающим энергией.
+            <br>
+            <b>Эффект:</b> Наносит 1d6 Урона мозгу Нетраннера и уменьшает количество Сетевых Действий, которые Нетраннер может сделать в следующий ход на 1 (минимум 2).
+          </td>
+        </tr>
+        <tr>
+          <td><b>Дракон</b></td>
+          <td>Чёрный ЛЁД Против Программ</td>
+          <td>6</td>
+          <td>4</td>
+          <td>6</td>
+          <td>6</td>
+          <td>30</td>
+          <td>1,000€$ (О. дорогое)</td>
+        </tr>
+        <tr>
+          <td colspan="9">
+            <b>Иконка:</b> Робот-дракон с золотой чешуей, окутанный электрическими разрядами.
+            <br>
+            <b>Эффект:</b> Наносит 6d6 урона Программе. Если этого урона хватает, чтобы отключить программу, то она уничтожается.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Убийца</b></td>
+          <td>Чёрный ЛЁД Против Программ</td>
+          <td>4</td>
+          <td>8</td>
+          <td>6</td>
+          <td>2</td>
+          <td>20</td>
+          <td>500€$ (Дорогое)</td>
+        </tr>
+        <tr>
+          <td colspan="9">
+            <b>Иконка:</b> Робот-самурай с красными глазами, держащий светящуюся катану.
+            <br>
+            <b>Эффект:</b> Наносит 4d6 урона Программе. Если этого урона хватает, чтобы отключить программу, то она уничтожается.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Саблезубый</b></td>
+          <td>Чёрный ЛЁД Против Программ</td>
+          <td>8</td>
+          <td>6</td>
+          <td>6</td>
+          <td>2</td>
+          <td>25</td>
+          <td>1,000€$ (О. дорогое)</td>
+        </tr>
+        <tr>
+          <td colspan="9">
+            <b>Иконка:</b> Огромный неуклюжий кот со светящимися белыми клыками.
+            <br>
+            <b>Эффект:</b> Наносит 6d6 урона Программе. Если этого урона хватает, чтобы Отключить программу, то она уничтожается.
+          </td>
+        </tr></tbody></table>`},{id:"economy_27",name:"СЕТь. Количество этажей",page:"economy",table:`<table id="economy_27"><caption>СЕТь. Количество этажей</caption><tbody><tr>
         <td><b>Количество Этажей</b></td>
         <td><b>Максимум Управляющих Узлов</b></td>
         <td><b>Переносной?</b></td>
@@ -9822,9 +9313,7 @@ const alltables = [
         <td>3</td>
         <td>НЕТ</td>
         <td>
-          5,000€$
-          <br>
-          Роскошь
+          5,000€$ (Роскошь)
         </td>
       </tr>
       <tr>
@@ -9832,42 +9321,26 @@ const alltables = [
         <td>НЕТ</td>
         <td>НЕТ</td>
         <td>10,000€$ (Супер Роскошь)</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_27",
-    name: "Покупка Сетевой Архетиктуры. Добавляем Пароли, Управляющие Узлы и Файлы",
-    page: "economy",
-    table: `<table id="economy_27"><caption>Покупка Сетевой Архетиктуры. Добавляем Пароли, Управляющие Узлы и Файлы</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_28",name:"СЕТь. Пароли, управление, файлы",page:"economy",table:`<table id="economy_28"><caption>СЕТь. Пароли, управление, файлы</caption><tbody><tr>
         <td><b>СЛ взлома архитектуры</b></td>
         <td><b>Цена</b></td>
       </tr>
       <tr>
-        <td>СЛ6</td>
-        <td>500(Дорогое)</td>
+        <td><b>СЛ6</b></td>
+        <td>500 (Дорогое)</td>
       </tr>
       <tr>
-        <td>СЛ8</td>
+        <td><b>СЛ8</b></td>
         <td>1,000€$ (0. дорогое)</td>
       </tr>
       <tr>
-        <td>СЛ1О</td>
-        <td>
-          5,000€$
-          <br>
-          Роскошь
-        </td>
+        <td><b>СЛ1О</b></td>
+        <td>5,000€$ (Роскошь)</td>
       </tr>
       <tr>
-        <td>СЛ12</td>
+        <td><b>СЛ12</b></td>
         <td>10,000€$ (Супер роскошь)</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_28",
-    name: "Покупка Сетевой Архетиктуры. Добавляем Демонов и Другой Чёрный ЛЁД",
-    page: "economy",
-    table: `<table id="economy_28"><caption>Покупка Сетевой Архетиктуры. Добавляем Демонов и Другой Чёрный ЛЁД</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_29",name:"СЕТь. Демоны и ЛЁД",page:"economy",table:`<table id="economy_29"><caption>СЕТь. Демоны и ЛЁД</caption><tbody><tr>
         <td><b>Имя</b></td>
         <td><b>REZ</b></td>
         <td><b>Интерфейс</b></td>
@@ -9876,7 +9349,7 @@ const alltables = [
         <td><b>Цена</b></td>
       </tr>
       <tr>
-        <td>Бес</td>
+        <td><b>Бес</b></td>
         <td>15</td>
         <td>3</td>
         <td>2</td>
@@ -9889,16 +9362,12 @@ const alltables = [
         </td>
       </tr>
       <tr>
-        <td>Ифрит</td>
+        <td><b>Ифрит</b></td>
         <td>25</td>
         <td>4</td>
         <td>3</td>
         <td>14</td>
-        <td>
-          5,000€$
-          <br>
-          Роскошь
-        </td>
+        <td>5,000€$ (Роскошь)</td>
       </tr>
       <tr>
         <td colspan="6">
@@ -9906,7 +9375,7 @@ const alltables = [
         </td>
       </tr>
       <tr>
-        <td>Балрон</td>
+        <td><b>Балрон</b></td>
         <td>30</td>
         <td>7</td>
         <td>4</td>
@@ -9917,289 +9386,26 @@ const alltables = [
         <td colspan="6">
           <b>Иконка:</b> Огромный гуманоидный монстр в футуристической черной броне, покрытой шипящими светящимися зелеными щупальцами.
         </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_29",
-    name: "Покупка Сетевой Архетиктуры. Добавляем Пароли, Управляющие Узлы и Файлы",
-    page: "economy",
-    table: `<table id="economy_29"><caption>Покупка Сетевой Архетиктуры. Добавляем Пароли, Управляющие Узлы и Файлы</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_30",name:"СЕТь. Защита управления",page:"economy",table:`<table id="economy_30"><caption>СЕТь. Защита управления</caption><tbody><tr>
         <td><b>СЛ проверки навыка Электроника/Безопасность</b></td>
         <td><b>Цена</b></td>
       </tr>
       <tr>
-        <td>СЛ9</td>
+        <td><b>СЛ 9</b></td>
         <td>500(Дорогое)</td>
       </tr>
       <tr>
-        <td>СЛ13</td>
+        <td><b>СЛ 13</b></td>
         <td>1,000€$ (0. дорогое)</td>
       </tr>
       <tr>
-        <td>СЛ17</td>
-        <td>
-          5,000€$
-          <br>
-          Роскошь
-        </td>
+        <td><b>СЛ 17</b></td>
+        <td>5,000€$ (Роскошь)</td>
       </tr>
       <tr>
-        <td>СЛ21</td>
+        <td><b>СЛ 21</b></td>
         <td>10,000€$ (Супер роскошь)</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_30",
-    name: "Покупка Сетевой Архетиктуры. Активная защита",
-    page: "economy",
-    table: `<table id="economy_30"><caption>Покупка Сетевой Архетиктуры. Активная защита</caption><tbody><tr>
-          <td><b>Тип</b></td>
-          <td><b>Описание</b></td>
-          <td><b>Триггер по умолчанию</b></td>
-          <td><b>Инфо</b></td>
-        </tr>
-        <tr>
-          <td><b>Рой Беспилотников</b></td>
-          <td>
-            Крошечные дроны размером с мошку с режущими поверхностями из нанопроволоки.
-            <br>
-            Расценивайте Рой, как единое целое, с Оч.Тяж. Оружием Ближнего Боя.
-            <br>
-            <b>СЛ 17 Электроника/Безопасность, 5 мин до взлома.</b>
-          </td>
-          <td>Цель входит в зону, не имея соответствующего пропуска или бейджа.</td>
-          <td>8 СКО • 15ПЗ Периметр Охраняемой Территории</td>
-        </tr>
-        <tr>
-          <td><b>Боевые Наземные Дроны</b></td>
-          <td>
-            Бывают в разных вариантах: вращающийся шар, гусеничные, колесные или как змеи. Дроны оснащены 2 устройствами на выбор:
-            <br>
-            • Очень тяжелый Пистолет с 8 Бронебойными Пулями
-            <br>
-            • Пистолет-пулемёт с 30 Патронами
-            <br>
-            • Камера Видеонаблюдения
-            <br>
-            <b>СЛ 21 Электроника/Безопасность, 5 мин до взлома.</b>
-          </td>
-          <td>Цель входит в зону, не имея соответствующего пропуска или бейджа.</td>
-          <td>4 СКО • 30ПЗ Периметр Охраняемой Территории</td>
-        </tr>
-        <tr>
-          <td><b>Большой Летающий Дрон</b></td>
-          <td>
-            Большие Беспилотники оснащены 2 устройствами на выбор:
-            <br>
-            • Дартган с 8 Отравленными Стрелами
-            <br>
-            • Очень тяжелый Пистолет с 8 Бронебойными Пулями
-            <br>
-            • Камера Видеонаблюдения
-            <br>
-            <b>СЛ 21 Электроника/Безопасность, 5 мин до взлома.</b>
-          </td>
-          <td>Цель входит в зону, не имея соответствующего пропуска или бейджа.</td>
-          <td>6 СКО • 20ПЗ Периметр Охраняемой Территории</td>
-        </tr>
-        <tr>
-          <td><b>Маленький Летающий Дрон</b></td>
-          <td>
-            Миниатюрные Беспилотники оснащены 1 устройством на выбор:
-            <br>
-            • Дартган с 8 Отравленными Стрелами
-            <br>
-            • Очень тяжелый Пистолет с 8 Бронебойными Пулями
-            <br>
-            • Камера Видеонаблюдения
-            <br>
-            <b>СЛ17 Электроника/Безопасность, 5 мин до взлома.</b>
-          </td>
-          <td>Цель входит в зону, не имея соответствующего пропуска или бейджа.</td>
-          <td>6 СКО • 15ПЗ Периметр Охраняемой Территории</td>
-        </tr>
-        <tr>
-          <td><b>Дрон Паук</b></td>
-          <td>
-            Дрон Паук может быть оснащены 2 устройствами на выбор:
-            <br>
-            • Гранатомет с 2 Слезоточивыми Гранатами
-            <br>
-            • Очень Тяжёлым Оружием Ближнего Боя • Тяжёлым Пистолет-пулемётом с 40 Патронами
-            <br>
-            • Камера Видеонаблюдения
-            <br>
-            <b>СЛ 21 Электроника/Безопасность, 5 мин до взлома.</b>
-          </td>
-          <td>Цель входит в зону, не имея соответствующего пропуска или бейджа.</td>
-          <td>4 СКО • 40ПЗ Периметр Охраняемой Территории</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "economy_31",
-    name: "Покупка Сетевой Архетиктуры. Стационарная защита",
-    page: "economy",
-    table: `<table id="economy_31"><caption>Покупка Сетевой Архетиктуры. Стационарная защита</caption><tbody><tr>
-          <td><b>Тип</b></td>
-          <td><b>Описание</b></td>
-          <td><b>Триггер по умолчанию</b></td>
-          <td><b>Инфо</b></td>
-        </tr>
-        <tr>
-          <td><b>Автоматический Кровавый Рой</b></td>
-          <td>
-            Автоматическое оружие рассеивает красный туман, состоящий из роя нанитов в помещении. При вдыхании наниты атакуют жертву изнутри, превращая гемоглобин в ее крови в сгустки. Все, что фильтрует газовые атаки, блокирует Автоматизированный Кровавый Рой.
-            <br>
-            Каждый человек в пределах зоны должен успешно пройти проверку на СЛ15 "Сопротивление пыткам/наркотикам". Кто не справился, получает 3d6 урона непосредственно к своим ПЗ. Их броня не разрушается.
-            <br>
-            <b>СЛ21 Электроника/Безопасность, 5 мин до взлома.</b>
-          </td>
-          <td>Цель входит в помещение, не имея соответствующего пропуска или бейджа.</td>
-          <td>Разовая атака по всем целям Периметр Охраняемой Территории</td>
-        </tr>
-        <tr>
-          <td><b>Автоматическое Оружие Ближнего Боя</b></td>
-          <td>
-            Автоматическое Очень Тяжёлое Оружие Влижнего Воя, обычно атакующее из угла комнаты. Часто это что-то, по типу гидроабразивного резака или катушки Мономолекулярной проволоки.
-            <br>
-            <b>СЛ17 Электроника/Безопасность, 5 мин до взлома.</b>
-          </td>
-          <td>Цель входит в помещение, не имея соответствующего пропуска или бейджа. Турель будет стрелять, пока цель не будет убита, пока не покинет защищаемый периметр или пока не предъявит соответствующий пропуск.</td>
-          <td>Боевой номер 14 25ПЗ Периметр Охраняемой Территории</td>
-        </tr>
-        <tr>
-          <td><b>Автоматическая Турель</b></td>
-          <td>
-            Это автоматическое оружие, для наилучшего обзора обычно устанавливается в потолок. Большинство Оружия Дальнего Боя можно установить на Турель, но чаще устанавливают что то одно из этого:
-            <br>
-            • Штурмовая Винтовка с 25 Патронами
-            <br>
-            • Огнемет с 4 Зажигательными боеприпасами
-            <br>
-            • Дартган с 8 Отравленными Стрелами
-            <br>
-            • Очень тяжелый Пистолет с 8 Бронебойными Пулями
-            <br>
-            • Тяжёлый Пистолет-пулемёто с 40 Патронами
-            <br>
-            <b>СЛ17 Электроника/Безопасность, 5 мин до взлома.</b>
-          </td>
-          <td>Цель входит в помещение, не имея соответствующего пропуска или бейджа. Турель будет стрелять, пока цель не будет убита, пока не покинет защищаемый периметр или пока не предъявит соответствующий пропуск.</td>
-          <td>Боевой номер 14 25ПЗ Периметр Охраняемой Территории</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "economy_32",
-    name: "Ловушки в Окружающей среде",
-    page: "economy",
-    table: `<table id="economy_32"><caption>Ловушки в Окружающей среде</caption><tbody><tr>
-          <td><b>Тип</b></td>
-          <td><b>Описание</b></td>
-          <td><b>Триггер по умолчанию</b></td>
-          <td><b>Инфо</b></td>
-        </tr>
-        <tr>
-          <td><b>Камеры Видеонаблюдения</b></td>
-          <td>
-            Эти камеры могут видеть при Слабом Освещении, в ИК и УФ диапазонах и передавать изображение для принятия мер демоном или сотрудниками службы безопасности.
-            <br>
-            <b>СЛ9 Электроника/Безопасность, 1 мин до взлома.</b>
-          </td>
-          <td>Цель входит в помещение.</td>
-          <td>5ПЗ Внимательность СЛ 17 чтобы заметить её. Может увидеть всю комнату или коридор</td>
-        </tr>
-        <tr>
-          <td><b>Липкий Коврик</b></td>
-          <td>
-            Сеть нанопроводов, скрытых в обычном на первый взгляд ковре. Когда их активируют, провода вытягиваются и обвивают ноги жертвы, уменьшая СКО на 1d6 пока с них не сойдут или не уничтожат их.
-            <br>
-            <b>СЛ13 Электроника/Безопасность, 1 мин до взлома</b>
-          </td>
-          <td>Цель наступает на ковер.</td>
-          <td>20ПЗ Внимательность СЛ 17 чтобы заметить 1 СКА Периметр Охраняемой Территории</td>
-        </tr>
-        <tr>
-          <td><b>Электрический пол</b></td>
-          <td>
-            Вмонтированная в пол сетка, при активации наносит 6d6 урона электрическим разрядом в тело, броня поглощает урон, но не повреждается. Пока цель находится на этом участке, в конце каждого хода повторно получает урон электрическим разрядом.
-            <br>
-            <b>СЛ13 Электроника/Безопасность, 1 мин до взлома.</b>
-          </td>
-          <td>Цель наступает на участок сетки.</td>
-          <td>20ПЗ Внимательность СЛ 17 чтобы заметить Периметр Охраняемой Территории</td>
-        </tr>
-        <tr>
-          <td><b>Лазерная Сетка</b></td>
-          <td>
-            С потолка и стен проецируется лазерная сетка. Рассматривайте касание одного из лазеров как удар по телу Очень Тяжёлым Оружием Ближнего Воя. Если с помощью Навыка "Внимательность", вы заметили сетку, то с помощью Навыка "Акробатика", можно попробовать пройти через неё (СЛ17), при провале, вы задеваете луч.
-            <br>
-            <b>СЛ17 Электроника/Безопасность, 5 мин до взлома.</b>
-          </td>
-          <td>Цель вошла в Охраняемую Зону или передвинулась на 2 метра в пределах Охраняемой Зоны.</td>
-          <td>Внимательность СЛ 17 чтобы заметить Периметр Охраняемой Территории</td>
-        </tr>
-        <tr>
-          <td><b>Нажимной пол</b></td>
-          <td>
-            Часть этого пола имеет противовес, чтобы сбросить цель в яму-ловушку под полом. Цели могут попытаться спастись от падения с помощью проверки атлетики СЛ15. Проверка не требуется, если у цели легко доступна рукохват или пистолет-крюк. На дне ямы может быть сетка из нанопроволоки или шипов, наносящих 6d6 повреждений телу цели, которые уменьшаются броней.
-            <br>
-            <b>СЛ13 Электроника/Безопасность, 1 мин до взлома.</b>
-          </td>
-          <td>Цель наступила на срабатывающий механизм</td>
-          <td>Внимательность СЛ 17 чтобы заметить Периметр Охраняемой Территории</td>
-        </tr>
-        <tr>
-          <td><b>Слизь</b></td>
-          <td>
-            Вто серия распылителей, которые при срабатывании выпускают густую слизь вокруг ступней и ног цели, уменьшая их СКО на 2d6 до тех пор, пока слизь не будет уничтожена или цели иным образом не покинут Защищенную зону.
-            <br>
-            <b>СЛ13 Электроника/Безопасность, 5 мин до взлома.</b>
-          </td>
-          <td>Цель вошла в зону распыления.</td>
-          <td>10ПЗ Восприятие СЛ 17 чтобы заметить 1 СКА Периметр Охраняемой Территории</td>
-        </tr>
-        <tr>
-          <td><b>Решетка с шипами</b></td>
-          <td>Стальные стержни, которые падают в виде решетки с потолка или из стены, сокрушая цели под/между ними, наносят 6d6 урона по телу, который уменьшается броней. СЛ13 Электроника/Безопасность, 5 мин до взлома.</td>
-          <td>Цель вошла в область сетки.</td>
-          <td>20ПЗ Внимательность СЛ 17 чтобы заметить 1 СКА Периметр Охраняемой Территории</td>
-        </tr>
-        <tr>
-          <td><b>Скользкий пол</b></td>
-          <td>
-            Это серия распылителей, которые при срабатывании распыляют сверхгладкую жидкость на пол в области. Любой, кто совершает Действие Движения в этой области, должен преуспеть в проверке Атлетики СЛ15 или упасть.
-            <br>
-            <b>СЛ13 Электроника/Безопасность, 1 мин до взлома.</b>
-          </td>
-          <td>Цель вошла в зону действия</td>
-          <td>1ОПЭ Внимательность СЛ 17 чтобы заметить Периметр Охраняемой Территории</td>
-        </tr>
-        <tr>
-          <td><b>Останавливающие панели</b></td>
-          <td>
-            Это панели, встроенные в стены и выполненные в виде картин или досок. При срабатывании они производят ошеломляющий светошумовой взрыв. Любой, попавший в зону действия, должен пройти проверку сопротивления пыткам/наркотикам СЛ 15, иначе в течение минуты он получит критические травмы глаз и слуха. Бонусный урон от этих критических травм отсутствует.
-            <br>
-            <b>СЛ13 Электроника/Безопасность, 1 мин до взлома.</b>
-          </td>
-          <td>Цель входит в радиус 2 м от панели. Площадь действия ЮмнаЮмв центре которой панель.</td>
-          <td>5ПЗ Внимательность СЛ 17 чтобы заметить Периметр Охраняемой Территории</td>
-        </tr>
-        <tr>
-          <td><b>Зона с Усыпляющим Газом</b></td>
-          <td>
-            При срабатывании все отверстия в помещении герметично закрываются. Поместите ловушку в начало очереди инициативы. В ход ловушки все в клетке должны попытаться пройти проверку сопротивления пыткам/наркотикам СЛ13. Любой, кто проваливает проверку, теперь находится без сознания, но только до тех пор, пока он не будет разбужен полученным уроном или кем-то другим, использующим свое Действие, чтобы разбудить его. Ловушку можно сломать, уменьшив ее ПЭ до 0 до того, как все потеряют сознание, или обезвредив ее другими способами.
-            <br>
-            <b>СЛ13 Электроника/Безопасность, 1 мин до взлома.</b>
-          </td>
-          <td>Цель вошла в закрытую зону распыления.</td>
-          <td>60ПЗ Внимательность СЛ 17 чтобы заметить Периметр Охраняемой Территории</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "economy_33",
-    name: "Услуги и развлечения",
-    page: "economy",
-    table: `<table id="economy_33"><caption>Услуги и развлечения</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_31",name:"Услуги и развлечения",page:"economy",table:`<table id="economy_31"><caption>Услуги и развлечения</caption><tbody><tr>
         <td><b>Услуга/Развлечение</b></td>
         <td><b>Цена</b></td>
       </tr>
@@ -10334,13 +9540,7 @@ const alltables = [
       <tr>
         <td>Видеоигра</td>
         <td>50€$ Дешевое</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "combat_20",
-    name: "Транспорт",
-    page: "combat",
-    table: `<table id="combat_20"><caption>Транспорт</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_32",name:"Транспорт",page:"economy",table:`<table id="economy_32"><caption>Транспорт</caption><tbody><tr>
         <th colspan="7"><b>Наземный Транспорт</b></th>
       </tr>
       <tr>
@@ -10348,7 +9548,7 @@ const alltables = [
         <td><b>Описание</b></td>
         <td><b>ПЗТ</b></td>
         <td><b>Мест</b></td>
-        <td><b>СКО (бой)</b></td>
+        <td><b>СКО</b></td>
         <td><b>Скорость</b></td>
         <td><b>Цена</b></td>
       </tr>
@@ -10357,45 +9557,45 @@ const alltables = [
         <td>Обычный Мотоцикл с двигателем СН00Н2.</td>
         <td>35</td>
         <td>2</td>
-        <td>20 СКО</td>
-        <td>161 Км/Ч</td>
-        <td>20,000€$ (Супер Роскошь)</td>
+        <td>20</td>
+        <td>161 км/ч</td>
+        <td>20,000€$<br>Супер Роскошь</td>
       </tr>
       <tr>
         <td>Супербайк</td>
         <td>Экзотический Мотоцикл с двигателем СН00Н2, способный развивать огромную скорость.</td>
         <td>35</td>
         <td>2</td>
-        <td>60 СКО</td>
-        <td>483 Км/Ч</td>
-        <td>100,000€$ (Супер Роскошь)</td>
+        <td>60</td>
+        <td>483 км/ч</td>
+        <td>100,000€$<br>Супер Роскошь</td>
       </tr>
       <tr>
         <td>Компактный Автомобиль</td>
         <td>Обычный автомобиль с двигателем СН00Н2.</td>
         <td>50</td>
         <td>4</td>
-        <td>20 СКО</td>
-        <td>161 Км/Ч</td>
-        <td>30,000€$ (Супер Роскошь)</td>
+        <td>20</td>
+        <td>161 км/ч</td>
+        <td>30,000€$<br>Супер Роскошь</td>
       </tr>
       <tr>
         <td>Спорткар</td>
         <td>Спорткар с двигателем СН00Н2.</td>
         <td>50</td>
         <td>4</td>
-        <td>40 СКО</td>
-        <td>322 Км/Ч</td>
-        <td>50,000€$ (Супер Роскошь)</td>
+        <td>40</td>
+        <td>322 км/ч</td>
+        <td>50,000€$<br>Супер Роскошь</td>
       </tr>
       <tr>
         <td>Суперкар</td>
         <td>Экзотический суперкар с двигателем СН00Н2, способный развивать огромную скорость.</td>
         <td>50</td>
         <td>2</td>
-        <td>60 СКО</td>
-        <td>483 Км/Ч</td>
-        <td>100,000€$ (Супер Роскошь)</td>
+        <td>60</td>
+        <td>483 км/ч</td>
+        <td>100,000€$<br>Супер Роскошь</td>
       </tr>
       <tr>
         <th colspan="7"><b>Водный Транспорт</b></th>
@@ -10405,7 +9605,7 @@ const alltables = [
         <td><b>Описание</b></td>
         <td><b>ПЗТ</b></td>
         <td><b>Мест</b></td>
-        <td><b>СКО (бой)</b></td>
+        <td><b>СКО</b></td>
         <td><b>Скорость</b></td>
         <td><b>Цена</b></td>
       </tr>
@@ -10414,36 +9614,36 @@ const alltables = [
         <td>Обычный водный гидроцикл с двигателем СН00Н2.</td>
         <td>35</td>
         <td>2</td>
-        <td>20 СКО</td>
-        <td>97 Км/Ч</td>
-        <td>20,000€$ (Супер Роскошь)</td>
+        <td>20</td>
+        <td>97 км/ч</td>
+        <td>20,000€$<br>Супер Роскошь</td>
       </tr>
       <tr>
         <td>Скоростной Катер</td>
         <td>Скоростной катер с двигателем СН00Н2</td>
         <td>50</td>
         <td>4</td>
-        <td>20 СКО</td>
-        <td>97 Км/Ч</td>
-        <td>30,000€$ (Супер Роскошь)</td>
+        <td>20</td>
+        <td>97 км/ч</td>
+        <td>30,000€$<br>Супер Роскошь</td>
       </tr>
       <tr>
         <td>Круизный Катер</td>
         <td>Роскошный катер с двигателем СН00Н2 и возмож­ностью разместить небольшое количество привилеги­рованных людей. Круизные Катеры имеют индивиду­альные каюты.</td>
         <td>60</td>
-        <td>2 на ком­нату</td>
-        <td>10 СКО</td>
-        <td>24 Км/Ч</td>
-        <td>30,000€$ (Супер Роскошь) За каюту под палубой (минимум две каюты)</td>
+        <td>2 на комнату</td>
+        <td>10</td>
+        <td>24 км/ч</td>
+        <td>30,000€$<br>Супер Роскошь<br>За каюту под палубой (мин 2 каюты)</td>
       </tr>
       <tr>
         <td>Яхта</td>
         <td>Роскошное прогулочное судно с двигателем СН00Н2, с большим количеством кают для размещения и развлечений хозяев и их почетных гостей. Яхты имеют индивиду­альные каюты.</td>
         <td>100</td>
-        <td>4 на ком­нату</td>
-        <td>10 СКО</td>
-        <td>24 Км/Ч</td>
-        <td>50,000€$ (Супер Роскошь) За каюту под палубой (минимум четыре каюты)</td>
+        <td>4 на комнату</td>
+        <td>10</td>
+        <td>24 км/ч</td>
+        <td>50,000€$<br>Супер Роскошь<br>За каюту под палубой (мин 4 каюты)</td>
       </tr>
       <tr>
         <th colspan="7"><b>Воздушный Транспорт</b></th>
@@ -10453,7 +9653,7 @@ const alltables = [
         <td><b>Описание</b></td>
         <td><b>ПЗТ</b></td>
         <td><b>Мест</b></td>
-        <td><b>СКО (бой)</b></td>
+        <td><b>СКО</b></td>
         <td><b>Скорость</b></td>
         <td><b>Цена</b></td>
       </tr>
@@ -10462,52 +9662,46 @@ const alltables = [
         <td>Небольшой винтокрыл с двигателем СН00Н2, обожаем любителями летать.</td>
         <td>35</td>
         <td>2</td>
-        <td>20 СКО</td>
-        <td>161 Км/Ч</td>
-        <td>20,000€$ (Супер Роскошь)</td>
+        <td>20</td>
+        <td>161 км/ч</td>
+        <td>20,000€$<br>Супер Роскошь</td>
       </tr>
       <tr>
         <td>Вертолет</td>
         <td>Полноценный вертолет с двигателем СН00Н2, пригодный для длительных полётов.</td>
         <td>60</td>
         <td>4</td>
-        <td>40 СКО</td>
-        <td>322 Км/Ч</td>
-        <td>40,000€$ (Супер Роскошь)</td>
+        <td>40</td>
+        <td>322 км/ч</td>
+        <td>40,000€$<br>Супер Роскошь</td>
       </tr>
       <tr>
         <td>АУ-4 Универсальный Аэродайн</td>
         <td>Передовой летательный аппарат с двигателем вертикальной тяги СН00Н2.</td>
         <td>100</td>
         <td>6</td>
-        <td>40 СКО</td>
-        <td>322 Км/Ч</td>
-        <td>50,000€$ (Супер Роскошь)</td>
+        <td>40</td>
+        <td>322 км/ч</td>
+        <td>50,000€$<br>Супер Роскошь</td>
       </tr>
       <tr>
         <td>АУ-9 Спортивный Аэродайн</td>
         <td>Экзотический летательный аппарат с вертикальной тягой СН00Н2, развивающий огромную скорость.</td>
         <td>60</td>
         <td>2</td>
-        <td>60 СКО</td>
-        <td>483 Км/Ч</td>
-        <td>100,000€$ (Супер Роскошь)</td>
+        <td>60</td>
+        <td>483 км/ч</td>
+        <td>100,000€$<br>Супер Роскошь</td>
       </tr>
       <tr>
         <td>Аэрозеп</td>
         <td>Современные грузовые дирижабли, разных размеров в зависимости от назначения. Аэрозепы имеют индивиду­альные каюты.</td>
         <td>100</td>
-        <td>2 на ком­нат</td>
-        <td>20 СКО</td>
-        <td>161 Км/Ч</td>
-        <td>30,000€$ (Супер Роскошь) За каюту под палубой (минимум две каюты)</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_34",
-    name: "Образ жизни",
-    page: "economy",
-    table: `<table id="economy_34"><caption>Образ жизни</caption><tbody><tr>
+        <td>2 на комнат</td>
+        <td>20</td>
+        <td>161 км/ч</td>
+        <td>30,000€$<br>Супер Роскошь<br>За каюту под палубой (мин 2 каюты)</td>
+      </tr></tbody></table>`},{id:"economy_33",name:"Образ жизни",page:"economy",table:`<table id="economy_33"><caption>Образ жизни</caption><tbody><tr>
         <td><b>Стиль жизни</b></td>
         <td><b>Что Это Значит</b></td>
         <td><b>Месячная Цена</b></td>
@@ -10531,13 +9725,7 @@ const alltables = [
         <td>Свежая Еда</td>
         <td>Вы едите настоящую еду. Раз в месяц, если вы устали и забрались далеко от дома, можете позволить себе номер в отеле. Вы часто посещаете корпоративные элитные бары. Раз в месяц можете поесть в ресторане мирового класса.</td>
         <td>1500€$</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_35",
-    name: "Недвижимость",
-    page: "economy",
-    table: `<table id="economy_35"><caption>Недвижимость</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_34",name:"Недвижимость",page:"economy",table:`<table id="economy_34"><caption>Недвижимость</caption><tbody><tr>
         <td><b>Тип Недвижимости</b></td>
         <td><b>Стоимость аренды 1 (в мес.)</b></td>
         <td><b>Стоимость покупки</b></td>
@@ -10596,13 +9784,7 @@ const alltables = [
         <td>Корпоративный МакОсобняк в Бивервилле</td>
         <td>Корпа платит за вас</td>
         <td>500,000€$</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_36",
-    name: "Работа. Типы",
-    page: "economy",
-    table: `<table id="economy_36"><caption>Работа. Типы</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_35",name:"Работа. Типы",page:"economy",table:`<table id="economy_35"><caption>Работа. Типы</caption><tbody><tr>
         <td><b>Тип Работы</b></td>
         <td><b>Описание и Пример</b></td>
         <td><b>Оплата (Каждому)</b></td>
@@ -10621,13 +9803,7 @@ const alltables = [
         <td>Опасное Дело</td>
         <td>Ожидается мясорубка. Без хорошей подготовки вы — труп. Нужно пробраться на военный объект, взорвать склад и сбежать.</td>
         <td>2,000€$</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_37",
-    name: "Халтурки по ролям",
-    page: "economy",
-    table: `<table id="economy_37"><caption>Халтурки по ролям</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_36",name:"Халтурки по ролям",page:"economy",table:`<table id="economy_36"><caption>Халтурки по ролям</caption><tbody><tr>
         <th colspan="5"><b>Халтурка Рокербоя</b></th>
       </tr>
       <tr>
@@ -11146,13 +10322,7 @@ const alltables = [
         <td>0€$</td>
         <td>100€$</td>
         <td>300€$</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "economy_47",
-    name: "Ценовая Категория",
-    page: "economy",
-    table: `<table id="economy_47"><caption>Ценовая Категория</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"economy_37",name:"Ценовая Категория",page:"economy",table:`<table id="economy_37"><caption>Ценовая Категория</caption><tbody><tr>
         <td><b>Ценовая Категория</b></td>
         <td><b>Рыночная Цена</b></td>
       </tr>
@@ -11187,13 +10357,7 @@ const alltables = [
       <tr>
         <td>Супер Роскошь</td>
         <td>10,000€$ and up</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "life_1",
-    name: "Что находится в Ближайшем Вендите?",
-    page: "life",
-    table: `<table id="life_1"><caption>Что находится в Ближайшем Вендите?</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"life_1",name:"Что находится в Ближайшем Вендите?",page:"life",table:`<table id="life_1"><caption>Что находится в Ближайшем Вендите?</caption><tbody><tr>
         <td><b>1d10</b></td>
         <td>
           <b>Еда<br>(1d6:1-3)</b>
@@ -11264,13 +10428,7 @@ const alltables = [
         <td>Консервированные безалкогольные напитки</td>
         <td>Видеоигры</td>
         <td>Ношеные трусы</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "life_2",
-    name: "Клиентура Тошниловки",
-    page: "life",
-    table: `<table id="life_2"><caption>Клиентура Тошниловки</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"life_2",name:"Клиентура Тошниловки",page:"life",table:`<table id="life_2"><caption>Клиентура Тошниловки</caption><tbody><tr>
         <td><b>1d6</b></td>
         <td><b>Владелец или Кассир</b></td>
         <td><b>Колоритная Личность #1</b></td>
@@ -11311,38 +10469,7 @@ const alltables = [
         <td>Человек средних лет, которого вы не можете понять, но который, кажется, все равно всегда с вами спорит.</td>
         <td>Клиент, который в ужасе от того, что находится на улице, и собирается наброситься (и, возможно, выхватит пистолет) на любого, кто к нему подойдет.</td>
         <td>Сопоятельная пара в слишком дорогих вещах заходит в магазин за выпивкой после ночи высококласснох вечеринок.</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_1",
-    name: "Кибердеки",
-    page: "netrunning",
-    table: `<table id="netrunning_1"><caption>Кибердеки</caption><tbody><tr>
-        <td><b>Тип</b></td>
-        <td><b>Цена</b></td>
-        <td><b>Слоты</b></td>
-      </tr>
-      <tr>
-        <td>Кибердека плохого качества</td>
-        <td>100€$ (Премиум)</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>Кибердека</td>
-        <td>500€$ (Дорогое)</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>Кибердека отличного качества</td>
-        <td>1,000€$ (О. дорогое)</td>
-        <td>9</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_2",
-    name: "Количество СЕТевых действий",
-    page: "netrunning",
-    table: `<table id="netrunning_2"><caption>Количество СЕТевых действий</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"netrunning_1",name:"Количество СЕТевых действий",page:"netrunning",table:`<table id="netrunning_1"><caption>Количество СЕТевых действий</caption><tbody><tr>
         <td><b>Ранг Интерфейса</b></td>
         <td><b>1-3</b></td>
         <td><b>4-6</b></td>
@@ -11355,299 +10482,22 @@ const alltables = [
         <td>3</td>
         <td>4</td>
         <td>5</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_3",
-    name: "Три класса Программ, не относящихся к Чёрному ЛЬДУ",
-    page: "netrunning",
-    table: `<table id="netrunning_3"><caption>Три класса Программ, не относящихся к Чёрному ЛЬДУ</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"netrunning_2",name:"Три класса Программ, не относящихся к Чёрному ЛЬДУ",page:"netrunning",table:`<table id="netrunning_2"><caption>Три класса Программ, не относящихся к Чёрному ЛЬДУ</caption><tbody><tr>
         <td><b>Класс</b></td>
         <td><b>Описание</b></td>
       </tr>
       <tr>
-        <td>Усиления</td>
+        <td><a href="economy.html#economyPrograms">Усиления</a></td>
         <td>Пока Активна, улучшает твои функции в Архитектуре СЕТИ.</td>
       </tr>
       <tr>
-        <td>Защитные</td>
+        <td><a href="economy.html#economyPrograms">Защитные</a></td>
         <td>Пока Активна, останавливает либо иным способом уменьшает атаки Программ или других Нетраннеров.</td>
       </tr>
       <tr>
-        <td>Атакующие</td>
+        <td><a href="economy.html#economyPrograms">Атакующие</a></td>
         <td>Программы для нанесения урона либо отключения Нетраннеров/Программ. Автоматически Выключаются после их Запуска.</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_4",
-    name: "Программы. Усиления",
-    page: "netrunning",
-    table: `<table id="netrunning_4"><caption>Программы. Усиления</caption><tbody><tr>
-        <td><b>Название</b></td>
-        <td><b>Класс</b></td>
-        <td><b>АТК</b></td>
-        <td><b>ЗАЩ</b></td>
-        <td><b>REZ</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td>Стиратель</td>
-        <td>Усилитель</td>
-        <td>0</td>
-        <td>0</td>
-        <td>7</td>
-        <td>20€$ (Обычное)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Розовый шарик, испускающий крошечные мыльные пузыри.
-          <br>
-          <b>Эффект:</b> +2 к проверке "Плащ", пока эта программа Активна.
-        </td>
-      </tr>
-      <tr>
-        <td>Найдёмся!</td>
-        <td>Усилитель</td>
-        <td>0</td>
-        <td>0</td>
-        <td>7</td>
-        <td>20€$ (Обычное)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Сверкающее серебряное увеличительное стекло медленно вращается на месте.
-          <br>
-          <b>Эффект:</b> +2 к проверке "Первопроходец", пока эта программа Активна.
-        </td>
-      </tr>
-
-      <tr>
-        <td>Быстрый Гонзалес</td>
-        <td>Усилитель</td>
-        <td>0</td>
-        <td>0</td>
-        <td>7</td>
-        <td>100€$ (Премиум)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Поднимающийся столб пыли за Нетраннером.
-          <br>
-          <b>Эффект:</b> Повышает Скорость на +2 до тех пор, пока эта программа Активна.
-        </td>
-      </tr>
-      <tr>
-        <td>Червь</td>
-        <td>Усилитель</td>
-        <td>0</td>
-        <td>0</td>
-        <td>7</td>
-        <td>50€$ (Ценное)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Золотой механический червь с неоново-зелеными глазами.
-          <br>
-          <b>Эффект:</b> +2 к проверке "Бэкдор", пока эта программа Активна.
-        </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_5",
-    name: "Программы. Защитные",
-    page: "netrunning",
-    table: `<table id="netrunning_5"><caption>Программы. Защитные</caption><tbody><tr>
-        <td><b>Название</b></td>
-        <td><b>Класс</b></td>
-        <td><b>АТК</b></td>
-        <td><b>ЗАЩ</b></td>
-        <td><b>REZ</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td>Доспехи</td>
-        <td>Защита</td>
-        <td>0</td>
-        <td>0</td>
-        <td>7</td>
-        <td>50€$ (Ценное)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Прозрачные золотые доспехи, Нетраннера.
-          <br>
-          <b>Эффект:</b> Снижает урон мозгу на 4, пока она Активна. Одновременно может быть запущена только 1 копия этой Программы. Каждую копию этой Программы можно использовать только 1 раз за подключение.
-        </td>
-      </tr>
-      <tr>
-        <td>Зенитка</td>
-        <td>Защита</td>
-        <td>0</td>
-        <td>0</td>
-        <td>7</td>
-        <td>50€$ (Ценное)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Облако ослепляющих, сияющих, разноцветных огней кружащих вокруг Нетраннера.
-          <br>
-          <b>Эффект:</b> Уменьшает АТК, всех Программ против вас до 0 (кроме Программ Чёрного ЛЬДА), пока она Активна. Одновременно может быть запущена только 1 копия этой Программы. Каждую копию этой Программы можно использовать только один раз за подключение.
-        </td>
-      </tr>
-      <tr>
-        <td>Щит</td>
-        <td>Защита</td>
-        <td>0</td>
-        <td>0</td>
-        <td>7</td>
-        <td>20€$ (Обычное)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Мерцающий серебряный энергетический барьер, окружающий Нетраннера.
-          <br>
-          <b>Эффект:</b> Обнуляет 1-й успешный Эффект Программы (Не Чёрного ЛЬДА) наносящий урон мозгу. Обнулив урон Щит Деактивируется. Одновременно запускается 1 копия Программы. Копию этой Программы можно использовать только 1 раз за подключение.
-        </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_6",
-    name: "Программы. Атакующие",
-    page: "netrunning",
-    table: `<table id="netrunning_6"><caption>Программы. Атакующие</caption><tbody><tr>
-        <td><b>Название</b></td>
-        <td><b>Класс</b></td>
-        <td><b>АТК</b></td>
-        <td><b>ЗАЩ</b></td>
-        <td><b>REZ</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td>Банхаммер</td>
-        <td>Против Программ</td>
-        <td>1</td>
-        <td>0</td>
-        <td>0</td>
-        <td>50€$ (Ценное)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Гигантский пылающий белый молот, в руках Нетраннера.
-          <br>
-          <b>Эффект:</b> Наносит 2d6 урона Программам Чёрного ЛЬДА, остальным 1 Программам наносит 3d6.
-        </td>
-      </tr>
-      <tr>
-        <td>Меч</td>
-        <td>Против Программ</td>
-        <td>1</td>
-        <td>0</td>
-        <td>0</td>
-        <td>50€$ (Ценное)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Светящаяся энергетическая катана, появляющаяся в руке Нетраннера.
-          <br>
-          <b>Эффект:</b> Наносит 3d6 урона Программам Чёрного ЛЬДА, остальным Программам наносит 2d6.
-        </td>
-      </tr>
-      <tr>
-        <td>ДекаЛОМ</td>
-        <td>Против Людей</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>100€$ (Премиум)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Мультяшная динамитная шашка, брошенная Нетраннером.
-          <br>
-          <b>Эффект:</b> Выбрасывает вражеского Нетраннера из Архитектуры. Нетраннер испытывает все Эффекты Активированного Чёрного ЛЬДА, с которым он столкнулся в Архитектуре.
-        </td>
-      </tr>
-      <tr>
-        <td>Адская стрела</td>
-        <td>Против Людей</td>
-        <td>2</td>
-        <td>0</td>
-        <td>0</td>
-        <td>100€$ (Премиум)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Нетраннер из руки выпускает огненную стрелу
-          <br>
-          <b>Эффект:</b> Наносит 2d6 Урона мозгу Нетраннера. Кибердека без теплоизоляции загорается вместе с одеждой Нетраннера. В конце каждого своего хода, Нетраннер получает 2 урона, пока не потратит Мясное действие, чтобы потушить себя. Данный эффект не складывается.
-        </td>
-      </tr>
-      <tr>
-        <td>Нервотрёп</td>
-        <td>Против Людей</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>100€$ (Премиум)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Хромированный шар, брошенный Нетраннером, искрящийся от электричества.
-          <br>
-          <b>Эффект:</b> ИНТ, РЕА, ЛВК вражеского Нетраннера, в течении следующего часа снижается на 1d6 (минимум 1). Воздействие в основном психосоматическое и спустя час, проходит.
-        </td>
-      </tr>
-      <tr>
-        <td>Смертельный Яд</td>
-        <td>Против Людей</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>100€$ (Премиум)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Нетраннер из пальца "стреляет" неоново-зеленым лучом.
-          <br>
-          <b>Эффект:</b> Уничтожает одну случайную Программу из Кибердеки Нетраннера (Кроме Чёрного ЛЬДА).
-        </td>
-      </tr>
-      <tr>
-        <td>Суперклей</td>
-        <td>Против Людей</td>
-        <td>2</td>
-        <td>0</td>
-        <td>0</td>
-        <td>100€$ (Премиум)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Из руки Нетраннера вылетела масса липкой красной слизи.
-          <br>
-          <b>Эффект:</b> В течение ld6 Раундов Нетраннер не может двигаться вглубь Архитектуры, а также безопасно Отключится (но может не безопасно). Каждую копию этой Программы можно использовать только один раз за подключение.
-        </td>
-      </tr>
-      <tr>
-        <td>Спираль</td>
-        <td>Против Людей</td>
-        <td>1</td>
-        <td>0</td>
-        <td>0</td>
-        <td>50€$ (Ценное)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Из пальца Нетраннера исходит мерцающая неоновым светом двойная спираль.
-          <br>
-          <b>Эффект:</b> Наносит ld6 Урона мозгу Нетраннера и уменьшает количество Сетевых Действий, которые Нетраннер может совершить в свой следующий Ход на l (минимум 2).
-        </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_7",
-    name: "Классы Черного ЛЬДА",
-    page: "netrunning",
-    table: `<table id="netrunning_7"><caption>Классы Черного ЛЬДА</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"netrunning_3",name:"Классы Черного ЛЬДА",page:"netrunning",table:`<table id="netrunning_3"><caption>Классы Черного ЛЬДА</caption><tbody><tr>
         <td><b>Класс</b></td>
         <td><b>Описание</b></td>
       </tr>
@@ -11662,232 +10512,7 @@ const alltables = [
       <tr>
         <td><b>Демон</b></td>
         <td>ИИ Чёрного ЛЬДА, которые используют Управляющие Узлы для защиты своей СЕТи и физического пространства, нацелившись на Нетраннера и его группу в Мясном пространстве. Слишком большие для Кибердек.</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_8",
-    name: "Чёрный лёд",
-    page: "netrunning",
-    table: `<table id="netrunning_8"><caption>Чёрный лёд</caption><tbody><tr>
-          <td><b>Имя</b></td>
-          <td><b>Класс</b></td>
-          <td><b>ВСП</b></td>
-          <td><b>СКО</b></td>
-          <td><b>АТК</b></td>
-          <td><b>ЗАЩ</b></td>
-          <td><b>REZ</b></td>
-          <td><b>Цена</b></td>
-        </tr>
-        <tr>
-          <td><b>Аспид</b></td>
-          <td>Чёрный ЛЁД Против Людей</td>
-          <td>4</td>
-          <td>6</td>
-          <td>2</td>
-          <td>2</td>
-          <td>15</td>
-          <td>100€$ (Премиум)</td>
-        </tr>
-        <tr>
-          <td colspan="9">
-            <b>Иконка:</b> Золотая Египетская кобра, извергающая лучи неонового зеленого света.
-            <br>
-            <b>Эффект:</b> Уничтожает одну случайную Программу из Кибердеки Нетраннера.
-          </td>
-        </tr>
-        <tr>
-          <td><b>Великан</b></td>
-          <td>Чёрный ЛЁД Против Людей</td>
-          <td>2</td>
-          <td>2</td>
-          <td>8</td>
-          <td>4</td>
-          <td>25</td>
-          <td>1,000€$ (О. дорогое)</td>
-        </tr>
-        <tr>
-          <td colspan="9">
-            <b>Иконка:</b> Гигантская пара ног возвышается над вражеским Нетраннером.
-            <br>
-            <b>Эффект:</b> Наносит 3d6 Урона мозгу Нетраннера. Выбрасывает Нетраннера из текущего "забега". Нетраннер испытывает все Эффекты Активированного Чёрного ЛЬДА, с которым он столкнулся в Архитектуре кроме Великана.
-          </td>
-        </tr>
-        <tr>
-          <td><b>Адская Гончая</b></td>
-          <td>Чёрный ЛЁД Против Людей</td>
-          <td>6</td>
-          <td>6</td>
-          <td>6</td>
-          <td>2</td>
-          <td>20</td>
-          <td>500€$ (Дорогое)</td>
-        </tr>
-        <tr>
-          <td colspan="9">
-            <b>Иконка:</b> Огромный черный металлический волк. С Белыми пылающими глазами и пламенем, проносящимся волнами по всему телу. Скрежещущим металлическим голосом, повторяет имя вражеского Нетраннера.
-            <br>
-            <b>Эффект:</b> Наносит 2d6 урона мозгу Нетраннера. Кибердека без теплоизоляции загорается вместе с одеждой Нетраннера. В конце каждого своего хода, Нетраннер получает 2 урона, пока не потратит Мясное действие, чтобы потушить себя. Данный эффект не складывается.
-          </td>
-        </tr>
-        <tr>
-          <td><b>Кракен</b></td>
-          <td>Чёрный ЛЁД Против Людей</td>
-          <td>6</td>
-          <td>2</td>
-          <td>8</td>
-          <td>4</td>
-          <td>30</td>
-          <td>1,000€$ (О. дорогое)</td>
-        </tr>
-        <tr>
-          <td colspan="9">
-            <b>Иконка:</b> Множество извивающихся оранжевых щупалец, торчащих из стен. Их присоски покрыты липкой красной слизью.
-            <br>
-            <b>Эффект:</b> Наносит 3d6 Урона мозгу Нетраннера. В течении двух Ходов Нетраннер не может двигаться в глубь Архитектуры а также безопасно Отключится (Нетраннер всё ещё может небезопасно Отключится).
-          </td>
-        </tr>
-        <tr>
-          <td><b>Лич</b></td>
-          <td>Чёрный ЛЁД Против Людей</td>
-          <td>8</td>
-          <td>2</td>
-          <td>6</td>
-          <td>2</td>
-          <td>25</td>
-          <td>500€$ (Дорогое)</td>
-        </tr>
-        <tr>
-          <td colspan="9">
-            <b>Иконка:</b> Металлический скелет, завернутый в черную мантию. Его руки украшены кольцами, которые искрятся от электричества.
-            <br>
-            <b>Эффект:</b> ИНТ, РЕА, и ЛВК вражеского Нетраннера, в течение следующего часа снижается на ld6 (минимум 1). Воздействие в основном психосоматическое и спустя час, проходит.
-          </td>
-        </tr>
-        <tr>
-          <td><b>Ворон</b></td>
-          <td>Чёрный ЛЁД Против Людей</td>
-          <td>6</td>
-          <td>4</td>
-          <td>4</td>
-          <td>2</td>
-          <td>15</td>
-          <td>50€$ (Денное)</td>
-        </tr>
-        <tr>
-          <td colspan="9">
-            <b>Иконка:</b> Ворон в латных доспехах держащий светящееся белое копьё.
-            <br>
-            <b>Эффект:</b> Отключает 1 случайную Защитную Программу из Активированных Прог. вражеского Нетраннера, затем наносит 1d6 урона мозгу Раннеру.
-          </td>
-        </tr>
-        <tr>
-          <td><b>Скорпион</b></td>
-          <td>Чёрный ЛЁД Против Людей</td>
-          <td>2</td>
-          <td>6</td>
-          <td>2</td>
-          <td>2</td>
-          <td>15</td>
-          <td>100€$ (Премиум)</td>
-        </tr>
-        <tr>
-          <td colspan="9">
-            <b>Иконка:</b> Крохотный чёрный скорпион, который очень громко шипит, когда вражеский Нетраннер говорит.
-            <br>
-            <b>Эффект:</b> СКО вражеского Нетраннера, в течение часа снижается на 1d6 (минимум 1). Воздействие психологческое и спустя час, проходит.
-          </td>
-        </tr>
-        <tr>
-          <td><b>Скунс</b></td>
-          <td>Чёрный ЛЁД Против Людей</td>
-          <td>2</td>
-          <td>4</td>
-          <td>4</td>
-          <td>2</td>
-          <td>10</td>
-          <td>500€$ (Дорогое)</td>
-        </tr>
-        <tr>
-          <td colspan="9">
-            <b>Иконка:</b> Мультяшный скунс, который ходит на задних лапах и очень пристально следит за Нетраннером.
-            <br>
-            <b>Эффект:</b> Вражеский Раннер поражённый Эффектом, получает минус 2 ко всем Проверкам “Ускользнуть", пока эта Программа Активирована. Каждый Скунс за один раз может воздействовать только на одного Нетраннера, но эффекты нескольких Скунсов могут складываться.
-          </td>
-        </tr>
-        <tr>
-          <td><b>Висп</b></td>
-          <td>Чёрный ЛЁД Против Людей</td>
-          <td>4</td>
-          <td>4</td>
-          <td>4</td>
-          <td>2</td>
-          <td>15</td>
-          <td>50€$ (Денное)</td>
-        </tr>
-        <tr>
-          <td colspan="9">
-            <b>Иконка:</b> Светящийся шар с одним крошечным глазом, потрескивающим энергией.
-            <br>
-            <b>Эффект:</b> Наносит 1d6 Урона мозгу Нетраннера и уменьшает количество Сетевых Действий, которые Нетраннер может сделать в следующий ход на 1 (минимум 2).
-          </td>
-        </tr>
-        <tr>
-          <td><b>Дракон</b></td>
-          <td>Чёрный ЛЁД Против Программ</td>
-          <td>6</td>
-          <td>4</td>
-          <td>6</td>
-          <td>6</td>
-          <td>30</td>
-          <td>1,000€$ (О. дорогое)</td>
-        </tr>
-        <tr>
-          <td colspan="9">
-            <b>Иконка:</b> Робот-дракон с золотой чешуей, окутанный электрическими разрядами.
-            <br>
-            <b>Эффект:</b> Наносит 6d6 урона Программе. Если этого урона хватает, чтобы отключить программу, то она уничтожается.
-          </td>
-        </tr>
-        <tr>
-          <td><b>Убийца</b></td>
-          <td>Чёрный ЛЁД Против Программ</td>
-          <td>4</td>
-          <td>8</td>
-          <td>6</td>
-          <td>2</td>
-          <td>20</td>
-          <td>500€$ (Дорогое)</td>
-        </tr>
-        <tr>
-          <td colspan="9">
-            <b>Иконка:</b> Робот-самурай с красными глазами, держащий светящуюся катану.
-            <br>
-            <b>Эффект:</b> Наносит 4d6 урона Программе. Если этого урона хватает, чтобы отключить программу, то она уничтожается.
-          </td>
-        </tr>
-        <tr>
-          <td><b>Саблезубый</b></td>
-          <td>Чёрный ЛЁД Против Программ</td>
-          <td>8</td>
-          <td>6</td>
-          <td>6</td>
-          <td>2</td>
-          <td>25</td>
-          <td>1,000€$ (О. дорогое)</td>
-        </tr>
-        <tr>
-          <td colspan="9">
-            <b>Иконка:</b> Огромный неуклюжий кот со светящимися белыми клыками.
-            <br>
-            <b>Эффект:</b> Наносит 6d6 урона Программе. Если этого урона хватает, чтобы Отключить программу, то она уничтожается.
-          </td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_9",
-    name: "Нетраннинг. Различные улучшения",
-    page: "netrunning",
-    table: `<table id="netrunning_9"><caption>Нетраннинг. Различные улучшения</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"netrunning_4",name:"Улучшения для нетраннинга",page:"netrunning",table:`<table id="netrunning_4"><caption>Улучшения для нетраннинга</caption><tbody><tr>
           <td><b>Название</b></td>
           <td><b>Информация</b></td>
           <td><b>Цена</b></td>
@@ -11905,62 +10530,7 @@ const alltables = [
             . Добавляет 1 дополнительный Слот для Программы или Оборудования.
           </td>
           <td>500€$ (Дорогое)</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_10",
-    name: "Оборудование для Кибердеки",
-    page: "netrunning",
-    table: `<table id="netrunning_10"><caption>Оборудование для Кибердеки</caption><tbody><tr>
-          <td><b>Название</b></td>
-          <td><b>Информация</b></td>
-          <td><b>Цена</b></td>
-        </tr>
-        <tr>
-          <td><b>Резервный Диск</b></td>
-          <td>
-            Установленный на Кибердеке Резервный Диск "сохраняет" Программы (Кроме Чёрного ЛЬДА), которые уничтожаются, помещая их на Резервный Диск за мгновение до их кончины. Мясным Действием, Нетраннер может переустановить все сохраненные Программы, на свою деку, если на ней есть свободные Слоты. Если снять с Кибердеки Резервный Диск, с него автоматически всё сотрется. Предустановленные Программы действующие "один раз за нетран" и тому подобное, переустанавливаются в том же состоянии, в каком были "сохранены" перед уничтожением, поэтому вы не сможете уничтожить свою броню, чтобы восстановить её.
-            <b>Требуется 2 Слота для Оборудования.</b>
-          </td>
-          <td>100€$ (Премиум)</td>
-        </tr>
-        <tr>
-          <td><b>ДНК Замок</b></td>
-          <td>
-            Кибердека с ДНК Замком, может блокироваться и разблокироваться с помощью отпечатка пальца, радужной оболочки, капли крови или любого другого биометрического метода, по желанию. Метод зависит от модели ДНК Замка. К заблокированной Кибердеке невозможно получить доступ без биометрического ключа. Ну или пройти проверку Электроника/Безопасность СЛ17.
-            <b>Требуется 2 Слота для Оборудования.</b>
-          </td>
-          <td>100€$ (Премиум)</td>
-        </tr>
-        <tr>
-          <td><b>Закалённая схема</b></td>
-          <td>Кибердеку с Закаленной Схемой, нельзя временно вывести из строя или уничтожить ЭМИ Эффектами, например импульсом СВЧ Пистолета или Эффектами от Программ (кроме Чёрного ЛЬДА).</td>
-          <td>100€$ (Премиум)</td>
-        </tr>
-        <tr>
-          <td><b>Теплоизоляция Проводки</b></td>
-          <td>Кибердека с Теплоизоляцией Проводки, не может загореться и поджечь одежду пользователя из-за Эффекта Программы.</td>
-          <td>100€$ (Премиум)</td>
-        </tr>
-        <tr>
-          <td><b>КРАШ Барьер</b></td>
-          <td>
-            На Кибердеку с КРАШ Барьером, не действуют Эффекты Программ, которые заставляют Нетраннера Отключится.
-            <b>Требуется 2 Слота для Оборудования.</b>
-          </td>
-          <td>100€$ (Премиум)</td>
-        </tr>
-        <tr>
-          <td><b>Увеличение радиуса</b></td>
-          <td>Кибердека с Увеличенным радиусом может подключаться к точке доступа на расстоянии до 8 метров.</td>
-          <td>100€$ (Премиум)</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_11",
-    name: "Пример Архитектуры СЕТи",
-    page: "netrunning",
-    table: `<table id="netrunning_11"><caption>Пример Архитектуры СЕТи</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"netrunning_5",name:"Пример Архитектуры СЕТи",page:"netrunning",table:`<table id="netrunning_5"><caption>Пример Архитектуры СЕТи</caption><tbody><tr>
         <td><b>Этаж</b></td>
         <td><b>По ту стороу Двери</b></td>
         <td><b>СЛ</b></td>
@@ -11999,13 +10569,7 @@ const alltables = [
         <td>7</td>
         <td>Адская Гончая</td>
         <td>НЕТ</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_12",
-    name: "Создание архитектуры сети. Стандартный рейтинг сложности",
-    page: "netrunning",
-    table: `<table id="netrunning_12"><caption>Создание архитектуры сети. Стандартный рейтинг сложности</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"netrunning_6",name:"Создание архитектуры сети. Стандартный рейтинг сложности",page:"netrunning",table:`<table id="netrunning_6"><caption>Создание архитектуры сети. Стандартный рейтинг сложности</caption><tbody><tr>
         <td></td>
         <td><b>Базовая Сложность</b></td>
         <td><b>Обычная Сложность</b></td>
@@ -12032,13 +10596,7 @@ const alltables = [
         <td>2 или меньше</td>
         <td>4 или меньше</td>
         <td>6 или меньше</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_13",
-    name: "Архитектура СЕТИ: Два первых этажа (Лобби)",
-    page: "netrunning",
-    table: `<table id="netrunning_13"><caption>Архитектура СЕТИ: Два первых этажа (Лобби)</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"netrunning_7",name:"Архитектура СЕТИ: Два первых этажа (Лобби)",page:"netrunning",table:`<table id="netrunning_7"><caption>Архитектура СЕТИ: Два первых этажа (Лобби)</caption><tbody><tr>
         <td><b>Бросок</b></td>
         <td><b>Этаж Лобби</b></td>
       </tr>
@@ -12065,13 +10623,7 @@ const alltables = [
       <tr>
         <td>6</td>
         <td>Убийца</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_14",
-    name: "Архитектура СЕТИ: Все Остальные Этажи",
-    page: "netrunning",
-    table: `<table id="netrunning_14"><caption>Архитектура СЕТИ: Все Остальные Этажи</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"netrunning_8",name:"Архитектура СЕТИ: Все Остальные Этажи",page:"netrunning",table:`<table id="netrunning_8"><caption>Архитектура СЕТИ: Все Остальные Этажи</caption><tbody><tr>
         <td><b>3d6</b></td>
         <td><b>Базовый Этаж</b></td>
         <td><b>Обычный Этаж</b></td>
@@ -12189,55 +10741,7 @@ const alltables = [
         <td>Лич, Ворон</td>
         <td>Великан</td>
         <td>Дракон х2</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_15",
-    name: "Архитектура СЕТИ: Демоны",
-    page: "netrunning",
-    table: `<table id="netrunning_15"><caption>Архитектура СЕТИ: Демоны</caption><tbody><tr>
-        <td><b>Имя</b></td>
-        <td><b>REZ</b></td>
-        <td><b>Интерфейс</b></td>
-        <td><b>СЕТ-Действий</b></td>
-        <td><b>Боевой Номер</b></td>
-      </tr>
-      <tr>
-        <td><b>Бес</b></td>
-        <td>15</td>
-        <td>3</td>
-        <td>2</td>
-        <td>14</td>
-      </tr>
-      <tr>
-        <td colspan="5">Иконка: Мелкая Оранжевая сфера с красными рожками.</td>
-      </tr>
-      <tr>
-        <td><b>Ифрит</b></td>
-        <td>25</td>
-        <td>4</td>
-        <td>3</td>
-        <td>14</td>
-      </tr>
-      <tr>
-        <td colspan="5">Иконка: Высокий, крепкий негр, одетый в элегантный смокинг с феской на голове и кинжалом в руке.</td>
-      </tr>
-      <tr>
-        <td><b>Балрон</b></td>
-        <td>30</td>
-        <td>7</td>
-        <td>4</td>
-        <td>14</td>
-      </tr>
-      <tr>
-        <td colspan="5">Иконка: Огромный монстр в футуристической черной броне, покрытой светящимися зелеными щупальцами.</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_16",
-    name: "Архитектура СЕТИ: Активная Защита",
-    page: "netrunning",
-    table: `<table id="netrunning_16"><caption>Архитектура СЕТИ: Активная Защита</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"netrunning_9",name:"Архитектура СЕТИ: Активная Защита",page:"netrunning",table:`<table id="netrunning_9"><caption>Архитектура СЕТИ: Активная Защита</caption><tbody><tr>
           <td><b>Тип</b></td>
           <td><b>Описание</b></td>
           <td><b>Триггер по умолчанию</b></td>
@@ -12318,13 +10822,7 @@ const alltables = [
           </td>
           <td>Цель входит в зону, не имея соответствующего пропуска или бейджа.</td>
           <td>4 СКО • 40ПЗ Периметр Охраняемой Территории</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_17",
-    name: "Архитектура СЕТИ: Стационарная Защита",
-    page: "netrunning",
-    table: `<table id="netrunning_17"><caption>Архитектура СЕТИ: Стационарная Защита</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"netrunning_10",name:"Архитектура СЕТИ: Стационарная Защита",page:"netrunning",table:`<table id="netrunning_10"><caption>Архитектура СЕТИ: Стационарная Защита</caption><tbody><tr>
           <td><b>Тип</b></td>
           <td><b>Описание</b></td>
           <td><b>Триггер по умолчанию</b></td>
@@ -12371,13 +10869,7 @@ const alltables = [
           </td>
           <td>Цель входит в помещение, не имея соответствующего пропуска или бейджа. Турель будет стрелять, пока цель не будет убита, пока не покинет защищаемый периметр или пока не предъявит соответствующий пропуск.</td>
           <td>Боевой номер 14 25ПЗ Периметр Охраняемой Территории</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_18",
-    name: "Архитектура СЕТИ: Ловушки в Окружающей Среде",
-    page: "netrunning",
-    table: `<table id="netrunning_18"><caption>Архитектура СЕТИ: Ловушки в Окружающей Среде</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"netrunning_11",name:"Архитектура СЕТИ: Ловушки в Окружающей Среде",page:"netrunning",table:`<table id="netrunning_11"><caption>Архитектура СЕТИ: Ловушки в Окружающей Среде</caption><tbody><tr>
           <td><b>Тип</b></td>
           <td><b>Описание</b></td>
           <td><b>Триггер по умолчанию</b></td>
@@ -12478,84 +10970,7 @@ const alltables = [
           </td>
           <td>Цель вошла в закрытую зону распыления.</td>
           <td>60ПЗ Внимательность СЛ 17 чтобы заметить Периметр Охраняемой Территории</td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_19",
-    name: "Архитектура СЕТИ: Добавляем Пароли Управляющие Узлы и Файлы",
-    page: "netrunning",
-    table: `<table id="netrunning_19"><caption>Архитектура СЕТИ: Добавляем Пароли Управляющие Узлы и Файлы</caption><tbody><tr>
-        <td><b>СЛ взлома архитектуры</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td>СЛ6</td>
-        <td>500€$ (Дорогое)</td>
-      </tr>
-      <tr>
-        <td>СЛ8</td>
-        <td>1,000€$ (0. дорогое)</td>
-      </tr>
-      <tr>
-        <td>СЛ1О</td>
-        <td>5,000€$ (Роскошь)</td>
-      </tr>
-      <tr>
-        <td>СЛ12</td>
-        <td>10,000€$ (Супер Роскошь)</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_20",
-    name: "Архитектура СЕТИ: Демоны и Чёрный ЛЕД",
-    page: "netrunning",
-    table: `<table id="netrunning_20"><caption>Архитектура СЕТИ: Демоны и Чёрный ЛЕД</caption><tbody><tr>
-        <td><b>Demon</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td>Бес</td>
-        <td>1,000€$ (0. дорогое)</td>
-      </tr>
-      <tr>
-        <td>Ифрит</td>
-        <td>5,000€$ (Роскошь)</td>
-      </tr>
-      <tr>
-        <td>Балрон</td>
-        <td>10,000€$ (Супер Роскошь)</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_21",
-    name: "Архитектура СЕТИ: Защита и Управляющие Узлы",
-    page: "netrunning",
-    table: `<table id="netrunning_21"><caption>Архитектура СЕТИ: Защита и Управляющие Узлы</caption><tbody><tr>
-        <td><b>СЛ "Электроника/ Безопасность"</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td>СЛ9</td>
-        <td>500€$ (Дорогое)</td>
-      </tr>
-      <tr>
-        <td>СЛ13</td>
-        <td>1,000€$ (0. дорогое)</td>
-      </tr>
-      <tr>
-        <td>СЛ17</td>
-        <td>5,000€$ (Роскошь)</td>
-      </tr>
-      <tr>
-        <td>СЛ21</td>
-        <td>10,000€$ (Супер Роскошь)</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "netrunning_22",
-    name: "Архитектура СЕТИ: Пример Безопасности для Дома",
-    page: "netrunning",
-    table: `<table id="netrunning_22"><caption>Архитектура СЕТИ: Пример Безопасности для Дома</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"netrunning_12",name:"Архитектура СЕТИ: Пример Безопасности для Дома",page:"netrunning",table:`<table id="netrunning_12"><caption>Архитектура СЕТИ: Пример Безопасности для Дома</caption><tbody><tr>
         <td><b>Этаж</b></td>
         <td><b>По ту стороу Двери</b></td>
         <td><b>СЛ</b></td>
@@ -12579,79 +10994,61 @@ const alltables = [
         <td>4</td>
         <td>Control Node (Automated Turret)</td>
         <td>(Control DV8)</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "nightcity_1",
-    name: "Найт-Сити. Зоны",
-    page: "nightcity",
-    table: `<table id="nightcity_1"><caption>Найт-Сити. Зоны</caption><tbody><tr>
-        <td><b>Тип Зоны</b></td>
-        <td><b>Описание</b></td>
-      </tr>
-      <tr>
-        <td>Зона поражения</td>
-        <td>Район, наиболее пострадавший от ядерного взрыва в Найт-Сити, представляет собой опасную местность, полную разрушенных, искореженных небоскребов, сгоревших автомобилей и погребенных тел неудачливых людей.</td>
-      </tr>
-      <tr>
-        <td>Востанавл. Городской Центр</td>
-        <td>Это те части города, которые избежали худших последствий войны и бомбардировок. В Центре восстановления повсюду краны и строительная техника, возводящие новые корпоративные башни и многолюдные городские мегабашни.</td>
-      </tr>
-      <tr>
-        <td>Корпоративная Зона</td>
-        <td>Это особый район города, который был оцеплен и закрыт только для высокопоставленных руководителей корпораций и членов их семей.</td>
-      </tr>
-      <tr>
-        <td>Боевая Зона</td>
-        <td>Самая опасная и беззаконная часть города, выросшая из зоны боёв по время и после 4-й корпоративной войны. Единственное правосудие здесь вершится под дулом пистолета.</td>
-      </tr>
-      <tr>
-        <td>Переполненные Пригороды</td>
-        <td>Это место на грани катастрофы, где когда-то стояли безопасные и надежные Бивервилли, заполнено разросшимися палаточными городками и нерегулируемыми лагерями беженцев, переполненными переселенцами войны.</td>
-      </tr>
-      <tr>
-        <td>Периметр Пустошей</td>
-        <td>Это территория за пределами разросшегося Города. На краю беззакония, за исключением районов, контролируемых семьями кочевников.</td>
-      </tr>
-      <tr>
-        <td>Открытая Дорога</td>
-        <td>Шоссе, населенное только людьми в транспорте или бродячими бустерами на шипастых машинах и мотоциклах.</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "nightcity_2",
-    name: "Найт-Сити. Рейтинг Угроз",
-    page: "nightcity",
-    table: `<table id="nightcity_2"><caption>Найт-Сити. Рейтинг Угроз</caption><tbody><tr>
-        <td><b>Рейтинг угрозы</b></td>
-        <td><b>Описание</b></td>
-      </tr>
-      <tr>
-        <td>Административный</td>
-        <td>Охраняемый закрытый район только для ультра-богатых и влиятельных людей, живущих там, играя в гольф и теннис под защитой вооруженной охраны. Он соединен с городским центром с помощью маглева, чтобы ездить на работу.</td>
-      </tr>
-      <tr>
-        <td>Корпоративный</td>
-        <td>Это части города, патрулируемые корпоративной охраной, которые находятся в отдалении от резни в Эоне боевых действий. Однако и там есть своя опасность. Опасность с гораздо более высоким бюджетом.</td>
-      </tr>
-      <tr>
-        <td>Умеренный</td>
-        <td>Это части города, выходящие за пределы Корпоративных зон, где живут люди, которые не могут позволить себе жить внутри Корпоративных зон. Жизнь там в относительной безопасности... ну по сравнению с бойней в Боевых зонах. К сожалению, эта бойня иногда просачивается в Умеренные зоны.</td>
-      </tr>
-      <tr>
-        <td>Боевые</td>
-        <td>Это самые худшие места в городе, где гибнут люди, и никто не убирает тела.</td>
-      </tr>
-      <tr>
-        <td>Окраины</td>
-        <td>Это территория за пределами городской черты. Единственные законы здесь — те, которые вы устанавливаете для себя сами. Скорее всего, вы столкнетесь здесь только с дорожными бандитами и кочевниками.</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "nightcity_3",
-    name: "Найт-Сити. Корпорации",
-    page: "nightcity",
-    table: `<table id="nightcity_3"><caption>Найт-Сити. Корпорации</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"nightcity_1",name:"Найт-Сити. Зоны",page:"nightcity",table:`<table id="nightcity_1"><caption>Найт-Сити. Зоны</caption><tbody><tr>
+          <td><b>Тип Зоны</b></td>
+          <td><b>Описание</b></td>
+        </tr>
+        <tr>
+          <td><b>Зона поражения</b></td>
+          <td>Район, наиболее пострадавший от ядерного взрыва в Найт-Сити, представляет собой опасную местность, полную разрушенных, искореженных небоскребов, сгоревших автомобилей и погребенных тел неудачливых людей.</td>
+        </tr>
+        <tr>
+          <td><b>Востанавленный Городской Центр</b></td>
+          <td>Это те части города, которые избежали худших последствий войны и бомбардировок. В Центре восстановления повсюду краны и строительная техника, возводящие новые корпоративные башни и многолюдные городские мегабашни.</td>
+        </tr>
+        <tr>
+          <td><b>Корпоративная Зона</b></td>
+          <td>Это особый район города, который был оцеплен и закрыт только для высокопоставленных руководителей корпораций и членов их семей.</td>
+        </tr>
+        <tr>
+          <td><b>Боевая Зона</b></td>
+          <td>Самая опасная и беззаконная часть города, выросшая из зоны боёв по время и после 4-й корпоративной войны. Единственное правосудие здесь вершится под дулом пистолета.</td>
+        </tr>
+        <tr>
+          <td><b>Переполненные Пригороды</b></td>
+          <td>Это место на грани катастрофы, где когда-то стояли безопасные и надежные Бивервилли, заполнено разросшимися палаточными городками и нерегулируемыми лагерями беженцев, переполненными переселенцами войны.</td>
+        </tr>
+        <tr>
+          <td><b>Периметр Пустошей</b></td>
+          <td>Это территория за пределами разросшегося Города. На краю беззакония, за исключением районов, контролируемых семьями кочевников.</td>
+        </tr>
+        <tr>
+          <td><b>Открытая Дорога</b></td>
+          <td>Шоссе, населенное только людьми в транспорте или бродячими бустерами на шипастых машинах и мотоциклах.</td>
+        </tr></tbody></table>`},{id:"nightcity_2",name:"Найт-Сити. Рейтинг Угроз",page:"nightcity",table:`<table id="nightcity_2"><caption>Найт-Сити. Рейтинг Угроз</caption><tbody><tr>
+          <td><b>Рейтинг угрозы</b></td>
+          <td><b>Описание</b></td>
+        </tr>
+        <tr>
+          <td><b>Административный</b></td>
+          <td>Охраняемый закрытый район только для ультра-богатых и влиятельных людей, живущих там, играя в гольф и теннис под защитой вооруженной охраны. Он соединен с городским центром с помощью маглева, чтобы ездить на работу.</td>
+        </tr>
+        <tr>
+          <td><b>Корпоративный</b></td>
+          <td>Это части города, патрулируемые корпоративной охраной, которые находятся в отдалении от резни в Эоне боевых действий. Однако и там есть своя опасность. Опасность с гораздо более высоким бюджетом.</td>
+        </tr>
+        <tr>
+          <td><b>Умеренный</b></td>
+          <td>Это части города, выходящие за пределы Корпоративных зон, где живут люди, которые не могут позволить себе жить внутри Корпоративных зон. Жизнь там в относительной безопасности... ну по сравнению с бойней в Боевых зонах. К сожалению, эта бойня иногда просачивается в Умеренные зоны.</td>
+        </tr>
+        <tr>
+          <td><b>Боевые</b></td>
+          <td>Это самые худшие места в городе, где гибнут люди, и никто не убирает тела.</td>
+        </tr>
+        <tr>
+          <td><b>Окраины</b></td>
+          <td>Это территория за пределами городской черты. Единственные законы здесь — те, которые вы устанавливаете для себя сами. Скорее всего, вы столкнетесь здесь только с дорожными бандитами и кочевниками.</td>
+        </tr></tbody></table>`},{id:"nightcity_3",name:"Найт-Сити. Корпорации",page:"nightcity",table:`<table id="nightcity_3"><caption>Найт-Сити. Корпорации</caption><tbody><tr>
         <td><b>Корпорация</b></td>
         <td><b>Деятельность</b></td>
         <td>
@@ -12822,13 +11219,7 @@ const alltables = [
           <br>
           225,000
         </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "nightcity_16",
-    name: "Weather: December to February",
-    page: "nightcity",
-    table: `<table id="nightcity_16"><caption>Weather: December to February</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"nightcity_4",name:"Weather: December to February",page:"nightcity",table:`<table id="nightcity_4"><caption>Weather: December to February</caption><tbody><tr>
             <td><b>1d6</b></td>
             <td><b>Temperature</b></td>
             <td><b>Current Conditions</b></td>
@@ -12862,13 +11253,7 @@ const alltables = [
             <td>6</td>
             <td>Cool (15°C)</td>
             <td><a href="#StrangeWeather">Strange</a></td>
-          </tr></tbody></table>`,
-  },
-  {
-    id: "nightcity_17",
-    name: "Weather: March to May",
-    page: "nightcity",
-    table: `<table id="nightcity_17"><caption>Weather: March to May</caption><tbody><tr>
+          </tr></tbody></table>`},{id:"nightcity_5",name:"Weather: March to May",page:"nightcity",table:`<table id="nightcity_5"><caption>Weather: March to May</caption><tbody><tr>
             <td><b>1d6</b></td>
             <td><b>Temperature</b></td>
             <td><b>Current Conditions</b></td>
@@ -12902,13 +11287,7 @@ const alltables = [
             <td>6</td>
             <td>Warm (21°C)</td>
             <td><a href="#StrangeWeather">Strange</a></td>
-          </tr></tbody></table>`,
-  },
-  {
-    id: "nightcity_18",
-    name: "Weather: June to August",
-    page: "nightcity",
-    table: `<table id="nightcity_18"><caption>Weather: June to August</caption><tbody><tr>
+          </tr></tbody></table>`},{id:"nightcity_6",name:"Weather: June to August",page:"nightcity",table:`<table id="nightcity_6"><caption>Weather: June to August</caption><tbody><tr>
             <td><b>1d6</b></td>
             <td><b>Temperature</b></td>
             <td><b>Current Conditions</b></td>
@@ -12942,13 +11321,7 @@ const alltables = [
             <td>6</td>
             <td>Hot (32°C)</td>
             <td><a href="#StrangeWeather">Strange</a></td>
-          </tr></tbody></table>`,
-  },
-  {
-    id: "nightcity_19",
-    name: "Weather: September to November",
-    page: "nightcity",
-    table: `<table id="nightcity_19"><caption>Weather: September to November</caption><tbody><tr>
+          </tr></tbody></table>`},{id:"nightcity_7",name:"Weather: September to November",page:"nightcity",table:`<table id="nightcity_7"><caption>Weather: September to November</caption><tbody><tr>
             <td><b>1d6</b></td>
             <td><b>Temperature</b></td>
             <td><b>Current Conditions</b></td>
@@ -12982,13 +11355,7 @@ const alltables = [
             <td>6</td>
             <td>Hot (27°C)</td>
             <td><a href="#StrangeWeather">Strange</a></td>
-          </tr></tbody></table>`,
-  },
-  {
-    id: "nightcity_20",
-    name: "Strange Weather",
-    page: "nightcity",
-    table: `<table id="nightcity_20"><caption>Strange Weather</caption><tbody><tr>
+          </tr></tbody></table>`},{id:"nightcity_8",name:"Strange Weather",page:"nightcity",table:`<table id="nightcity_8"><caption>Strange Weather</caption><tbody><tr>
         <td><b>1d6</b></td>
         <td><b>Temperature</b></td>
         <td><b>Current Conditions</b></td>
@@ -13046,13 +11413,7 @@ const alltables = [
         <td>10</td>
         <td>Blackout</td>
         <td>1d6 Days</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_1",
-    name: "Количество сетевых действий",
-    page: "roles",
-    table: `<table id="roles_1"><caption>Количество сетевых действий</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"roles_1",name:"Нетран. Количество сетевых действий",page:"roles",table:`<table id="roles_1"><caption>Нетран. Количество сетевых действий</caption><tbody><tr>
         <td><b>Ранг интерфейса</b></td>
         <td><b>1-3</b></td>
         <td><b>4-6</b></td>
@@ -13065,13 +11426,7 @@ const alltables = [
         <td>3</td>
         <td>4</td>
         <td>5</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_2",
-    name: "Функции интерфейса",
-    page: "roles",
-    table: `<table id="roles_2"><caption>Функции интерфейса</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"roles_2",name:"Нетран. Функции интерфейса",page:"roles",table:`<table id="roles_2"><caption>Нетран. Функции интерфейса</caption><tbody><tr>
         <td><b>Функция</b></td>
         <td><b>Информация</b></td>
       </tr>
@@ -13110,13 +11465,7 @@ const alltables = [
       <tr>
         <td><a href="netrunning.html#zap">Разряд</a></td>
         <td>Базовая атака Нетраннеру, которая работает как против Программ, так и против других Нетраннеров.</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_3",
-    name: "Теник. Таблица СЛ и времени",
-    page: "roles",
-    table: `<table id="roles_3"><caption>Теник. Таблица СЛ и времени</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"roles_3",name:"Теник. Таблица СЛ и времени",page:"roles",table:`<table id="roles_3"><caption>Теник. Таблица СЛ и времени</caption><tbody><tr>
         <td><b>Цена</b></td>
         <td><b>СЛ</b></td>
         <td><b>Время</b></td>
@@ -13155,13 +11504,7 @@ const alltables = [
         <td>10.000€$+ Супер Роскошь</td>
         <td>29</td>
         <td>1 месяц за 10.000€$ цены</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_4",
-    name: "Медтехник. Препараты",
-    page: "roles",
-    table: `<table id="roles_4"><caption>Медтехник. Препараты</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"roles_4",name:"Медтехник. Препараты",page:"roles",table:`<table id="roles_4"><caption>Медтехник. Препараты</caption><tbody><tr>
         <td><b>Препараты</b></td>
         <td><b>Эффект</b></td>
       </tr>
@@ -13184,13 +11527,7 @@ const alltables = [
       <tr>
         <td><b>Всплеск</b></td>
         <td>При введении дозы Всплеска цель может бодрствовать без сна в течение 24 часов. Человек может получить пользу только от одного применения Всплеска в неделю.</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_5",
-    name: "Медицинские технологии [Криосистемы]",
-    page: "roles",
-    table: `<table id="roles_5"><caption>Медицинские технологии [Криосистемы]</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"roles_5",name:"Медтехник. Криосистемы",page:"roles",table:`<table id="roles_5"><caption>Медтехник. Криосистемы</caption><tbody><tr>
         <td><b>Уровень</b></td>
         <td><b>Выгода</b></td>
       </tr>
@@ -13213,13 +11550,7 @@ const alltables = [
       <tr>
         <td>5</td>
         <td>За 5 очков в Криосистемах вы получаете еще 3 криокамеры, которые можно поместить там же, где и первые три. Ваш крионасос теперь имеет 3 заряда, максимальная грузоподъемность увеличивается до 3х человек в стазисе.</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_6",
-    name: "Медиа. Слухи",
-    page: "roles",
-    table: `<table id="roles_6"><caption>Медиа. Слухи</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"roles_6",name:"Медиа. Слухи",page:"roles",table:`<table id="roles_6"><caption>Медиа. Слухи</caption><tbody><tr>
         <td><b>Слух</b></td>
         <td><b>Описание</b></td>
         <td><b>Пассив СЛ</b></td>
@@ -13248,13 +11579,7 @@ const alltables = [
         <td>Такой же как Существенный Слух, но содержит дополнительную информацию, которую, в случае подтверждения, Медиа может использовать в опубликованной им истории о предполагаемой правде, лежащей в основе слухов.</td>
         <td>13</td>
         <td>21</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_7",
-    name: "Корпо. Повысить лояльность",
-    page: "roles",
-    table: `<table id="roles_7"><caption>Корпо. Повысить лояльность</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"roles_7",name:"Корпо. Повысить лояльность",page:"roles",table:`<table id="roles_7"><caption>Корпо. Повысить лояльность</caption><tbody><tr>
         <td><b>Повысить лояльность</b></td>
         <td><b>Очки</b></td>
       </tr>
@@ -13281,13 +11606,7 @@ const alltables = [
       <tr>
         <td>Рискнуть жизнью ради подчинённого.</td>
         <td>+8</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_8",
-    name: "Корпо. Потеря лояльности",
-    page: "roles",
-    table: `<table id="roles_8"><caption>Корпо. Потеря лояльности</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"roles_8",name:"Корпо. Потеря лояльности",page:"roles",table:`<table id="roles_8"><caption>Корпо. Потеря лояльности</caption><tbody><tr>
         <td><b>Потеря лояльности</b></td>
         <td><b>Очки</b></td>
       </tr>
@@ -13314,458 +11633,591 @@ const alltables = [
       <tr>
         <td>Бросить подчинённого под огнем.</td>
         <td>-8</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_9",
-    name: "Корпо. Телохранитель",
-    page: "roles",
-    table: `<table id="roles_9"><caption>Корпо. Телохранитель</caption><tbody><tr>
-        <td><b>1d6</b></td>
-        <td><b>ИНТ</b></td>
-        <td><b>РЕА</b></td>
-        <td><b>ЛВК</b></td>
-        <td><b>ТЕХ</b></td>
-        <td><b>ХАР</b></td>
-        <td><b>ВОЛЯ</b></td>
-        <td><b>СКО</b></td>
-        <td><b>ТЕЛ</b></td>
-        <td><b>ЭМП</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>3</td>
-        <td>7</td>
-        <td>7</td>
-        <td>4</td>
-        <td>7</td>
-        <td>6</td>
-        <td>4</td>
-        <td>8</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>5</td>
-        <td>8</td>
-        <td>6</td>
-        <td>2</td>
-        <td>7</td>
-        <td>8</td>
-        <td>4</td>
-        <td>8</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>4</td>
-        <td>8</td>
-        <td>5</td>
-        <td>3</td>
-        <td>7</td>
-        <td>8</td>
-        <td>6</td>
-        <td>6</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>4</td>
-        <td>7</td>
-        <td>8</td>
-        <td>4</td>
-        <td>7</td>
-        <td>7</td>
-        <td>4</td>
-        <td>7</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>3</td>
-        <td>8</td>
-        <td>5</td>
-        <td>2</td>
-        <td>8</td>
-        <td>7</td>
-        <td>4</td>
-        <td>6</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>5</td>
-        <td>7</td>
-        <td>7</td>
-        <td>2</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>7</td>
-        <td>4</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_10",
-    name: "Корпо. Оперативник под прикрытием",
-    page: "roles",
-    table: `<table id="roles_10"><caption>Корпо. Оперативник под прикрытием</caption><tbody><tr>
-        <td><b>1d6</b></td>
-        <td><b>ИНТ</b></td>
-        <td><b>РЕА</b></td>
-        <td><b>ЛВК</b></td>
-        <td><b>ТЕХ</b></td>
-        <td><b>ХАР</b></td>
-        <td><b>ВОЛЯ</b></td>
-        <td><b>СКО</b></td>
-        <td><b>ТЕЛ</b></td>
-        <td><b>ЭМП</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>4</td>
-        <td>8</td>
-        <td>5</td>
-        <td>4</td>
-        <td>6</td>
-        <td>8</td>
-        <td>5</td>
-        <td>7</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>3</td>
-        <td>8</td>
-        <td>6</td>
-        <td>2</td>
-        <td>8</td>
-        <td>6</td>
-        <td>6</td>
-        <td>6</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
-        <td>7</td>
-        <td>6</td>
-        <td>3</td>
-        <td>7</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-        <td>5</td>
-        <td>3</td>
-        <td>6</td>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>3</td>
-        <td>8</td>
-        <td>4</td>
-        <td>4</td>
-        <td>8</td>
-        <td>7</td>
-        <td>4</td>
-        <td>8</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>5</td>
-        <td>8</td>
-        <td>3</td>
-        <td>7</td>
-        <td>7</td>
-        <td>8</td>
-        <td>3</td>
-        <td>6</td>
-        <td>3</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_11",
-    name: "Корпо. Водитель",
-    page: "roles",
-    table: `<table id="roles_11"><caption>Корпо. Водитель</caption><tbody><tr>
-        <td>1d6</td>
-        <td>ИНТ</td>
-        <td>РЕА</td>
-        <td>ЛВК</td>
-        <td>ТЕХ</td>
-        <td>ХАР</td>
-        <td>ВОЛЯ</td>
-        <td>СКО</td>
-        <td>ТЕЛ</td>
-        <td>ЭМП</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>5</td>
-        <td>8</td>
-        <td>6</td>
-        <td>4</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>5</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>5</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
-        <td>7</td>
-        <td>4</td>
-        <td>7</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>6</td>
-        <td>8</td>
-        <td>8</td>
-        <td>4</td>
-        <td>7</td>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>8</td>
-        <td>7</td>
-        <td>4</td>
-        <td>5</td>
-        <td>4</td>
-        <td>7</td>
-        <td>5</td>
-        <td>6</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>7</td>
-        <td>8</td>
-        <td>3</td>
-        <td>5</td>
-        <td>7</td>
-        <td>6</td>
-        <td>4</td>
-        <td>6</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>6</td>
-        <td>8</td>
-        <td>6</td>
-        <td>6</td>
-        <td>8</td>
-        <td>5</td>
-        <td>3</td>
-        <td>5</td>
-        <td>3</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_12",
-    name: "Корпо. Нетраннер",
-    page: "roles",
-    table: `<table id="roles_12"><caption>Корпо. Нетраннер</caption><tbody><tr>
-        <td>1d6</td>
-        <td>ИНТ</td>
-        <td>РЕА</td>
-        <td>ЛВК</td>
-        <td>ТЕХ</td>
-        <td>ХАР</td>
-        <td>ВОЛЯ</td>
-        <td>СКО</td>
-        <td>ТЕЛ</td>
-        <td>ЭМП</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>7</td>
-        <td>5</td>
-        <td>4</td>
-        <td>5</td>
-        <td>5</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>7</td>
-        <td>8</td>
-        <td>4</td>
-        <td>6</td>
-        <td>8</td>
-        <td>3</td>
-        <td>4</td>
-        <td>6</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>5</td>
-        <td>6</td>
-        <td>8</td>
-        <td>8</td>
-        <td>6</td>
-        <td>6</td>
-        <td>4</td>
-        <td>4</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>7</td>
-        <td>8</td>
-        <td>5</td>
-        <td>6</td>
-        <td>4</td>
-        <td>4</td>
-        <td>6</td>
-        <td>5</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>5</td>
-        <td>8</td>
-        <td>8</td>
-        <td>5</td>
-        <td>5</td>
-        <td>3</td>
-        <td>6</td>
-        <td>4</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>6</td>
-        <td>4</td>
-        <td>7</td>
-        <td>4</td>
-        <td>4</td>
-        <td>4</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_13",
-    name: "Корпо. Техник",
-    page: "roles",
-    table: `<table id="roles_13"><caption>Корпо. Техник</caption><tbody><tr>
-        <td><b>1d6</b></td>
-        <td><b>ИНТ</b></td>
-        <td><b>PEA</b></td>
-        <td><b>ЛВК</b></td>
-        <td><b>ТЕХ</b></td>
-        <td><b>ХАР</b></td>
-        <td><b>ВОЛЯ</b></td>
-        <td><b>CKO</b></td>
-        <td><b>ТЕЛ</b></td>
-        <td><b>ЭМП</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>8</td>
-        <td>8</td>
-        <td>5</td>
-        <td>7</td>
-        <td>3</td>
-        <td>4</td>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>8</td>
-        <td>3</td>
-        <td>5</td>
-        <td>5</td>
-        <td>4</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>8</td>
-        <td>6</td>
-        <td>5</td>
-        <td>8</td>
-        <td>4</td>
-        <td>3</td>
-        <td>3</td>
-        <td>7</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>8</td>
-        <td>8</td>
-        <td>5</td>
-        <td>7</td>
-        <td>4</td>
-        <td>4</td>
-        <td>4</td>
-        <td>5</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>7</td>
-        <td>7</td>
-        <td>3</td>
-        <td>7</td>
-        <td>5</td>
-        <td>3</td>
-        <td>6</td>
-        <td>6</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>5</td>
-        <td>8</td>
-        <td>6</td>
-        <td>3</td>
-        <td>3</td>
-        <td>5</td>
-        <td>5</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_14",
-    name: "Кочевник. Автопарк семьи",
-    page: "roles",
-    table: `<table id="roles_14"><caption>Кочевник. Автопарк семьи</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"roles_9",name:"Корпо. Сотрудники",page:"roles",table:`<table id="roles_9"><caption>Корпо. Сотрудники</caption><tbody><tr>
+          <th colspan="12"><b>Телохранитель</b></th>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Прикрытие</b></td>
+          <td colspan="10">Личный тренер, эскорт</td>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Истинная&nbsp;работа</b></td>
+          <td colspan="10">Защищает вас в опасных ситуациях</td>
+        </tr>
+        <tr>
+          <td rowspan="3"><b>Навыки</b></td>
+          <td><b>+2</b></td>
+          <td colspan="10">Концентрация, Общение, Образование, Первая Помощь, Проницательность, Владение языками (Уличный Сленг), Знание Местности (Свой Район), Убеждение, Скрытность</td>
+        </tr>
+        <tr>
+          <td><b>+4</b></td>
+          <td colspan="10">Атлетика, Уклонение, Допрос, Внимательность, Сопротивление пыткам/Наркотикам, Тактика</td>
+        </tr>
+        <tr>
+          <td><b>+6</b></td>
+          <td colspan="10">Пистолеты, Рукопашный бой</td>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Киберимпланты</b></td>
+          <td colspan="10">Повышенные Антитела, Подкожная Броня (ОС 11), Набор Кибераудио, Встроенный Агент, Трекер маячка</td>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Снаряжение</b></td>
+          <td colspan="10">Агент, Лёгкая Бронезащита (ОС 11), Очень тяжелый Пистолет, Стандартные патроны для ОТ Пистолета х50</td>
+        </tr>
+        <tr>
+          <td colspan="2" rowspan="7"><b>Характеристики</b></td>
+          <td><b>1d6</b></td>
+          <td><b>ИНТ</b></td>
+          <td><b>РЕА</b></td>
+          <td><b>ЛВК</b></td>
+          <td><b>ТЕХ</b></td>
+          <td><b>ХАР</b></td>
+          <td><b>ВОЛЯ</b></td>
+          <td><b>СКО</b></td>
+          <td><b>ТЕЛ</b></td>
+          <td><b>ЭМП</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>3</td>
+          <td>7</td>
+          <td>7</td>
+          <td>4</td>
+          <td>7</td>
+          <td>6</td>
+          <td>4</td>
+          <td>8</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>5</td>
+          <td>8</td>
+          <td>6</td>
+          <td>2</td>
+          <td>7</td>
+          <td>8</td>
+          <td>4</td>
+          <td>8</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>4</td>
+          <td>8</td>
+          <td>5</td>
+          <td>3</td>
+          <td>7</td>
+          <td>8</td>
+          <td>6</td>
+          <td>6</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>4</td>
+          <td>7</td>
+          <td>8</td>
+          <td>4</td>
+          <td>7</td>
+          <td>7</td>
+          <td>4</td>
+          <td>7</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>3</td>
+          <td>8</td>
+          <td>5</td>
+          <td>2</td>
+          <td>8</td>
+          <td>7</td>
+          <td>4</td>
+          <td>6</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>5</td>
+          <td>7</td>
+          <td>7</td>
+          <td>2</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+          <td>7</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <th colspan="12"><b>Оперативник под прикрытием</b></th>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Прикрытие</b></td>
+          <td colspan="10">Личный помощник, стилист</td>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Истинная работа</b></td>
+          <td colspan="10">Делает за вас грязную работу</td>
+        </tr>
+        <tr>
+          <td rowspan="3"><b>Навыки</b></td>
+          <td><b>+2</b></td>
+          <td colspan="10">Атлетика, Рукопашный бой, Концетрация, Общение, Образование, Первая Помощь, Владение языками (Уличный Сленг), Знание Местности (Свой Район), Внимательность, Убеждение</td>
+        </tr>
+        <tr>
+          <td><b>+4</b></td>
+          <td colspan="10">Подкуп, Бюрократия, Бизнес, Уклонение, Проницательность, Взлом Замков, Уличное Чутьё, Торговля, Гардероб и Стиль</td>
+        </tr>
+        <tr>
+          <td><b>+6</b></td>
+          <td colspan="10">Пистолеты, Скрытность</td>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Киберимпланты</b></td>
+          <td colspan="10">Два сопряженных Кибер-глаза с УФ/ИК Зрением, Сдвиг цвета, Кибер-рука с "Рукохватом", Выкидныморужиемдальнего боя (ОченьТяжелый пистолет), покрытие Realskinn™</td>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Снаряжение</b></td>
+          <td colspan="10">Агент, лёгкая бронезащита (ОС 11), Очень Тяжелый пистолет, Стандартные патроны для ОТ Пистолета х50</td>
+        </tr>
+        <tr>
+          <td colspan="2" rowspan="7"><b>Характеристики</b></td>
+          <td><b>1d6</b></td>
+          <td><b>ИНТ</b></td>
+          <td><b>РЕА</b></td>
+          <td><b>ЛВК</b></td>
+          <td><b>ТЕХ</b></td>
+          <td><b>ХАР</b></td>
+          <td><b>ВОЛЯ</b></td>
+          <td><b>СКО</b></td>
+          <td><b>ТЕЛ</b></td>
+          <td><b>ЭМП</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>4</td>
+          <td>8</td>
+          <td>5</td>
+          <td>4</td>
+          <td>6</td>
+          <td>8</td>
+          <td>5</td>
+          <td>7</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>3</td>
+          <td>8</td>
+          <td>6</td>
+          <td>2</td>
+          <td>8</td>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td>5</td>
+          <td>7</td>
+          <td>6</td>
+          <td>3</td>
+          <td>7</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>5</td>
+          <td>3</td>
+          <td>6</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>3</td>
+          <td>8</td>
+          <td>4</td>
+          <td>4</td>
+          <td>8</td>
+          <td>7</td>
+          <td>4</td>
+          <td>8</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>5</td>
+          <td>8</td>
+          <td>3</td>
+          <td>7</td>
+          <td>7</td>
+          <td>8</td>
+          <td>3</td>
+          <td>6</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <th colspan="12"><b>Водитель</b></th>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Прикрытие</b></td>
+          <td colspan="10">Лакей, личный водитель</td>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Истинная работа</b></td>
+          <td colspan="10">Водит, пилотирует, управляет ТС команды</td>
+        </tr>
+        <tr>
+          <td rowspan="3"><b>Навыки</b></td>
+          <td><b>+2</b></td>
+          <td colspan="10">Атлетика, Концентрация, Общение, Образование, Первая Помощь, Проницательность, Владение языками (Уличный Сленг), Знание Местности (Свой Район), Внимательность, Убеждение</td>
+        </tr>
+        <tr>
+          <td><b>+4</b></td>
+          <td colspan="10">Рукопашный бой, Выносливость, Уклонение, Автомеханик, Пилотирование, Судоходство, Судоремонт, Скрытность, Следопыт</td>
+        </tr>
+        <tr>
+          <td><b>+6</b></td>
+          <td colspan="10">Вождение, Пистолеты</td>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Киберимпланты</b></td>
+          <td colspan="10">Имплант Радар/Сонар, Набор Кибераудио, Встроенный Агент, Трекер маячка, Радар-Детектор</td>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Снаряжение</b></td>
+          <td colspan="10">Лёгкая Бронезащита (ОС 11), Очень Тяжелый пистолет, Автомобиль с улучшенными сиденьями, Базовые патроны для ОТ Пистолета х50</td>
+        </tr>
+        <tr>
+          <td colspan="2" rowspan="7"><b>Характеристики</b></td>
+          <td><b>1d6</b></td>
+          <td><b>ИНТ</b></td>
+          <td><b>РЕА</b></td>
+          <td><b>ЛВК</b></td>
+          <td><b>ТЕХ</b></td>
+          <td><b>ХАР</b></td>
+          <td><b>ВОЛЯ</b></td>
+          <td><b>СКО</b></td>
+          <td><b>ТЕЛ</b></td>
+          <td><b>ЭМП</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>5</td>
+          <td>8</td>
+          <td>6</td>
+          <td>4</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>5</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+          <td>5</td>
+          <td>7</td>
+          <td>4</td>
+          <td>7</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>6</td>
+          <td>8</td>
+          <td>8</td>
+          <td>4</td>
+          <td>7</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>8</td>
+          <td>7</td>
+          <td>4</td>
+          <td>5</td>
+          <td>4</td>
+          <td>7</td>
+          <td>5</td>
+          <td>6</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>7</td>
+          <td>8</td>
+          <td>3</td>
+          <td>5</td>
+          <td>7</td>
+          <td>6</td>
+          <td>4</td>
+          <td>6</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>6</td>
+          <td>8</td>
+          <td>6</td>
+          <td>6</td>
+          <td>8</td>
+          <td>5</td>
+          <td>3</td>
+          <td>5</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <th colspan="12"><b>Нетраннер</b></th>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Прикрытие</b></td>
+          <td colspan="10">IТ-шник, исследователь</td>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Истинная работа</b></td>
+          <td colspan="10">Нетраннинг и сбор информации</td>
+        </tr>
+        <tr>
+          <td rowspan="3"><b>Навыки</b></td>
+          <td><b>+2</b></td>
+          <td colspan="10">Интерфейс (Ролевая Способность Нетраннера), Атлетика, Рукопашный бой, Концетрация, Общение, Уклонение, Первая Помощь, Проницательность, Владение языками (Уличный Сленг), Знание Местности (Свой Район), Внимательность, Убеждение</td>
+        </tr>
+        <tr>
+          <td><b>+4</b></td>
+          <td colspan="10">Техника, Криптография, Кибертехника, Образование, Электроника/Безопасность (х2), Фальсификация, Поиск Информации, Пистолеты, Скрытность</td>
+        </tr>
+        <tr>
+          <td><b>+6</b></td>
+          <td colspan="10"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Киберимпланты</b></td>
+          <td colspan="10">Нейролинк, Разъём флешек, Регулятор Боли, Личный порт, Кибер-глаза с AR</td>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Снаряжение</b></td>
+          <td colspan="10">Агент, Лёгкая Бронезащита (ОС11), Кибердека (7 слотов: Меч, Меч, Убийца, Червь, Червь, Доспехи), Очень Тяжелый пистолет, Стандартные патроны для ОТ Пистолета х50</td>
+        </tr>
+        <tr>
+          <td colspan="2" rowspan="7"><b>Характеристики</b></td>
+          <td><b>1d6</b></td>
+          <td><b>ИНТ</b></td>
+          <td><b>РЕА</b></td>
+          <td><b>ЛВК</b></td>
+          <td><b>ТЕХ</b></td>
+          <td><b>ХАР</b></td>
+          <td><b>ВОЛЯ</b></td>
+          <td><b>СКО</b></td>
+          <td><b>ТЕЛ</b></td>
+          <td><b>ЭМП</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>7</td>
+          <td>5</td>
+          <td>4</td>
+          <td>5</td>
+          <td>5</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>7</td>
+          <td>8</td>
+          <td>4</td>
+          <td>6</td>
+          <td>8</td>
+          <td>3</td>
+          <td>4</td>
+          <td>6</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>5</td>
+          <td>6</td>
+          <td>8</td>
+          <td>8</td>
+          <td>6</td>
+          <td>6</td>
+          <td>4</td>
+          <td>4</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>7</td>
+          <td>8</td>
+          <td>5</td>
+          <td>6</td>
+          <td>4</td>
+          <td>4</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>5</td>
+          <td>8</td>
+          <td>8</td>
+          <td>5</td>
+          <td>5</td>
+          <td>3</td>
+          <td>6</td>
+          <td>4</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>4</td>
+          <td>7</td>
+          <td>4</td>
+          <td>4</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <th colspan="12"><b>Техник</b></th>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Прикрытие</b></td>
+          <td colspan="10">IТ-шник, стажер</td>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Истинная работа</b></td>
+          <td colspan="10">Ремонторужия и снаряжения</td>
+        </tr>
+        <tr>
+          <td rowspan="3"><b>Навыки</b></td>
+          <td><b>+2</b></td>
+          <td colspan="10">Атлетика, Рукопашный бой, Концетрация, Общение, Уклонение, Первая Помощь, Проницательность, Владение языками (Уличный Сленг), Знание Местности (Свой Район), Внимательность, Убеждение, Скрытность</td>
+        </tr>
+        <tr>
+          <td><b>+4</b></td>
+          <td colspan="10">Образование, Пистолеты, Оружейник (х2)</td>
+        </tr>
+        <tr>
+          <td><b>+6</b></td>
+          <td colspan="10">Техника, Кибертехника, Электроника/Безопасность (х2)</td>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Киберимпланты</b></td>
+          <td colspan="10">Инструменты в руке, Набор Кибераудио, Встроенный Агент, ДетекторЖучков, Диктофон</td>
+        </tr>
+        <tr>
+          <td colspan="2"><b>Снаряжение</b></td>
+          <td colspan="10">Лёгкая Бронезащита (ОС 11), Очень Тяжелый пистолет, Стандартные патроны для ОТ Пистолета х50</td>
+        </tr>
+        <tr>
+          <td colspan="2" rowspan="7"><b>Характеристики</b></td>
+          <td><b>1d6</b></td>
+          <td><b>ИНТ</b></td>
+          <td><b>РЕА</b></td>
+          <td><b>ЛВК</b></td>
+          <td><b>ТЕХ</b></td>
+          <td><b>ХАР</b></td>
+          <td><b>ВОЛЯ</b></td>
+          <td><b>СКО</b></td>
+          <td><b>ТЕЛ</b></td>
+          <td><b>ЭМП</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>8</td>
+          <td>8</td>
+          <td>5</td>
+          <td>7</td>
+          <td>3</td>
+          <td>4</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>8</td>
+          <td>3</td>
+          <td>5</td>
+          <td>5</td>
+          <td>4</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>8</td>
+          <td>6</td>
+          <td>5</td>
+          <td>8</td>
+          <td>4</td>
+          <td>3</td>
+          <td>3</td>
+          <td>7</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>8</td>
+          <td>8</td>
+          <td>5</td>
+          <td>7</td>
+          <td>4</td>
+          <td>4</td>
+          <td>4</td>
+          <td>5</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>7</td>
+          <td>7</td>
+          <td>3</td>
+          <td>7</td>
+          <td>5</td>
+          <td>3</td>
+          <td>6</td>
+          <td>6</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>5</td>
+          <td>8</td>
+          <td>6</td>
+          <td>3</td>
+          <td>3</td>
+          <td>5</td>
+          <td>5</td>
+        </tr></tbody></table>`},{id:"roles_10",name:"Кочевник. Автопарк семьи",page:"roles",table:`<table id="roles_10"><caption>Кочевник. Автопарк семьи</caption><tbody><tr>
         <td><b>Ранг</b></td>
         <td><b>Семейный Транспорт</b></td>
       </tr>
@@ -13784,27 +12236,20 @@ const alltables = [
       <tr>
         <td>9-</td>
         <td>10 Аэрозеп, AV-9, Суперкар, Яхта</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_15",
-    name: "Кочевник. Модернизации Транспорта. Любой транспорт",
-    page: "roles",
-    table: `<table id="roles_15"><caption>Кочевник. Модернизации Транспорта. Любой транспорт</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"roles_11",name:"Кочевник. Модернизации Транспорта",page:"roles",table:`<table id="roles_11"><caption>Кочевник. Модернизации Транспорта</caption><tbody><tr>
+        <th colspan="2"><b>Любой транспорт</b></th>
+      </tr>
+      <tr>
         <td><b>Ранг</b></td>
         <td><b>Улучшение</b></td>
       </tr>
       <tr>
         <td>5</td>
-        <td>
-          <b>Усиление Рамы:</b> Бронирует транспорт на ОС 13 (Стекло не бронируется)
-        </td>
+        <td><b>Усиление Рамы:</b> Бронирует транспорт на ОС 13 (Стекло не бронируется)</td>
       </tr>
       <tr>
         <td>1</td>
-        <td>
-          <b>Пуленепробиваемое Стекло:</b> стёкла в ТС теперь укрыние и имеют ПЗ. Тонкое Пуленепробиваемое Стекло (15 ПЗ). Если улучшить ещё раз, будет Толстое Пуленепробиваемое Стекло (30 ПЗ). Каждое стекло в ТС, получает урон отдельно
-        </td>
+        <td><b>Пуленепробиваемое Стекло:</b> стёкла в ТС теперь укрыние и имеют ПЗ. Тонкое Пуленепробиваемое Стекло (15 ПЗ). Если улучшить ещё раз, будет Толстое Пуленепробиваемое Стекло (30 ПЗ). Каждое стекло в ТС, получает урон отдельно</td>
       </tr>
       <tr>
         <td>1</td>
@@ -13849,13 +12294,11 @@ const alltables = [
         <td>
           <b>Тайник:</b> В транспорт устанавливается две "Скрытые Кобуры" (работают, как и одноименный Киберимплант), которые дают водителю и пассажиру, легкий доступ к скрытому оружию. Также в транспорт устанавливается одного большое скрытое пространство для провоза контрабанды. Эти тайники можно обнаружить только при помощи Навыка "Прятать/Находить Предметы" (СЛ 17). Это улучшение можно устанавливать несколько раз в любой транспорт, кроме Мотоциклов, Гидроциклов и Автожиро^^
         </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_16",
-    name: "Кочевник. Модернизации Транспорта. Любой транспорт, кроме Мотоциклов, Гидроциклов и Автожиров",
-    page: "roles",
-    table: `<table id="roles_16"><caption>Кочевник. Модернизации Транспорта. Любой транспорт, кроме Мотоциклов, Гидроциклов и Автожиров</caption><tbody><tr>
+      </tr>
+      <tr>
+        <th colspan="2"><b>Любой Транспорт, кроме Мотоциклов, Гидроциклов и Автожиров</b></th>
+      </tr>
+      <tr>
         <td><b>Ранг</b></td>
         <td><b>Улучшение</b></td>
       </tr>
@@ -13878,13 +12321,11 @@ const alltables = [
           <b>Крепление для Тяжелого Вооружения:</b> Одно из сидений, переделывается во вращающееся крепление для любого двуручного оружия дальнего боя, из которого пассажир может стрелять потратив своё Действие. Пассажир может перезаряжать данное оружие во время движения транспорта. Это оружие можно снимать и обратно установить потратив Действие. Если Кочевник ставит это крепление впервые на транспорт, то в качестве подарка от Семьи можно выбрать:
           <b>Tsunami Arms "Хеликс" или Рейлган Rhinemetall EMG-86, или Гранатомёт Militech "Ковбой" U-56</b>, а всё последующее, на усмотрение Кочевника. Если на транспорте установлено Пуленепробиваемое Стекло, то стрелок защищен пузырем из такого же стекла. Повторная установка Крепления возможна только на Круизный Катер, Яхту, Аэрозепы и Автомобили на которых установлено Место для Жилья. Требуется Усиленное шасси.
         </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_17",
-    name: "Кочевник. Модернизации Транспорта. Любой Сухопутный и Водный Транспорт",
-    page: "roles",
-    table: `<table id="roles_17"><caption>Кочевник. Модернизации Транспорта. Любой Сухопутный и Водный Транспорт</caption><tbody><tr>
+      </tr>
+      <tr>
+        <th colspan="2"><b>Любой Сухопутный и Водный Транспорт</b></th>
+      </tr>
+      <tr>
         <td><b>Ранг</b></td>
         <td><b>Улучшение</b></td>
       </tr>
@@ -13893,13 +12334,11 @@ const alltables = [
         <td>
           <b>Встроенное Оружие Ближнего Боя: Очень Тяжёлое Оружие Ближнего Боя</b> можно установить с любой 1 стороны транспорта. Потратив Действие водитель может им воспользоваться. Это оружие нельзя снять. Можно 1 установить несколько улучшений.
         </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_18",
-    name: "Кочевник. Модернизации Транспорта. Любой Сухопутный Транспорт",
-    page: "roles",
-    table: `<table id="roles_18"><caption>Кочевник. Модернизации Транспорта. Любой Сухопутный Транспорт</caption><tbody><tr>
+      </tr>
+      <tr>
+        <th colspan="2"><b>Любой Сухопутный Транспорт</b></th>
+      </tr>
+      <tr>
         <td><b>Ранг</b></td>
         <td><b>Улучшение</b></td>
       </tr>
@@ -13914,13 +12353,11 @@ const alltables = [
         <td>
           <b>Двигатель от AV-4:</b> это улучшение добавляет транспорту турбореактивный двигатель с управляемым вектором тяги, позволяющий летать! Пока транспорт в воздухе он перемещается как AV-4. В воздухе транспорт управляется Навыком "Пилотирование", а не "Вождение".
         </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_19",
-    name: "Кочевник. Модернизации Транспорта. Любой Сухопутный и Водный Транспорт, кроме Мотоциклов и Гидроциклов",
-    page: "roles",
-    table: `<table id="roles_19"><caption>Кочевник. Модернизации Транспорта. Любой Сухопутный и Водный Транспорт, кроме Мотоциклов и Гидроциклов</caption><tbody><tr>
+      </tr>
+      <tr>
+        <th colspan="2"><b>Любой Сухопутный и Водный Транспорт, кроме Мотоциклов и Гидроциклов</b></th>
+      </tr>
+      <tr>
         <td>Ранг</td>
         <td>Улучшение</td>
       </tr>
@@ -13929,13 +12366,11 @@ const alltables = [
         <td>
           <b>Кенгурятник:</b> Когда вы врезаетесь на своём транспорте в Укрытие, в другой транспорт или в пешехода, то транспорт не получает никакого урона и никто внутри не получает Критическое Повреждение "Перелом Шеи". Если в этот ход вы использовали Нитро, то при столкновении лобовой частью с Укрытием, другим транспортом или пешеходомто вы получаетедополнительно 2d6 урона.
         </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_20",
-    name: "Кочевник. Модернизации Транспорта. Все Мотоциклы",
-    page: "roles",
-    table: `<table id="roles_20"><caption>Кочевник. Модернизации Транспорта. Все Мотоциклы</caption><tbody><tr>
+      </tr>
+      <tr>
+        <th colspan="2"><b>Все Мотоциклы</b></th>
+      </tr>
+      <tr>
         <td>Ранг</td>
         <td>Улучшение</td>
       </tr>
@@ -13944,13 +12379,11 @@ const alltables = [
         <td>
           <b>Улучшенная Интеграция Интерфейсного Разъёма:</b> С этим улучшением, вы подключенные к мотоциклу, с помощью Личных портов можешь попытаться уклонится от атак по тебе или твоему пассажиру при помощи Навыка "Уклонение", как если бы вы шли пешком (необходимо РЕА 8 или выше). Твое решение уклониться, автоматически распространяется на твоего пассажира. В случае атаки по площади (например взрыв), при успешном уклонении ваш мотоцикл выезжает невредимым (точно также как если бы вы были пешком).
         </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_21",
-    name: "Кочевник. Модернизации Транспорта. Весь Наземный транпорт",
-    page: "roles",
-    table: `<table id="roles_21"><caption>Кочевник. Модернизации Транспорта. Весь Наземный транпорт</caption><tbody><tr>
+      </tr>
+      <tr>
+        <th colspan="2"><b>Весь Наземный транпорт</b></th>
+      </tr>
+      <tr>
         <td>Ранг</td>
         <td>Улучшение</td>
       </tr>
@@ -13959,29 +12392,7 @@ const alltables = [
         <td>
           <b>Развертываемая полоса с шипами:</b> Потратив Действие водитель может ими воспользоваться. При развертывании все ближайшие транспортные средства с шинами должны сделать проверку Навыка "Вождение" против СЛ 17. Если проверка провалена, их транспорт получит 4d6 урона в уязвимое место (урон, прошедший через ОС транспорта, умножается на 2). Дополнительная Полоса с шипами стоит 10€$. Повторная установка этого Улучшения увеличивает количество Полос с шипами, которые можно выбросить до перезарядки. Во время движения перезаряжаться нельзя.
         </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "roles_22",
-    name: "Кочевник. Модернизации Транспорта. Аэрозеп, AV-4, Круизный Катер, Автомобили, Яхта",
-    page: "roles",
-    table: `<table id="roles_22"><caption>Кочевник. Модернизации Транспорта. Аэрозеп, AV-4, Круизный Катер, Автомобили, Яхта</caption><tbody><tr>
-        <td>Ранг</td>
-        <td>Улучшение</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>
-          <b>Место для Жилья:</b> При установке в автомобиль или AV-4, это улучшение добавляет в транспорт 1 кровать, туалет, душ и небольшую кухню. При установки в Круизный Катер, Яхту или в Аэрозепы это улучшение добавляет ещё одну комнату.
-          <b>Для Автомобиля и Спорткара требуется Усиленное шасси.</b>
-        </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "skills_1",
-    name: "Навыки. Сложность",
-    page: "skills",
-    table: `<table id="skills_1"><caption>Навыки. Сложность</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"skills_1",name:"Навыки. Сложность",page:"skills",table:`<table id="skills_1"><caption>Навыки. Сложность</caption><tbody><tr>
         <td><b>Сложность</b></td>
         <td><b>Описание</b></td>
         <td><b>СЛ</b></td>
@@ -14020,13 +12431,7 @@ const alltables = [
         <td>Легендарный</td>
         <td>Внушающий благоговение подвиг. О нем люди напишут истории, поистине удивительное достижение, о котором еще долгие годы будут говорить без умолку.</td>
         <td>29</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "skills_2",
-    name: "Навыки. Модификаторы",
-    page: "skills",
-    table: `<table id="skills_2"><caption>Навыки. Модификаторы</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"skills_2",name:"Навыки. Модификаторы",page:"skills",table:`<table id="skills_2"><caption>Навыки. Модификаторы</caption><tbody><tr>
         <td><b>Обстоятельство</b></td>
         <td><b>Модификатор</b></td>
       </tr>
@@ -14069,13 +12474,7 @@ const alltables = [
       <tr>
         <td>Выполнению задачи мешает дым или темнота</td>
         <td>-4</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "skills_3",
-    name: "Навыки. Список",
-    page: "skills",
-    table: `<table id="skills_3"><caption>Навыки. Список</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"skills_3",name:"Навыки. Список",page:"skills",table:`<table id="skills_3"><caption>Навыки. Список</caption><tbody><tr>
         <td><b>Навык</b></td>
         <td><b>СТАТ</b></td>
         <td><b>Eng</b></td>
@@ -14436,13 +12835,7 @@ const alltables = [
         <td><a href="skills.html#Weaponstech">Оружейник</a></td>
         <td>ТЕХ</td>
         <td>Weaponstech</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "start_1",
-    name: "Запускаем Киберпанк. Какой я игрок?",
-    page: "start",
-    table: `<table id="start_1"><caption>Запускаем Киберпанк. Какой я игрок?</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"start_1",name:"Какой я игрок?",page:"start",table:`<table id="start_1"><caption>Какой я игрок?</caption><tbody><tr>
         <td><b>Воины</b></td>
         <td><b>Исследователи</b></td>
       </tr>
@@ -14503,13 +12896,7 @@ const alltables = [
           <br>
           Отыгрывать акцент и манеры своего персонажа.
         </td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "start_2",
-    name: "Запускаем Киберпанк. Таблица Очков Улучшения Стиля Игры",
-    page: "start",
-    table: `<table id="start_2"><caption>Запускаем Киберпанк. Таблица Очков Улучшения Стиля Игры</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"start_2",name:"Таблица ОУ Стиля Игры",page:"start",table:`<table id="start_2"><caption>Таблица ОУ Стиля Игры</caption><tbody><tr>
             <td><b>10</b></td>
             <td>Группа не справилась с миссией, но пыталась</td>
             <td>Использованные навыки почти всегда не очень эффективны</td>
@@ -14572,156 +12959,92 @@ const alltables = [
             <td>Сделал что-то действительно невероятное, чтобы поддержать группу и помочь ей работать вместе для достижения своих целей</td>
             <td>Использование игроком расследования или разведки позволило обнаружить нечто действительно невероятное в этой игровой сессии</td>
             <td>Сделал что-то невероятное в ролевой игре, например, героическую речь, звездный момент или удивительно повлиял на результаты игры через отыгрыш</td>
-          </tr></tbody></table>`,
-  },
-  {
-    id: "start_3",
-    name: "Запускаем Киберпанк. Улучшение Обычных Навыков",
-    page: "start",
-    table: `<table id="start_3"><caption>Запускаем Киберпанк. Улучшение Обычных Навыков</caption><tbody><tr>
-        <td><b>Ур.</b></td>
-        <td><b>1</b></td>
-        <td><b>2</b></td>
-        <td><b>3</b></td>
-        <td><b>4</b></td>
-        <td><b>5</b></td>
-        <td><b>6</b></td>
-        <td><b>7</b></td>
-        <td><b>8</b></td>
-        <td><b>9</b></td>
-        <td><b>10</b></td>
-      </tr>
-      <tr>
-        <td>О.У.</td>
-        <td>20</td>
-        <td>40</td>
-        <td>60</td>
-        <td>80</td>
-        <td>100</td>
-        <td>120</td>
-        <td>140</td>
-        <td>160</td>
-        <td>180</td>
-        <td>200</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "start_4",
-    name: "Запускаем Киберпанк. Улучшение Сложных(х2) Навыков",
-    page: "start",
-    table: `<table id="start_4"><caption>Запускаем Киберпанк. Улучшение Сложных(х2) Навыков</caption><tbody><tr>
-        <td><b>Ур.</b></td>
-        <td><b>1</b></td>
-        <td><b>2</b></td>
-        <td><b>3</b></td>
-        <td><b>4</b></td>
-        <td><b>5</b></td>
-        <td><b>6</b></td>
-        <td><b>7</b></td>
-        <td><b>8</b></td>
-        <td><b>9</b></td>
-        <td><b>10</b></td>
-      </tr>
-      <tr>
-        <td>О.У.</td>
-        <td>40</td>
-        <td>80</td>
-        <td>120</td>
-        <td>160</td>
-        <td>200</td>
-        <td>240</td>
-        <td>280</td>
-        <td>320</td>
-        <td>360</td>
-        <td>400</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "start_5",
-    name: "Запускаем Киберпанк. Улучшение Ранга Ролевой Способности",
-    page: "start",
-    table: `<table id="start_5"><caption>Запускаем Киберпанк. Улучшение Ранга Ролевой Способности</caption><tbody><tr>
-        <td><b>Ур.</b></td>
-        <td><b>1</b></td>
-        <td><b>2</b></td>
-        <td><b>3</b></td>
-        <td><b>4</b></td>
-        <td><b>5</b></td>
-        <td><b>6</b></td>
-        <td><b>7</b></td>
-        <td><b>8</b></td>
-        <td><b>9</b></td>
-        <td><b>10</b></td>
-      </tr>
-      <tr>
-        <td>О.У</td>
-        <td>60</td>
-        <td>120</td>
-        <td>180</td>
-        <td>240</td>
-        <td>300</td>
-        <td>360</td>
-        <td>420</td>
-        <td>480</td>
-        <td>540</td>
-        <td>600</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "start_6",
-    name: "Запускаем Киберпанк. Телохранитель (1:1)",
-    page: "start",
-    table: `<table id="start_6"><caption>Запускаем Киберпанк. Телохранитель (1:1)</caption><tbody><tr>
-              <td>
-                ИНТ
-                <br>
-                3
-              </td>
-              <td>
-                РЕА
-                <br>
-                6
-              </td>
-              <td>
-                ЛВК
-                <br>
-                5
-              </td>
-              <td>
-                ТЕХ
-                <br>
-                2
-              </td>
-              <td>
-                ХАР
-                <br>
-                4
-              </td>
-              <td>
-                ВОЛЯ
-                <br>
-                4
-              </td>
-              <td>
-                УДЧ
-                <br>
-                --
-              </td>
-              <td>
-                СКО
-                <br>
-                4
-              </td>
-              <td>
-                ТЕЛ
-                <br>
-                6
-              </td>
-              <td>
-                ЭМП
-                <br>
-                3
-              </td>
+          </tr></tbody></table>`},{id:"start_3",name:"Улучшение Обычных Навыков",page:"start",table:`<table id="start_3"><caption>Улучшение Обычных Навыков</caption><tbody><tr>
+          <td><b>Ур.</b></td>
+          <td><b>1</b></td>
+          <td><b>2</b></td>
+          <td><b>3</b></td>
+          <td><b>4</b></td>
+          <td><b>5</b></td>
+          <td><b>6</b></td>
+          <td><b>7</b></td>
+          <td><b>8</b></td>
+          <td><b>9</b></td>
+          <td><b>10</b></td>
+        </tr>
+        <tr>
+          <td>О.У.</td>
+          <td>20</td>
+          <td>40</td>
+          <td>60</td>
+          <td>80</td>
+          <td>100</td>
+          <td>120</td>
+          <td>140</td>
+          <td>160</td>
+          <td>180</td>
+          <td>200</td>
+        </tr></tbody></table>`},{id:"start_4",name:"Улучшение Сложных(х2) Навыков",page:"start",table:`<table id="start_4"><caption>Улучшение Сложных(х2) Навыков</caption><tbody><tr>
+          <td><b>Ур.</b></td>
+          <td><b>1</b></td>
+          <td><b>2</b></td>
+          <td><b>3</b></td>
+          <td><b>4</b></td>
+          <td><b>5</b></td>
+          <td><b>6</b></td>
+          <td><b>7</b></td>
+          <td><b>8</b></td>
+          <td><b>9</b></td>
+          <td><b>10</b></td>
+        </tr>
+        <tr>
+          <td>О.У.</td>
+          <td>40</td>
+          <td>80</td>
+          <td>120</td>
+          <td>160</td>
+          <td>200</td>
+          <td>240</td>
+          <td>280</td>
+          <td>320</td>
+          <td>360</td>
+          <td>400</td>
+        </tr></tbody></table>`},{id:"start_5",name:"Улучшение Ранга Ролевой Способности",page:"start",table:`<table id="start_5"><caption>Улучшение Ранга Ролевой Способности</caption><tbody><tr>
+          <td><b>Ур.</b></td>
+          <td><b>1</b></td>
+          <td><b>2</b></td>
+          <td><b>3</b></td>
+          <td><b>4</b></td>
+          <td><b>5</b></td>
+          <td><b>6</b></td>
+          <td><b>7</b></td>
+          <td><b>8</b></td>
+          <td><b>9</b></td>
+          <td><b>10</b></td>
+        </tr>
+        <tr>
+          <td>О.У</td>
+          <td>60</td>
+          <td>120</td>
+          <td>180</td>
+          <td>240</td>
+          <td>300</td>
+          <td>360</td>
+          <td>420</td>
+          <td>480</td>
+          <td>540</td>
+          <td>600</td>
+        </tr></tbody></table>`},{id:"start_6",name:"Телохранитель (1:1)",page:"start",table:`<table id="start_6"><caption>Телохранитель (1:1)</caption><tbody><tr>
+              <td>ИНТ<br>3</td>
+              <td>РЕА<br>6</td>
+              <td>ЛВК<br>5</td>
+              <td>ТЕХ<br>2</td>
+              <td>ХАР<br>4</td>
+              <td>ВОЛЯ<br>4</td>
+              <td>УДЧ<br>--</td>
+              <td>СКО<br>4</td>
+              <td>ТЕЛ<br>6</td>
+              <td>ЭМП<br>3</td>
             </tr>
             <tr>
               <td colspan="4">Пунткты Здоровья 35</td>
@@ -14753,63 +13076,17 @@ const alltables = [
               <td colspan="10">
                 <b>Киберимлпанты и СпецСнаряжение</b> Боеприпас для дробовика х25, Боеприпасы для Оч. Тяж. пистолета х25, Рация
               </td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "start_7",
-    name: "Запускаем Киберпанк. Бустер (1:1)",
-    page: "start",
-    table: `<table id="start_7"><caption>Запускаем Киберпанк. Бустер (1:1)</caption><tbody><tr>
-              <td>
-                ИНТ
-                <br>
-                2
-              </td>
-              <td>
-                РЕА
-                <br>
-                6
-              </td>
-              <td>
-                ЛВК
-                <br>
-                5
-              </td>
-              <td>
-                ТЕХ
-                <br>
-                2
-              </td>
-              <td>
-                ХАР
-                <br>
-                4
-              </td>
-              <td>
-                ВОЛЯ
-                <br>
-                2
-              </td>
-              <td>
-                УДЧ
-                <br>
-                --
-              </td>
-              <td>
-                СКО
-                <br>
-                4
-              </td>
-              <td>
-                ТЕЛ
-                <br>
-                2
-              </td>
-              <td>
-                ЭМП
-                <br>
-                3
-              </td>
+            </tr></tbody></table>`},{id:"start_7",name:"Бустер (1:1)",page:"start",table:`<table id="start_7"><caption>Бустер (1:1)</caption><tbody><tr>
+              <td>ИНТ<br>2</td>
+              <td>РЕА<br>6</td>
+              <td>ЛВК<br>5</td>
+              <td>ТЕХ<br>2</td>
+              <td>ХАР<br>4</td>
+              <td>ВОЛЯ<br>2</td>
+              <td>УДЧ<br>--</td>
+              <td>СКО<br>4</td>
+              <td>ТЕЛ<br>2</td>
+              <td>ЭМП<br>3</td>
             </tr>
             <tr>
               <td colspan="4">Пунткты Здоровья 20</td>
@@ -14841,63 +13118,17 @@ const alltables = [
               <td colspan="10">
                 <b>Киберимлпанты и СпецСнаряжение</b> Боеприпасы для Оч. тяж. пистолета х30, Одноразовый телефон, Потрошители, Техноволосы
               </td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "start_8",
-    name: "Запускаем Киберпанк. Дорожный бандит (1:1)",
-    page: "start",
-    table: `<table id="start_8"><caption>Запускаем Киберпанк. Дорожный бандит (1:1)</caption><tbody><tr>
-              <td>
-                ИНТ
-                <br>
-                4
-              </td>
-              <td>
-                РЕА
-                <br>
-                6
-              </td>
-              <td>
-                ЛВК
-                <br>
-                4
-              </td>
-              <td>
-                ТЕХ
-                <br>
-                4
-              </td>
-              <td>
-                ХАР
-                <br>
-                3
-              </td>
-              <td>
-                ВОЛЯ
-                <br>
-                3
-              </td>
-              <td>
-                УДЧ
-                <br>
-                --
-              </td>
-              <td>
-                СКО
-                <br>
-                3
-              </td>
-              <td>
-                ТЕЛ
-                <br>
-                3
-              </td>
-              <td>
-                ЭМП
-                <br>
-                3
-              </td>
+            </tr></tbody></table>`},{id:"start_8",name:"Дорожный бандит (1:1)",page:"start",table:`<table id="start_8"><caption>Дорожный бандит (1:1)</caption><tbody><tr>
+              <td>ИНТ<br>4</td>
+              <td>РЕА<br>6</td>
+              <td>ЛВК<br>4</td>
+              <td>ТЕХ<br>4</td>
+              <td>ХАР<br>3</td>
+              <td>ВОЛЯ<br>3</td>
+              <td>УДЧ<br>--</td>
+              <td>СКО<br>3</td>
+              <td>ТЕЛ<br>3</td>
+              <td>ЭМП<br>3</td>
             </tr>
             <tr>
               <td colspan="4">Пунткты Здоровья 25</td>
@@ -14934,63 +13165,17 @@ const alltables = [
               <td colspan="10">
                 <b>Киберимлпанты и СпецСнаряжение</b> Боеприпасы для Оч. тяж. пистолета х20, Стрелы х20, Веревка, Фонарик, Нейролинк (Личный порт)
               </td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "start_9",
-    name: "Запускаем Киберпанк. Оперативник СБ (1:1)",
-    page: "start",
-    table: `<table id="start_9"><caption>Запускаем Киберпанк. Оперативник СБ (1:1)</caption><tbody><tr>
-              <td>
-                ИНТ
-                <br>
-                3
-              </td>
-              <td>
-                РЕА
-                <br>
-                7
-              </td>
-              <td>
-                ЛВК
-                <br>
-                4
-              </td>
-              <td>
-                ТЕХ
-                <br>
-                2
-              </td>
-              <td>
-                ХАР
-                <br>
-                2
-              </td>
-              <td>
-                ВОЛЯ
-                <br>
-                3
-              </td>
-              <td>
-                УДЧ
-                <br>
-                --
-              </td>
-              <td>
-                СКО
-                <br>
-                3
-              </td>
-              <td>
-                ТЕЛ
-                <br>
-                5
-              </td>
-              <td>
-                ЭМП
-                <br>
-                3
-              </td>
+            </tr></tbody></table>`},{id:"start_9",name:"Оперативник СБ (1:1)",page:"start",table:`<table id="start_9"><caption>Оперативник СБ (1:1)</caption><tbody><tr>
+              <td>ИНТ<br>3</td>
+              <td>РЕА<br>7</td>
+              <td>ЛВК<br>4</td>
+              <td>ТЕХ<br>2</td>
+              <td>ХАР<br>2</td>
+              <td>ВОЛЯ<br>3</td>
+              <td>УДЧ<br>--</td>
+              <td>СКО<br>3</td>
+              <td>ТЕЛ<br>5</td>
+              <td>ЭМП<br>3</td>
             </tr>
             <tr>
               <td colspan="4">Пунткты Здоровья 30</td>
@@ -15027,63 +13212,17 @@ const alltables = [
               <td colspan="10">
                 <b>Киберимлпанты и СпецСнаряжение</b> Винтовочные патроны х40, Боеприпасы для Оч. тяж. пистолета х20, Рация
               </td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "start_10",
-    name: "Запускаем Киберпанк. Нетраннер (1:2)",
-    page: "start",
-    table: `<table id="start_10"><caption>Запускаем Киберпанк. Нетраннер (1:2)</caption><tbody><tr>
-              <td>
-                ИНТ
-                <br>
-                7
-              </td>
-              <td>
-                РЕА
-                <br>
-                5
-              </td>
-              <td>
-                ЛВК
-                <br>
-                4
-              </td>
-              <td>
-                ТЕХ
-                <br>
-                7
-              </td>
-              <td>
-                ХАР
-                <br>
-                4
-              </td>
-              <td>
-                ВОЛЯ
-                <br>
-                5
-              </td>
-              <td>
-                УДЧ
-                <br>
-                --
-              </td>
-              <td>
-                СКО
-                <br>
-                5
-              </td>
-              <td>
-                ТЕЛ
-                <br>
-                3
-              </td>
-              <td>
-                ЭМП
-                <br>
-                4
-              </td>
+            </tr></tbody></table>`},{id:"start_10",name:"Нетраннер (1:2)",page:"start",table:`<table id="start_10"><caption>Нетраннер (1:2)</caption><tbody><tr>
+              <td>ИНТ<br>7</td>
+              <td>РЕА<br>5</td>
+              <td>ЛВК<br>4</td>
+              <td>ТЕХ<br>7</td>
+              <td>ХАР<br>4</td>
+              <td>ВОЛЯ<br>5</td>
+              <td>УДЧ<br>--</td>
+              <td>СКО<br>5</td>
+              <td>ТЕЛ<br>3</td>
+              <td>ЭМП<br>4</td>
             </tr>
             <tr>
               <td colspan="4">Пунткты Здоровья 30</td>
@@ -15119,63 +13258,17 @@ const alltables = [
               <td colspan="10">
                 <b>Киберимлпанты и СпецСнаряжение</b> Банхаммер, Декалом, Стиратель, Адская стрела, Щит, Меч, Червь
               </td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "start_11",
-    name: "Запускаем Киберпанк. Шеф реставраторов (1:2)",
-    page: "start",
-    table: `<table id="start_11"><caption>Запускаем Киберпанк. Шеф реставраторов (1:2)</caption><tbody><tr>
-              <td>
-                ИНТ
-                <br>
-                3
-              </td>
-              <td>
-                РЕА
-                <br>
-                6
-              </td>
-              <td>
-                ЛВК
-                <br>
-                6
-              </td>
-              <td>
-                ТЕХ
-                <br>
-                5
-              </td>
-              <td>
-                ХАР
-                <br>
-                4
-              </td>
-              <td>
-                ВОЛЯ
-                <br>
-                5
-              </td>
-              <td>
-                УДЧ
-                <br>
-                --
-              </td>
-              <td>
-                СКО
-                <br>
-                4
-              </td>
-              <td>
-                ТЕЛ
-                <br>
-                6
-              </td>
-              <td>
-                ЭМП
-                <br>
-                4
-              </td>
+            </tr></tbody></table>`},{id:"start_11",name:"Шеф реставраторов (1:2)",page:"start",table:`<table id="start_11"><caption>Шеф реставраторов (1:2)</caption><tbody><tr>
+              <td>ИНТ<br>3</td>
+              <td>РЕА<br>6</td>
+              <td>ЛВК<br>6</td>
+              <td>ТЕХ<br>5</td>
+              <td>ХАР<br>4</td>
+              <td>ВОЛЯ<br>5</td>
+              <td>УДЧ<br>--</td>
+              <td>СКО<br>4</td>
+              <td>ТЕЛ<br>6</td>
+              <td>ЭМП<br>4</td>
             </tr>
             <tr>
               <td colspan="4">Пунткты Здоровья 40</td>
@@ -15217,63 +13310,17 @@ const alltables = [
               <td colspan="10">
                 <b>Киберимлпанты и СпецСнаряжение</b> Боеприпас для дробовика х25,БоеприпасдляТяж.пистолетах25,Агент,Пистолет-крюк,Рация, Палаткаи I оборудованиедля кемпинга, Назальные фильтры, Нейролинк (Разъем для флешек, Флешка тактильного усиления)
               </td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "start_12",
-    name: "Запускаем Киберпанк. Офицер СБ (1:2)",
-    page: "start",
-    table: `<table id="start_12"><caption>Запускаем Киберпанк. Офицер СБ (1:2)</caption><tbody><tr>
-              <td>
-                ИНТ
-                <br>
-                4
-              </td>
-              <td>
-                РЕА
-                <br>
-                8(6)
-              </td>
-              <td>
-                ЛВК
-                <br>
-                6(4)
-              </td>
-              <td>
-                ТЕХ
-                <br>
-                4
-              </td>
-              <td>
-                ХАР
-                <br>
-                6
-              </td>
-              <td>
-                ВОЛЯ
-                <br>
-                5
-              </td>
-              <td>
-                УДЧ
-                <br>
-                --
-              </td>
-              <td>
-                СКО
-                <br>
-                6(4)
-              </td>
-              <td>
-                ТЕЛ
-                <br>
-                7
-              </td>
-              <td>
-                ЭМП
-                <br>
-                4
-              </td>
+            </tr></tbody></table>`},{id:"start_12",name:"Офицер СБ (1:2)",page:"start",table:`<table id="start_12"><caption>Офицер СБ (1:2)</caption><tbody><tr>
+              <td>ИНТ<br>4</td>
+              <td>РЕА<br>8(6)</td>
+              <td>ЛВК<br>6(4)</td>
+              <td>ТЕХ<br>4</td>
+              <td>ХАР<br>6</td>
+              <td>ВОЛЯ<br>5</td>
+              <td>УДЧ<br>--</td>
+              <td>СКО<br>6(4)</td>
+              <td>ТЕЛ<br>7</td>
+              <td>ЭМП<br>4</td>
             </tr>
             <tr>
               <td colspan="4">Пунткты Здоровья 40</td>
@@ -15310,63 +13357,17 @@ const alltables = [
               <td colspan="10">
                 <b>Киберимлпанты и СпецСнаряжение</b> Боеприпасы для штурм. винтовки х60, Боеприпасы для Оч. тяж. пистолета х40, НаручникиХ2,Трекер маячка, Комплект Кибераудио (Усиленный слух), Киберглаз (Тактический прицел, Телеоптика), Нейролинк I (Личный порт)
               </td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "start_13",
-    name: "Запускаем Киберпанк. Патрульный (1:3)",
-    page: "start",
-    table: `<table id="start_13"><caption>Запускаем Киберпанк. Патрульный (1:3)</caption><tbody><tr>
-              <td>
-                ИНТ
-                <br>
-                6
-              </td>
-              <td>
-                РЕА
-                <br>
-                8
-              </td>
-              <td>
-                ЛВК
-                <br>
-                8
-              </td>
-              <td>
-                ТЕХ
-                <br>
-                3
-              </td>
-              <td>
-                ХАР
-                <br>
-                5
-              </td>
-              <td>
-                ВОЛЯ
-                <br>
-                6
-              </td>
-              <td>
-                УДЧ
-                <br>
-                --
-              </td>
-              <td>
-                СКО
-                <br>
-                6
-              </td>
-              <td>
-                ТЕЛ
-                <br>
-                6
-              </td>
-              <td>
-                ЭМП
-                <br>
-                6
-              </td>
+            </tr></tbody></table>`},{id:"start_13",name:"Патрульный (1:3)",page:"start",table:`<table id="start_13"><caption>Патрульный (1:3)</caption><tbody><tr>
+              <td>ИНТ<br>6</td>
+              <td>РЕА<br>8</td>
+              <td>ЛВК<br>8</td>
+              <td>ТЕХ<br>3</td>
+              <td>ХАР<br>5</td>
+              <td>ВОЛЯ<br>6</td>
+              <td>УДЧ<br>--</td>
+              <td>СКО<br>6</td>
+              <td>ТЕЛ<br>6</td>
+              <td>ЭМП<br>6</td>
             </tr>
             <tr>
               <td colspan="4">Пунткты Здоровья 40</td>
@@ -15403,63 +13404,17 @@ const alltables = [
               <td colspan="10">
                 <b>Киберимлпанты и СпецСнаряжение</b> Боеприпасы для штурм. винтовки х60, Боеприпасы для Оч. тяж. пистолета х40, НаручникиХ2,Трекер маячка, Комплект Кибераудио (Усиленный слух), Киберглаз (Тактический прицел, Телеоптика), Нейролинк I (Личный порт)
               </td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "start_14",
-    name: "Запускаем Киберпанк. Пиротехник (1:3)",
-    page: "start",
-    table: `<table id="start_14"><caption>Запускаем Киберпанк. Пиротехник (1:3)</caption><tbody><tr>
-              <td>
-                ИНТ
-                <br>
-                5
-              </td>
-              <td>
-                РЕА
-                <br>
-                8
-              </td>
-              <td>
-                ЛВК
-                <br>
-                6
-              </td>
-              <td>
-                ТЕХ
-                <br>
-                7
-              </td>
-              <td>
-                ХАР
-                <br>
-                4
-              </td>
-              <td>
-                ВОЛЯ
-                <br>
-                4
-              </td>
-              <td>
-                УДЧ
-                <br>
-                --
-              </td>
-              <td>
-                СКО
-                <br>
-                6
-              </td>
-              <td>
-                ТЕЛ
-                <br>
-                5
-              </td>
-              <td>
-                ЭМП
-                <br>
-                3
-              </td>
+            </tr></tbody></table>`},{id:"start_14",name:"Пиротехник (1:3)",page:"start",table:`<table id="start_14"><caption>Пиротехник (1:3)</caption><tbody><tr>
+              <td>ИНТ<br>5</td>
+              <td>РЕА<br>8</td>
+              <td>ЛВК<br>6</td>
+              <td>ТЕХ<br>7</td>
+              <td>ХАР<br>4</td>
+              <td>ВОЛЯ<br>4</td>
+              <td>УДЧ<br>--</td>
+              <td>СКО<br>6</td>
+              <td>ТЕЛ<br>5</td>
+              <td>ЭМП<br>3</td>
             </tr>
             <tr>
               <td colspan="4">Пунткты Здоровья 35</td>
@@ -15496,63 +13451,17 @@ const alltables = [
               <td colspan="10">
                 <b>Киберимлпанты и СпецСнаряжение</b> Боеприпасы для огнемёта (Зажигательные Боеприпасы для дробовика) х8, Боеприпасы для Оч. тяж. пистолета х50, Зажигательная граната х1, Светошумовая граната х1, Комплект Кибераудио (Демпфер), Киберглазх2 (Анти-ослеплениех2), Назальныефильтры
               </td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "start_15",
-    name: "Запускаем Киберпанк. Киберпсихопат (босс)",
-    page: "start",
-    table: `<table id="start_15"><caption>Запускаем Киберпанк. Киберпсихопат (босс)</caption><tbody><tr>
-              <td>
-                ИНТ
-                <br>
-                5
-              </td>
-              <td>
-                РЕА
-                <br>
-                8
-              </td>
-              <td>
-                ЛВК
-                <br>
-                8
-              </td>
-              <td>
-                ТЕХ
-                <br>
-                5
-              </td>
-              <td>
-                ХАР
-                <br>
-                4
-              </td>
-              <td>
-                ВОЛЯ
-                <br>
-                7
-              </td>
-              <td>
-                УДЧ
-                <br>
-                --
-              </td>
-              <td>
-                СКО
-                <br>
-                8
-              </td>
-              <td>
-                ТЕЛ
-                <br>
-                10
-              </td>
-              <td>
-                ЭМП
-                <br>
-                0
-              </td>
+            </tr></tbody></table>`},{id:"start_15",name:"Киберпсихопат (босс)",page:"start",table:`<table id="start_15"><caption>Киберпсихопат (босс)</caption><tbody><tr>
+              <td>ИНТ<br>5</td>
+              <td>РЕА<br>8</td>
+              <td>ЛВК<br>8</td>
+              <td>ТЕХ<br>5</td>
+              <td>ХАР<br>4</td>
+              <td>ВОЛЯ<br>7</td>
+              <td>УДЧ<br>--</td>
+              <td>СКО<br>8</td>
+              <td>ТЕЛ<br>10</td>
+              <td>ЭМП<br>0</td>
             </tr>
             <tr>
               <td colspan="4">Пунткты Здоровья 55</td>
@@ -15594,13 +13503,7 @@ const alltables = [
               <td colspan="10">
                 <b>Киберимлпанты и СпецСнаряжение</b> Бронебойная граната х2, Боеприпасы к тяж. пистолету х100, Киберрука х2 (Выкидной гранатомёт х2, Выкидной тяжелый ПП, Когти росомахи), Кибернога х2 (Прыжковый ускоритель х2), Киберзмея, Искусственные мышцыи усиленные кости, Нейролинк (Разъём для флешек, Редактор боли), Подкожная броня
               </td>
-            </tr></tbody></table>`,
-  },
-  {
-    id: "traumateam_1",
-    name: "Тяжесть Ранения",
-    page: "traumateam",
-    table: `<table id="traumateam_1"><caption>Тяжесть Ранения</caption><tbody><tr>
+            </tr></tbody></table>`},{id:"traumateam_1",name:"Тяжесть Ранения",page:"traumateam",table:`<table id="traumateam_1"><caption>Тяжесть Ранения</caption><tbody><tr>
         <td><b>Тяжесть Ранения</b></td>
         <td><b>Предел</b></td>
         <td><b>Эффект Ранения</b></td>
@@ -15639,13 +13542,7 @@ const alltables = [
         <td>Провал одного Спасброска</td>
         <td>Смерть</td>
         <td>Никогда не вернётся</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "traumateam_2",
-    name: "Критические повреждения Тела",
-    page: "traumateam",
-    table: `<table id="traumateam_2"><caption>Критические повреждения Тела</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"traumateam_2",name:"Критические повреждения Тела",page:"traumateam",table:`<table id="traumateam_2"><caption>Критические повреждения Тела</caption><tbody><tr>
         <td><b>2d6</b></td>
         <td><b>Травма</b></td>
         <td><b>Эффект от повреждения</b></td>
@@ -15743,13 +13640,7 @@ const alltables = [
         </td>
         <td>НЕТ</td>
         <td>Хирургия СЛ15</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "traumateam_3",
-    name: "Критические повреждения головы",
-    page: "traumateam",
-    table: `<table id="traumateam_3"><caption>Критические повреждения головы</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"traumateam_3",name:"Критические повреждения головы",page:"traumateam",table:`<table id="traumateam_3"><caption>Критические повреждения головы</caption><tbody><tr>
         <td><b>2d6</b></td>
         <td><b>Травма</b></td>
         <td><b>Эффект от повреждения</b></td>
@@ -15847,13 +13738,7 @@ const alltables = [
         </td>
         <td>НЕТ</td>
         <td>Хирургия СЛ17</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "traumateam_4",
-    name: "Команда Trauma Team",
-    page: "traumateam",
-    table: `<table id="traumateam_4"><caption>Команда Trauma Team</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"traumateam_4",name:"Команда Trauma Team",page:"traumateam",table:`<table id="traumateam_4"><caption>Команда Trauma Team</caption><tbody><tr>
         <td><b>Участник Trauma Team</b></td>
         <td><b>Боевой Номер</b></td>
         <td><b>ОС</b></td>
@@ -15899,13 +13784,7 @@ const alltables = [
         <td>13</td>
         <td>30</td>
         <td>4</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "traumateam_5",
-    name: "Цены в больнице",
-    page: "traumateam",
-    table: `<table id="traumateam_5"><caption>Цены в больнице</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"traumateam_5",name:"Цены в больнице",page:"traumateam",table:`<table id="traumateam_5"><caption>Цены в больнице</caption><tbody><tr>
         <td><b>Самая высокая СЛ стабилизации или лечения травмы во время посещения</b></td>
         <td><b>Цена</b></td>
       </tr>
@@ -15924,13 +13803,7 @@ const alltables = [
       <tr>
         <td>СЛ10</td>
         <td>50€$ (Денное)</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "traumateam_6",
-    name: "Установка киберимплантов",
-    page: "traumateam",
-    table: `<table id="traumateam_6"><caption>Установка киберимплантов</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"traumateam_6",name:"Установка киберимплантов",page:"traumateam",table:`<table id="traumateam_6"><caption>Установка киберимплантов</caption><tbody><tr>
         <td><b>Типичное место установки</b></td>
         <td><b>СЛ Хирургии (Только Медтех)</b></td>
         <td><b>Стоимость установки</b></td>
@@ -15949,13 +13822,7 @@ const alltables = [
         <td>Госпиталь</td>
         <td>СЛ17</td>
         <td>1,000€$ (0. дорогое)</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "traumateam_7",
-    name: "Будискульптинг",
-    page: "traumateam",
-    table: `<table id="traumateam_7"><caption>Будискульптинг</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"traumateam_7",name:"Будискульптинг",page:"traumateam",table:`<table id="traumateam_7"><caption>Будискульптинг</caption><tbody><tr>
         <td><b>Будискульптинг</b></td>
         <td><b>Установка</b></td>
         <td><b>Цена</b></td>
@@ -15975,13 +13842,7 @@ const alltables = [
         <td>1,000€$ (О. дорогое)</td>
         <td>4d6</td>
         <td>СЛ17: Материалов на 500€$ (Дорогое)</td>
-      </tr></tbody></table>`,
-  },
-  {
-    id: "traumateam_8",
-    name: "Терапия",
-    page: "traumateam",
-    table: `<table id="traumateam_8"><caption>Терапия</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"traumateam_8",name:"Терапия",page:"traumateam",table:`<table id="traumateam_8"><caption>Терапия</caption><tbody><tr>
           <td><b>Терапия</b></td>
           <td><b>Описание</b></td>
           <td><b>Цена</b></td>
@@ -16021,13 +13882,7 @@ const alltables = [
             <b>Эффект:</b> Восстанавливаете 4d6 утраченной человечности.
             <b>Человечность не может быть полностью восстановлена без удаления кибероборудования. Каждая установленная часть кибероборудования снижает вашу максимальную человечность на 2, каждая часть боргирования уменьшает человечность на 4. Импланты с 0 воздействием не уменьшают вашу человечность.</b>
           </td>
-        </tr></tbody></table>`,
-  },
-  {
-    id: "traumateam_9",
-    name: "Психические Травмы",
-    page: "traumateam",
-    table: `<table id="traumateam_9"><caption>Психические Травмы</caption><tbody><tr>
+        </tr></tbody></table>`},{id:"traumateam_9",name:"Психические Травмы",page:"traumateam",table:`<table id="traumateam_9"><caption>Психические Травмы</caption><tbody><tr>
         <td><b>Тип Травмы</b></td>
         <td><b>Пример Травмы</b></td>
         <td><b>Потеря Человечности</b></td>
@@ -16051,6 +13906,4 @@ const alltables = [
         <td>Долгосрочные стрессовые факторы в вашей жизни</td>
         <td>Ожидание голодной смерти или жизнь в зоне боевых действий, переживание от затяжной катастрофы или жизнь в течении месяца в постоянной опасности.</td>
         <td>2d6</td>
-      </tr></tbody></table>`,
-  },
-];
+      </tr></tbody></table>`},];
