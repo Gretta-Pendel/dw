@@ -1,274 +1,283 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	color: black;
-	font-family: Calibri, 'Trebuchet MS', sans-serif;
-	font-size: medium;
-	display: grid;
-	grid-template-columns: 200px auto;
-	grid-template-areas: "head head" "aside main" "foot foot";
-	background-color: #efefef;
+  margin: 0;
+  color: black;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  font-size: medium;
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-areas: "head head" "aside main" "foot foot";
+  background-color: #efefef;
 }
 
 header {
-	grid-area: head;
+  grid-area: head;
 }
 
 nav {
-	grid-area: aside;
-	background-color: #333;
-	padding: .5rem 2rem 1rem 0;
-	width: 200px;
-	color: #efefef;
+  grid-area: aside;
+  background-color: #333;
+  padding: 0.5rem 2rem 1rem 0;
+  width: 200px;
+  color: #efefef;
 }
 
-nav>div {
-	padding-left: .75rem;
+nav > div {
+  padding-left: 0.75rem;
 }
 
 nav .menu span {
-	display: none;
+  display: none;
 }
 
 nav ul {
-	padding: .25rem 0;
-	list-style: none;
+  padding: 0.25rem 0;
+  list-style: none;
 }
 
 nav li {
-	margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 nav a {
-	color: #efefef;
-	text-decoration: none;
+  color: #efefef;
+  text-decoration: none;
 }
 
 nav li a + div {
-	padding-left: 1em;;
+  padding-left: 1em;
 }
 
 main {
-	grid-area: main;
-	padding: 1rem 1.5rem;
-	max-width: 1380px;
+  grid-area: main;
+  padding: 1rem 1.5rem;
+  max-width: 1380px;
 }
 
 footer {
-	grid-area: foot;
+  grid-area: foot;
 }
 
 table {
-	border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 p {
-	margin: .25rem 0 .5rem 0;
+  margin: 0.25rem 0 0.5rem 0;
 }
 
 h2 {
-	position: relative;
-	margin-top: 3rem;
-	clear: both;
+  position: relative;
+  margin-top: 3rem;
+  clear: both;
 }
 
 h2::before {
-	content:'';
-	position: absolute;
-	width: 100%;
-	height: 1px;
-	border-top: 1px dotted #999;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-top: 1px dotted #999;
 }
 
 h2 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 h3,
 h4 {
-	margin: 1rem 0 .25rem 0;
+  margin: 1rem 0 0.25rem 0;
 }
 
 b {
-	font-weight: 600;
+  font-weight: 600;
 }
 
-ul, ol {
-	margin: 0;
-	padding-left: 32px;
+ul,
+ol {
+  margin: 0;
+  padding-left: 32px;
 }
 
-p+ul {
-	margin-top: -.5rem;
+p + ul {
+  margin-top: -0.5rem;
 }
 
 th,
 td {
-	padding: 0 .5rem;
-	border-bottom: 1px solid #999;
-	vertical-align: top;
+  padding: 0 0.5rem;
+  border-bottom: 1px solid #999;
+  vertical-align: top;
 }
 
 .gear {
-	font-size: small;
+  font-size: small;
 }
 
 .inset {
-	font-size: small;
-	margin: 1rem 0 1rem 1rem;
-	padding: 0 1rem .5rem;
-	background-color: #ddd;
-	float: right;
-	max-width: 300px;
+  font-size: small;
+  margin: 1rem 0 1rem 1rem;
+  padding: 0 1rem 0.5rem;
+  background-color: #ddd;
+  float: right;
+  max-width: 300px;
 }
 
-@media(min-width: 768.02px) {
-	nav>div {
-		position: fixed;
-		width: 200px;
-		padding-left: .75rem;
-		top: 0;
-		bottom: 0;
-		overflow-y: auto;
-	}
-	.gear {
-		display: grid;
-		gap: 1rem;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas: "div div";
-	}
-	.moves {
-		display: grid;
-		gap: 1rem;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas: "div div";
-	}
+@media (min-width: 768.02px) {
+  nav > div {
+    position: fixed;
+    width: 200px;
+    padding-left: 0.75rem;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+  }
+  .gear {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "div div";
+  }
+  .moves {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "div div";
+  }
 }
 
 .collapse {
-	cursor: pointer;
-	position: relative;
-	z-index: 50;
+  cursor: pointer;
+  position: relative;
+  z-index: 50;
 }
 
 .collapse::after {
-	display: inline;
-	width: 15px;
-	height: 10px;
-	content: ' 👁️';
+  display: inline;
+  width: 15px;
+  height: 10px;
+  content: " 👁️";
 }
 
-.collapse+* {
-	display: none;
-	border: 1px solid #ccc;
-	padding: 0 1rem .5rem;
-	margin-top: .5rem;
+.collapse + * {
+  display: none;
+  border: 1px solid #ccc;
+  padding: 0 1rem 0.5rem;
+  margin-top: 0.5rem;
 }
 
 i {
-	color: #dd3300;
+  color: #dd3300;
 }
 
 main span {
-	border-bottom: 1px dotted #000;
-	font-weight: 600;
+  border-bottom: 1px dotted #000;
+  font-weight: 600;
 }
 
+#items span {
+  display: block;
+  cursor: pointer;
+}
+#items a {
+  display: block;
+  padding-left: 0.5rem;
+}
 
-@media(max-width: 768px) {
-	body {
-		display: block;
-	}
+@media (max-width: 768px) {
+  body {
+    display: block;
+  }
 
-	nav {
-		width: 100%;
-		height: 2.5rem;
-		padding-right: 0;
-		position: fixed;
-		z-index: 100;
-	}
+  nav {
+    width: 100%;
+    height: 2.5rem;
+    padding-right: 0;
+    position: fixed;
+    z-index: 100;
+  }
 
-	nav>div {
-		position: inherit;
-		width: calc(100% - .75rem);
-		overflow-y:hidden;
-		/*background-color: #333;*/
-	}
+  nav > div {
+    position: inherit;
+    width: calc(100% - 0.75rem);
+    overflow-y: hidden;
+    /*background-color: #333;*/
+  }
 
-	nav .menu {
-		display: flex;
-		justify-content: space-between;
-		width: 100%;
-	}
+  nav .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 
-	nav .menu span {
-		display: block;
-		width: 30px;
-		height: 10px;
-	}
+  nav .menu span {
+    display: block;
+    width: 30px;
+    height: 10px;
+  }
 
-	nav .menu span::before {
-		display: inline;
-		width: 15px;
-		height: 10px;
-		content: ' 👁️';
-	}
+  nav .menu span::before {
+    display: inline;
+    width: 15px;
+    height: 10px;
+    content: " 👁️";
+  }
 
-	#mmenu{
-		display: none;
-	}
+  #mmenu {
+    display: none;
+  }
 
-	main {
-		padding: 3rem 1rem .5rem;
-	}
+  main {
+    padding: 3rem 1rem 0.5rem;
+  }
 
-	h2 {
-		padding-top: 6rem;
-		margin-top: -3rem;
-	}
+  h2 {
+    padding-top: 6rem;
+    margin-top: -3rem;
+  }
 
-	h3 {
-		padding-top: 5rem;
-		margin-top: -3rem;
-	}
+  h3 {
+    padding-top: 5rem;
+    margin-top: -3rem;
+  }
 
-	.inset {
-		max-width: 100%;
-		padding: 0 .5rem .5rem;
-		margin: 1rem 0;
-		float:none;
-	}
+  .inset {
+    max-width: 100%;
+    padding: 0 0.5rem 0.5rem;
+    margin: 1rem 0;
+    float: none;
+  }
 
-	.inset h3 {
-		padding-top: .5rem;
-		margin-top: 0;
-	}
+  .inset h3 {
+    padding-top: 0.5rem;
+    margin-top: 0;
+  }
 
-	.collapse {
-		padding-top: 2rem;
-		margin-top: 0;
-	}
+  .collapse {
+    padding-top: 2rem;
+    margin-top: 0;
+  }
 
-	.collapse+* {
-		border: 1px solid #ccc;
-		padding: 0 .5rem .5rem;
-		margin-top: .5rem;
-		margin: .5rem -.5rem 0;
-	}
+  .collapse + * {
+    border: 1px solid #ccc;
+    padding: 0 0.5rem 0.5rem;
+    margin-top: 0.5rem;
+    margin: 0.5rem -0.5rem 0;
+  }
 
-	.moves div+div {
-		margin-top: 1.5rem;
-		border-top:1px #333 dotted;
-	}
+  .moves div + div {
+    margin-top: 1.5rem;
+    border-top: 1px #333 dotted;
+  }
 
-	table {
-		max-width: calc(100% - 2rem) !important;
-	}
+  table {
+    max-width: calc(100% - 2rem) !important;
+  }
 
-	td {
-		font-size: small;
-	}
+  td {
+    font-size: small;
+  }
 }

@@ -22,9 +22,7 @@
 	<nav>
 		<div>
 			<div class="menu">
-				<div><a href="chars.html">PC</a> |
-					<a href="actions.html">Actions</a> |
-					<a href="index.html">Rules</a>
+				<div><a href="chars.html">PC</a> | <a href="actions.html">Actions</a> | <a href="index.html">Rules</a>
 				</div>
 				<span></span>
 			</div>
@@ -62,7 +60,6 @@
 		<p><b>Небольшой</b>: монстр размером примерно с полурослика.</p>
 		<p><b>Крупный</b>: монстр куда больше человека, размером с телегу.</p>
 		<p><b>Огромный</b>: размером с небольшой дом или еще больше.</p>
-
 		<h2 id="creation">Создание монстра</h2>
 		<h4>1. Костяк</h4>
 		<table>
@@ -333,16 +330,14 @@
 			<li>Нечто, связанное с одним из персонажей, бросьте еще раз</li>
 			<li>Сокровищница: 1к10×1000 монет и 1к10×10 драгоценных камней стоимостью 2к6×100 каждый</li>
 		</ol>
-		
 		<div id="mm"></div>
 	</main>
-
 	<script src="mm.js"></script>
 	<script>
 		let mms = document.getElementById('mm');
 
 		for (const a in area) {
-			if (Object.hasOwnProperty.call(area, a)) {
+			if (false) {
 				const el = area[a];
 				let adiv = document.createElement('div');
 				let atitle = document.createElement('h3');
@@ -361,8 +356,8 @@
 						mdiv.append(mtitle);
 
 						let mparams = document.createElement('div');
-						mparams.innerHTML = `<b>❤️${el.hp} &nbsp; &nbsp; 
-						🛡️${el.armor} &nbsp; &nbsp; 
+						mparams.innerHTML = `<b>❤️${el.hp} &nbsp; &nbsp;
+						🛡️${el.armor} &nbsp; &nbsp;
 						🗡️${el.attack} (${el.damage})</b>`;
 						mdiv.append(mparams);
 
@@ -402,33 +397,110 @@
 				}
 				mms.append(adiv);
 			}
+			let box = document.createElement("div");
+			let h2 = document.createElement("h2");
+			h2.setAttribute("id", `id_${a}`);
+			h2.innerText = area[a];
+			box.append(h2);
+			for (const m in mm) {
+				if (mm[m].area == a) {
+					const el = mm[m];
+					let mdiv = document.createElement('div');
+
+					let mtitle = document.createElement('h3');
+					mtitle.setAttribute("id", `id_${m}`);
+					mtitle.innerText = el.name;
+					mdiv.append(mtitle);
+
+					let mparams = document.createElement('div');
+					mparams.innerHTML = `<b>❤️${el.hp} &nbsp; &nbsp;
+						🛡️${el.armor} &nbsp; &nbsp;
+						🗡️${el.attack} (${el.damage})</b>`;
+					mdiv.append(mparams);
+
+					let mprops = document.createElement('p');
+					let props_str = '';
+					for (const prop in el.properties) {
+						props_str += `<i>${el.properties[prop]}</i><br>`;
+					}
+					mprops.innerHTML = props_str;
+					if (el.special) {
+						let mspec = document.createElement('p');
+						mspec.innerHTML = `<b>Особые свойства</b>: ${el.special}`;
+						mdiv.append(mspec);
+					}
+					mdiv.append(mprops);
+
+					let mdesc = document.createElement('p');
+					mdesc.innerText = el.description;
+					mdiv.append(mdesc);
+
+					let minst = document.createElement('p');
+					minst.innerHTML = `<b>Инстинкт</b>: ${el.instinct}`;
+					mdiv.append(minst);
+
+					let mactions = document.createElement('ul');
+					let actions_str = '';
+					el.actions.forEach(element => {
+						actions_str += `<li>${element}</li>`;
+					});
+					mactions.innerHTML = actions_str;
+					mdiv.append(mactions);
+					box.append(mdiv);
+				}
+			}
+			mms.append(box);
 		}
 
 
 		let menu = document.getElementById('items');
-		let items = document.querySelectorAll('main h3');
-		for (let i = 0; i < items.length; i++) {
-			const element = items[i];
-			let subitems = element.nextElementSibling.querySelectorAll('h4');
+		for (const a in area) {
 			let li = document.createElement("li");
+			let span = document.createElement("span");
+			span.innerText = area[a];
+			li.append(span);
 			let d = document.createElement("div");
-			li.innerHTML = `<a href="#id_${i}">+ ${element.innerHTML}</a>`;
-			for (const j of subitems) {
-				d.innerHTML += `${j.textContent}<br>`;
-			}
 			d.setAttribute('style', 'display:none;');
+			for (const m in mm) {
+				if (mm[m].area == a) {
+					let link = document.createElement("a");
+					link.innerText = mm[m].name;
+					link.href = `#id_${m}`;
+					d.append(link);
+				}
+			}
 			li.append(d);
-			li.addEventListener("click", (event) => {
-				d.style.display === 'none' || d.style.display === '' ? d.style.display = 'block' : d.style.display = 'none';
+			span.addEventListener("click", e => {
+				d.style.display === 'none' || d.style.display === ''
+					? d.style.display = 'block' : d.style.display = 'none';
 			});
-
 			menu.append(li);
-			element.setAttribute("id", `id_${i}`);
 		}
+
+
+		// let items = document.querySelectorAll('main h3');
+		// for (let i = 0; i < items.length; i++) {
+		// 	const element = items[i];
+		// 	let subitems = element.nextElementSibling.querySelectorAll('h4');
+		// 	let li = document.createElement("li");
+		// 	let d = document.createElement("div");
+		// 	li.innerHTML = `<a href="#id_${i}">+ ${element.innerHTML}</a>`;
+		// 	for (const j of subitems) {
+		// 		d.innerHTML += `${j.textContent}<br>`;
+		// 	}
+		// 	d.setAttribute('style', 'display:none;');
+		// 	li.append(d);
+		// 	li.addEventListener("click", (event) => {
+		// 		d.style.display === 'none' || d.style.display === ''
+		// 		? d.style.display = 'block' : d.style.display = 'none';
+		// 	});
+
+		// 	menu.append(li);
+		// 	element.setAttribute("id", `id_${i}`);
+		// }
 
 	</script>
 	<script src="js.js"></script>
-
 </body>
 
 </html>
