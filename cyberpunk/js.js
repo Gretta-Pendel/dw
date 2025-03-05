@@ -306,7 +306,7 @@ window.addEventListener("load", () => {
 
 // footer
 const footer = document.createElement("footer");
-footer.innerHTML = `<a href="">Terms</a> | <a href="tables.html">Tables</a> | <a href="poi.html">POI</a> | <a href="start.html">Start</a>`;
+footer.innerHTML = `<a href="">Terms</a> | <a href="tables.html">Tables</a> | <a href="poi.html">POI</a> | <a href="start.html">Start</a> | <a href="short.html">Short</a>`;
 pageurl !== "poi" ? main.after(footer) : undefined;
 // dictionary
 // let sections = {
