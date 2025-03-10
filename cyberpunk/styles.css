@@ -588,6 +588,11 @@ nav .side-menu-box {
     max-width: 100%;
   }
 
+  footer {
+    left: 0;
+    padding-left: 0.25rem;
+  }
+
   h2 {
     padding-top: 6rem;
     margin-top: -3rem;
@@ -642,5 +647,10 @@ nav .side-menu-box {
   .tableBox tbody td:first-child,
   .tableBox thead th:first-child {
     border-right: 1px solid #999;
+  }
+}
+@media (max-width: 380px) {
+  main {
+    padding: 5rem 0.5rem 0.5rem;
   }
 }
