@@ -80,12 +80,12 @@ const menuResize = (m) => {
 
 const sideMenu = (m) => {
   mmopen.addEventListener("click", (event) => {
-    if ((m && m.style.display === "none") || "") {
+    if ((m && m.style.display === "none") || m.style.display === "") {
       m.style.display = "block";
       nav.style.height = m.offsetHeight + 16 + "px";
     } else {
       m.style.display = "none";
-      nav.style.height = "2.5rem";
+      nav.style.height = "2rem";
     }
   });
   menuResize(m);

@@ -75,7 +75,7 @@
 }
 .block.char table {
   margin: 0;
-  max-width: 350px;
+  /*max-width: 350px;*/
 }
 .block.char td {
   font-weight: 600;
