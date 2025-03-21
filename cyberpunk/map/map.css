@@ -179,9 +179,6 @@ hr {
   font-family: Calibri, sans-serif;
   height: 100%;
 }
-.poiPage body {
-  grid-template-areas: "main" "foot";
-}
 .poiPage footer {
   left: 0;
   padding: 0.25rem 0.5rem;
