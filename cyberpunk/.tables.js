@@ -1,4 +1,4 @@
-const pages = ["char","combat","economy","life","netrunning","nightcity","roles","skills","start","traumateam",];const alltables = [{id:"char_1",name:"Культурное происхождение",page:"char",table:`<table id="char_1"><caption>Культурное происхождение</caption><tbody><tr>
+const pages = ["char","combat","economy","table","life","netrunning","nightcity","roles","skills","start","traumateam",];const alltables = [{id:"char_1",name:"Культурное происхождение",page:"char",table:`<table id="char_1"><caption>Культурное происхождение</caption><tbody><tr>
         <td><b>1d10</b></td>
         <td><b>Ваш регион</b></td>
         <td>
@@ -464,73 +464,73 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
         <td>10</td>
         <td>Кто-то с общим интересом или целью</td>
       </tr></tbody></table>`},{id:"char_11",name:"Ваши враги",page:"char",table:`<table id="char_11"><caption>Ваши враги</caption><tbody><tr>
-        <td><b>1d10</b></td>
-        <td><b>Враг</b></td>
-        <td>
-          <b>Что послужило причиной? Кто был обижен?</b> (выберите)
-        </td>
-        <td><b>Как они могут напасть на вас?</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Бывший друг</td>
-        <td>Он потерял своё лицо или статус</td>
-        <td>Самостоятельно, но не отступит от своего пути, чего бы не произошло</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Бывший любовник</td>
-        <td>Потерял любовника, друга или родственника</td>
-        <td>Самостоятельно</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Отчужденный родственник</td>
-        <td>Получил крупное публичное унижение</td>
-        <td>Он и его близкий друг</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Враг детства</td>
-        <td>Обвинили в трусости или каком-то другом крупном личном недостатке</td>
-        <td>Он и несколько (1d6/2) друзей</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Человек, работавший на вас</td>
-        <td>Бросили или предали</td>
-        <td>Он и несколько (1d10/2) друзей</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Человек, на которого вы работали</td>
-        <td>Отклонили предложение о работе или романтических отношениях</td>
-        <td>Целая банда (1d10+5)</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>Партнёр или коллега</td>
-        <td>Вы просто не любите друг друга</td>
-        <td>Местные корпы или законники</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>Менеджер корпорации</td>
-        <td>Один из вас был романтическим соперником</td>
-        <td>Могущественный бандит или небольшая корпа</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>Чиновник</td>
-        <td>Был конкурентом по бизнесу</td>
-        <td>Мощная корпа</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>Бустер</td>
-        <td>Подставили его за преступление, которого он не совершал</td>
-        <td>Целый город, правительство или агентство.</td>
-      </tr></tbody></table>`},{id:"char_12",name:"Сладкая месть",page:"char",table:`<table id="char_12"><caption>Сладкая месть</caption><tbody><tr>
+          <td><b>1d10</b></td>
+          <td><b>Враг</b></td>
+          <td>
+            <b>Что послужило причиной? Кто был обижен?</b> (выберите)
+          </td>
+          <td><b>Как они могут напасть на вас?</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Бывший друг</td>
+          <td>Он потерял своё лицо или статус</td>
+          <td>Самостоятельно, но не отступит от своего пути, чего бы не произошло</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Бывший любовник</td>
+          <td>Потерял любовника, друга или родственника</td>
+          <td>Самостоятельно</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Отчужденный родственник</td>
+          <td>Получил крупное публичное унижение</td>
+          <td>Он и его близкий друг</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Враг детства</td>
+          <td>Обвинили в трусости или каком-то другом крупном личном недостатке</td>
+          <td>Он и несколько (1d6/2) друзей</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Человек, работавший на вас</td>
+          <td>Бросили или предали</td>
+          <td>Он и несколько (1d10/2) друзей</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Человек, на которого вы работали</td>
+          <td>Отклонили предложение о работе или романтических отношениях</td>
+          <td>Целая банда (1d10+5)</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Партнёр или коллега</td>
+          <td>Вы просто не любите друг друга</td>
+          <td>Местные корпы или законники</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Менеджер корпорации</td>
+          <td>Один из вас был романтическим соперником</td>
+          <td>Могущественный бандит или небольшая корпа</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Чиновник</td>
+          <td>Был конкурентом по бизнесу</td>
+          <td>Мощная корпа</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Бустер</td>
+          <td>Подставили его за преступление, которого он не совершал</td>
+          <td>Целый город, правительство или агентство.</td>
+        </tr></tbody></table>`},{id:"char_12",name:"Сладкая месть",page:"char",table:`<table id="char_12"><caption>Сладкая месть</caption><tbody><tr>
         <td><b>1d10</b></td>
         <td><b>Что вы/они собираетесь делать??</b></td>
       </tr>
@@ -2190,6 +2190,308 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
               <td>6</td>
               <td>Грязные копы</td>
             </tr></tbody></table>`},{id:"char_25",name:"#1: Уличная крыса (Шаблоны). Пример",page:"char",data:"example",table:`<table id="char_25"><caption>#1: Уличная крыса (Шаблоны). Пример</caption><tbody><tr>
+            <td><b>1d10</b></td>
+            <td><b>ИНТ</b></td>
+            <td><b>РЕА</b></td>
+            <td><b>ЛВК</b></td>
+            <td><b>ТЕХ</b></td>
+            <td><b>ХАР</b></td>
+            <td><b>ВОЛЯ</b></td>
+            <td><b>УДЧ</b></td>
+            <td><b>СКО</b></td>
+            <td><b>ТЕЛ</b></td>
+            <td><b>ЭМП</b></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>6</td>
+            <td>7</td>
+            <td>7</td>
+            <td>3</td>
+            <td>8</td>
+            <td>6</td>
+            <td>5</td>
+            <td>5</td>
+            <td>6</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>7</td>
+            <td>8</td>
+            <td>6</td>
+            <td>3</td>
+            <td>6</td>
+            <td>6</td>
+            <td>7</td>
+            <td>5</td>
+            <td>6</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>5</td>
+            <td>8</td>
+            <td>7</td>
+            <td>4</td>
+            <td>7</td>
+            <td>7</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>8</td>
+            <td>6</td>
+            <td>4</td>
+            <td>6</td>
+            <td>7</td>
+            <td>6</td>
+            <td>5</td>
+            <td>7</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>6</td>
+            <td>7</td>
+            <td>5</td>
+            <td>7</td>
+            <td>6</td>
+            <td>7</td>
+            <td>6</td>
+            <td>8</td>
+            <td>4</td>
+          </tr>
+          <tr class="dark">
+            <td>6</td>
+            <td>7</td>
+            <td>7</td>
+            <td>6</td>
+            <td>5</td>
+            <td>7</td>
+            <td>6</td>
+            <td>6</td>
+            <td>7</td>
+            <td>7</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>7</td>
+            <td>7</td>
+            <td>6</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>7</td>
+            <td>6</td>
+            <td>6</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>7</td>
+            <td>8</td>
+            <td>7</td>
+            <td>5</td>
+            <td>6</td>
+            <td>6</td>
+            <td>5</td>
+            <td>6</td>
+            <td>8</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>7</td>
+            <td>7</td>
+            <td>6</td>
+            <td>4</td>
+            <td>6</td>
+            <td>6</td>
+            <td>6</td>
+            <td>5</td>
+            <td>6</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>6</td>
+            <td>6</td>
+            <td>8</td>
+            <td>5</td>
+            <td>6</td>
+            <td>6</td>
+            <td>5</td>
+            <td>6</td>
+            <td>6</td>
+            <td>5</td>
+          </tr></tbody></table>`},{id:"char_26",name:"#1: Уличная крыса (Шаблоны). Пример",page:"char",data:"example",table:`<table id="char_26"><caption>#1: Уличная крыса (Шаблоны). Пример</caption><tbody><tr>
+            <td>ИНТ 7</td>
+            <td>РЕА 7</td>
+            <td>ЛВК 6</td>
+            <td>ТЕХ 5</td>
+            <td>ХАР 7</td>
+            <td>ВОЛЯ 6</td>
+            <td>УДЧ 6</td>
+            <td>СКО 7</td>
+            <td>ТЕЛ 7</td>
+            <td>ЭМП 5</td>
+          </tr></tbody></table>`},{id:"char_27",name:"#1: Уличная крыса (Шаблоны).",page:"char",table:`<table id="char_27"><caption>#1: Уличная крыса (Шаблоны).</caption><tbody><tr>
+          <th colspan="11"><b>Рокербой</b></th>
+        </tr>
+        <tr>
+          <td><b>1d10</b></td>
+          <td><b>ИНТ</b></td>
+          <td><b>РЕА</b></td>
+          <td><b>ЛВК</b></td>
+          <td><b>ТЕХ</b></td>
+          <td><b>ХАР</b></td>
+          <td><b>ВОЛЯ</b></td>
+          <td><b>УДЧ</b></td>
+          <td><b>СКО</b></td>
+          <td><b>ТЕЛ</b></td>
+          <td><b>ЭМП</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>8</td>
+          <td>7</td>
+          <td>7</td>
+          <td>3</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>3</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>7</td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>4</td>
+          <td>5</td>
+          <td>7</td>
+          <td>7</td>
+          <td>6</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>3</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>3</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+          <td>6</td>
+          <td>8</td>
+          <td>6</td>
+          <td>5</td>
+          <td>4</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td>7</td>
+          <td>8</td>
+          <td>5</td>
+          <td>7</td>
+          <td>3</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>5</td>
+          <td>6</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>3</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>5</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>4</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>3</td>
+          <td>5</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>7</td>
+          <td>5</td>
+          <td>5</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>5</td>
+          <td>8</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>4</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <th colspan="11"><b>Соло</b></th>
+        </tr>
+        <tr>
           <td><b>1d10</b></td>
           <td><b>ИНТ</b></td>
           <td><b>РЕА</b></td>
@@ -2267,7 +2569,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
           <td>8</td>
           <td>4</td>
         </tr>
-        <tr class="dark">
+        <tr>
           <td>6</td>
           <td>7</td>
           <td>7</td>
@@ -2331,1619 +2633,1317 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
           <td>6</td>
           <td>6</td>
           <td>5</td>
-        </tr></tbody></table>`},{id:"char_26",name:"#1: Уличная крыса (Шаблоны). Пример",page:"char",data:"example",table:`<table id="char_26"><caption>#1: Уличная крыса (Шаблоны). Пример</caption><tbody><tr>
-          <td>ИНТ 7</td>
-          <td>РЕА 7</td>
-          <td>ЛВК 6</td>
-          <td>ТЕХ 5</td>
-          <td>ХАР 7</td>
-          <td>ВОЛЯ 6</td>
-          <td>УДЧ 6</td>
-          <td>СКО 7</td>
-          <td>ТЕЛ 7</td>
-          <td>ЭМП 5</td>
-        </tr></tbody></table>`},{id:"char_27",name:"#1: Уличная крыса (Шаблоны).",page:"char",table:`<table id="char_27"><caption>#1: Уличная крыса (Шаблоны).</caption><tbody><tr>
-        <th colspan="11"><b>Рокербой</b></th>
-      </tr>
-      <tr>
-        <td><b>1d10</b></td>
-        <td><b>ИНТ</b></td>
-        <td><b>РЕА</b></td>
-        <td><b>ЛВК</b></td>
-        <td><b>ТЕХ</b></td>
-        <td><b>ХАР</b></td>
-        <td><b>ВОЛЯ</b></td>
-        <td><b>УДЧ</b></td>
-        <td><b>СКО</b></td>
-        <td><b>ТЕЛ</b></td>
-        <td><b>ЭМП</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>7</td>
-        <td>6</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>8</td>
-        <td>7</td>
-        <td>7</td>
-        <td>3</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>3</td>
-        <td>7</td>
-        <td>7</td>
-        <td>7</td>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>4</td>
-        <td>5</td>
-        <td>7</td>
-        <td>7</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>4</td>
-        <td>5</td>
-        <td>7</td>
-        <td>7</td>
-        <td>6</td>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>3</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>3</td>
-        <td>7</td>
-        <td>7</td>
-        <td>7</td>
-        <td>6</td>
-        <td>8</td>
-        <td>6</td>
-        <td>5</td>
-        <td>4</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>7</td>
-        <td>8</td>
-        <td>5</td>
-        <td>7</td>
-        <td>3</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>5</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>3</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>5</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-        <td>6</td>
-        <td>6</td>
-        <td>6</td>
-        <td>6</td>
-        <td>4</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>3</td>
-        <td>5</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-        <td>5</td>
-        <td>8</td>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>4</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <th colspan="11"><b>Соло</b></th>
-      </tr>
-      <tr>
-        <td><b>1d10</b></td>
-        <td><b>ИНТ</b></td>
-        <td><b>РЕА</b></td>
-        <td><b>ЛВК</b></td>
-        <td><b>ТЕХ</b></td>
-        <td><b>ХАР</b></td>
-        <td><b>ВОЛЯ</b></td>
-        <td><b>УДЧ</b></td>
-        <td><b>СКО</b></td>
-        <td><b>ТЕЛ</b></td>
-        <td><b>ЭМП</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>3</td>
-        <td>8</td>
-        <td>6</td>
-        <td>5</td>
-        <td>5</td>
-        <td>6</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>7</td>
-        <td>8</td>
-        <td>6</td>
-        <td>3</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>6</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>5</td>
-        <td>8</td>
-        <td>7</td>
-        <td>4</td>
-        <td>7</td>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>5</td>
-        <td>8</td>
-        <td>6</td>
-        <td>4</td>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>7</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-        <td>8</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>7</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>7</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>6</td>
-        <td>6</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>7</td>
-        <td>8</td>
-        <td>7</td>
-        <td>5</td>
-        <td>6</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>8</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>7</td>
-        <td>7</td>
-        <td>6</td>
-        <td>4</td>
-        <td>6</td>
-        <td>6</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>6</td>
-        <td>6</td>
-        <td>8</td>
-        <td>5</td>
-        <td>6</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>6</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <th colspan="11"><b>Нетраннер</b></th>
-      </tr>
-      <tr>
-        <td><b>1d10</b></td>
-        <td><b>ИНТ</b></td>
-        <td><b>РЕА</b></td>
-        <td><b>ЛВК</b></td>
-        <td><b>ТЕХ</b></td>
-        <td><b>ХАР</b></td>
-        <td><b>ВОЛЯ</b></td>
-        <td><b>УДЧ</b></td>
-        <td><b>СКО</b></td>
-        <td><b>ТЕЛ</b></td>
-        <td><b>ЭМП</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>5</td>
-        <td>8</td>
-        <td>7</td>
-        <td>7</td>
-        <td>7</td>
-        <td>4</td>
-        <td>8</td>
-        <td>7</td>
-        <td>7</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>8</td>
-        <td>3</td>
-        <td>8</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>5</td>
-        <td>6</td>
-        <td>8</td>
-        <td>6</td>
-        <td>6</td>
-        <td>4</td>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>5</td>
-        <td>7</td>
-        <td>7</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-        <td>8</td>
-        <td>6</td>
-        <td>5</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>5</td>
-        <td>8</td>
-        <td>8</td>
-        <td>5</td>
-        <td>7</td>
-        <td>3</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>6</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>4</td>
-        <td>7</td>
-        <td>7</td>
-        <td>6</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>6</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>7</td>
-        <td>7</td>
-        <td>7</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>5</td>
-        <td>7</td>
-        <td>8</td>
-        <td>6</td>
-        <td>8</td>
-        <td>4</td>
-        <td>8</td>
-        <td>5</td>
-        <td>7</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>6</td>
-        <td>3</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>7</td>
-        <td>8</td>
-        <td>6</td>
-        <td>6</td>
-        <td>6</td>
-        <td>4</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <th colspan="11"><b>Техник</b></th>
-      </tr>
-      <tr>
-        <td><b>1d10</b></td>
-        <td><b>ИНТ</b></td>
-        <td><b>РЕА</b></td>
-        <td><b>ЛВК</b></td>
-        <td><b>ТЕХ</b></td>
-        <td><b>ХАР</b></td>
-        <td><b>ВОЛЯ</b></td>
-        <td><b>УДЧ</b></td>
-        <td><b>СКО</b></td>
-        <td><b>ТЕЛ</b></td>
-        <td><b>ЭМП</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>8</td>
-        <td>4</td>
-        <td>4</td>
-        <td>5</td>
-        <td>5</td>
-        <td>7</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>7</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>3</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>8</td>
-        <td>6</td>
-        <td>5</td>
-        <td>7</td>
-        <td>5</td>
-        <td>4</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>7</td>
-        <td>8</td>
-        <td>7</td>
-        <td>8</td>
-        <td>4</td>
-        <td>4</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-        <td>4</td>
-        <td>3</td>
-        <td>7</td>
-        <td>7</td>
-        <td>6</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>8</td>
-        <td>7</td>
-        <td>5</td>
-        <td>6</td>
-        <td>3</td>
-        <td>3</td>
-        <td>7</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>8</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>4</td>
-        <td>4</td>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>8</td>
-        <td>8</td>
-        <td>7</td>
-        <td>8</td>
-        <td>5</td>
-        <td>4</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>3</td>
-        <td>3</td>
-        <td>5</td>
-        <td>7</td>
-        <td>7</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>8</td>
-        <td>8</td>
-        <td>5</td>
-        <td>6</td>
-        <td>4</td>
-        <td>4</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <th colspan="11"><b>Медтехник</b></th>
-      </tr>
-      <tr>
-        <td><b>1d10</b></td>
-        <td><b>ИНТ</b></td>
-        <td><b>РЕА</b></td>
-        <td><b>ЛВК</b></td>
-        <td><b>ТЕХ</b></td>
-        <td><b>ХАР</b></td>
-        <td><b>ВОЛЯ</b></td>
-        <td><b>УДЧ</b></td>
-        <td><b>СКО</b></td>
-        <td><b>ТЕЛ</b></td>
-        <td><b>ЭМП</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>7</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>3</td>
-        <td>8</td>
-        <td>5</td>
-        <td>5</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>7</td>
-        <td>4</td>
-        <td>4</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>6</td>
-        <td>5</td>
-        <td>5</td>
-        <td>8</td>
-        <td>5</td>
-        <td>3</td>
-        <td>8</td>
-        <td>5</td>
-        <td>7</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>8</td>
-        <td>3</td>
-        <td>5</td>
-        <td>6</td>
-        <td>6</td>
-        <td>5</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>8</td>
-        <td>5</td>
-        <td>5</td>
-        <td>8</td>
-        <td>5</td>
-        <td>5</td>
-        <td>6</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>8</td>
-        <td>6</td>
-        <td>5</td>
-        <td>8</td>
-        <td>5</td>
-        <td>4</td>
-        <td>8</td>
-        <td>5</td>
-        <td>7</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>6</td>
-        <td>5</td>
-        <td>7</td>
-        <td>7</td>
-        <td>3</td>
-        <td>5</td>
-        <td>8</td>
-        <td>5</td>
-        <td>5</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-        <td>4</td>
-        <td>6</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>6</td>
-        <td>3</td>
-        <td>4</td>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <th colspan="11"><b>Медиа</b></th>
-      </tr>
-      <tr>
-        <td><b>1d10</b></td>
-        <td><b>ИНТ</b></td>
-        <td><b>РЕА</b></td>
-        <td><b>ЛВК</b></td>
-        <td><b>ТЕХ</b></td>
-        <td><b>ХАР</b></td>
-        <td><b>ВОЛЯ</b></td>
-        <td><b>УДЧ</b></td>
-        <td><b>СКО</b></td>
-        <td><b>ТЕЛ</b></td>
-        <td><b>ЭМП</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>6</td>
-        <td>6</td>
-        <td>5</td>
-        <td>5</td>
-        <td>8</td>
-        <td>7</td>
-        <td>5</td>
-        <td>7</td>
-        <td>5</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>8</td>
-        <td>7</td>
-        <td>7</td>
-        <td>3</td>
-        <td>6</td>
-        <td>6</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-        <td>6</td>
-        <td>8</td>
-        <td>5</td>
-        <td>5</td>
-        <td>5</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>6</td>
-        <td>5</td>
-        <td>7</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
-        <td>6</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-        <td>4</td>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
-        <td>4</td>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>8</td>
-        <td>5</td>
-        <td>6</td>
-        <td>3</td>
-        <td>7</td>
-        <td>6</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>8</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-        <td>4</td>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>7</td>
-        <td>6</td>
-        <td>6</td>
-        <td>3</td>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <th colspan="11"><b>Законник</b></th>
-      </tr>
-      <tr>
-        <td><b>1d10</b></td>
-        <td><b>ИНТ</b></td>
-        <td><b>РЕА</b></td>
-        <td><b>ЛВК</b></td>
-        <td><b>ТЕХ</b></td>
-        <td><b>ХАР</b></td>
-        <td><b>ВОЛЯ</b></td>
-        <td><b>УДЧ</b></td>
-        <td><b>СКО</b></td>
-        <td><b>ТЕЛ</b></td>
-        <td><b>ЭМП</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>7</td>
-        <td>8</td>
-        <td>5</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>6</td>
-        <td>6</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>8</td>
-        <td>5</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>5</td>
-        <td>7</td>
-        <td>7</td>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
-        <td>7</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-        <td>6</td>
-        <td>8</td>
-        <td>5</td>
-        <td>7</td>
-        <td>7</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>5</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>5</td>
-        <td>7</td>
-        <td>8</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>7</td>
-        <td>8</td>
-        <td>7</td>
-        <td>5</td>
-        <td>6</td>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>5</td>
-        <td>6</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>8</td>
-        <td>5</td>
-        <td>7</td>
-        <td>6</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
-        <td>7</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>5</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>6</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>8</td>
-        <td>7</td>
-        <td>5</td>
-        <td>7</td>
-        <td>6</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <th colspan="11"><b>Корпорат</b></th>
-      </tr>
-      <tr>
-        <td><b>1d10</b></td>
-        <td><b>ИНТ</b></td>
-        <td><b>РЕА</b></td>
-        <td><b>ЛВК</b></td>
-        <td><b>ТЕХ</b></td>
-        <td><b>ХАР</b></td>
-        <td><b>ВОЛЯ</b></td>
-        <td><b>УДЧ</b></td>
-        <td><b>СКО</b></td>
-        <td><b>ТЕЛ</b></td>
-        <td><b>ЭМП</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>8</td>
-        <td>5</td>
-        <td>5</td>
-        <td>3</td>
-        <td>8</td>
-        <td>6</td>
-        <td>6</td>
-        <td>5</td>
-        <td>5</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>8</td>
-        <td>6</td>
-        <td>6</td>
-        <td>4</td>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>3</td>
-        <td>8</td>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-        <td>4</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>8</td>
-        <td>5</td>
-        <td>7</td>
-        <td>5</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>5</td>
-        <td>5</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>7</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>8</td>
-        <td>5</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>5</td>
-        <td>7</td>
-        <td>7</td>
-        <td>3</td>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>5</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-        <td>4</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>3</td>
-        <td>7</td>
-        <td>5</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>7</td>
-        <td>5</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
-        <td>8</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-        <td>4</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <th colspan="11"><b>Фиксер</b></th>
-      </tr>
-      <tr>
-        <td><b>1d10</b></td>
-        <td><b>ИНТ</b></td>
-        <td><b>РЕА</b></td>
-        <td><b>ЛВК</b></td>
-        <td><b>ТЕХ</b></td>
-        <td><b>ХАР</b></td>
-        <td><b>ВОЛЯ</b></td>
-        <td><b>УДЧ</b></td>
-        <td><b>СКО</b></td>
-        <td><b>ТЕЛ</b></td>
-        <td><b>ЭМП</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>8</td>
-        <td>5</td>
-        <td>7</td>
-        <td>4</td>
-        <td>6</td>
-        <td>5</td>
-        <td>8</td>
-        <td>5</td>
-        <td>5</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>8</td>
-        <td>5</td>
-        <td>5</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>7</td>
-        <td>5</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>6</td>
-        <td>6</td>
-        <td>6</td>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-        <td>8</td>
-        <td>6</td>
-        <td>3</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>8</td>
-        <td>6</td>
-        <td>6</td>
-        <td>3</td>
-        <td>6</td>
-        <td>5</td>
-        <td>8</td>
-        <td>7</td>
-        <td>5</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>8</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-        <td>3</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>8</td>
-        <td>6</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-        <td>4</td>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>4</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>8</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
-        <td>5</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>5</td>
-        <td>5</td>
-        <td>6</td>
-        <td>8</td>
-        <td>6</td>
-        <td>4</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <th colspan="11"><b>Кочевник</b></th>
-      </tr>
-      <tr>
-        <td><b>1d10</b></td>
-        <td><b>ИНТ</b></td>
-        <td><b>РЕА</b></td>
-        <td><b>ЛВК</b></td>
-        <td><b>ТЕХ</b></td>
-        <td><b>ХАР</b></td>
-        <td><b>ВОЛЯ</b></td>
-        <td><b>УДЧ</b></td>
-        <td><b>СКО</b></td>
-        <td><b>ТЕЛ</b></td>
-        <td><b>ЭМП</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>6</td>
-        <td>6</td>
-        <td>8</td>
-        <td>3</td>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-        <td>6</td>
-        <td>6</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>5</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>8</td>
-        <td>8</td>
-        <td>8</td>
-        <td>7</td>
-        <td>5</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>5</td>
-        <td>8</td>
-        <td>6</td>
-        <td>3</td>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>5</td>
-        <td>8</td>
-        <td>7</td>
-        <td>4</td>
-        <td>8</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>6</td>
-        <td>6</td>
-        <td>6</td>
-        <td>3</td>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-        <td>7</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-        <td>8</td>
-        <td>4</td>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>4</td>
-        <td>6</td>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>7</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>5</td>
-        <td>7</td>
-        <td>8</td>
-        <td>3</td>
-        <td>8</td>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-        <td>4</td>
-        <td>8</td>
-        <td>6</td>
-        <td>6</td>
-        <td>6</td>
-        <td>6</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>4</td>
-        <td>7</td>
-        <td>8</td>
-        <td>7</td>
-        <td>7</td>
-        <td>7</td>
-        <td>4</td>
-      </tr></tbody></table>`},{id:"char_28",name:"#2: Эджраннер (Быстро и грязно). Пример",page:"char",data:"example",table:`<table id="char_28"><caption>#2: Эджраннер (Быстро и грязно). Пример</caption><tbody><tr>
-            <td><b>1d10</b></td>
-            <td><b>ИНТ</b></td>
-            <td><b>РЕА</b></td>
-            <td><b>ЛВК</b></td>
-            <td><b>ТЕХ</b></td>
-            <td><b>ХАР</b></td>
-            <td><b>ВОЛЯ</b></td>
-            <td><b>УДЧ</b></td>
-            <td><b>СКО</b></td>
-            <td><b>ТЕЛ</b></td>
-            <td><b>ЭМП</b></td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>6</td>
-            <td>7</td>
-            <td>7</td>
-            <td>3</td>
-            <td>8</td>
-            <td class="dark">6</td>
-            <td>5</td>
-            <td>5</td>
-            <td>6</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>7</td>
-            <td>8</td>
-            <td>6</td>
-            <td>3</td>
-            <td>6</td>
-            <td>6</td>
-            <td>7</td>
-            <td>5</td>
-            <td>6</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>5</td>
-            <td>8</td>
-            <td class="dark">7</td>
-            <td>4</td>
-            <td>7</td>
-            <td>7</td>
-            <td>6</td>
-            <td>7</td>
-            <td class="dark">8</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>8</td>
-            <td>6</td>
-            <td>4</td>
-            <td>6</td>
-            <td>7</td>
-            <td class="dark">6</td>
-            <td>5</td>
-            <td>7</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td class="dark">6</td>
-            <td>6</td>
-            <td>7</td>
-            <td>5</td>
-            <td class="dark">7</td>
-            <td>6</td>
-            <td>7</td>
-            <td>6</td>
-            <td>8</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>7</td>
-            <td class="dark">7</td>
-            <td>6</td>
-            <td>5</td>
-            <td>7</td>
-            <td>6</td>
-            <td>6</td>
-            <td class="dark">7</td>
-            <td>7</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>7</td>
-            <td>7</td>
-            <td>6</td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>7</td>
-            <td>6</td>
-            <td>6</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <td>8</td>
-            <td>7</td>
-            <td>8</td>
-            <td>7</td>
-            <td class="dark">5</td>
-            <td>6</td>
-            <td>6</td>
-            <td>5</td>
-            <td>6</td>
-            <td>8</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>7</td>
-            <td>7</td>
-            <td>6</td>
-            <td>4</td>
-            <td>6</td>
-            <td>6</td>
-            <td>6</td>
-            <td>5</td>
-            <td>6</td>
-            <td class="dark">5</td>
-          </tr>
-          <tr>
-            <td>10</td>
-            <td>6</td>
-            <td>6</td>
-            <td>8</td>
-            <td>5</td>
-            <td>6</td>
-            <td>6</td>
-            <td>5</td>
-            <td>6</td>
-            <td>6</td>
-            <td>5</td>
-          </tr></tbody></table>`},{id:"char_29",name:"#2: Эджраннер (Быстро и грязно). Пример",page:"char",data:"example",table:`<table id="char_29"><caption>#2: Эджраннер (Быстро и грязно). Пример</caption><tbody><tr>
+        </tr>
+        <tr>
+          <th colspan="11"><b>Нетраннер</b></th>
+        </tr>
+        <tr>
+          <td><b>1d10</b></td>
+          <td><b>ИНТ</b></td>
+          <td><b>РЕА</b></td>
+          <td><b>ЛВК</b></td>
+          <td><b>ТЕХ</b></td>
+          <td><b>ХАР</b></td>
+          <td><b>ВОЛЯ</b></td>
+          <td><b>УДЧ</b></td>
+          <td><b>СКО</b></td>
+          <td><b>ТЕЛ</b></td>
+          <td><b>ЭМП</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>5</td>
+          <td>8</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+          <td>4</td>
+          <td>8</td>
+          <td>7</td>
+          <td>7</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td>8</td>
+          <td>3</td>
+          <td>8</td>
+          <td>7</td>
+          <td>5</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>5</td>
+          <td>6</td>
+          <td>8</td>
+          <td>6</td>
+          <td>6</td>
+          <td>4</td>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>5</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+          <td>8</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>5</td>
+          <td>8</td>
+          <td>8</td>
+          <td>5</td>
+          <td>7</td>
+          <td>3</td>
+          <td>7</td>
+          <td>5</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>4</td>
+          <td>7</td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>5</td>
+          <td>7</td>
+          <td>8</td>
+          <td>6</td>
+          <td>8</td>
+          <td>4</td>
+          <td>8</td>
+          <td>5</td>
+          <td>7</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+          <td>6</td>
+          <td>3</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>7</td>
+          <td>8</td>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>4</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <th colspan="11"><b>Техник</b></th>
+        </tr>
+        <tr>
+          <td><b>1d10</b></td>
+          <td><b>ИНТ</b></td>
+          <td><b>РЕА</b></td>
+          <td><b>ЛВК</b></td>
+          <td><b>ТЕХ</b></td>
+          <td><b>ХАР</b></td>
+          <td><b>ВОЛЯ</b></td>
+          <td><b>УДЧ</b></td>
+          <td><b>СКО</b></td>
+          <td><b>ТЕЛ</b></td>
+          <td><b>ЭМП</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+          <td>8</td>
+          <td>4</td>
+          <td>4</td>
+          <td>5</td>
+          <td>5</td>
+          <td>7</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td>3</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>8</td>
+          <td>6</td>
+          <td>5</td>
+          <td>7</td>
+          <td>5</td>
+          <td>4</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>7</td>
+          <td>8</td>
+          <td>7</td>
+          <td>8</td>
+          <td>4</td>
+          <td>4</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>6</td>
+          <td>7</td>
+          <td>6</td>
+          <td>4</td>
+          <td>3</td>
+          <td>7</td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>8</td>
+          <td>7</td>
+          <td>5</td>
+          <td>6</td>
+          <td>3</td>
+          <td>3</td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>8</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>4</td>
+          <td>4</td>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>8</td>
+          <td>8</td>
+          <td>7</td>
+          <td>8</td>
+          <td>5</td>
+          <td>4</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>6</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>3</td>
+          <td>3</td>
+          <td>5</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>8</td>
+          <td>8</td>
+          <td>5</td>
+          <td>6</td>
+          <td>4</td>
+          <td>4</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <th colspan="11"><b>Медтехник</b></th>
+        </tr>
+        <tr>
+          <td><b>1d10</b></td>
+          <td><b>ИНТ</b></td>
+          <td><b>РЕА</b></td>
+          <td><b>ЛВК</b></td>
+          <td><b>ТЕХ</b></td>
+          <td><b>ХАР</b></td>
+          <td><b>ВОЛЯ</b></td>
+          <td><b>УДЧ</b></td>
+          <td><b>СКО</b></td>
+          <td><b>ТЕЛ</b></td>
+          <td><b>ЭМП</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>7</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td>3</td>
+          <td>8</td>
+          <td>5</td>
+          <td>5</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+          <td>4</td>
+          <td>4</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+          <td>8</td>
+          <td>5</td>
+          <td>3</td>
+          <td>8</td>
+          <td>5</td>
+          <td>7</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>8</td>
+          <td>3</td>
+          <td>5</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td>7</td>
+          <td>5</td>
+          <td>5</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>8</td>
+          <td>5</td>
+          <td>5</td>
+          <td>8</td>
+          <td>5</td>
+          <td>5</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>8</td>
+          <td>6</td>
+          <td>5</td>
+          <td>8</td>
+          <td>5</td>
+          <td>4</td>
+          <td>8</td>
+          <td>5</td>
+          <td>7</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>6</td>
+          <td>5</td>
+          <td>7</td>
+          <td>7</td>
+          <td>3</td>
+          <td>5</td>
+          <td>8</td>
+          <td>5</td>
+          <td>5</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>6</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+          <td>4</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>3</td>
+          <td>4</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <th colspan="11"><b>Медиа</b></th>
+        </tr>
+        <tr>
+          <td><b>1d10</b></td>
+          <td><b>ИНТ</b></td>
+          <td><b>РЕА</b></td>
+          <td><b>ЛВК</b></td>
+          <td><b>ТЕХ</b></td>
+          <td><b>ХАР</b></td>
+          <td><b>ВОЛЯ</b></td>
+          <td><b>УДЧ</b></td>
+          <td><b>СКО</b></td>
+          <td><b>ТЕЛ</b></td>
+          <td><b>ЭМП</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+          <td>8</td>
+          <td>7</td>
+          <td>5</td>
+          <td>7</td>
+          <td>5</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>8</td>
+          <td>7</td>
+          <td>7</td>
+          <td>3</td>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+          <td>6</td>
+          <td>8</td>
+          <td>5</td>
+          <td>5</td>
+          <td>5</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>6</td>
+          <td>5</td>
+          <td>7</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td>5</td>
+          <td>6</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>6</td>
+          <td>7</td>
+          <td>4</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td>5</td>
+          <td>4</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>8</td>
+          <td>5</td>
+          <td>6</td>
+          <td>3</td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>8</td>
+          <td>6</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+          <td>4</td>
+          <td>6</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>3</td>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <th colspan="11"><b>Законник</b></th>
+        </tr>
+        <tr>
+          <td><b>1d10</b></td>
+          <td><b>ИНТ</b></td>
+          <td><b>РЕА</b></td>
+          <td><b>ЛВК</b></td>
+          <td><b>ТЕХ</b></td>
+          <td><b>ХАР</b></td>
+          <td><b>ВОЛЯ</b></td>
+          <td><b>УДЧ</b></td>
+          <td><b>СКО</b></td>
+          <td><b>ТЕЛ</b></td>
+          <td><b>ЭМП</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td>7</td>
+          <td>8</td>
+          <td>5</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>8</td>
+          <td>5</td>
+          <td>7</td>
+          <td>5</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>5</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td>5</td>
+          <td>7</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>6</td>
+          <td>6</td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>8</td>
+          <td>5</td>
+          <td>7</td>
+          <td>7</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>6</td>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+          <td>7</td>
+          <td>8</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>7</td>
+          <td>8</td>
+          <td>7</td>
+          <td>5</td>
+          <td>6</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>5</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>8</td>
+          <td>5</td>
+          <td>7</td>
+          <td>6</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+          <td>5</td>
+          <td>7</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>8</td>
+          <td>7</td>
+          <td>5</td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <th colspan="11"><b>Корпорат</b></th>
+        </tr>
+        <tr>
+          <td><b>1d10</b></td>
+          <td><b>ИНТ</b></td>
+          <td><b>РЕА</b></td>
+          <td><b>ЛВК</b></td>
+          <td><b>ТЕХ</b></td>
+          <td><b>ХАР</b></td>
+          <td><b>ВОЛЯ</b></td>
+          <td><b>УДЧ</b></td>
+          <td><b>СКО</b></td>
+          <td><b>ТЕЛ</b></td>
+          <td><b>ЭМП</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>8</td>
+          <td>5</td>
+          <td>5</td>
+          <td>3</td>
+          <td>8</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>8</td>
+          <td>6</td>
+          <td>6</td>
+          <td>4</td>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>3</td>
+          <td>8</td>
+          <td>6</td>
+          <td>7</td>
+          <td>6</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>8</td>
+          <td>5</td>
+          <td>7</td>
+          <td>5</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>7</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+          <td>8</td>
+          <td>5</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>5</td>
+          <td>7</td>
+          <td>7</td>
+          <td>3</td>
+          <td>6</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+          <td>4</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+          <td>3</td>
+          <td>7</td>
+          <td>5</td>
+          <td>7</td>
+          <td>5</td>
+          <td>5</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td>7</td>
+          <td>5</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+          <td>5</td>
+          <td>8</td>
+          <td>6</td>
+          <td>6</td>
+          <td>7</td>
+          <td>4</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <th colspan="11"><b>Фиксер</b></th>
+        </tr>
+        <tr>
+          <td><b>1d10</b></td>
+          <td><b>ИНТ</b></td>
+          <td><b>РЕА</b></td>
+          <td><b>ЛВК</b></td>
+          <td><b>ТЕХ</b></td>
+          <td><b>ХАР</b></td>
+          <td><b>ВОЛЯ</b></td>
+          <td><b>УДЧ</b></td>
+          <td><b>СКО</b></td>
+          <td><b>ТЕЛ</b></td>
+          <td><b>ЭМП</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>8</td>
+          <td>5</td>
+          <td>7</td>
+          <td>4</td>
+          <td>6</td>
+          <td>5</td>
+          <td>8</td>
+          <td>5</td>
+          <td>5</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>8</td>
+          <td>5</td>
+          <td>5</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>7</td>
+          <td>5</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>8</td>
+          <td>6</td>
+          <td>3</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+          <td>5</td>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>8</td>
+          <td>6</td>
+          <td>6</td>
+          <td>3</td>
+          <td>6</td>
+          <td>5</td>
+          <td>8</td>
+          <td>7</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>8</td>
+          <td>7</td>
+          <td>5</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+          <td>3</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>8</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>6</td>
+          <td>6</td>
+          <td>7</td>
+          <td>4</td>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+          <td>4</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>8</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+          <td>5</td>
+          <td>5</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>5</td>
+          <td>5</td>
+          <td>6</td>
+          <td>8</td>
+          <td>6</td>
+          <td>4</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <th colspan="11"><b>Кочевник</b></th>
+        </tr>
+        <tr>
+          <td><b>1d10</b></td>
+          <td><b>ИНТ</b></td>
+          <td><b>РЕА</b></td>
+          <td><b>ЛВК</b></td>
+          <td><b>ТЕХ</b></td>
+          <td><b>ХАР</b></td>
+          <td><b>ВОЛЯ</b></td>
+          <td><b>УДЧ</b></td>
+          <td><b>СКО</b></td>
+          <td><b>ТЕЛ</b></td>
+          <td><b>ЭМП</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>6</td>
+          <td>6</td>
+          <td>8</td>
+          <td>3</td>
+          <td>6</td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>5</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+          <td>8</td>
+          <td>8</td>
+          <td>8</td>
+          <td>7</td>
+          <td>5</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>5</td>
+          <td>8</td>
+          <td>6</td>
+          <td>3</td>
+          <td>8</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>5</td>
+          <td>8</td>
+          <td>7</td>
+          <td>4</td>
+          <td>8</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>3</td>
+          <td>6</td>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>7</td>
+          <td>6</td>
+          <td>8</td>
+          <td>4</td>
+          <td>6</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>4</td>
+          <td>6</td>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td>7</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>5</td>
+          <td>7</td>
+          <td>8</td>
+          <td>3</td>
+          <td>8</td>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td>5</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>6</td>
+          <td>7</td>
+          <td>6</td>
+          <td>4</td>
+          <td>8</td>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>4</td>
+          <td>7</td>
+          <td>8</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+          <td>4</td>
+        </tr></tbody></table>`},{id:"char_28",name:"#2: Эджраннер (Быстро и грязно). Пример",page:"char",data:"example",table:`<table id="char_28"><caption>#2: Эджраннер (Быстро и грязно). Пример</caption><tbody><tr>
+          <td><b>1d10</b></td>
+          <td><b>ИНТ</b></td>
+          <td><b>РЕА</b></td>
+          <td><b>ЛВК</b></td>
+          <td><b>ТЕХ</b></td>
+          <td><b>ХАР</b></td>
+          <td><b>ВОЛЯ</b></td>
+          <td><b>УДЧ</b></td>
+          <td><b>СКО</b></td>
+          <td><b>ТЕЛ</b></td>
+          <td><b>ЭМП</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+          <td>3</td>
+          <td>8</td>
+          <td class="dark">6</td>
+          <td>5</td>
+          <td>5</td>
+          <td>6</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>7</td>
+          <td>8</td>
+          <td>6</td>
+          <td>3</td>
+          <td>6</td>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td>6</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>5</td>
+          <td>8</td>
+          <td class="dark">7</td>
+          <td>4</td>
+          <td>7</td>
+          <td>7</td>
+          <td>6</td>
+          <td>7</td>
+          <td class="dark">8</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>5</td>
+          <td>8</td>
+          <td>6</td>
+          <td>4</td>
+          <td>6</td>
+          <td>7</td>
+          <td class="dark">6</td>
+          <td>5</td>
+          <td>7</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td class="dark">6</td>
+          <td>6</td>
+          <td>7</td>
+          <td>5</td>
+          <td class="dark">7</td>
+          <td>6</td>
+          <td>7</td>
+          <td>6</td>
+          <td>8</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>7</td>
+          <td class="dark">7</td>
+          <td>6</td>
+          <td>5</td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td class="dark">7</td>
+          <td>7</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>7</td>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>7</td>
+          <td>8</td>
+          <td>7</td>
+          <td class="dark">5</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>8</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>7</td>
+          <td>7</td>
+          <td>6</td>
+          <td>4</td>
+          <td>6</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td class="dark">5</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>6</td>
+          <td>6</td>
+          <td>8</td>
+          <td>5</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+          <td>6</td>
+          <td>6</td>
+          <td>5</td>
+        </tr></tbody></table>`},{id:"char_29",name:"#2: Эджраннер (Быстро и грязно). Пример",page:"char",data:"example",table:`<table id="char_29"><caption>#2: Эджраннер (Быстро и грязно). Пример</caption><tbody><tr>
           <td>ИНТ 6</td>
           <td>РЕА 7</td>
           <td>ЛВК 7</td>
@@ -5839,11 +5839,11 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
       </tr></tbody></table>`},{id:"combat_4",name:"DV Одиночного Выстрела от Дальности",page:"combat",table:`<table id="combat_4"><caption>DV Одиночного Выстрела от Дальности</caption><tbody><tr>
         <td><b>Тип Оружия</b></td>
         <td><b>0-6 м</b></td>
-        <td><b>7- 12 м</b></td>
+        <td><b>7-12 м</b></td>
         <td><b>13-25 м</b></td>
         <td><b>26-50 м</b></td>
-        <td><b>51 - 100 м</b></td>
-        <td><b>101 - 200 м</b></td>
+        <td><b>51-100 м</b></td>
+        <td><b>101-200 м</b></td>
         <td><b>201-400 м</b></td>
         <td><b>401-800 м</b></td>
       </tr>
@@ -6003,60 +6003,60 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
         <td>Термит</td>
         <td>6 урона напрямую в ПЗ</td>
       </tr></tbody></table>`},{id:"combat_9",name:"Яды и наркотики",page:"combat",table:`<table id="combat_9"><caption>Яды и наркотики</caption><tbody><tr>
-        <th colspan="4"><b>Яды</b></th>
-      </tr>
-      <tr>
-        <td><b>Интенсивность</b></td>
-        <td><b>Примеры</b></td>
-        <td><b>СЛ Сопротивление пыткам/Наркотикам</b></td>
-        <td><b>Эффект</b></td>
-      </tr>
-      <tr>
-        <td>Слабый</td>
-        <td>Белладонна, Токсичные отходы</td>
-        <td>11</td>
-        <td>1d6 урона напрямую в ПЗ</td>
-      </tr>
-      <tr>
-        <td>Сильный</td>
-        <td>Мышьяк</td>
-        <td>13</td>
-        <td>2d6 урона напрямую в ПЗ</td>
-      </tr>
-      <tr>
-        <td>Смертельный</td>
-        <td>Биотоксин, Дизайнерские наркотики, рыбный Яд</td>
-        <td>15</td>
-        <td>3d6 урона напрямую в ПЗ</td>
-      </tr>
-      <tr>
-        <th colspan="4"><b>Наркотики</b></th>
-      </tr>
-      <tr>
-        <td><b>Интенсивность</b></td>
-        <td><b>Примеры</b></td>
-        <td><b>СЛ Сопротивление пыткам/Наркотикам</b></td>
-        <td><b>Эффект</b></td>
-      </tr>
+          <th colspan="4"><b>Яды</b></th>
+        </tr>
+        <tr>
+          <td><b>Интенсивность</b></td>
+          <td><b>Примеры</b></td>
+          <td><b>СЛ Сопротивление пыткам/Наркотикам</b></td>
+          <td><b>Эффект</b></td>
+        </tr>
+        <tr>
+          <td>Слабый</td>
+          <td>Белладонна, Токсичные отходы</td>
+          <td>11</td>
+          <td>1d6 урона напрямую в ПЗ</td>
+        </tr>
+        <tr>
+          <td>Сильный</td>
+          <td>Мышьяк</td>
+          <td>13</td>
+          <td>2d6 урона напрямую в ПЗ</td>
+        </tr>
+        <tr>
+          <td>Смертельный</td>
+          <td>Биотоксин, Дизайнерские наркотики, рыбный Яд</td>
+          <td>15</td>
+          <td>3d6 урона напрямую в ПЗ</td>
+        </tr>
+        <tr>
+          <th colspan="4"><b>Наркотики</b></th>
+        </tr>
+        <tr>
+          <td><b>Интенсивность</b></td>
+          <td><b>Примеры</b></td>
+          <td><b>СЛ Сопротивление пыткам/Наркотикам</b></td>
+          <td><b>Эффект</b></td>
+        </tr>
 
-      <tr>
-        <td>Слабый</td>
-        <td>Алкоголь</td>
-        <td>11</td>
-        <td>Опьянение</td>
-      </tr>
-      <tr>
-        <td>Сильный</td>
-        <td>Пентотал (сыворотка правды)</td>
-        <td>13</td>
-        <td>Внушаемость</td>
-      </tr>
-      <tr>
-        <td>Смертельный</td>
-        <td>Дизайнерские Наркотики</td>
-        <td>15</td>
-        <td>Намерения дизайнера</td>
-      </tr></tbody></table>`},{id:"combat_10",name:"Параметры укрытий",page:"combat",table:`<table id="combat_10"><caption>Параметры укрытий</caption><tbody><tr>
+        <tr>
+          <td>Слабый</td>
+          <td>Алкоголь</td>
+          <td>11</td>
+          <td>Опьянение</td>
+        </tr>
+        <tr>
+          <td>Сильный</td>
+          <td>Пентотал (сыворотка правды)</td>
+          <td>13</td>
+          <td>Внушаемость</td>
+        </tr>
+        <tr>
+          <td>Смертельный</td>
+          <td>Дизайнерские Наркотики</td>
+          <td>15</td>
+          <td>Намерения дизайнера</td>
+        </tr></tbody></table>`},{id:"combat_10",name:"Параметры укрытий",page:"combat",table:`<table id="combat_10"><caption>Параметры укрытий</caption><tbody><tr>
         <td><b>Тип Укрытия</b></td>
         <td><b>ПЗ Толстого</b></td>
         <td><b>ПЗ Тонкого</b></td>
@@ -6215,23 +6215,23 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
         <td>Тонкая Древесина</td>
         <td>5ПЗ</td>
       </tr></tbody></table>`},{id:"combat_12",name:"Щиты",page:"combat",table:`<table id="combat_12"><caption>Щиты</caption><tbody><tr>
-        <td><b>Тип Щита</b></td>
-        <td><b>Описание Щита</b></td>
-        <td><b>Пункты Здоровья (ПЗ)</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td>Поленепробиваемый Щит</td>
-        <td>Прозрачный поликарбонатный щит, который защитит вас в перестрелке.</td>
-        <td>10</td>
-        <td>100€$ (Премиум)</td>
-      </tr>
-      <tr>
-        <td>Труп</td>
-        <td>Мясной Щит. До этого был личностью.</td>
-        <td>ТЕЛ СТАТ при жизни.</td>
-        <td>Зависит от количества всаженных пуль.</td>
-      </tr></tbody></table>`},{id:"combat_13",name:"Ситуации, требующие маневра",page:"combat",table:`<table id="combat_13"><caption>Ситуации, требующие маневра</caption><tbody><tr>
+          <td><b>Тип Щита</b></td>
+          <td><b>Описание Щита</b></td>
+          <td><b>Пункты Здоровья (ПЗ)</b></td>
+          <td><b>Цена</b></td>
+        </tr>
+        <tr>
+          <td>Поленепробиваемый Щит</td>
+          <td>Прозрачный поликарбонатный щит, который защитит вас в перестрелке.</td>
+          <td>10</td>
+          <td>100€$ (Премиум)</td>
+        </tr>
+        <tr>
+          <td>Труп</td>
+          <td>Мясной Щит. До этого был личностью.</td>
+          <td>ТЕЛ СТАТ при жизни.</td>
+          <td>Зависит от количества всаженных пуль.</td>
+        </tr></tbody></table>`},{id:"combat_13",name:"Ситуации, требующие маневра",page:"combat",table:`<table id="combat_13"><caption>Ситуации, требующие маневра</caption><tbody><tr>
         <td><b>Манёвр</b></td>
         <td><b>СЛ</b></td>
       </tr>
@@ -6528,66 +6528,66 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
           <td>Gang Colors</td>
           <td>Аэрогиппо 50€$ (Ценное)</td>
         </tr></tbody></table>`},{id:"economy_3",name:"Оружие ближнего боя",page:"economy",table:`<table id="economy_3"><caption>Оружие ближнего боя</caption><tbody><tr>
-        <td><b>Тип оружия ближ. боя</b></td>
-        <td><b>Пример оружия</b></td>
-        <td><b># кол-во рук</b></td>
-        <td><b>Урон</b></td>
-        <td><b>СКА</b></td>
-        <td><b>Можно ли скрыть?</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td>Лёгкое</td>
-        <td>Нож, Томагавк</td>
-        <td>Зависит от типа</td>
-        <td>1d6</td>
-        <td>2</td>
-        <td>ДА</td>
-        <td>
-          50€$
-          <br>
-          Ценное
-        </td>
-      </tr>
-      <tr>
-        <td>Среднее</td>
-        <td>Бейсбольная бита, Лом, Мачете</td>
-        <td>Зависит от типа</td>
-        <td>2d6</td>
-        <td>2</td>
-        <td>НЕТ</td>
-        <td>
-          50€$
-          <br>
-          Ценное
-        </td>
-      </tr>
-      <tr>
-        <td>Тяжелое</td>
-        <td>Труба, Меч, Шипастая дубина</td>
-        <td>Зависит от типа</td>
-        <td>3d6</td>
-        <td>2</td>
-        <td>НЕТ</td>
-        <td>
-          100€$
-          <br>
-          Премиум
-        </td>
-      </tr>
-      <tr>
-        <td>Очень тяжелое</td>
-        <td>Бензопила, Лопасть вертолёта, Нагината, Кувалда</td>
-        <td>Зависит от типа</td>
-        <td>4d6</td>
-        <td>1</td>
-        <td>НЕТ</td>
-        <td>
-          500€$
-          <br>
-          Дорогое
-        </td>
-      </tr></tbody></table>`},{id:"economy_4",name:"Оружие дальнего боя",page:"economy",table:`<table id="economy_4"><caption>Оружие дальнего боя</caption><tbody><tr>
+          <td><b>Тип оружия ближ. боя</b></td>
+          <td><b>Пример оружия</b></td>
+          <td><b># кол-во рук</b></td>
+          <td><b>Урон</b></td>
+          <td><b>СКА</b></td>
+          <td><b>Можно ли скрыть?</b></td>
+          <td><b>Цена</b></td>
+        </tr>
+        <tr>
+          <td>Лёгкое</td>
+          <td>Нож, Томагавк</td>
+          <td>Зависит от типа</td>
+          <td>1d6</td>
+          <td>2</td>
+          <td>ДА</td>
+          <td>
+            50€$
+            <br>
+            Ценное
+          </td>
+        </tr>
+        <tr>
+          <td>Среднее</td>
+          <td>Бейсбольная бита, Лом, Мачете</td>
+          <td>Зависит от типа</td>
+          <td>2d6</td>
+          <td>2</td>
+          <td>НЕТ</td>
+          <td>
+            50€$
+            <br>
+            Ценное
+          </td>
+        </tr>
+        <tr>
+          <td>Тяжелое</td>
+          <td>Труба, Меч, Шипастая дубина</td>
+          <td>Зависит от типа</td>
+          <td>3d6</td>
+          <td>2</td>
+          <td>НЕТ</td>
+          <td>
+            100€$
+            <br>
+            Премиум
+          </td>
+        </tr>
+        <tr>
+          <td>Очень тяжелое</td>
+          <td>Бензопила, Лопасть вертолёта, Нагината, Кувалда</td>
+          <td>Зависит от типа</td>
+          <td>4d6</td>
+          <td>1</td>
+          <td>НЕТ</td>
+          <td>
+            500€$
+            <br>
+            Дорогое
+          </td>
+        </tr></tbody></table>`},{id:"economy_4",name:"Оружие дальнего боя",page:"economy",table:`<table id="economy_4"><caption>Оружие дальнего боя</caption><tbody><tr>
           <td><b>Тип оружия</b></td>
           <td><b>Оружейный навык</b></td>
           <td><b>Урон 1-го выстрела</b></td>
@@ -6622,11 +6622,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
           <td>2</td>
           <td>1</td>
           <td>ДА</td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
         </tr>
         <tr>
           <td colspan="8">Альтернативные режимы огня и фичи: Нет</td>
@@ -6639,11 +6635,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
           <td>1</td>
           <td>1</td>
           <td>НЕТ</td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
         </tr>
         <tr>
           <td colspan="8">Альтернативные режимы огня и фичи: Нет</td>
@@ -6656,11 +6648,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
           <td>1</td>
           <td>1</td>
           <td>ДА</td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
         </tr>
         <tr>
           <td colspan="8">Альтернативные режимы огня и фичи: Стрельба очередями (3) • Огонь на подавление</td>
@@ -6673,11 +6661,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
           <td>1</td>
           <td>1</td>
           <td>НЕТ</td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
         </tr>
         <tr>
           <td colspan="8">Альтернативные режимы огня и фичи: Стрельба очередями (3) • Огонь на подавление</td>
@@ -6690,11 +6674,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
           <td>1</td>
           <td>2</td>
           <td>НЕТ</td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
         </tr>
         <tr>
           <td colspan="8">Альтернативные режимы огня и фичи: Выстрел дробью</td>
@@ -6707,11 +6687,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
           <td>1</td>
           <td>2</td>
           <td>НЕТ</td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
         </tr>
         <tr>
           <td colspan="8">Альтернативные режимы огня и фичи: Стрельба очередями(4) • Огонь на подавление</td>
@@ -6724,11 +6700,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
           <td>1</td>
           <td>2</td>
           <td>НЕТ</td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
         </tr>
         <tr>
           <td colspan="8">Альтернативные режимы огня и фичи: Нет</td>
@@ -6741,11 +6713,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
           <td>1</td>
           <td>2</td>
           <td>НЕТ</td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
         </tr>
         <tr>
           <td colspan="8">Альтернативные режимы огня и фичи: Стрелы</td>
@@ -6758,11 +6726,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
           <td>1</td>
           <td>2</td>
           <td>НЕТ</td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
         </tr>
         <tr>
           <td colspan="8">Альтернативные режимы огня и фичи: Взрывы</td>
@@ -6775,11 +6739,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
           <td>1</td>
           <td>2</td>
           <td>НЕТ</td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
         </tr>
         <tr>
           <td colspan="8">Альтернативные режимы огня и фичи: Взрывы</td>
@@ -6802,7 +6762,85 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
         <td>500€$ Дорогое</td>
         <td>100€$ Премиум</td>
         <td>1,000€$ Очень дорогое</td>
-      </tr></tbody></table>`},{id:"economy_6",name:"Модификации Оружия",page:"economy",table:`<table id="economy_6"><caption>Модификации Оружия</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"table_5",name:"Table 6",page:"table",table:`<table id="table_5"><caption>Table 6</caption><tbody><tr>
+          <td><b>Тип оружия дальнего боя</b></td>
+          <td><b>Пример оружия низкого качества</b></td>
+          <td><b>Примероружия обычного качества</b></td>
+          <td><b>Пример оружия высокого качества</b></td>
+        </tr>
+
+        <tr>
+          <td>Пистолет</td>
+          <td>Dai Lung Streetmaster</td>
+          <td>Federated Arms X-9mm</td>
+          <td>Militech "Avenger"</td>
+        </tr>
+        <tr>
+          <td>Тяжелый пистолет</td>
+          <td>Dai Lung Magnum</td>
+          <td>Mustang Arms "Mark III"</td>
+          <td>Nova "Cityhunter"</td>
+        </tr>
+        <tr>
+          <td>Очень тяжелый пистолет</td>
+          <td>Federated Arms "Super Chief"</td>
+          <td>Sternmeyer P-35</td>
+          <td>Militech "Boomer Buster"</td>
+        </tr>
+        <tr>
+          <td>Лук</td>
+          <td>GunMart "Sherwood"</td>
+          <td>Eagletech "Tomcat"</td>
+          <td>Eagletech "Bearcat"</td>
+        </tr>
+        <tr>
+          <td>Арбалет</td>
+          <td>GunMart "Hunter"</td>
+          <td>Eagletech "Striker"</td>
+          <td>Eagletech "Scorpion"</td>
+        </tr>
+        <tr>
+          <td>Пистолет-пулемет</td>
+          <td>Federated Arms Tech-Assault III</td>
+          <td>Militech "Mini-Gat"</td>
+          <td>Arasaka "Minami 10"</td>
+        </tr>
+        <tr>
+          <td>Тяжелый ПП</td>
+          <td>Chadran Arms "City Reaper"</td>
+          <td>Sternmeyer SMG-21</td>
+          <td>Militech "Viper"</td>
+        </tr>
+        <tr>
+          <td>Дробовик</td>
+          <td>GunMart "Home Defender"</td>
+          <td>Arasaka "Rapid Assault"</td>
+          <td>Militech "Bulldog"</td>
+        </tr>
+        <tr>
+          <td>Штурмовая винтовка</td>
+          <td>Chadran Arms "Jungle Reaper"</td>
+          <td>Militech "Ronin"</td>
+          <td>Militech "Dragon"</td>
+        </tr>
+        <tr>
+          <td>Снайперская винтовка</td>
+          <td>GunMart "Snipe-Star"</td>
+          <td>Nomad "Long Rifle"</td>
+          <td>Arasaka WSSA Sniper System</td>
+        </tr>
+        <tr>
+          <td>Гранатомет</td>
+          <td>Towa Manufacturing Type-G</td>
+          <td>Militech "Mini-Grenade"</td>
+          <td>Tsunami Arms Type-18</td>
+        </tr>
+        <tr>
+          <td>Ракетомет</td>
+          <td>Towa Manufacturing Type-R</td>
+          <td>Militech "Urban"</td>
+          <td>Militech "Hotshot"</td>
+        </tr></tbody></table>`},{id:"economy_6",name:"Модификации Оружия",page:"economy",table:`<table id="economy_6"><caption>Модификации Оружия</caption><tbody><tr>
         <td><b>Модификации</b></td>
         <td><b>Цена</b></td>
       </tr>
@@ -6838,126 +6876,126 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
         <td>Снайперский прицел</td>
         <td>100€$ Премиум</td>
       </tr></tbody></table>`},{id:"economy_7",name:"Таблица Магазинов",page:"economy",table:`<table id="economy_7"><caption>Таблица Магазинов</caption><tbody><tr>
-        <td><b>Тип</b></td>
-        <td><b>Стандартный</b></td>
-        <td><b>Увеличенный</b></td>
-        <td><b>Барабанный</b></td>
-      </tr>
-      <tr>
-        <td>Пистолет</td>
-        <td>12</td>
-        <td>18</td>
-        <td>36</td>
-      </tr>
-      <tr>
-        <td>Тяжелый Пистолет</td>
-        <td>8</td>
-        <td>14</td>
-        <td>28</td>
-      </tr>
-      <tr>
-        <td>Оч.Тяжелый Пистолет</td>
-        <td>8</td>
-        <td>14</td>
-        <td>28</td>
-      </tr>
-      <tr>
-        <td>Пистолет-Пулемёт</td>
-        <td>30</td>
-        <td>40</td>
-        <td>50</td>
-      </tr>
-      <tr>
-        <td>Тяжелый ПП</td>
-        <td>40</td>
-        <td>50</td>
-        <td>60</td>
-      </tr>
-      <tr>
-        <td>Дробовик</td>
-        <td>4</td>
-        <td>8</td>
-        <td>16</td>
-      </tr>
-      <tr>
-        <td>Штурмовая Винтовка</td>
-        <td>25</td>
-        <td>35</td>
-        <td>45</td>
-      </tr>
-      <tr>
-        <td>Снайперска</td>
-        <td>4</td>
-        <td>8</td>
-        <td>12</td>
-      </tr>
-      <tr>
-        <td>Гранатомёт</td>
-        <td>2</td>
-        <td>4</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>Ракетомёт</td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-      </tr></tbody></table>`},{id:"economy_8",name:"Боеприпасы",page:"economy",table:`<table id="economy_8"><caption>Боеприпасы</caption><tbody><tr>
-        <td><b>Тип Боеприпасов</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td>Стандартные Боеприпасы</td>
-        <td>10€$ Дешевка</td>
-      </tr>
-      <tr>
-        <td>Бронебойные Боеприпасы</td>
-        <td>100€$ Премиум</td>
-      </tr>
-      <tr>
-        <td>Боеприпасы с Биотоксинами</td>
-        <td>500€$ Дорогое</td>
-      </tr>
-      <tr>
-        <td>ЭМИ Боеприпасы</td>
-        <td>500€$ Дорогое</td>
-      </tr>
-      <tr>
-        <td>Экспансивные Боеприпасы</td>
-        <td>100€$ Премиум</td>
-      </tr>
-      <tr>
-        <td>Светошумовые Боеприпасы</td>
-        <td>100€$ Премиум</td>
-      </tr>
-      <tr>
-        <td>Зажигательные Боеприпасы</td>
-        <td>100€$ Премиум</td>
-      </tr>
-      <tr>
-        <td>Боеприпасы с ядом</td>
-        <td>100€$ Премиум</td>
-      </tr>
-      <tr>
-        <td>Резиновые Боеприпасы</td>
-        <td>10€$ Дешевка</td>
-      </tr>
-      <tr>
-        <td>Усыпляющие Боеприпасы</td>
-        <td>500€$ Дорогое</td>
-      </tr>
-      <tr>
-        <td>Умные Боеприпасы</td>
-        <td>500€$ Дорогое</td>
-      </tr>
-      <tr>
-        <td>Дымовые Боеприпасы</td>
-        <td>50€$ Ценное</td>
-      </tr>
-      <tr>
-        <td>Слезоточивый газ</td>
-        <td>50€$ Ценное</td>
-      </tr></tbody></table>`},{id:"economy_9",name:"Экзотическое Оружие",page:"economy",table:`<table id="economy_9"><caption>Экзотическое Оружие</caption><tbody><tr>
+          <td><b>Тип</b></td>
+          <td><b>Стандартный</b></td>
+          <td><b>Увеличенный</b></td>
+          <td><b>Барабанный</b></td>
+        </tr>
+        <tr>
+          <td>Пистолет</td>
+          <td>12</td>
+          <td>18</td>
+          <td>36</td>
+        </tr>
+        <tr>
+          <td>Тяжелый Пистолет</td>
+          <td>8</td>
+          <td>14</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <td>Оч.Тяжелый Пистолет</td>
+          <td>8</td>
+          <td>14</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <td>Пистолет-Пулемёт</td>
+          <td>30</td>
+          <td>40</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Тяжелый ПП</td>
+          <td>40</td>
+          <td>50</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>Дробовик</td>
+          <td>4</td>
+          <td>8</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td>Штурмовая Винтовка</td>
+          <td>25</td>
+          <td>35</td>
+          <td>45</td>
+        </tr>
+        <tr>
+          <td>Снайперска</td>
+          <td>4</td>
+          <td>8</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>Гранатомёт</td>
+          <td>2</td>
+          <td>4</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>Ракетомёт</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr></tbody></table>`},{id:"economy_8",name:"Боеприпасы",page:"economy",table:`<table id="economy_8"><caption>Боеприпасы</caption><tbody><tr>
+          <td><b>Тип Боеприпасов</b></td>
+          <td><b>Цена</b></td>
+        </tr>
+        <tr>
+          <td><b>Стандартные Боеприпасы</b></td>
+          <td><b>10€$ Дешевка</b></td>
+        </tr>
+        <tr>
+          <td>Бронебойные Боеприпасы</td>
+          <td>100€$ Премиум</td>
+        </tr>
+        <tr>
+          <td>Боеприпасы с Биотоксинами</td>
+          <td>500€$ Дорогое</td>
+        </tr>
+        <tr>
+          <td>ЭМИ Боеприпасы</td>
+          <td>500€$ Дорогое</td>
+        </tr>
+        <tr>
+          <td>Экспансивные Боеприпасы</td>
+          <td>100€$ Премиум</td>
+        </tr>
+        <tr>
+          <td>Светошумовые Боеприпасы</td>
+          <td>100€$ Премиум</td>
+        </tr>
+        <tr>
+          <td>Зажигательные Боеприпасы</td>
+          <td>100€$ Премиум</td>
+        </tr>
+        <tr>
+          <td>Боеприпасы с ядом</td>
+          <td>100€$ Премиум</td>
+        </tr>
+        <tr>
+          <td>Резиновые Боеприпасы</td>
+          <td>10€$ Дешевка</td>
+        </tr>
+        <tr>
+          <td>Усыпляющие Боеприпасы</td>
+          <td>500€$ Дорогое</td>
+        </tr>
+        <tr>
+          <td>Умные Боеприпасы</td>
+          <td>500€$ Дорогое</td>
+        </tr>
+        <tr>
+          <td>Дымовые Боеприпасы</td>
+          <td>50€$ Ценное</td>
+        </tr>
+        <tr>
+          <td>Слезоточивый газ</td>
+          <td>50€$ Ценное</td>
+        </tr></tbody></table>`},{id:"economy_9",name:"Экзотическое Оружие",page:"economy",table:`<table id="economy_9"><caption>Экзотическое Оружие</caption><tbody><tr>
         <td><b>Оружие</b></td>
         <td><b>Цена</b></td>
       </tr>
@@ -7017,105 +7055,105 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
         <td>Tsunami Arms Helix</td>
         <td>5,000€$ Роскошь</td>
       </tr></tbody></table>`},{id:"economy_10",name:"Бронезащита",page:"economy",table:`<table id="economy_10"><caption>Бронезащита</caption><tbody><tr>
-        <td><b>Тип Брони</b></td>
-        <td>
-          <b>
-            Останавливающая
+          <td><b>Тип Брони</b></td>
+          <td>
+            <b>
+              Останавливающая
+              <br>
+              Способность Брони (ОС)
+            </b>
+          </td>
+          <td>
+            <b>
+              Штраф Брони
+              <br>
+              (Минимум 0)
+            </b>
+          </td>
+          <td><b>Цена</b></td>
+        </tr>
+        <tr>
+          <td>Кожа</td>
+          <td>4</td>
+          <td>Нет</td>
+          <td>
+            20€$
             <br>
-            Способность Брони (ОС)
-          </b>
-        </td>
-        <td>
-          <b>
-            Штраф Брони
+            Обычное
+          </td>
+        </tr>
+        <tr>
+          <td>Кевлар®</td>
+          <td>7</td>
+          <td>Нет</td>
+          <td>
+            50€$
             <br>
-            (Минимум 0)
-          </b>
-        </td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td>Кожа</td>
-        <td>4</td>
-        <td>Нет</td>
-        <td>
-          20€$
-          <br>
-          Обычное
-        </td>
-      </tr>
-      <tr>
-        <td>Кевлар®</td>
-        <td>7</td>
-        <td>Нет</td>
-        <td>
-          50€$
-          <br>
-          Ценное
-        </td>
-      </tr>
-      <tr>
-        <td>Легкий Бронекостюм</td>
-        <td>11</td>
-        <td>Нет</td>
-        <td>100€$ Премиум</td>
-      </tr>
-      <tr>
-        <td>Комбинезон Бодивейт</td>
-        <td>11</td>
-        <td>Нет</td>
-        <td>1,000€$ Очень дорогое</td>
-      </tr>
-      <tr>
-        <td>Средний Бронекостюм</td>
-        <td>12</td>
-        <td>-2 РЕА, ЛВК и СКО</td>
-        <td>
-          100€$
-          <br>
-          Премиум
-        </td>
-      </tr>
-      <tr>
-        <td>Тяжелый Бронекостюм</td>
-        <td>13</td>
-        <td>-2 РЕА, ЛВК и СКО</td>
-        <td>
-          500€$
-          <br>
-          Дорогое
-        </td>
-      </tr>
-      <tr>
-        <td>Взрывозащищ. Броня</td>
-        <td>15</td>
-        <td>-4 РЕА, ЛВК и СКО</td>
-        <td>
-          500€$
-          <br>
-          Дорогое
-        </td>
-      </tr>
-      <tr>
-        <td>Металгир®</td>
-        <td>18</td>
-        <td>-4 РЕА, ЛВК и СКО</td>
-        <td>
-          5,000€$
-          <br>
-          Роскошь
-        </td>
-      </tr>
-      <tr>
-        <td>Пуленепробиваемый щит</td>
-        <td>
-          10 ПЗ, которые уменьшаются
-          <br>
-          при повреждении
-        </td>
-        <td>Нет, но занимает одну руку</td>
-        <td>100€$ Премиум</td>
-      </tr></tbody></table>`},{id:"economy_11",name:"Снаряжение",page:"economy",table:`<table id="economy_11"><caption>Снаряжение</caption><tbody><tr>
+            Ценное
+          </td>
+        </tr>
+        <tr>
+          <td>Легкий Бронекостюм</td>
+          <td>11</td>
+          <td>Нет</td>
+          <td>100€$ Премиум</td>
+        </tr>
+        <tr>
+          <td>Комбинезон Бодивейт</td>
+          <td>11</td>
+          <td>Нет</td>
+          <td>1,000€$ Очень дорогое</td>
+        </tr>
+        <tr>
+          <td>Средний Бронекостюм</td>
+          <td>12</td>
+          <td>-2 РЕА, ЛВК и СКО</td>
+          <td>
+            100€$
+            <br>
+            Премиум
+          </td>
+        </tr>
+        <tr>
+          <td>Тяжелый Бронекостюм</td>
+          <td>13</td>
+          <td>-2 РЕА, ЛВК и СКО</td>
+          <td>
+            500€$
+            <br>
+            Дорогое
+          </td>
+        </tr>
+        <tr>
+          <td>Взрывозащищ. Броня</td>
+          <td>15</td>
+          <td>-4 РЕА, ЛВК и СКО</td>
+          <td>
+            500€$
+            <br>
+            Дорогое
+          </td>
+        </tr>
+        <tr>
+          <td>Металгир®</td>
+          <td>18</td>
+          <td>-4 РЕА, ЛВК и СКО</td>
+          <td>
+            5,000€$
+            <br>
+            Роскошь
+          </td>
+        </tr>
+        <tr>
+          <td>Пуленепробиваемый щит</td>
+          <td>
+            10 ПЗ, которые уменьшаются
+            <br>
+            при повреждении
+          </td>
+          <td>Нет, но занимает одну руку</td>
+          <td>100€$ Премиум</td>
+        </tr></tbody></table>`},{id:"economy_11",name:"Снаряжение",page:"economy",table:`<table id="economy_11"><caption>Снаряжение</caption><tbody><tr>
         <td><b>Название</b></td>
         <td><b>Цена</b></td>
       </tr>
@@ -7492,261 +7530,193 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
           <td>1,000 €$</td>
           <td>5,000 €$</td>
         </tr></tbody></table>`},{id:"economy_13",name:"Стилевые импланты (7 слотов)",page:"economy",table:`<table id="economy_13"><caption>Стилевые импланты (7 слотов)</caption><tbody><tr>
-        <td><b>Название</b></td>
-        <td><b>Установка</b></td>
-        <td><b>Информация</b></td>
-        <td><b>Цена</b></td>
-        <td><b>ПЧ</b></td>
-      </tr>
-      <tr>
-        <td>Биомонитор</td>
-        <td>Молл</td>
-        <td>Подкожный имплантат, который постоянно считывает и выводит на диодный экран показания пульса, температуры, дыхания, уровень сахара в крови и т.д. Вы можете связать Биомонитор со своим Агентом, чтобы он мог отслеживать ваше состояние.</td>
-        <td>
-          100€$
-          <br>
-          Премиум
-        </td>
-        <td>0 (нет)</td>
-      </tr>
-      <tr>
-        <td>Химкожа</td>
-        <td>Молл</td>
-        <td>Красители и пигменты, которые вводятся в кожу, чтобы навсегда изменить её оттенок. Сфера применения варьируется от скрытия дефектов кожи до желания иметь неоновозеленую кожу. Пигменты, по желанию, могут быть чувствительны к температуре или реагировать на гормональные изменения в организме. Химкожа с техволосами даёт +2 к навыкуУход за Собой за наличие обоих. (Этот бонус действует 1 раз).</td>
-        <td>
-          100€$
-          <br>
-          Премиум
-        </td>
-        <td>0 (нет)</td>
-      </tr>
-      <tr>
-        <td>ЭМИ-нить</td>
-        <td>Молл</td>
-        <td>Эти тонкие серебряные линии, популяризованные ЮР, проходят по телу в виде дорожек. Многие считают, что они действуют как клетка Фарадея, защищая вас от радиации и электромагнитного излучения, хотя этим заявлениям нет научных подтверждений. По выглядят они, конечно, круто. Большинство людей носят ЭМИ-нить как модный тренд.</td>
-        <td>
-          10€$
-          <br>
-          Дешевка
-        </td>
-        <td>0 (нет)</td>
-      </tr>
-      <tr>
-        <td>Светящиеся тату</td>
-        <td>Молл</td>
-        <td>Введённые под кожу элементы, которые накапливают свет и проецируют цветные татуировки. Для большой татуировки требуется установить несколько этих имплантов, чтобы завершить её. Установка 3 и более тату, даёт +2 к Навыку Гардероб и Стиль. (Этот бонус действует 1 раз).</td>
-        <td>
-          100€$
-          <br>
-          Премиум
-        </td>
-        <td>0 (нет)</td>
-      </tr>
-      <tr>
-        <td>Изменчивые Такты</td>
-        <td>Молл</td>
-        <td>Линзы в глазу, меняющие цвет. Доступны несколько моделей. Линзы могут быть чувствительны ктемпературе или реагировать на гормональные изменения в организме. Можно выбрать только один цвет и рисунок. Пользователь может деактивировать изменение цвета в любое время по своему желанию без каких-либо действий.</td>
-        <td>
-          100€$
-          <br>
-          Премиум
-        </td>
-        <td>0 (нет)</td>
-      </tr>
-      <tr>
-        <td>Подкожные Часы</td>
-        <td>Молл</td>
-        <td>Имплантированные под кожу светодиодные часы, показывают текущее время и дату.</td>
-        <td>
-          100€$
-          <br>
-          Премиум
-        </td>
-        <td>0 (нет)</td>
-      </tr>
-      <tr>
-        <td>Техноволосы</td>
-        <td>Молл</td>
-        <td>Разноцветные светящиеся искусственные волосы. Волосы могут быть чувствительны к температуре или реагировать на гормональные изменения в организме, а также по желанию удлиняться, либо втягиваться за счёт встроенного механизма. Техноволосы с Химкожей дают +2 к навыку Уход за Собой за наличие обоих. (Этот бонус действует 1 раз).</td>
-        <td>
-          100€$
-          <br>
-          Премиум
-        </td>
-        <td>0 (нет)</td>
-      </tr></tbody></table>`},{id:"economy_14",name:"Нейронные имплантаты [Нейролинк...]",page:"economy",table:`<table id="economy_14"><caption>Нейронные имплантаты [Нейролинк...]</caption><tbody><tr>
-        <td><b>Название</b></td>
-        <td><b>Установка</b></td>
-        <td><b>Информация</b></td>
-        <td><b>Цена</b></td>
-        <td><b>ПЧ</b></td>
-      </tr>
-      <tr class="base">
-        <td>Нейролинк</td>
-        <td>Клиника</td>
-        <td>
-          Проводная искусственная нервная система. Требуется для использования нейроимплантов и смартлинка.
-          <b>Имеет 5 слотов опций</b>
-        </td>
-        <td>
-          500€$
-          <br>
-          Дорогое
-        </td>
-        <td>7 (2d6)</td>
-      </tr>
-      <tr>
-        <td>Записыватель брейндансов</td>
-        <td>Клиника</td>
-        <td>
-          Модуль Нейроимпланта. Поделись пережитой историей с собственной точки зрения! Записывает Брейндансы на стандартную флешку памяти или на подсоединенный Агент. Брейндансы можно просматривать через очки для брейнданса.
-          <b>Требует нейролинк.</b>
-        </td>
-        <td>
-          500€$
-          <br>
-          Дорогое
-        </td>
-        <td>7 (2d6)</td>
-      </tr>
-      <tr>
-        <td>Разъем для флешек</td>
-        <td>Клиника</td>
-        <td>
-          Модуль Нейроимпланта. Разъём устанавливается в заднюю часть шеи, в него легко вставляется одна Флешка (которых существует различное множество).
-          <br>
-          Чтобы вставить или достать одну Флешку, необходимо потратить Действие.
-          <br>
-          Если вы впервые вставляете Флешку (которую до этого не использовали), вы теряете Человечность. Если вы ранее использовали Флешку, то Человечность не теряется.
-          <b>Флешка не занимает слот модуля в Нейролинке.</b> <br>
-          Можно установить несколько Разъёмов (каждый покупается отдельно).
-          <b>Требует нейролинк.</b>
-        </td>
-        <td>
-          500€$
-          <br>
-          Дорогое
-        </td>
-        <td>7 (2d6)</td>
-      </tr>
-      <tr>
-        <td>Личный порт</td>
-        <td>Клиника</td>
-        <td>
-          Модуль Нейроимпланта. Разъём, установленный в запястье или голову, позволяет подключаться и использовать Умное оружие, Кибердеки, тяжёлую технику и управлять транспортом без рук. Если установить несколько личных портов, то можно будет подключаться к нескольким вещам одновременно.
-          <b>Требует нейролинк.</b>
-        </td>
-        <td>
-          500€$
-          <br>
-          Дорогое
-        </td>
-        <td>7 (2d6)</td>
-      </tr>
-      <tr>
-        <td>Керезников</td>
-        <td>Клиника</td>
-        <td>
-          Модуль Нейроимпланта. Всегда работающий Ускоритель, который увеличивает скорость реакции. Даёт +2 к броскам Инициативы. Одновременно может быть установлен только один Ускоритель.
-          <b>Требует нейролинк.</b>
-        </td>
-        <td>
-          500€$
-          <br>
-          Дорогое
-        </td>
-        <td>14 (4d6)</td>
-      </tr>
-      <tr>
-        <td>Сандвистан</td>
-        <td>Клиника</td>
-        <td>
-          Модуль Нейроимпланта. Ускоритель, который даёт кратковременное улучшение, значительно увеличивающее скорость реакции. При активации (Действие), в течение минуты даёт +3 к Инициативе. Повторно активировать можно только через час. Одновременно может быть установлен только один Ускоритель.
-          <b>Требует нейролинк.</b>
-        </td>
-        <td>
-          500€$
-          <br>
-          Дорогое
-        </td>
-        <td>7 (2d6)</td>
-      </tr>
-      <tr>
-        <td>Химический анализатор</td>
-        <td>нет</td>
-        <td>
-          Флешка. При установке в Разъём позволяет анализировать вещество. Нужно Действие, чтобы определить точный химический состав вещества. Мгновенно определяет большинство веществ из обширной базы образцов.
-          <b>Требует разъём для флешек.</b>
-        </td>
-        <td>
-          500€$
-          <br>
-          Дорогое
-        </td>
-        <td>3(1d6)</td>
-      </tr>
-      <tr>
-        <td>Флешка памяти</td>
-        <td>нет</td>
-        <td>
-          Флешка для хранения данных. При установке в Разъём, на можно поместить какую-либо информацию или изучить то, что уже хранится на ней.
-          <b>Требует разъём для флешек.</b>
-        </td>
-        <td>
-          10€$
-          <br>
-          Дешевка
-        </td>
-        <td>0 (НЕТ)</td>
-      </tr>
-      <tr>
-        <td>Усилитель Обоняния</td>
-        <td>нет</td>
-        <td>
-          Флешка. При установке в Разъём обоняние пользователя усиливается, что позволяет ему использовать навык Выслеживание, используя запах в дополнение к визуальным подсказкам.
-          <b>Требует разъём для флешек.</b>
-        </td>
-        <td>100€$(Премиум)</td>
-        <td>7 (2d6)</td>
-      </tr>
-      <tr>
-        <td>Редактор боли</td>
-        <td>нет</td>
-        <td>
-          Флешка. При установке в Разъём, отключает болевые рецепторы, позволяя игнорировать последствия Тяжёлого Ранения.
-          <b>Требует разъём для флешек.</b>
-        </td>
-        <td>
-          1,000€$
-          <br>
-          О. дорогое
-        </td>
-        <td>14 (4d6)</td>
-      </tr>
-      <tr>
-        <td>Флешка навыка</td>
-        <td>нет</td>
-        <td>
-          Флешка. При установке в Разъем чип улучшает навык, для которого он был создан, у пользователя на +3, если только навык пользователя не был уже натренирован выше +3, в этом случае ничего не происходит. Чипы умений для сложности (х2) стоят 1,000€$, для всех остальных умений — 500€$.
-          <b>Требует разъём для флешек.</b>
-        </td>
-        <td>
-          500€$ (Дорогое) или 1,000€$
-          <br>
-          О. дорогое
-        </td>
-        <td>7 (2d6)</td>
-      </tr>
-      <tr>
-        <td>Тактильное усиление</td>
-        <td>нет</td>
-        <td>
-          Флешка. При установке в Разъём усиливает осязательные чувства. Дотронувшись до поверхности, пользователь может почувствовать движение в пределах 20 метров от себя. Пока рука используется в качестве "детектора движения", её нельзя использовать ни для чего другого.
-          <b>Требует разъём для флешек.</b>
-        </td>
-        <td>100€$(Премиум)</td>
-        <td>7 (2d6)</td>
-      </tr></tbody></table>`},{id:"economy_15",name:"Кибероптика [Киберглаз...]",page:"economy",table:`<table id="economy_15"><caption>Кибероптика [Киберглаз...]</caption><tbody><tr>
+          <td><b>Название</b></td>
+          <td><b>Установка</b></td>
+          <td><b>Информация</b></td>
+          <td><b>Цена</b></td>
+          <td><b>ПЧ</b></td>
+        </tr>
+        <tr>
+          <td>Биомонитор</td>
+          <td>Молл</td>
+          <td>Подкожный имплантат, который постоянно считывает и выводит на диодный экран показания пульса, температуры, дыхания, уровень сахара в крови и т.д. Вы можете связать Биомонитор со своим Агентом, чтобы он мог отслеживать ваше состояние.</td>
+          <td>100€$<br>Премиум</td>
+          <td>0 (нет)</td>
+        </tr>
+        <tr>
+          <td>Химкожа</td>
+          <td>Молл</td>
+          <td>Красители и пигменты, которые вводятся в кожу, чтобы навсегда изменить её оттенок. Сфера применения варьируется от скрытия дефектов кожи до желания иметь неоновозеленую кожу. Пигменты, по желанию, могут быть чувствительны к температуре или реагировать на гормональные изменения в организме. Химкожа с техволосами даёт +2 к навыкуУход за Собой за наличие обоих. (Этот бонус действует 1 раз).</td>
+          <td>100€$<br>Премиум</td>
+          <td>0 (нет)</td>
+        </tr>
+        <tr>
+          <td>ЭМИ-нить</td>
+          <td>Молл</td>
+          <td>Эти тонкие серебряные линии, популяризованные ЮР, проходят по телу в виде дорожек. Многие считают, что они действуют как клетка Фарадея, защищая вас от радиации и электромагнитного излучения, хотя этим заявлениям нет научных подтверждений. По выглядят они, конечно, круто. Большинство людей носят ЭМИ-нить как модный тренд.</td>
+          <td>10€$<br>Дешевка</td>
+          <td>0 (нет)</td>
+        </tr>
+        <tr>
+          <td>Светящиеся тату</td>
+          <td>Молл</td>
+          <td>Введённые под кожу элементы, которые накапливают свет и проецируют цветные татуировки. Для большой татуировки требуется установить несколько этих имплантов, чтобы завершить её. Установка 3 и более тату, даёт +2 к Навыку Гардероб и Стиль. (Этот бонус действует 1 раз).</td>
+          <td>100€$<br>Премиум</td>
+          <td>0 (нет)</td>
+        </tr>
+        <tr>
+          <td>Изменчивые Такты</td>
+          <td>Молл</td>
+          <td>Линзы в глазу, меняющие цвет. Доступны несколько моделей. Линзы могут быть чувствительны ктемпературе или реагировать на гормональные изменения в организме. Можно выбрать только один цвет и рисунок. Пользователь может деактивировать изменение цвета в любое время по своему желанию без каких-либо действий.</td>
+          <td>100€$<br>Премиум</td>
+          <td>0 (нет)</td>
+        </tr>
+        <tr>
+          <td>Подкожные Часы</td>
+          <td>Молл</td>
+          <td>Имплантированные под кожу светодиодные часы, показывают текущее время и дату.</td>
+          <td>100€$<br>Премиум</td>
+          <td>0 (нет)</td>
+        </tr>
+        <tr>
+          <td>Техноволосы</td>
+          <td>Молл</td>
+          <td>Разноцветные светящиеся искусственные волосы. Волосы могут быть чувствительны к температуре или реагировать на гормональные изменения в организме, а также по желанию удлиняться, либо втягиваться за счёт встроенного механизма. Техноволосы с Химкожей дают +2 к навыку Уход за Собой за наличие обоих. (Этот бонус действует 1 раз).</td>
+          <td>100€$<br>Премиум</td>
+          <td>0 (нет)</td>
+        </tr></tbody></table>`},{id:"economy_14",name:"Нейронные имплантаты [Нейролинк...]",page:"economy",table:`<table id="economy_14"><caption>Нейронные имплантаты [Нейролинк...]</caption><tbody><tr>
+          <td><b>Название</b></td>
+          <td><b>Установка</b></td>
+          <td><b>Информация</b></td>
+          <td><b>Цена</b></td>
+          <td><b>ПЧ</b></td>
+        </tr>
+        <tr class="base">
+          <td>Нейролинк</td>
+          <td>Клиника</td>
+          <td>
+            Проводная искусственная нервная система. Требуется для использования нейроимплантов и смартлинка.
+            <b>Имеет 5 слотов опций</b>
+          </td>
+          <td>500€$<br>Дорогое</td>
+          <td>7 (2d6)</td>
+        </tr>
+        <tr>
+          <td>Записыватель брейндансов</td>
+          <td>Клиника</td>
+          <td>
+            Модуль Нейроимпланта. Поделись пережитой историей с собственной точки зрения! Записывает Брейндансы на стандартную флешку памяти или на подсоединенный Агент. Брейндансы можно просматривать через очки для брейнданса.
+            <b>Требует нейролинк.</b>
+          </td>
+          <td>500€$<br>Дорогое</td>
+          <td>7 (2d6)</td>
+        </tr>
+        <tr>
+          <td>Разъем для флешек</td>
+          <td>Клиника</td>
+          <td>
+            Модуль Нейроимпланта. Разъём устанавливается в заднюю часть шеи, в него легко вставляется одна Флешка (которых существует различное множество).
+            <br>
+            Чтобы вставить или достать одну Флешку, необходимо потратить Действие.
+            <br>
+            Если вы впервые вставляете Флешку (которую до этого не использовали), вы теряете Человечность. Если вы ранее использовали Флешку, то Человечность не теряется.
+            <b>Флешка не занимает слот модуля в Нейролинке.</b> <br>
+            Можно установить несколько Разъёмов (каждый покупается отдельно).
+            <b>Требует нейролинк.</b>
+          </td>
+          <td>500€$<br>Дорогое</td>
+          <td>7 (2d6)</td>
+        </tr>
+        <tr>
+          <td>Личный порт</td>
+          <td>Клиника</td>
+          <td>
+            Модуль Нейроимпланта. Разъём, установленный в запястье или голову, позволяет подключаться и использовать Умное оружие, Кибердеки, тяжёлую технику и управлять транспортом без рук. Если установить несколько личных портов, то можно будет подключаться к нескольким вещам одновременно.
+            <b>Требует нейролинк.</b>
+          </td>
+          <td>500€$<br>Дорогое</td>
+          <td>7 (2d6)</td>
+        </tr>
+        <tr>
+          <td>Керезников</td>
+          <td>Клиника</td>
+          <td>
+            Модуль Нейроимпланта. Всегда работающий Ускоритель, который увеличивает скорость реакции. Даёт +2 к броскам Инициативы. Одновременно может быть установлен только один Ускоритель.
+            <b>Требует нейролинк.</b>
+          </td>
+          <td>500€$<br>Дорогое</td>
+          <td>14 (4d6)</td>
+        </tr>
+        <tr>
+          <td>Сандвистан</td>
+          <td>Клиника</td>
+          <td>
+            Модуль Нейроимпланта. Ускоритель, который даёт кратковременное улучшение, значительно увеличивающее скорость реакции. При активации (Действие), в течение минуты даёт +3 к Инициативе. Повторно активировать можно только через час. Одновременно может быть установлен только один Ускоритель.
+            <b>Требует нейролинк.</b>
+          </td>
+          <td>500€$<br>Дорогое</td>
+          <td>7 (2d6)</td>
+        </tr>
+        <tr>
+          <td>Химический анализатор</td>
+          <td>нет</td>
+          <td>
+            Флешка. При установке в Разъём позволяет анализировать вещество. Нужно Действие, чтобы определить точный химический состав вещества. Мгновенно определяет большинство веществ из обширной базы образцов.
+            <b>Требует разъём для флешек.</b>
+          </td>
+          <td>500€$<br>Дорогое</td>
+          <td>3(1d6)</td>
+        </tr>
+        <tr>
+          <td>Флешка памяти</td>
+          <td>нет</td>
+          <td>
+            Флешка для хранения данных. При установке в Разъём, на можно поместить какую-либо информацию или изучить то, что уже хранится на ней.
+            <b>Требует разъём для флешек.</b>
+          </td>
+          <td>10€$<br>Дешевка</td>
+          <td>0 (НЕТ)</td>
+        </tr>
+        <tr>
+          <td>Усилитель Обоняния</td>
+          <td>нет</td>
+          <td>
+            Флешка. При установке в Разъём обоняние пользователя усиливается, что позволяет ему использовать навык Выслеживание, используя запах в дополнение к визуальным подсказкам.
+            <b>Требует разъём для флешек.</b>
+          </td>
+          <td>100€$<br>Премиум</td>
+          <td>7 (2d6)</td>
+        </tr>
+        <tr>
+          <td>Редактор боли</td>
+          <td>нет</td>
+          <td>
+            Флешка. При установке в Разъём, отключает болевые рецепторы, позволяя игнорировать последствия Тяжёлого Ранения.
+            <b>Требует разъём для флешек.</b>
+          </td>
+          <td>1,000€$<br>О. дорогое</td>
+          <td>14 (4d6)</td>
+        </tr>
+        <tr>
+          <td>Флешка навыка</td>
+          <td>нет</td>
+          <td>
+            Флешка. При установке в Разъем чип улучшает навык, для которого он был создан, у пользователя на +3, если только навык пользователя не был уже натренирован выше +3, в этом случае ничего не происходит. Чипы умений для сложности (х2) стоят 1,000€$, для всех остальных умений — 500€$.
+            <b>Требует разъём для флешек.</b>
+          </td>
+          <td>500€$ (Дорогое) или 1,000€$<br>О. дорогое</td>
+          <td>7 (2d6)</td>
+        </tr>
+        <tr>
+          <td>Тактильное усиление</td>
+          <td>нет</td>
+          <td>
+            Флешка. При установке в Разъём усиливает осязательные чувства. Дотронувшись до поверхности, пользователь может почувствовать движение в пределах 20 метров от себя. Пока рука используется в качестве "детектора движения", её нельзя использовать ни для чего другого.
+            <b>Требует разъём для флешек.</b>
+          </td>
+          <td>100€$(Премиум)</td>
+          <td>7 (2d6)</td>
+        </tr></tbody></table>`},{id:"economy_15",name:"Кибероптика [Киберглаз...]",page:"economy",table:`<table id="economy_15"><caption>Кибероптика [Киберглаз...]</caption><tbody><tr>
           <td><b>Название</b></td>
           <td><b>Установка</b></td>
           <td><b>Информация</b></td>
@@ -7761,7 +7731,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             <b>Каждый киберглаз имеет 3 слота для модулей.</b> <br>
             Некоторые модули должны быть сопряжены. (Купленный дважды и установленные в разные глаза. Потеря Человечности рассчитывается отдельно для каждого модуля).
           </td>
-          <td>100€$(Премиум)</td>
+          <td>100€$<br>Премиум</td>
           <td>7 (2d6)</td>
         </tr>
         <tr>
@@ -7771,7 +7741,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберглаза. Пользователь невосприимчив к слепоте или другим эффектам, вызванными яркими вспышками, например, светошумовыми гранатами.
             <b>Требуется 2 киберглаза и сопряжение.</b>
           </td>
-          <td>100€$(Премиум)</td>
+          <td>100€$<br>Премиум</td>
           <td>2 (1d6/2🠉)</td>
         </tr>
         <tr>
@@ -7781,7 +7751,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберглаза. Проецирует крошечный экран в поле зрения для сообщений, видео и т.д. от других киберимплантов и электроники пользователя. "Картинка в картинке" в реальной жизни.
             <b>Требует Киберглаз.</b>
           </td>
-          <td>100€$(Премиум)</td>
+          <td>100€$<br>Премиум</td>
           <td>2 (1d6/2🠉)</td>
         </tr>
         <tr>
@@ -7791,7 +7761,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберглаза. Косметическое улучшение, позволяющее сколько угодно раз менять цвета и узоры в глазу (Действие). Глаза могут быть чувствительны к температуре или реагировать на гормональные изменения в организме.
             <b>Требует Киберглаз.</b>
           </td>
-          <td>100€$(Премиум)</td>
+          <td>100€$<br>Премиум</td>
           <td>2 (1d6/2🠉)</td>
         </tr>
         <tr>
@@ -7801,11 +7771,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберглаза. Экзотическое Оружие Дартган, спрятанное внутри киберглаза, рассчитаное на один выстрел.
             <b>Требует Киберглаз и занимает 3 слота опций.</b>
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>500€$<br>Дорогое</td>
           <td>2 (1d6/2🠉)</td>
         </tr>
         <tr>
@@ -7815,11 +7781,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберглаза. Пользователь добавляет +2 к навыкам Внимательности, Чтения по губам и Скрытие/раскрытие объекта при проверках, требующих зрения.
             <b>Требуется два сопряженных Киберглаза</b>. Многократные установки не дают никаких преимуществ.
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>500€$<br>Дорогое</td>
           <td>3(1d6)</td>
         </tr>
         <tr>
@@ -7829,7 +7791,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберглаза. Снимает штрафы, накладываемые темнотой, дымом, туманом и т.п. до 0. Пользователь может отличить горячее мясо от холодного металла , но не позволяет видеть сквозь укрытия.
             <b>Требуется сопряжение и 2 слота опций на каждый</b>
           </td>
-          <td>500€$ (Доротое)</td>
+          <td>500€$<br>Дорогое</td>
           <td>3(1d6)</td>
         </tr>
         <tr>
@@ -7839,11 +7801,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберглаза. Микроскоп, позволяющий рассматривать предметы с увеличением до 400х.
             <b>Требует киберглаз.</b>
           </td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>2 (1d6/2🠉)</td>
         </tr>
         <tr>
@@ -7853,7 +7811,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберглаза. Записывает видео и аудио на стандартную флешку памяти или связанный агент.
             <b>Требует киберглаз, занимает 2 слота опций.</b>
           </td>
-          <td>500€$ (Доротое)</td>
+          <td>500€$<br>Доротое</td>
           <td>2 (1d6/2🠉)</td>
         </tr>
         <tr>
@@ -7863,8 +7821,8 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберглаза. Отображает в пределах 100м от пользователя радиацию в виде голубого свечения над её источником.
             <b>Требует киберглаз.</b>
           </td>
-          <td>1,000€$ (О. доротое)</td>
-          <td>3(1d6)</td>
+          <td>1,000€$<br>О. дорогое</td>
+          <td>3 (1d6)</td>
         </tr>
         <tr>
           <td>Тактический прицел</td>
@@ -7873,8 +7831,8 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберглаза. Даёт пользователю +1 к проверкам Прицельного выстрела. Множественные установки не суммируются.
             <b>Требует киберглаз.</b>
           </td>
-          <td>500€$ (Доротое)</td>
-          <td>3(1d6)</td>
+          <td>500€$<br>Доротое</td>
+          <td>3 (1d6)</td>
         </tr>
         <tr>
           <td>ТелеОптика</td>
@@ -7883,8 +7841,8 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберглаза. Позволяет видеть детали на расстоянии 800м. При атаке цели на расстоянии 51м и дальше в режиме одиночного огня или прицельного выстрела можете добавить +1 к проверке. Несколько установок не суммируются. Не суммируется со снайперским прицелом.
             <b>Требует киберглаз.</b>
           </td>
-          <td>500€$ (Доротое)</td>
-          <td>3(1d6)</td>
+          <td>500€$<br>Доротое</td>
+          <td>3 (1d6)</td>
         </tr>
         <tr>
           <td>Виртуальное зрение</td>
@@ -7893,7 +7851,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберглаза. Проецирует изображение киберпространства поверх реального мира. Теперь точно не забудете свои Очки Виртуальности.
             <b>Требуется 2 киберглаза и сопряжение.</b>
           </td>
-          <td>100€$(Премиум)</td>
+          <td>100€$<br>Премиум</td>
           <td>2 (1d6/2🠉)</td>
         </tr></tbody></table>`},{id:"economy_16",name:"Кибераудио [Комплект Кибераудио...]",page:"economy",table:`<table id="economy_16"><caption>Кибераудио [Комплект Кибераудио...]</caption><tbody><tr>
           <td><b>Название</b></td>
@@ -7919,11 +7877,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Кибераудио. Даёт пользователю +2 к проверке навыка Внимательность, если задействован слух.
             <b>Требуется Комплект Кибераудио</b>. Установка нескольких модулей не даёт никаких преимуществ.
           </td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>3(1d6)</td>
         </tr>
         <tr>
@@ -7933,11 +7887,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Кибераудио. Записывает аудио на стандартную Флешку Памяти или подключённый Агент.
             <b>Требует Комплект Кибераудио.</b>
           </td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>2 (1d6/2🠉)</td>
         </tr>
         <tr>
@@ -7947,11 +7897,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Кибераудио. Устройство пищит, когда находится в 2 метрах от прослушки, жучка или иного подслушивающего устройства.
             <b>Требует Комплект Кибераудио.</b>
           </td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>2 (1d6/2🠉)</td>
         </tr>
         <tr>
@@ -7961,25 +7907,17 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Кибераудио. Отслеживает привязанный маячок на расстоянии до 1,5 километров. В комплект входит привязанный маячок размером с пуговицу. Дополнительный маячок стоит 50€$.
             <b>Требует Комплект Кибераудио.</b>
           </td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>2 (1d6/2🠉)</td>
         </tr>
         <tr>
           <td>Внутренний агент</td>
           <td>Молл</td>
           <td>
-            Модуль Кибераудио. Полноценный Агент (см. раздел "Снаряжение"на СТР. 352), управляемый с помощью голоса. Весь контент озвучиваются, но можно вывести на модуль Хирон или на ближайший экран. Флешка Памяти имплантированного Агента не может быть извлечена без хирургического вмешательства.
+            Модуль Кибераудио. Полноценный <a href="economy.html#economyEquipmnet">Агент</a>, управляемый с помощью голоса. Весь контент озвучиваются, но можно вывести на модуль Хирон или на ближайший экран. Флешка Памяти имплантированного Агента не может быть извлечена без хирургического вмешательства.
             <b>Требует Комплект Кибераудио.</b>
           </td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>3(1d6)</td>
         </tr>
         <tr>
@@ -7989,11 +7927,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Кибераудио. Автоматическая коррекция звука. Пользователь невосприимчив к оглушению или другим эффектам, вызванными громкими звуками, например светошумовыми гранатами.
             <b>Требует Комплект Кибераудио.</b>
           </td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>2 (1d6/2🠉)</td>
         </tr>
         <tr>
@@ -8003,11 +7937,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Кибераудио. Позволяет общаться по радиосвязи в радиусе 1 километра.
             <b>Требует Комплект Кибераудио.</b>
           </td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>2 (1d6/2🠉)</td>
         </tr>
         <tr>
@@ -8027,11 +7957,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Кибераудио. Начинает пищать, если в радиусе 100 метров замечает активный радар.
             <b>Требует Комплект Кибераудио.</b>
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>2 (1d6/2🠉)</td>
         </tr>
         <tr>
@@ -8041,11 +7967,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Кибераудио. Позволяет шифровать исходящие сообщения, чтобы их нельзя было понять без дешифровки. Дешифратор также входит в комплект без дополнительной оплаты.
             <b>Требует Комплект Кибераудио.</b>
           </td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>2 (1d6/2🠉)</td>
         </tr>
         <tr>
@@ -8055,11 +7977,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Кибераудио. Даёт +2 к Навыкам "Проницательность" и "Допрос". Потратив Действие, можно на минуту активировать специальную функцию "Детектор Джи". В течение этого времени ГМ скрыто бросает за игрока все проверки "Проницательность" и "Допрос", и когда фиксируетложь, подаетодин звуковой сигнал, или когда сам того захочет, если бросок был неудачным. Остерегайтесь ложных положительных и отрицательных результатов.
             <b>Требуется Комплект Кибераудио.</b> Установка нескольких модулей не даёт никаких преимуществ.
           </td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>3 (1d6)</td>
         </tr></tbody></table>`},{id:"economy_17",name:"Внутренние киберимпланты [7 слотов]",page:"economy",table:`<table id="economy_17"><caption>Внутренние киберимпланты [7 слотов]</caption><tbody><tr>
           <td><b>Название</b></td>
@@ -8072,21 +7990,14 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
           <td>АудиоВокс</td>
           <td>Клиника</td>
           <td>Вокальный синтезатор. +2 к навыку актёрского мастерства и+2к навыку игры на гитаре во время пения. Установка нескольких имплантов не даёт никаких преимуществ.</td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>3 (1d6)</td>
         </tr>
         <tr>
           <td>Контрацептив</td>
           <td>Молл</td>
           <td>Предотвращает нежелательную беременность.</td>
-          <td>
-            10€$
-            <br>
-            Дешевка
+          <td>10€$<br>Дешевка
           </td>
           <td>0 (нет)</td>
         </tr>
@@ -8094,11 +8005,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
           <td>Усиленные антитела</td>
           <td>Молл</td>
           <td>После стабилизации, за каждый день отдыха, благодаря этому импланту, восполняется здоровье равное удвоенному ТЕЛ (вместо обычного темпа), большую часть дня надо отдыхать, заниматься можно только легкой активностью, пока Здоровье полностью не восполнится.</td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>2 (1d6/2🠉)</td>
         </tr>
         <tr>
@@ -8212,75 +8119,71 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             <br>
             Лёгкое оружие ближнего боя отличного качества (1d6 урона, 2 СКА), которое можно прятать без проверки.
             <br>
-            Пузырёк с Ядом или Биотоксином (приобретается отдельно, см. список снаряжения на СТР. 355), можно (без проверки) надежно хранить и прятать во рту рядом с клыками. Содержимое пузырька применяется к Вампирам бесшумно и в любой момент (Действие не тратится). Каждое применение тратит весь пузырёк, эффект длится 30 минут.
+            Пузырёк с Ядом или Биотоксином (<a href="economy.html#economyEquipmnet">приобретается отдельно</a>, можно (без проверки) надежно хранить и прятать во рту рядом с клыками. Содержимое пузырька применяется к Вампирам бесшумно и в любой момент (Действие не тратится). Каждое применение тратит весь пузырёк, эффект длится 30 минут.
             <br>
             Установка Вампиров включает в себя полную переработку рта пользователя, что предотвращает случайное отравление клыками на полпути к куску пиццы или критической неудачи.
+          </td>
+          <td>100€$<br>Премиум</td>
+          <td>14 (4d6)</td>
+        </tr></tbody></table>`},{id:"economy_18",name:"Внешние Киберимпланты [7 слотов]",page:"economy",table:`<table id="economy_18"><caption>Внешние Киберимпланты [7 слотов]</caption><tbody><tr>
+          <td><b>Название</b></td>
+          <td><b>Установка</b></td>
+          <td><b>Информация</b></td>
+          <td><b>Цена</b></td>
+          <td><b>ПЧ</b></td>
+        </tr>
+        <tr>
+          <td>Скрытая кобура</td>
+          <td>Клиника</td>
+          <td>Кобура внутри тела пользователя, может хранить оружие, которое может быть скрыто. Его можно скрыть без проверки. Оружие можно вытащить из скрытой кобуры без действия, если оно имплантировано в легкодоступное место на теле. Вы можете достать его из бедра, если только вы не носите штанов.</td>
+          <td>
+            500€$
+            <br>
+            Дорогое
+          </td>
+          <td>7 (2d6)</td>
+        </tr>
+        <tr>
+          <td>Тканекожа</td>
+          <td>Госпиталь</td>
+          <td>
+            Тело и голова бронированы всегда на уровне ОС 7.
+            <br>
+            Ваша ОС определяется самым высоким предметом брони. Кроме того, всякий раз, когда ваша получает урон в каком-либо месте, все ваши предметы брони в этом месте получаютурон одновременно (например, тканекожа головы и шлем).
+            <br>
+            Когда вы успешно завершаете 1 день отдыха (исцеления), наномашины, присутствующие в коже, восстанавливают 1 ОС тела и головы.
           </td>
           <td>
             500€$
             <br>
             Дорогое
           </td>
+          <td>7 (2d6)</td>
+        </tr>
+        <tr>
+          <td>Подкожная броня</td>
+          <td>Госпиталь</td>
+          <td>
+            Тело и голова бронированы всегда на уровне ОС11.
+            <br>
+            Ваша ОС определяется самым высоким предметом брони. Кроме того, всякий раз, когда ваша получает урон в каком-либо месте, все ваши предметы брони в этом месте получаютурон одновременно (например, тканекожа головы и шлем).
+            <br>
+            Когда вы успешно завершаете 1 день отдыха (исцеления), наномашины, присутствующие в подкожной броне, восстанавливают 1 ОС тела и головы.
+          </td>
+          <td>
+            1,000€$
+            <br>
+            О. дорогое
+          </td>
           <td>14 (4d6)</td>
-        </tr></tbody></table>`},{id:"economy_18",name:"Внешние Киберимпланты [7 слотов]",page:"economy",table:`<table id="economy_18"><caption>Внешние Киберимпланты [7 слотов]</caption><tbody><tr>
-        <td><b>Название</b></td>
-        <td><b>Установка</b></td>
-        <td><b>Информация</b></td>
-        <td><b>Цена</b></td>
-        <td><b>ПЧ</b></td>
-      </tr>
-      <tr>
-        <td>Скрытая кобура</td>
-        <td>Клиника</td>
-        <td>Кобура внутри тела пользователя, может хранить оружие, которое может быть скрыто. Его можно скрыть без проверки. Оружие можно вытащить из скрытой кобуры без действия, если оно имплантировано в легкодоступное место на теле. Вы можете достать его из бедра, если только вы не носите штанов.</td>
-        <td>
-          500€$
-          <br>
-          Дорогое
-        </td>
-        <td>7 (2d6)</td>
-      </tr>
-      <tr>
-        <td>Тканекожа</td>
-        <td>Госпиталь</td>
-        <td>
-          Тело и голова бронированы всегда на уровне ОС 7.
-          <br>
-          Ваша ОС определяется самым высоким предметом брони. Кроме того, всякий раз, когда ваша получает урон в каком-либо месте, все ваши предметы брони в этом месте получаютурон одновременно (например, тканекожа головы и шлем).
-          <br>
-          Когда вы успешно завершаете 1 день отдыха (исцеления), наномашины, присутствующие в коже, восстанавливают 1 ОС тела и головы.
-        </td>
-        <td>
-          500€$
-          <br>
-          Дорогое
-        </td>
-        <td>7 (2d6)</td>
-      </tr>
-      <tr>
-        <td>Подкожная броня</td>
-        <td>Госпиталь</td>
-        <td>
-          Тело и голова бронированы всегда на уровне ОС11.
-          <br>
-          Ваша ОС определяется самым высоким предметом брони. Кроме того, всякий раз, когда ваша получает урон в каком-либо месте, все ваши предметы брони в этом месте получаютурон одновременно (например, тканекожа головы и шлем).
-          <br>
-          Когда вы успешно завершаете 1 день отдыха (исцеления), наномашины, присутствующие в подкожной броне, восстанавливают 1 ОС тела и головы.
-        </td>
-        <td>
-          1,000€$
-          <br>
-          О. дорогое
-        </td>
-        <td>14 (4d6)</td>
-      </tr>
-      <tr>
-        <td>Подкожный карман</td>
-        <td>Клиника</td>
-        <td>Размер 5х10 см с молнией Realskinn™. Содержимое можно успешно скрыть без проверки.</td>
-        <td>100€$(Премиум)</td>
-        <td>3 (1d6)</td>
-      </tr></tbody></table>`},{id:"economy_19",name:"Киберконечности [Киберрука... Кибернога...]",page:"economy",table:`<table id="economy_19"><caption>Киберконечности [Киберрука... Кибернога...]</caption><tbody><tr>
+        </tr>
+        <tr>
+          <td>Подкожный карман</td>
+          <td>Клиника</td>
+          <td>Размер 5х10 см с молнией Realskinn™. Содержимое можно успешно скрыть без проверки.</td>
+          <td>100€$(Премиум)</td>
+          <td>3 (1d6)</td>
+        </tr></tbody></table>`},{id:"economy_19",name:"Киберконечности [Киберрука... Кибернога...]",page:"economy",table:`<table id="economy_19"><caption>Киберконечности [Киберрука... Кибернога...]</caption><tbody><tr>
           <td><b>Название</b></td>
           <td><b>Установка</b></td>
           <td><b>Информация</b></td>
@@ -8294,11 +8197,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Замена руки. Не обязательно в паре.
             <b>Имеет 4 слота для опций киберруки или киберконечности.</b> Изначально поставляется с предустановленной Стандартной Рукой, которая не требует Потери Человечности и не занимает слот киберруки.
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>7 (2d6)</td>
         </tr>
         <tr class="base">
@@ -8308,11 +8207,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Напоминает обычную руку. При установке в мясную руку не учитывается при подсчете количества киберимплантов.
             <b>Не занимает слот опций киберруки.</b>
           </td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>2 (1d6/2🠉)</td>
         </tr>
         <tr>
@@ -8322,11 +8217,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберруки. Армированные костяшки. Среднее Оружие Ближнего Боя (2d6, 2 СКА), можно скрыть без проверки. При использовании, рука не может что-то держать.
             <b>Можно установить как единственный киберимплант в мясной руке.</b>
           </td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>3 (1d6)</td>
         </tr>
         <tr>
@@ -8336,11 +8227,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Кибердека намертво устанавливается в Кибер-руку. Необходимую для установки Кибердеку должен предоставить пользователь. Помимо того, что теперь ты никогда не потеряешь свою Кибердеку, в ней также появляется +1 дополнительный слот, в который можно установить Программы или Оборудование. При попытке выдернуть Кибердеку из Киберруки, она ломается без возможности починить, но программы и оборудование которые были на ней, можно восстановить.
             <b>Требуется Киберрука и 3 слота модулей.</b> <b>Для работы кибердеки требуются Личный Порт и Нейролинк.</b>
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>3 (1d6)</td>
         </tr>
         <tr>
@@ -8352,11 +8239,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Пользователь игнорирует штрафы передвижения, взбираясь по тросу. Трос можно отпустить, не тратя Действие, даже при подъёме. Во время использования рука не может что-то держать. Неэффективен как оружие, нельзя использовать для Захвата противника.
             <b>Требует Киберруку.</b>
           </td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>3 (1d6)</td>
         </tr>
         <tr>
@@ -8366,11 +8249,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберруки. Сканер с помощью датчиков и контактов диагностирует травмы и заболевания, помогая в экстренных ситуациях, не требующих навыка "Хирургия". Добавляет пользователю +2 к Навыкам: Первая Помощь и Парамедик.
             <b>Требуется Киберрука и 2 слота модулей.</b> Множественная установка не даёт никаких преимуществ.
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>7 (2d6)</td>
         </tr>
         <tr>
@@ -8380,11 +8259,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберруки. Одноручный гранотомет с одной гранатой в магазине, установленный в киберруку и несовместимый со всеми оружейными модификациями, кроме коннектора Смартлинка. Гранатомет можно успешно спрятать без проверки, а также открыть и закрыть без действия. Пока оружие "вскинуто", пользователь не может ничего держать в этой руке.
             <b>Требует Киберруку и занимает 2 слота.</b>
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>7 (2d6)</td>
         </tr>
         <tr>
@@ -8394,11 +8269,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберруки. Одноручное легкое, среднее или тяжелое оружие ближнего боя (которое не обязательно должно быть скрываемым до установки) устанавливается в Киберруку так, чтобы его можно было успешно скрыть без проверки, а также достать и убрать без действия. Пока оружие "вскинуто", пользователь не может ничего держать в этой руке. Требуется
             <b>Требует Киберруку и занимает 2 слота.</b>
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>7 (2d6)</td>
         </tr>
         <tr>
@@ -8406,13 +8277,9 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
           <td>Клиника</td>
           <td>
             Модуль Киберруки. Пуленепробиваемый щит, который скрыт, внутри киберруки. Его можно достать или сложить без действия, если у щита больше 0 ПЗ. Когда щит вынут из руки, вы не можете использовать эту руку ни для чего другого, и не можете держать в руке ничего, кроме щита. Пуленепробиваемый щит, установленный внутри киберруки, легко снимается и заменяется другим пуленепробиваемым щитом для удобства чистки и ремонта.
-            <b>Требуется Киберрука и 3 слота модулей</b>. См. раздел "Использование щитов" на СТР. 183.
+            <b>Требуется Киберрука и 3 слота модулей</b>. См. раздел <a href="combat.html#shield">Использование щитов</a>.
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>7 (2d6)</td>
         </tr>
         <tr>
@@ -8422,11 +8289,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберруки. Одноручное дальнобойное оружие (которое не обязательно должно быть скрываемым до установки), выбранное пользователем, устанавливается в Киберруку (вместе с любыми оружейными модулями, прикрепленными к нему) так, что его можно успешно скрыть без проверки, а также достать и убрать без действия. Пока оружие "вскинуто", пользователь не может ничего держать в этой руке.
             <b>Требует Киберруку и занимает 2 слота.</b>
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>7 (2d6)</td>
         </tr>
         <tr>
@@ -8436,7 +8299,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберруки. Киберруку можно установить в свободное гнездо или снять с помощью действия. При первой установке новой Киберруки, при помощи быстросменного крепления или иным способом, вы всегда теряете человечность. Прикрепление киберруки, которую вы уже использовали с помощью быстросменного крепления к этому не приводит.
             <b>Требуется Киберрука.</b>
           </td>
-          <td>100€$(Премиум)</td>
+          <td>100€$<br>Премиум</td>
           <td>7 (2d6)</td>
         </tr>
         <tr>
@@ -8446,11 +8309,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Вариант киберруки. Удлиняемые когти из углеродного стекла. Среднее оружие ближнего боя (2d6, 2 СКА), которое можно прятать без проверки. При использовании рука должна быть свободна.
             <b>Можно установить как единственный киберимплант в мясной руке.</b>
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>3 (1d6)</td>
         </tr>
         <tr>
@@ -8460,7 +8319,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберруки. Искусственные ногти из углеродного стекла. Лёгкое оружие ближнего боя (ld6, 2 СКА), можно спрятать без проверки, а также выдвинуть или убрать без действия.
             <b>Можно установить как единственный киберимплант в мясной руке.</b>
           </td>
-          <td>100€$(Премиум)</td>
+          <td>100€$<br>Премиум</td>
           <td>2 (1d6/2🠉)</td>
         </tr>
         <tr>
@@ -8470,11 +8329,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберруки. Выдвижная камера на плече, отслеживает всё независимо от пользователя, записывает аудио и видео на встроенную флешку или связанный агент. Можно достать или спрятать без проверки и действия.
             <b>Требует Киберруку и занимает 2 слота.</b>
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>7 (2d6)</td>
         </tr>
         <tr>
@@ -8484,11 +8339,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберруки. Моноструна, имплантированная в большой палец. Среднее оружие ближнего боя (2d6,2 СКА), которое можно прятать без проверки. Нельзя ничего держать в руке при использовании.
             <b>Можно установить как единственный киберимплант в мясной руке.</b>
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>3 (1d6)</td>
         </tr>
         <tr>
@@ -8498,11 +8349,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберруки. Подкожная пластина под ладонью для подключения умного оружия. Альтернатива личному порту. Можно установить, как единственный имплант в мясной руке.
             <b>Требуется Нейролинк, занимает слот в импланте Нейролинк.</b>
           </td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>3 (1d6)</td>
         </tr>
         <tr>
@@ -8512,11 +8359,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Диагностирует механизмы и электронику, помогая пользователю в ремонте и техобслуживании. Пользователь добавляет +2 к навыкам Знание Техники, Кибертехника, Автомобильные Технологии, Морские Технологии, Авиационные Технологии, Злектроника/Безопасность и Оружейник.
             <b>Требуется Киберрука и 2 слота модулей</b>. Многократная установка этой опции не дает никаких дополнительных преимуществ.
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>7 (2d6)</td>
         </tr>
         <tr>
@@ -8526,11 +8369,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберруки. В пальцах находятся отвертка, гаечный ключ, небольшая дрель и т.д. Теперь никуда без Мультитула!
             <b>Можно установить как единственный киберимплант в мясной руке.</b>
           </td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>3 (1d6)</td>
         </tr>
         <tr>
@@ -8540,11 +8379,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберруки. Выдвижные когти из углеродного стекла на костяшках пальцев. Тяжелое оружие ближнего боя (3d6, 2 СКА), которое можно спрятать без проверки. При использовании, как оружие, нельзя ничего держать в руке.
             <b>Можно установить как единственный киберимплант в мясной руке.</b>
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>7 (2d6)</td>
         </tr>
         <tr class="base">
@@ -8556,11 +8391,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             <br>
             Большинство опций должно быть приобретено дважды (установлено в обе ноги) и синхронизировано. (Каждый модуль покупается отдельно. Потеря Человечности рассчитывается отдельно для каждого модуля).
           </td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>3 (1d6)</td>
         </tr>
         <tr class="base">
@@ -8570,11 +8401,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Напоминает обычную ногу. При установке в мясную ногу не учитывается при подсчете количества киберимплантов, установленных в ноги.
             <b>Не занимает слов в киберноге.</b>
           </td>
-          <td>
-            100€$
-            <br>
-            Премиум
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>2 (1d6/2)</td>
         </tr>
         <tr>
@@ -8584,11 +8411,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Модуль Киберноги. Подошвы покрыты самым технологичным сцепляющим материалом. Обычный штраф передвижения, для лазания не учитывается.
             <b>Требует две сопряженные Киберноги.</b>
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>3 (1d6)</td>
         </tr>
         <tr>
@@ -8598,11 +8421,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Гидравлические ноги, отменяющие штраф к прыжкам.
             <b>Требует две сопряженные Киберноги, занимает 2 слота опций.</b>
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>3 (1d6)</td>
         </tr>
         <tr>
@@ -8612,11 +8431,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Нога с колесиками. Можно скрыть. Увеличивает скорость на 6 м при использовании действия "бег".
             <b>Требует две сопряженные Киберноги.</b>
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>3 (1d6)</td>
         </tr>
         <tr>
@@ -8626,11 +8441,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Клинок в столе. Лёгкое оружие ближнего боя. Можно скрыть без проверки.
             <b>Можно установить, как единственный имплант в мясной ноге.</b>
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>3 (1d6)</td>
         </tr>
         <tr>
@@ -8640,11 +8451,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Тонкая перепонка между пальцами. Отменяет штраф при плавании.
             <b>Требует две сопряженные Киберноги.</b>
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>3 (1d6)</td>
         </tr>
         <tr>
@@ -8678,11 +8485,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Вариант киберконечности. Покрытие из искусственной кожи для конечности.
             <b>Требуется кибернога или киберрука, не занимает слот.</b>
           </td>
-          <td>
-            500€$
-            <br>
-            Дорогое
-          </td>
+          <td>100€$<br>Премиум</td>
           <td>0 (нет)</td>
         </tr>
         <tr>
@@ -8732,11 +8535,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             <b>Требуется ТЕЛ 8 и две "Искусственные мышцы и усиленные кости"</b>.
             <br>
           </td>
-          <td>
-            5,000€$
-            <br>
-            Роскошь
-          </td>
+          <td>5,000€$<br>Роскошь</td>
           <td>14 (4d6)</td>
         </tr>
         <tr>
@@ -8754,11 +8553,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             •
             <b>Требуется ТЕЛ 6 и "Искусственные мышцы и усиленные кости"</b> <br>
           </td>
-          <td>
-            1,000€$
-            <br>
-            О. дорогое
-          </td>
+          <td>1,000€$<br>О. дорогое</td>
           <td>14 (4d6)</td>
         </tr>
         <tr>
@@ -8768,11 +8563,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Можно установить до 5 дополнительных киберглаз в мульти-оптическое крепление.
             <b>Киберлаза покупаются и устанавливаются отдельно.</b> Можно установить только одно фасеточное крепление.
           </td>
-          <td>
-            1,000€$
-            <br>
-            О. дорогое
-          </td>
+          <td>1,000€$<br>О. дорогое</td>
           <td>14 (4d6)</td>
         </tr>
         <tr>
@@ -8784,32 +8575,28 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             Можно установить только один Массив Датчиков.
             <b>Требуется Комплект Кибераудио, но не занимает место в модулях Комплекта Кибераудио.</b>
           </td>
-          <td>
-            1,000€$
-            <br>
-            О. дорогое
-          </td>
+          <td>1,000€$<br>О. дорогое</td>
           <td>14 (4d6)</td>
         </tr></tbody></table>`},{id:"economy_21",name:"Кибердеки",page:"economy",table:`<table id="economy_21"><caption>Кибердеки</caption><tbody><tr>
-        <td><b>Тип</b></td>
-        <td><b>Цена</b></td>
-        <td><b>Слоты</b></td>
-      </tr>
-      <tr>
-        <td>Кибердека плохого качества</td>
-        <td>100€$ (Премиум)</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>Кибердека</td>
-        <td>500€$ (Дорогое)</td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>Кибердека отличного качества</td>
-        <td>1,000€$ (О. дорогое)</td>
-        <td>9</td>
-      </tr></tbody></table>`},{id:"economy_22",name:"Оборудование для Кибердеки",page:"economy",table:`<table id="economy_22"><caption>Оборудование для Кибердеки</caption><tbody><tr>
+          <td><b>Тип</b></td>
+          <td><b>Цена</b></td>
+          <td><b>Слоты</b></td>
+        </tr>
+        <tr>
+          <td>Кибердека плохого качества</td>
+          <td>100€$ (Премиум)</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Кибердека</td>
+          <td>500€$ (Дорогое)</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>Кибердека отличного качества</td>
+          <td>1,000€$ (О. дорогое)</td>
+          <td>9</td>
+        </tr></tbody></table>`},{id:"economy_22",name:"Оборудование для Кибердеки",page:"economy",table:`<table id="economy_22"><caption>Оборудование для Кибердеки</caption><tbody><tr>
           <td><b>Название</b></td>
           <td><b>Информация</b></td>
           <td><b>Цена</b></td>
@@ -9297,435 +9084,435 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             <b>Эффект:</b> Наносит 6d6 урона Программе. Если этого урона хватает, чтобы Отключить программу, то она уничтожается.
           </td>
         </tr></tbody></table>`},{id:"economy_27",name:"СЕТь. Количество этажей",page:"economy",table:`<table id="economy_27"><caption>СЕТь. Количество этажей</caption><tbody><tr>
-        <td><b>Количество Этажей</b></td>
-        <td><b>Максимум Управляющих Узлов</b></td>
-        <td><b>Переносной?</b></td>
-        <td><b>Цена за Этаж</b></td>
-      </tr>
-      <tr>
-        <td>3-6</td>
-        <td>2</td>
-        <td>ДА</td>
-        <td>1,000€$ (0. дорогое)</td>
-      </tr>
-      <tr>
-        <td>7-12</td>
-        <td>3</td>
-        <td>НЕТ</td>
-        <td>
-          5,000€$ (Роскошь)
-        </td>
-      </tr>
-      <tr>
-        <td>13-18</td>
-        <td>НЕТ</td>
-        <td>НЕТ</td>
-        <td>10,000€$ (Супер Роскошь)</td>
-      </tr></tbody></table>`},{id:"economy_28",name:"СЕТь. Пароли, управление, файлы",page:"economy",table:`<table id="economy_28"><caption>СЕТь. Пароли, управление, файлы</caption><tbody><tr>
-        <td><b>СЛ взлома архитектуры</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td><b>СЛ6</b></td>
-        <td>500 (Дорогое)</td>
-      </tr>
-      <tr>
-        <td><b>СЛ8</b></td>
-        <td>1,000€$ (0. дорогое)</td>
-      </tr>
-      <tr>
-        <td><b>СЛ1О</b></td>
-        <td>5,000€$ (Роскошь)</td>
-      </tr>
-      <tr>
-        <td><b>СЛ12</b></td>
-        <td>10,000€$ (Супер роскошь)</td>
-      </tr></tbody></table>`},{id:"economy_29",name:"СЕТь. Демоны и ЛЁД",page:"economy",table:`<table id="economy_29"><caption>СЕТь. Демоны и ЛЁД</caption><tbody><tr>
-        <td><b>Имя</b></td>
-        <td><b>REZ</b></td>
-        <td><b>Интерфейс</b></td>
-        <td><b>СЕТ-Действий</b></td>
-        <td><b>Боевой номер</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td><b>Бес</b></td>
-        <td>15</td>
-        <td>3</td>
-        <td>2</td>
-        <td>14</td>
-        <td>1,000€$ (Очень дорогое)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Мелкая Оранжевая сфера с красными рожками
-        </td>
-      </tr>
-      <tr>
-        <td><b>Ифрит</b></td>
-        <td>25</td>
-        <td>4</td>
-        <td>3</td>
-        <td>14</td>
-        <td>5,000€$ (Роскошь)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Высокий крепко сложенный негр, одетый в элегантный смокинг, с феской на голове и кинжалом в руке.
-        </td>
-      </tr>
-      <tr>
-        <td><b>Балрон</b></td>
-        <td>30</td>
-        <td>7</td>
-        <td>4</td>
-        <td>14</td>
-        <td>10,000€$ (Супер Роскошь)</td>
-      </tr>
-      <tr>
-        <td colspan="6">
-          <b>Иконка:</b> Огромный гуманоидный монстр в футуристической черной броне, покрытой шипящими светящимися зелеными щупальцами.
-        </td>
-      </tr></tbody></table>`},{id:"economy_30",name:"СЕТь. Защита управления",page:"economy",table:`<table id="economy_30"><caption>СЕТь. Защита управления</caption><tbody><tr>
-        <td><b>СЛ проверки навыка Электроника/Безопасность</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td><b>СЛ 9</b></td>
-        <td>500(Дорогое)</td>
-      </tr>
-      <tr>
-        <td><b>СЛ 13</b></td>
-        <td>1,000€$ (0. дорогое)</td>
-      </tr>
-      <tr>
-        <td><b>СЛ 17</b></td>
-        <td>5,000€$ (Роскошь)</td>
-      </tr>
-      <tr>
-        <td><b>СЛ 21</b></td>
-        <td>10,000€$ (Супер роскошь)</td>
-      </tr></tbody></table>`},{id:"economy_31",name:"Услуги и развлечения",page:"economy",table:`<table id="economy_31"><caption>Услуги и развлечения</caption><tbody><tr>
-        <td><b>Услуга/Развлечение</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td>Бодискульптинг (Стандартный)</td>
-        <td>500€$ Дорогое</td>
-      </tr>
-      <tr>
-        <td>Бодискульптинг (Экзотический)</td>
-        <td>1,000€$ Очень дорогое</td>
-      </tr>
-      <tr>
-        <td>Брейнданс</td>
-        <td>20€$ Обычное</td>
-      </tr>
-      <tr>
-        <td>Выпивка в стрёмном Баре</td>
-        <td>100€$ Дешевка</td>
-      </tr>
-      <tr>
-        <td>Выпивка в хорошем Баре</td>
-        <td>100€$ Дешевка</td>
-      </tr>
-      <tr>
-        <td>Выпивка в отличном Баре</td>
-        <td>20€$ Обычное</td>
-      </tr>
-      <tr>
-        <td>Выпивка в корпоративном Баре</td>
-        <td>50€$ Дешевое</td>
-      </tr>
-      <tr>
-        <td>Установка найден. Имплантов (Молл)</td>
-        <td>100€$ Премиум</td>
-      </tr>
-      <tr>
-        <td>Установка найден. Имплантов (Клиника)</td>
-        <td>500€$ Дорогое</td>
-      </tr>
-      <tr>
-        <td>Установка найден. Имплантов (Госпиталь)</td>
-        <td>1,000€$ Очень дорогое</td>
-      </tr>
-      <tr>
-        <td>Лечение в Госпитале (СЛ10)</td>
-        <td>50€$ Дешевое</td>
-      </tr>
-      <tr>
-        <td>Лечение в Госпитале (СЛ13)</td>
-        <td>100€$ Премиум</td>
-      </tr>
-      <tr>
-        <td>Лечение в Госпитале (СЛ15)</td>
-        <td>500€$ Дорогое</td>
-      </tr>
-      <tr>
-        <td>Лечение в Госпитале (СЛ17+)</td>
-        <td>1,000€$ Очень дорогое</td>
-      </tr>
-      <tr>
-        <td>Номер в отеле, за ночь</td>
-        <td>100€$ Премиум</td>
-      </tr>
-      <tr>
-        <td>Номер в роскошном отеле, за ночь</td>
-        <td>500€$ Дорогое</td>
-      </tr>
-      <tr>
-        <td>Интерактивный Брейнданс</td>
-        <td>50€$ Дешевое</td>
-      </tr>
-      <tr>
-        <td>Живой концерт / Спортивное мероприятие</td>
-        <td>100€$ Премиум</td>
-      </tr>
-      <tr>
-        <td>Билет в Кино</td>
-        <td>20€$ Обычное</td>
-      </tr>
-      <tr>
-        <td>Услуги Профессионалов, Хорошие, за час</td>
-        <td>100€$ Премиум</td>
-      </tr>
-      <tr>
-        <td>Услуги Профессионалов, Отличные, за час</td>
-        <td>500€$ Дорогое</td>
-      </tr>
-      <tr>
-        <td>Услуги Профи мирового уровня, за работу</td>
-        <td>5,000€$ Роскошь</td>
-      </tr>
-      <tr>
-        <td>Поесть в Фастфуде</td>
-        <td>100€$ Дешевка</td>
-      </tr>
-      <tr>
-        <td>Поесть в хорошем ресторане</td>
-        <td>20€$ Обычное</td>
-      </tr>
-      <tr>
-        <td>Поесть в отличном ресторане</td>
-        <td>50€$ Дешевое</td>
-      </tr>
-      <tr>
-        <td>Поесть в ресторане Мирового уровня</td>
-        <td>500€$ Дорогое</td>
-      </tr>
-      <tr>
-        <td>Такси</td>
-        <td>20€$ Обычное</td>
-      </tr>
-      <tr>
-        <td>Терапия (Стандартная ПЧ)</td>
-        <td>500€$ Дорогое</td>
-      </tr>
-      <tr>
-        <td>Терапия (Экстремальная ПЧ)</td>
-        <td>1,000€$ Очень дорогое</td>
-      </tr>
-      <tr>
-        <td>Терапия (Зависимости)</td>
-        <td>1,000€$ Очень дорогое</td>
-      </tr>
-      <tr>
-        <td>Страховка Trauma Team (Серебро), в мес.</td>
-        <td>500€$ Дорогое</td>
-      </tr>
-      <tr>
-        <td>Страховка Trauma Team (Корп.), в мес.</td>
-        <td>1,000€$ Очень дорогое</td>
-      </tr>
-      <tr>
-        <td>Видеоигра</td>
-        <td>50€$ Дешевое</td>
-      </tr></tbody></table>`},{id:"economy_32",name:"Транспорт",page:"economy",table:`<table id="economy_32"><caption>Транспорт</caption><tbody><tr>
-        <th colspan="7"><b>Наземный Транспорт</b></th>
-      </tr>
-      <tr>
-        <td><b>Транспорт</b></td>
-        <td><b>Описание</b></td>
-        <td><b>ПЗТ</b></td>
-        <td><b>Мест</b></td>
-        <td><b>СКО</b></td>
-        <td><b>Скорость</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td>Дорожный Мотоцикл</td>
-        <td>Обычный Мотоцикл с двигателем СН00Н2.</td>
-        <td>35</td>
-        <td>2</td>
-        <td>20</td>
-        <td>161 км/ч</td>
-        <td>20,000€$<br>Супер Роскошь</td>
-      </tr>
-      <tr>
-        <td>Супербайк</td>
-        <td>Экзотический Мотоцикл с двигателем СН00Н2, способный развивать огромную скорость.</td>
-        <td>35</td>
-        <td>2</td>
-        <td>60</td>
-        <td>483 км/ч</td>
-        <td>100,000€$<br>Супер Роскошь</td>
-      </tr>
-      <tr>
-        <td>Компактный Автомобиль</td>
-        <td>Обычный автомобиль с двигателем СН00Н2.</td>
-        <td>50</td>
-        <td>4</td>
-        <td>20</td>
-        <td>161 км/ч</td>
-        <td>30,000€$<br>Супер Роскошь</td>
-      </tr>
-      <tr>
-        <td>Спорткар</td>
-        <td>Спорткар с двигателем СН00Н2.</td>
-        <td>50</td>
-        <td>4</td>
-        <td>40</td>
-        <td>322 км/ч</td>
-        <td>50,000€$<br>Супер Роскошь</td>
-      </tr>
-      <tr>
-        <td>Суперкар</td>
-        <td>Экзотический суперкар с двигателем СН00Н2, способный развивать огромную скорость.</td>
-        <td>50</td>
-        <td>2</td>
-        <td>60</td>
-        <td>483 км/ч</td>
-        <td>100,000€$<br>Супер Роскошь</td>
-      </tr>
-      <tr>
-        <th colspan="7"><b>Водный Транспорт</b></th>
-      </tr>
-      <tr>
-        <td><b>Транспорт</b></td>
-        <td><b>Описание</b></td>
-        <td><b>ПЗТ</b></td>
-        <td><b>Мест</b></td>
-        <td><b>СКО</b></td>
-        <td><b>Скорость</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td>Гидроцикл</td>
-        <td>Обычный водный гидроцикл с двигателем СН00Н2.</td>
-        <td>35</td>
-        <td>2</td>
-        <td>20</td>
-        <td>97 км/ч</td>
-        <td>20,000€$<br>Супер Роскошь</td>
-      </tr>
-      <tr>
-        <td>Скоростной Катер</td>
-        <td>Скоростной катер с двигателем СН00Н2</td>
-        <td>50</td>
-        <td>4</td>
-        <td>20</td>
-        <td>97 км/ч</td>
-        <td>30,000€$<br>Супер Роскошь</td>
-      </tr>
-      <tr>
-        <td>Круизный Катер</td>
-        <td>Роскошный катер с двигателем СН00Н2 и возмож­ностью разместить небольшое количество привилеги­рованных людей. Круизные Катеры имеют индивиду­альные каюты.</td>
-        <td>60</td>
-        <td>2 на комнату</td>
-        <td>10</td>
-        <td>24 км/ч</td>
-        <td>30,000€$<br>Супер Роскошь<br>За каюту под палубой (мин 2 каюты)</td>
-      </tr>
-      <tr>
-        <td>Яхта</td>
-        <td>Роскошное прогулочное судно с двигателем СН00Н2, с большим количеством кают для размещения и развлечений хозяев и их почетных гостей. Яхты имеют индивиду­альные каюты.</td>
-        <td>100</td>
-        <td>4 на комнату</td>
-        <td>10</td>
-        <td>24 км/ч</td>
-        <td>50,000€$<br>Супер Роскошь<br>За каюту под палубой (мин 4 каюты)</td>
-      </tr>
-      <tr>
-        <th colspan="7"><b>Воздушный Транспорт</b></th>
-      </tr>
-      <tr>
-        <td><b>Транспорт</b></td>
-        <td><b>Описание</b></td>
-        <td><b>ПЗТ</b></td>
-        <td><b>Мест</b></td>
-        <td><b>СКО</b></td>
-        <td><b>Скорость</b></td>
-        <td><b>Цена</b></td>
-      </tr>
-      <tr>
-        <td>Гирокоптер</td>
-        <td>Небольшой винтокрыл с двигателем СН00Н2, обожаем любителями летать.</td>
-        <td>35</td>
-        <td>2</td>
-        <td>20</td>
-        <td>161 км/ч</td>
-        <td>20,000€$<br>Супер Роскошь</td>
-      </tr>
-      <tr>
-        <td>Вертолет</td>
-        <td>Полноценный вертолет с двигателем СН00Н2, пригодный для длительных полётов.</td>
-        <td>60</td>
-        <td>4</td>
-        <td>40</td>
-        <td>322 км/ч</td>
-        <td>40,000€$<br>Супер Роскошь</td>
-      </tr>
-      <tr>
-        <td>АУ-4 Универсальный Аэродайн</td>
-        <td>Передовой летательный аппарат с двигателем вертикальной тяги СН00Н2.</td>
-        <td>100</td>
-        <td>6</td>
-        <td>40</td>
-        <td>322 км/ч</td>
-        <td>50,000€$<br>Супер Роскошь</td>
-      </tr>
-      <tr>
-        <td>АУ-9 Спортивный Аэродайн</td>
-        <td>Экзотический летательный аппарат с вертикальной тягой СН00Н2, развивающий огромную скорость.</td>
-        <td>60</td>
-        <td>2</td>
-        <td>60</td>
-        <td>483 км/ч</td>
-        <td>100,000€$<br>Супер Роскошь</td>
-      </tr>
-      <tr>
-        <td>Аэрозеп</td>
-        <td>Современные грузовые дирижабли, разных размеров в зависимости от назначения. Аэрозепы имеют индивиду­альные каюты.</td>
-        <td>100</td>
-        <td>2 на комнат</td>
-        <td>20</td>
-        <td>161 км/ч</td>
-        <td>30,000€$<br>Супер Роскошь<br>За каюту под палубой (мин 2 каюты)</td>
-      </tr></tbody></table>`},{id:"economy_33",name:"Образ жизни",page:"economy",table:`<table id="economy_33"><caption>Образ жизни</caption><tbody><tr>
-        <td><b>Стиль жизни</b></td>
-        <td><b>Что Это Значит</b></td>
-        <td><b>Месячная Цена</b></td>
-      </tr>
-      <tr>
-        <td>Kibble</td>
-        <td>Вы едите ужасную еду, которой даже аса кормить жалко. Раз в месяц можете посмотреть фильм или брейнданс</td>
-        <td>100€$</td>
-      </tr>
-      <tr>
-        <td>Дешёвый Полуфабрикат</td>
-        <td>Вы едите пищу, которая вкуснее киббла. Каждые выходные можете позволить себе сходить в неплохой бар или пообедать в ресторане</td>
-        <td>300€$</td>
-      </tr>
-      <tr>
-        <td>Хороший Полуфабрикат</td>
-        <td>Ваша еда по качеству не уступает большинству ресторанов, и, хотя она все еще синтетическая, по вкусу почти полностью совпадает с настоящей едой. Вы часто бываете в хороших барах и ресторанах. Раз в месяц, можете посетить живой концерт или спортивное мероприятие.</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>Свежая Еда</td>
-        <td>Вы едите настоящую еду. Раз в месяц, если вы устали и забрались далеко от дома, можете позволить себе номер в отеле. Вы часто посещаете корпоративные элитные бары. Раз в месяц можете поесть в ресторане мирового класса.</td>
-        <td>1500€$</td>
-      </tr></tbody></table>`},{id:"economy_34",name:"Недвижимость",page:"economy",table:`<table id="economy_34"><caption>Недвижимость</caption><tbody><tr>
+          <td><b>Количество Этажей</b></td>
+          <td><b>Максимум Управляющих Узлов</b></td>
+          <td><b>Переносной?</b></td>
+          <td><b>Цена за Этаж</b></td>
+        </tr>
+        <tr>
+          <td>3-6</td>
+          <td>2</td>
+          <td>ДА</td>
+          <td>1,000€$ (0. дорогое)</td>
+        </tr>
+        <tr>
+          <td>7-12</td>
+          <td>3</td>
+          <td>НЕТ</td>
+          <td>
+            5,000€$ (Роскошь)
+          </td>
+        </tr>
+        <tr>
+          <td>13-18</td>
+          <td>НЕТ</td>
+          <td>НЕТ</td>
+          <td>10,000€$ (Супер Роскошь)</td>
+        </tr></tbody></table>`},{id:"economy_28",name:"СЕТь. Пароли, управление, файлы",page:"economy",table:`<table id="economy_28"><caption>СЕТь. Пароли, управление, файлы</caption><tbody><tr>
+          <td><b>СЛ взлома архитектуры</b></td>
+          <td><b>Цена</b></td>
+        </tr>
+        <tr>
+          <td><b>СЛ6</b></td>
+          <td>500 (Дорогое)</td>
+        </tr>
+        <tr>
+          <td><b>СЛ8</b></td>
+          <td>1,000€$ (0. дорогое)</td>
+        </tr>
+        <tr>
+          <td><b>СЛ1О</b></td>
+          <td>5,000€$ (Роскошь)</td>
+        </tr>
+        <tr>
+          <td><b>СЛ12</b></td>
+          <td>10,000€$ (Супер роскошь)</td>
+        </tr></tbody></table>`},{id:"economy_29",name:"СЕТь. Демоны и ЛЁД",page:"economy",table:`<table id="economy_29"><caption>СЕТь. Демоны и ЛЁД</caption><tbody><tr>
+          <td><b>Имя</b></td>
+          <td><b>REZ</b></td>
+          <td><b>Интерфейс</b></td>
+          <td><b>СЕТ-Действий</b></td>
+          <td><b>Боевой номер</b></td>
+          <td><b>Цена</b></td>
+        </tr>
+        <tr>
+          <td><b>Бес</b></td>
+          <td>15</td>
+          <td>3</td>
+          <td>2</td>
+          <td>14</td>
+          <td>1,000€$ (Очень дорогое)</td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <b>Иконка:</b> Мелкая Оранжевая сфера с красными рожками
+          </td>
+        </tr>
+        <tr>
+          <td><b>Ифрит</b></td>
+          <td>25</td>
+          <td>4</td>
+          <td>3</td>
+          <td>14</td>
+          <td>5,000€$ (Роскошь)</td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <b>Иконка:</b> Высокий крепко сложенный негр, одетый в элегантный смокинг, с феской на голове и кинжалом в руке.
+          </td>
+        </tr>
+        <tr>
+          <td><b>Балрон</b></td>
+          <td>30</td>
+          <td>7</td>
+          <td>4</td>
+          <td>14</td>
+          <td>10,000€$ (Супер Роскошь)</td>
+        </tr>
+        <tr>
+          <td colspan="6">
+            <b>Иконка:</b> Огромный гуманоидный монстр в футуристической черной броне, покрытой шипящими светящимися зелеными щупальцами.
+          </td>
+        </tr></tbody></table>`},{id:"economy_30",name:"СЕТь. Защита управления",page:"economy",table:`<table id="economy_30"><caption>СЕТь. Защита управления</caption><tbody><tr>
+          <td><b>СЛ проверки навыка Электроника/Безопасность</b></td>
+          <td><b>Цена</b></td>
+        </tr>
+        <tr>
+          <td><b>СЛ 9</b></td>
+          <td>500(Дорогое)</td>
+        </tr>
+        <tr>
+          <td><b>СЛ 13</b></td>
+          <td>1,000€$ (0. дорогое)</td>
+        </tr>
+        <tr>
+          <td><b>СЛ 17</b></td>
+          <td>5,000€$ (Роскошь)</td>
+        </tr>
+        <tr>
+          <td><b>СЛ 21</b></td>
+          <td>10,000€$ (Супер роскошь)</td>
+        </tr></tbody></table>`},{id:"economy_31",name:"Услуги и развлечения",page:"economy",table:`<table id="economy_31"><caption>Услуги и развлечения</caption><tbody><tr>
+          <td><b>Услуга/Развлечение</b></td>
+          <td><b>Цена</b></td>
+        </tr>
+        <tr>
+          <td>Бодискульптинг (Стандартный)</td>
+          <td>500€$ Дорогое</td>
+        </tr>
+        <tr>
+          <td>Бодискульптинг (Экзотический)</td>
+          <td>1,000€$ Очень дорогое</td>
+        </tr>
+        <tr>
+          <td>Брейнданс</td>
+          <td>20€$ Обычное</td>
+        </tr>
+        <tr>
+          <td>Выпивка в стрёмном Баре</td>
+          <td>100€$ Дешевка</td>
+        </tr>
+        <tr>
+          <td>Выпивка в хорошем Баре</td>
+          <td>100€$ Дешевка</td>
+        </tr>
+        <tr>
+          <td>Выпивка в отличном Баре</td>
+          <td>20€$ Обычное</td>
+        </tr>
+        <tr>
+          <td>Выпивка в корпоративном Баре</td>
+          <td>50€$ Дешевое</td>
+        </tr>
+        <tr>
+          <td>Установка найден. Имплантов (Молл)</td>
+          <td>100€$ Премиум</td>
+        </tr>
+        <tr>
+          <td>Установка найден. Имплантов (Клиника)</td>
+          <td>500€$ Дорогое</td>
+        </tr>
+        <tr>
+          <td>Установка найден. Имплантов (Госпиталь)</td>
+          <td>1,000€$ Очень дорогое</td>
+        </tr>
+        <tr>
+          <td>Лечение в Госпитале (СЛ10)</td>
+          <td>50€$ Дешевое</td>
+        </tr>
+        <tr>
+          <td>Лечение в Госпитале (СЛ13)</td>
+          <td>100€$ Премиум</td>
+        </tr>
+        <tr>
+          <td>Лечение в Госпитале (СЛ15)</td>
+          <td>500€$ Дорогое</td>
+        </tr>
+        <tr>
+          <td>Лечение в Госпитале (СЛ17+)</td>
+          <td>1,000€$ Очень дорогое</td>
+        </tr>
+        <tr>
+          <td>Номер в отеле, за ночь</td>
+          <td>100€$ Премиум</td>
+        </tr>
+        <tr>
+          <td>Номер в роскошном отеле, за ночь</td>
+          <td>500€$ Дорогое</td>
+        </tr>
+        <tr>
+          <td>Интерактивный Брейнданс</td>
+          <td>50€$ Дешевое</td>
+        </tr>
+        <tr>
+          <td>Живой концерт / Спортивное мероприятие</td>
+          <td>100€$ Премиум</td>
+        </tr>
+        <tr>
+          <td>Билет в Кино</td>
+          <td>20€$ Обычное</td>
+        </tr>
+        <tr>
+          <td>Услуги Профессионалов, Хорошие, за час</td>
+          <td>100€$ Премиум</td>
+        </tr>
+        <tr>
+          <td>Услуги Профессионалов, Отличные, за час</td>
+          <td>500€$ Дорогое</td>
+        </tr>
+        <tr>
+          <td>Услуги Профи мирового уровня, за работу</td>
+          <td>5,000€$ Роскошь</td>
+        </tr>
+        <tr>
+          <td>Поесть в Фастфуде</td>
+          <td>100€$ Дешевка</td>
+        </tr>
+        <tr>
+          <td>Поесть в хорошем ресторане</td>
+          <td>20€$ Обычное</td>
+        </tr>
+        <tr>
+          <td>Поесть в отличном ресторане</td>
+          <td>50€$ Дешевое</td>
+        </tr>
+        <tr>
+          <td>Поесть в ресторане Мирового уровня</td>
+          <td>500€$ Дорогое</td>
+        </tr>
+        <tr>
+          <td>Такси</td>
+          <td>20€$ Обычное</td>
+        </tr>
+        <tr>
+          <td>Терапия (Стандартная ПЧ)</td>
+          <td>500€$ Дорогое</td>
+        </tr>
+        <tr>
+          <td>Терапия (Экстремальная ПЧ)</td>
+          <td>1,000€$ Очень дорогое</td>
+        </tr>
+        <tr>
+          <td>Терапия (Зависимости)</td>
+          <td>1,000€$ Очень дорогое</td>
+        </tr>
+        <tr>
+          <td>Страховка Trauma Team (Серебро), в мес.</td>
+          <td>500€$ Дорогое</td>
+        </tr>
+        <tr>
+          <td>Страховка Trauma Team (Корп.), в мес.</td>
+          <td>1,000€$ Очень дорогое</td>
+        </tr>
+        <tr>
+          <td>Видеоигра</td>
+          <td>50€$ Дешевое</td>
+        </tr></tbody></table>`},{id:"economy_32",name:"Транспорт",page:"economy",table:`<table id="economy_32"><caption>Транспорт</caption><tbody><tr>
+          <th colspan="7"><b>Наземный Транспорт</b></th>
+        </tr>
+        <tr>
+          <td><b>Транспорт</b></td>
+          <td><b>Описание</b></td>
+          <td><b>ПЗТ</b></td>
+          <td><b>Мест</b></td>
+          <td><b>СКО</b></td>
+          <td><b>Скорость</b></td>
+          <td><b>Цена</b></td>
+        </tr>
+        <tr>
+          <td>Дорожный Мотоцикл</td>
+          <td>Обычный Мотоцикл с двигателем СН00Н2.</td>
+          <td>35</td>
+          <td>2</td>
+          <td>20</td>
+          <td>161 км/ч</td>
+          <td>20,000€$<br>Супер Роскошь</td>
+        </tr>
+        <tr>
+          <td>Супербайк</td>
+          <td>Экзотический Мотоцикл с двигателем СН00Н2, способный развивать огромную скорость.</td>
+          <td>35</td>
+          <td>2</td>
+          <td>60</td>
+          <td>483 км/ч</td>
+          <td>100,000€$<br>Супер Роскошь</td>
+        </tr>
+        <tr>
+          <td>Компактный Автомобиль</td>
+          <td>Обычный автомобиль с двигателем СН00Н2.</td>
+          <td>50</td>
+          <td>4</td>
+          <td>20</td>
+          <td>161 км/ч</td>
+          <td>30,000€$<br>Супер Роскошь</td>
+        </tr>
+        <tr>
+          <td>Спорткар</td>
+          <td>Спорткар с двигателем СН00Н2.</td>
+          <td>50</td>
+          <td>4</td>
+          <td>40</td>
+          <td>322 км/ч</td>
+          <td>50,000€$<br>Супер Роскошь</td>
+        </tr>
+        <tr>
+          <td>Суперкар</td>
+          <td>Экзотический суперкар с двигателем СН00Н2, способный развивать огромную скорость.</td>
+          <td>50</td>
+          <td>2</td>
+          <td>60</td>
+          <td>483 км/ч</td>
+          <td>100,000€$<br>Супер Роскошь</td>
+        </tr>
+        <tr>
+          <th colspan="7"><b>Водный Транспорт</b></th>
+        </tr>
+        <tr>
+          <td><b>Транспорт</b></td>
+          <td><b>Описание</b></td>
+          <td><b>ПЗТ</b></td>
+          <td><b>Мест</b></td>
+          <td><b>СКО</b></td>
+          <td><b>Скорость</b></td>
+          <td><b>Цена</b></td>
+        </tr>
+        <tr>
+          <td>Гидроцикл</td>
+          <td>Обычный водный гидроцикл с двигателем СН00Н2.</td>
+          <td>35</td>
+          <td>2</td>
+          <td>20</td>
+          <td>97 км/ч</td>
+          <td>20,000€$<br>Супер Роскошь</td>
+        </tr>
+        <tr>
+          <td>Скоростной Катер</td>
+          <td>Скоростной катер с двигателем СН00Н2</td>
+          <td>50</td>
+          <td>4</td>
+          <td>20</td>
+          <td>97 км/ч</td>
+          <td>30,000€$<br>Супер Роскошь</td>
+        </tr>
+        <tr>
+          <td>Круизный Катер</td>
+          <td>Роскошный катер с двигателем СН00Н2 и возмож­ностью разместить небольшое количество привилеги­рованных людей. Круизные Катеры имеют индивиду­альные каюты.</td>
+          <td>60</td>
+          <td>2 на комнату</td>
+          <td>10</td>
+          <td>24 км/ч</td>
+          <td>30,000€$<br>Супер Роскошь<br>За каюту под палубой (мин 2 каюты)</td>
+        </tr>
+        <tr>
+          <td>Яхта</td>
+          <td>Роскошное прогулочное судно с двигателем СН00Н2, с большим количеством кают для размещения и развлечений хозяев и их почетных гостей. Яхты имеют индивиду­альные каюты.</td>
+          <td>100</td>
+          <td>4 на комнату</td>
+          <td>10</td>
+          <td>24 км/ч</td>
+          <td>50,000€$<br>Супер Роскошь<br>За каюту под палубой (мин 4 каюты)</td>
+        </tr>
+        <tr>
+          <th colspan="7"><b>Воздушный Транспорт</b></th>
+        </tr>
+        <tr>
+          <td><b>Транспорт</b></td>
+          <td><b>Описание</b></td>
+          <td><b>ПЗТ</b></td>
+          <td><b>Мест</b></td>
+          <td><b>СКО</b></td>
+          <td><b>Скорость</b></td>
+          <td><b>Цена</b></td>
+        </tr>
+        <tr>
+          <td>Гирокоптер</td>
+          <td>Небольшой винтокрыл с двигателем СН00Н2, обожаем любителями летать.</td>
+          <td>35</td>
+          <td>2</td>
+          <td>20</td>
+          <td>161 км/ч</td>
+          <td>20,000€$<br>Супер Роскошь</td>
+        </tr>
+        <tr>
+          <td>Вертолет</td>
+          <td>Полноценный вертолет с двигателем СН00Н2, пригодный для длительных полётов.</td>
+          <td>60</td>
+          <td>4</td>
+          <td>40</td>
+          <td>322 км/ч</td>
+          <td>40,000€$<br>Супер Роскошь</td>
+        </tr>
+        <tr>
+          <td>АУ-4 Универсальный Аэродайн</td>
+          <td>Передовой летательный аппарат с двигателем вертикальной тяги СН00Н2.</td>
+          <td>100</td>
+          <td>6</td>
+          <td>40</td>
+          <td>322 км/ч</td>
+          <td>50,000€$<br>Супер Роскошь</td>
+        </tr>
+        <tr>
+          <td>АУ-9 Спортивный Аэродайн</td>
+          <td>Экзотический летательный аппарат с вертикальной тягой СН00Н2, развивающий огромную скорость.</td>
+          <td>60</td>
+          <td>2</td>
+          <td>60</td>
+          <td>483 км/ч</td>
+          <td>100,000€$<br>Супер Роскошь</td>
+        </tr>
+        <tr>
+          <td>Аэрозеп</td>
+          <td>Современные грузовые дирижабли, разных размеров в зависимости от назначения. Аэрозепы имеют индивиду­альные каюты.</td>
+          <td>100</td>
+          <td>2 на комнат</td>
+          <td>20</td>
+          <td>161 км/ч</td>
+          <td>30,000€$<br>Супер Роскошь<br>За каюту под палубой (мин 2 каюты)</td>
+        </tr></tbody></table>`},{id:"economy_33",name:"Образ жизни",page:"economy",table:`<table id="economy_33"><caption>Образ жизни</caption><tbody><tr>
+          <td><b>Стиль жизни</b></td>
+          <td><b>Что Это Значит</b></td>
+          <td><b>Месячная Цена</b></td>
+        </tr>
+        <tr>
+          <td>Kibble</td>
+          <td>Вы едите ужасную еду, которой даже аса кормить жалко. Раз в месяц можете посмотреть фильм или брейнданс</td>
+          <td>100€$</td>
+        </tr>
+        <tr>
+          <td>Дешёвый Полуфабрикат</td>
+          <td>Вы едите пищу, которая вкуснее киббла. Каждые выходные можете позволить себе сходить в неплохой бар или пообедать в ресторане</td>
+          <td>300€$</td>
+        </tr>
+        <tr>
+          <td>Хороший Полуфабрикат</td>
+          <td>Ваша еда по качеству не уступает большинству ресторанов, и, хотя она все еще синтетическая, по вкусу почти полностью совпадает с настоящей едой. Вы часто бываете в хороших барах и ресторанах. Раз в месяц, можете посетить живой концерт или спортивное мероприятие.</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>Свежая Еда</td>
+          <td>Вы едите настоящую еду. Раз в месяц, если вы устали и забрались далеко от дома, можете позволить себе номер в отеле. Вы часто посещаете корпоративные элитные бары. Раз в месяц можете поесть в ресторане мирового класса.</td>
+          <td>1500€$</td>
+        </tr></tbody></table>`},{id:"economy_34",name:"Недвижимость",page:"economy",table:`<table id="economy_34"><caption>Недвижимость</caption><tbody><tr>
         <td><b>Тип Недвижимости</b></td>
         <td><b>Стоимость аренды 1 (в мес.)</b></td>
         <td><b>Стоимость покупки</b></td>
@@ -9804,560 +9591,560 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
         <td>Ожидается мясорубка. Без хорошей подготовки вы — труп. Нужно пробраться на военный объект, взорвать склад и сбежать.</td>
         <td>2,000€$</td>
       </tr></tbody></table>`},{id:"economy_36",name:"Халтурки по ролям",page:"economy",table:`<table id="economy_36"><caption>Халтурки по ролям</caption><tbody><tr>
-        <th colspan="5"><b>Халтурка Рокербоя</b></th>
-      </tr>
-      <tr>
-        <td><b>1d6</b></td>
-        <td><b>Что вы сделали, для заработка на этой неделе</b></td>
-        <td><b>Ролевой Ранг<br>1-4</b></td>
-        <td><b>Ролевой Ранг<br>5-7</b></td>
-        <td><b>Ролевой Ранг<br>8-10</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Сыграли небольшой концерт.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Ни концертов, ни работы.</td>
-        <td>0€$</td>
-        <td>100€$</td>
-        <td>300€$</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Большой концерт для корлы или местной знаменитости.</td>
-        <td>300€$</td>
-        <td>500€$</td>
-        <td>800€$</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Получили гонорар за лросмотры вашего контента в Дата Пуле.</td>
-        <td>300€$</td>
-        <td>500€$</td>
-        <td>800€$</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Выстулление на разогреве у известной груллы.</td>
-        <td>300€$</td>
-        <td>500€$</td>
-        <td>800€$</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Вы лросто лришли, вам лросто заллатили.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <th colspan="5"><b>Халтурка Соло</b></th>
-      </tr>
-      <tr>
-        <td><b>1d6</b></td>
-        <td><b>Что вы сделали, для заработка на этой неделе</b></td>
-        <td><b>Ролевой Ранг<br>1-4</b></td>
-        <td><b>Ролевой Ранг<br>5-7</b></td>
-        <td><b>Ролевой Ранг<br>8-10</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Телохранитель для мелкого клиента.</td>
-        <td>100€$</td>
-        <td>200€$</td>
-        <td>500€$</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Телохранитель для крупного клиента.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Трудное проникновение или извлечение кого-то.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Наняли в качестве лугача для фиксера, корлы или банды.</td>
-        <td>100€$</td>
-        <td>200€$</td>
-        <td>500€$</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Вы лривлекли лишнее внимание, лришлось залечь на дно.</td>
-        <td>0€$</td>
-        <td>100€$</td>
-        <td>300€$</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Работали силовиком или киллером на местную корлорацию.</td>
-        <td>100€$</td>
-        <td>200€$</td>
-        <td>500€$</td>
-      </tr>
-      <tr>
-        <th colspan="5"><b>Халтурка Нетраннера</b></th>
-      </tr>
-      <tr>
-        <td><b>1d6</b></td>
-        <td><b>Что вы сделали, для заработка на этой неделе</b></td>
-        <td><b>Ролевой Ранг<br>1-4</b></td>
-        <td><b>Ролевой Ранг<br>5-7</b></td>
-        <td><b>Ролевой Ранг<br>8-10</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Взломал местную сеть и лродал данные.</td>
-        <td>100€$</td>
-        <td>200€$</td>
-        <td>500€$</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Взломали крулную корпоративную систему и продали данные.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Вы отвлеклись и ничего не взламывали на этой неделе.</td>
-        <td>0€$</td>
-        <td>100€$</td>
-        <td>300€$</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Нашли ценный архив данных в заброшенной системе и лродали его.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Программой-Шантажером вывели из строя крулную систему и лолучили деньги за ее удаление.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Саботировали или иным образом вывели из строя крулную систему для анонимного клиента.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <th colspan="5"><b>Халтурка Техника</b></th>
-      </tr>
-      <tr>
-        <td><b>1d6</b></td>
-        <td><b>Что вы сделали, для заработка на этой неделе</b></td>
-        <td><b>Ролевой Ранг<br>1-4</b></td>
-        <td><b>Ролевой Ранг<br>5-7</b></td>
-        <td><b>Ролевой Ранг<br>8-10</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Не работали на этой неделе.</td>
-        <td>0€$</td>
-        <td>100€$</td>
-        <td>300€$</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Восстановили технику, которую раздобыли в Боевой Зоне.</td>
-        <td>100€$</td>
-        <td>200€$</td>
-        <td>500€$</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Помогали клиенту проникнуть в какое-либо место или устанавливали клиенту системы безопасности.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Модифицировали или отремонтировали кибертехнику.</td>
-        <td>100€$</td>
-        <td>200€$</td>
-        <td>500€$</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Модифицировали или отремонтировали какое-то оружие.</td>
-        <td>100€$</td>
-        <td>200€$</td>
-        <td>500€$</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Саботировали или вывели из строя что-то для клиента.</td>
-        <td>100€$</td>
-        <td>200€$</td>
-        <td>500€$</td>
-      </tr>
-      <tr>
-        <th colspan="5"><b>Халтурка Медтехника</b></th>
-      </tr>
-      <tr>
-        <td><b>1d6</b></td>
-        <td><b>Что вы сделали, для заработка на этой неделе</b></td>
-        <td><b>Ролевой Ранг<br>1-4</b></td>
-        <td><b>Ролевой Ранг<br>5-7</b></td>
-        <td><b>Ролевой Ранг<br>8-10</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Подлатали кого-то после перестрелки</td>
-        <td>100€$</td>
-        <td>200€$</td>
-        <td>500€$</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Продали киберимплант после "неудачной" операции.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Помогали Trauma Теат, когда они были перегружены.</td>
-        <td>100€$</td>
-        <td>200€$</td>
-        <td>500€$</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Делали небольшую работу в бесплатной клинике для местных жителей. Но благодарность на хлеб не намажешь.</td>
-        <td>0€$</td>
-        <td>100€$</td>
-        <td>300€$</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Провели сложную мед. процедуру для состоятельного клиента.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Сделали и доставили клиенту лекарства или наркотики.</td>
-        <td>100€$</td>
-        <td>200€$</td>
-        <td>500€$</td>
-      </tr>
-      <tr>
-        <th colspan="5"><b>Халтурка Медиа</b></th>
-      </tr>
-      <tr>
-        <td><b>1d6</b></td>
-        <td><b>Что вы сделали, для заработка на этой неделе</b></td>
-        <td><b>Ролевой Ранг<br>1-4</b></td>
-        <td><b>Ролевой Ранг<br>5-7</b></td>
-        <td><b>Ролевой Ранг<br>8-10</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Написали разоблачение на важную тему, оно хорошо продалось.</td>
-        <td>300€$</td>
-        <td>500€$</td>
-        <td>800€$</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Написали "пафосную" статью, которая принесла вам известность.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Написали скучную рекламу, чтобы просто оплатить счета.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Раскрыли большую историю, которая принесла вам несколько врагов и немного денег.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>На этой неделе нет ни новостей, ни зацепок.</td>
-        <td>0€$</td>
-        <td>100€$</td>
-        <td>300€$</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Написали разоблачение на самую щепетильную тему.</td>
-        <td>300€$</td>
-        <td>500€$</td>
-        <td>800€$</td>
-      </tr>
-      <tr>
-        <th colspan="5"><b>Халтурка Законника</b></th>
-      </tr>
-      <tr>
-        <td><b>1d6</b></td>
-        <td><b>Что вы сделали, для заработка на этой неделе</b></td>
-        <td><b>Ролевой Ранг<br>1-4</b></td>
-        <td><b>Ролевой Ранг<br>5-7</b></td>
-        <td><b>Ролевой Ранг<br>8-10</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Провели несколько мелких задержаний, все как обычно.</td>
-        <td>100€$</td>
-        <td>200€$</td>
-        <td>500€$</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Вознаграждение от гражданина. Или это была взятка?</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Разбили статую в парке. Её вычли из вашего жалованья</td>
-        <td>0€$</td>
-        <td>100€$</td>
-        <td>300€$</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Ничего не произошло. Просто дали зарплату за неделю.</td>
-        <td>100€$</td>
-        <td>200€$</td>
-        <td>500€$</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Провели крупную операцию по задержанию наркодилеров или контрабандистов и получили бонус от босса.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Уничтожили крупную банду, получили в бонус немного "конфискованного"</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <th colspan="5"><b>Халтурка Корпората</b></th>
-      </tr>
-      <tr>
-        <td><b>1d6</b></td>
-        <td><b>Что вы сделали, для заработка на этой неделе</b></td>
-        <td><b>Ролевой Ранг<br>1-4</b></td>
-        <td><b>Ролевой Ранг<br>5-7</b></td>
-        <td><b>Ролевой Ранг<br>8-10</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Добились небольшого успеха в проекте, получили премию.</td>
-        <td>300€$</td>
-        <td>500€$</td>
-        <td>800€$</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Ничего не делали. Корпе это не понравилось. Потеряли свой бонус.</td>
-        <td>0€$</td>
-        <td>100€$</td>
-        <td>300€$</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Просто забрали зарплату.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Нашли компромат на конкурента, получили бонус за это.</td>
-        <td>300€$</td>
-        <td>500€$</td>
-        <td>800€$</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Добились успеха в крупном проекте и получили премию от главного офиса.</td>
-        <td>300€$</td>
-        <td>500€$</td>
-        <td>800€$</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Устранили законным путем цель, которая угрожала вашей работе. Забрали его финансирование себе.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <th colspan="5"><b>Халтурка Фиксера</b></th>
-      </tr>
-      <tr>
-        <td><b>1d6</b></td>
-        <td><b>Что вы сделали, для заработка на этой неделе</b></td>
-        <td><b>Ролевой Ранг<br>1-4</b></td>
-        <td><b>Ролевой Ранг<br>5-7</b></td>
-        <td><b>Ролевой Ранг<br>8-10</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Продали информацию Медиа за хорошую вознаграждение.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Были агентом Рокербоя на концерте, 12% ваши.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Помогли клиенту найти нужный товар и получили за это долю.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Сделка сорвалась. Вы залегли на дно, пока все не уляжется.</td>
-        <td>0€$</td>
-        <td>100€$</td>
-        <td>300€$</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Нашли для Соло или Нетраннера выгодную "работу" и взяли плату за услуги.</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Нашли редкий, незаконный и очень труднодоступный предмет.</td>
-        <td>300€$</td>
-        <td>500€$</td>
-        <td>800€$</td>
-      </tr>
-      <tr>
-        <th colspan="5"><b>Халтурка Кочевника</b></th>
-      </tr>
-      <tr>
-        <td><b>1d6</b></td>
-        <td><b>Что вы сделали, для заработка на этой неделе</b></td>
-        <td><b>Ролевой Ранг<br>1-4</b></td>
-        <td><b>Ролевой Ранг<br>5-7</b></td>
-        <td><b>Ролевой Ранг<br>8-10</b></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Провернули нелегальную доставку.</td>
-        <td>100€$</td>
-        <td>200€$</td>
-        <td>500€$</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Защитили посылку.</td>
-        <td>100€$</td>
-        <td>200€$</td>
-        <td>500€$</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Перевезли мелкую контрабанду.</td>
-        <td>100€$</td>
-        <td>200€$</td>
-        <td>500€$</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Привезли большую партию "чего-то".</td>
-        <td>200€$</td>
-        <td>300€$</td>
-        <td>600€$</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Доставили клиента в целости и сохранности.</td>
-        <td>100€$</td>
-        <td>200€$</td>
-        <td>500€$</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>На этой неделе не нашли работу, ни законную, ни другую.</td>
-        <td>0€$</td>
-        <td>100€$</td>
-        <td>300€$</td>
-      </tr></tbody></table>`},{id:"economy_37",name:"Ценовая Категория",page:"economy",table:`<table id="economy_37"><caption>Ценовая Категория</caption><tbody><tr>
-        <td><b>Ценовая Категория</b></td>
-        <td><b>Рыночная Цена</b></td>
-      </tr>
-      <tr>
-        <td>Дешевка</td>
-        <td>10€$</td>
-      </tr>
-      <tr>
-        <td>Обычное</td>
-        <td>20€$</td>
-      </tr>
-      <tr>
-        <td>Ценное</td>
-        <td>50€$</td>
-      </tr>
-      <tr>
-        <td>Премиум</td>
-        <td>100€$</td>
-      </tr>
-      <tr>
-        <td>Дорогое</td>
-        <td>500€$</td>
-      </tr>
-      <tr>
-        <td>Очень Дорогое</td>
-        <td>1,000€$</td>
-      </tr>
-      <tr>
-        <td>Роскошь</td>
-        <td>5,000€$</td>
-      </tr>
-      <tr>
-        <td>Супер Роскошь</td>
-        <td>10,000€$ and up</td>
-      </tr></tbody></table>`},{id:"life_1",name:"Что находится в Ближайшем Вендите?",page:"life",table:`<table id="life_1"><caption>Что находится в Ближайшем Вендите?</caption><tbody><tr>
+          <th colspan="5"><b>Халтурка Рокербоя</b></th>
+        </tr>
+        <tr>
+          <td><b>1d6</b></td>
+          <td><b>Что вы сделали, для заработка на этой неделе</b></td>
+          <td><b>Ролевой Ранг<br>1-4</b></td>
+          <td><b>Ролевой Ранг<br>5-7</b></td>
+          <td><b>Ролевой Ранг<br>8-10</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Сыграли небольшой концерт.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ни концертов, ни работы.</td>
+          <td>0€$</td>
+          <td>100€$</td>
+          <td>300€$</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Большой концерт для корлы или местной знаменитости.</td>
+          <td>300€$</td>
+          <td>500€$</td>
+          <td>800€$</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Получили гонорар за лросмотры вашего контента в Дата Пуле.</td>
+          <td>300€$</td>
+          <td>500€$</td>
+          <td>800€$</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Выстулление на разогреве у известной груллы.</td>
+          <td>300€$</td>
+          <td>500€$</td>
+          <td>800€$</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Вы лросто лришли, вам лросто заллатили.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <th colspan="5"><b>Халтурка Соло</b></th>
+        </tr>
+        <tr>
+          <td><b>1d6</b></td>
+          <td><b>Что вы сделали, для заработка на этой неделе</b></td>
+          <td><b>Ролевой Ранг<br>1-4</b></td>
+          <td><b>Ролевой Ранг<br>5-7</b></td>
+          <td><b>Ролевой Ранг<br>8-10</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Телохранитель для мелкого клиента.</td>
+          <td>100€$</td>
+          <td>200€$</td>
+          <td>500€$</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Телохранитель для крупного клиента.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Трудное проникновение или извлечение кого-то.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Наняли в качестве лугача для фиксера, корлы или банды.</td>
+          <td>100€$</td>
+          <td>200€$</td>
+          <td>500€$</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Вы лривлекли лишнее внимание, лришлось залечь на дно.</td>
+          <td>0€$</td>
+          <td>100€$</td>
+          <td>300€$</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Работали силовиком или киллером на местную корлорацию.</td>
+          <td>100€$</td>
+          <td>200€$</td>
+          <td>500€$</td>
+        </tr>
+        <tr>
+          <th colspan="5"><b>Халтурка Нетраннера</b></th>
+        </tr>
+        <tr>
+          <td><b>1d6</b></td>
+          <td><b>Что вы сделали, для заработка на этой неделе</b></td>
+          <td><b>Ролевой Ранг<br>1-4</b></td>
+          <td><b>Ролевой Ранг<br>5-7</b></td>
+          <td><b>Ролевой Ранг<br>8-10</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Взломал местную сеть и лродал данные.</td>
+          <td>100€$</td>
+          <td>200€$</td>
+          <td>500€$</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Взломали крулную корпоративную систему и продали данные.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Вы отвлеклись и ничего не взламывали на этой неделе.</td>
+          <td>0€$</td>
+          <td>100€$</td>
+          <td>300€$</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Нашли ценный архив данных в заброшенной системе и лродали его.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Программой-Шантажером вывели из строя крулную систему и лолучили деньги за ее удаление.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Саботировали или иным образом вывели из строя крулную систему для анонимного клиента.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <th colspan="5"><b>Халтурка Техника</b></th>
+        </tr>
+        <tr>
+          <td><b>1d6</b></td>
+          <td><b>Что вы сделали, для заработка на этой неделе</b></td>
+          <td><b>Ролевой Ранг<br>1-4</b></td>
+          <td><b>Ролевой Ранг<br>5-7</b></td>
+          <td><b>Ролевой Ранг<br>8-10</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Не работали на этой неделе.</td>
+          <td>0€$</td>
+          <td>100€$</td>
+          <td>300€$</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Восстановили технику, которую раздобыли в Боевой Зоне.</td>
+          <td>100€$</td>
+          <td>200€$</td>
+          <td>500€$</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Помогали клиенту проникнуть в какое-либо место или устанавливали клиенту системы безопасности.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Модифицировали или отремонтировали кибертехнику.</td>
+          <td>100€$</td>
+          <td>200€$</td>
+          <td>500€$</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Модифицировали или отремонтировали какое-то оружие.</td>
+          <td>100€$</td>
+          <td>200€$</td>
+          <td>500€$</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Саботировали или вывели из строя что-то для клиента.</td>
+          <td>100€$</td>
+          <td>200€$</td>
+          <td>500€$</td>
+        </tr>
+        <tr>
+          <th colspan="5"><b>Халтурка Медтехника</b></th>
+        </tr>
+        <tr>
+          <td><b>1d6</b></td>
+          <td><b>Что вы сделали, для заработка на этой неделе</b></td>
+          <td><b>Ролевой Ранг<br>1-4</b></td>
+          <td><b>Ролевой Ранг<br>5-7</b></td>
+          <td><b>Ролевой Ранг<br>8-10</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Подлатали кого-то после перестрелки</td>
+          <td>100€$</td>
+          <td>200€$</td>
+          <td>500€$</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Продали киберимплант после "неудачной" операции.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Помогали Trauma Теат, когда они были перегружены.</td>
+          <td>100€$</td>
+          <td>200€$</td>
+          <td>500€$</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Делали небольшую работу в бесплатной клинике для местных жителей. Но благодарность на хлеб не намажешь.</td>
+          <td>0€$</td>
+          <td>100€$</td>
+          <td>300€$</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Провели сложную мед. процедуру для состоятельного клиента.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Сделали и доставили клиенту лекарства или наркотики.</td>
+          <td>100€$</td>
+          <td>200€$</td>
+          <td>500€$</td>
+        </tr>
+        <tr>
+          <th colspan="5"><b>Халтурка Медиа</b></th>
+        </tr>
+        <tr>
+          <td><b>1d6</b></td>
+          <td><b>Что вы сделали, для заработка на этой неделе</b></td>
+          <td><b>Ролевой Ранг<br>1-4</b></td>
+          <td><b>Ролевой Ранг<br>5-7</b></td>
+          <td><b>Ролевой Ранг<br>8-10</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Написали разоблачение на важную тему, оно хорошо продалось.</td>
+          <td>300€$</td>
+          <td>500€$</td>
+          <td>800€$</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Написали "пафосную" статью, которая принесла вам известность.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Написали скучную рекламу, чтобы просто оплатить счета.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Раскрыли большую историю, которая принесла вам несколько врагов и немного денег.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>На этой неделе нет ни новостей, ни зацепок.</td>
+          <td>0€$</td>
+          <td>100€$</td>
+          <td>300€$</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Написали разоблачение на самую щепетильную тему.</td>
+          <td>300€$</td>
+          <td>500€$</td>
+          <td>800€$</td>
+        </tr>
+        <tr>
+          <th colspan="5"><b>Халтурка Законника</b></th>
+        </tr>
+        <tr>
+          <td><b>1d6</b></td>
+          <td><b>Что вы сделали, для заработка на этой неделе</b></td>
+          <td><b>Ролевой Ранг<br>1-4</b></td>
+          <td><b>Ролевой Ранг<br>5-7</b></td>
+          <td><b>Ролевой Ранг<br>8-10</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Провели несколько мелких задержаний, все как обычно.</td>
+          <td>100€$</td>
+          <td>200€$</td>
+          <td>500€$</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Вознаграждение от гражданина. Или это была взятка?</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Разбили статую в парке. Её вычли из вашего жалованья</td>
+          <td>0€$</td>
+          <td>100€$</td>
+          <td>300€$</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Ничего не произошло. Просто дали зарплату за неделю.</td>
+          <td>100€$</td>
+          <td>200€$</td>
+          <td>500€$</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Провели крупную операцию по задержанию наркодилеров или контрабандистов и получили бонус от босса.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Уничтожили крупную банду, получили в бонус немного "конфискованного"</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <th colspan="5"><b>Халтурка Корпората</b></th>
+        </tr>
+        <tr>
+          <td><b>1d6</b></td>
+          <td><b>Что вы сделали, для заработка на этой неделе</b></td>
+          <td><b>Ролевой Ранг<br>1-4</b></td>
+          <td><b>Ролевой Ранг<br>5-7</b></td>
+          <td><b>Ролевой Ранг<br>8-10</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Добились небольшого успеха в проекте, получили премию.</td>
+          <td>300€$</td>
+          <td>500€$</td>
+          <td>800€$</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ничего не делали. Корпе это не понравилось. Потеряли свой бонус.</td>
+          <td>0€$</td>
+          <td>100€$</td>
+          <td>300€$</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Просто забрали зарплату.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Нашли компромат на конкурента, получили бонус за это.</td>
+          <td>300€$</td>
+          <td>500€$</td>
+          <td>800€$</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Добились успеха в крупном проекте и получили премию от главного офиса.</td>
+          <td>300€$</td>
+          <td>500€$</td>
+          <td>800€$</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Устранили законным путем цель, которая угрожала вашей работе. Забрали его финансирование себе.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <th colspan="5"><b>Халтурка Фиксера</b></th>
+        </tr>
+        <tr>
+          <td><b>1d6</b></td>
+          <td><b>Что вы сделали, для заработка на этой неделе</b></td>
+          <td><b>Ролевой Ранг<br>1-4</b></td>
+          <td><b>Ролевой Ранг<br>5-7</b></td>
+          <td><b>Ролевой Ранг<br>8-10</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Продали информацию Медиа за хорошую вознаграждение.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Были агентом Рокербоя на концерте, 12% ваши.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Помогли клиенту найти нужный товар и получили за это долю.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Сделка сорвалась. Вы залегли на дно, пока все не уляжется.</td>
+          <td>0€$</td>
+          <td>100€$</td>
+          <td>300€$</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Нашли для Соло или Нетраннера выгодную "работу" и взяли плату за услуги.</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Нашли редкий, незаконный и очень труднодоступный предмет.</td>
+          <td>300€$</td>
+          <td>500€$</td>
+          <td>800€$</td>
+        </tr>
+        <tr>
+          <th colspan="5"><b>Халтурка Кочевника</b></th>
+        </tr>
+        <tr>
+          <td><b>1d6</b></td>
+          <td><b>Что вы сделали, для заработка на этой неделе</b></td>
+          <td><b>Ролевой Ранг<br>1-4</b></td>
+          <td><b>Ролевой Ранг<br>5-7</b></td>
+          <td><b>Ролевой Ранг<br>8-10</b></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Провернули нелегальную доставку.</td>
+          <td>100€$</td>
+          <td>200€$</td>
+          <td>500€$</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Защитили посылку.</td>
+          <td>100€$</td>
+          <td>200€$</td>
+          <td>500€$</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Перевезли мелкую контрабанду.</td>
+          <td>100€$</td>
+          <td>200€$</td>
+          <td>500€$</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Привезли большую партию "чего-то".</td>
+          <td>200€$</td>
+          <td>300€$</td>
+          <td>600€$</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Доставили клиента в целости и сохранности.</td>
+          <td>100€$</td>
+          <td>200€$</td>
+          <td>500€$</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>На этой неделе не нашли работу, ни законную, ни другую.</td>
+          <td>0€$</td>
+          <td>100€$</td>
+          <td>300€$</td>
+        </tr></tbody></table>`},{id:"economy_37",name:"Ценовая Категория",page:"economy",table:`<table id="economy_37"><caption>Ценовая Категория</caption><tbody><tr>
+          <td><b>Ценовая Категория</b></td>
+          <td><b>Рыночная Цена</b></td>
+        </tr>
+        <tr>
+          <td>Дешевка</td>
+          <td>10€$</td>
+        </tr>
+        <tr>
+          <td>Обычное</td>
+          <td>20€$</td>
+        </tr>
+        <tr>
+          <td>Ценное</td>
+          <td>50€$</td>
+        </tr>
+        <tr>
+          <td>Премиум</td>
+          <td>100€$</td>
+        </tr>
+        <tr>
+          <td>Дорогое</td>
+          <td>500€$</td>
+        </tr>
+        <tr>
+          <td>Очень Дорогое</td>
+          <td>1,000€$</td>
+        </tr>
+        <tr>
+          <td>Роскошь</td>
+          <td>5,000€$</td>
+        </tr>
+        <tr>
+          <td>Супер Роскошь</td>
+          <td>10,000€$ and up</td>
+        </tr></tbody></table>`},{id:"life_1",name:"Что находится в Ближайшем Вендите?",page:"life",table:`<table id="life_1"><caption>Что находится в Ближайшем Вендите?</caption><tbody><tr>
         <td><b>1d10</b></td>
         <td>
           <b>Еда<br>(1d6:1-3)</b>
@@ -10519,7 +10306,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
         </tr>
         <tr>
           <td>Комбинезон Бодивейт</td>
-          <td>Броня ОСИ для головы и юла с местом для хранения кибердеки и шнуров для разъемов. Добавляет 1 дополнительный слот опций для оборудования. См. полный список на стр. 350.</td>
+          <td>Броня ОСИ для головы и юла с местом для хранения кибердеки и шнуров для разъемов. Добавляет 1 дополнительный слот опций для <a href="economy.html#economyDeck">оборудования</a>.</td>
           <td>1,000€$ (О. дорогое)</td>
         </tr>
         <tr>
@@ -11465,7 +11252,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
       <tr>
         <td><a href="netrunning.html#zap">Разряд</a></td>
         <td>Базовая атака Нетраннеру, которая работает как против Программ, так и против других Нетраннеров.</td>
-      </tr></tbody></table>`},{id:"roles_3",name:"Теник. Таблица СЛ и времени",page:"roles",table:`<table id="roles_3"><caption>Теник. Таблица СЛ и времени</caption><tbody><tr>
+      </tr></tbody></table>`},{id:"roles_3",name:"Техник. Таблица СЛ и времени",page:"roles",table:`<table id="roles_3"><caption>Техник. Таблица СЛ и времени</caption><tbody><tr>
         <td><b>Цена</b></td>
         <td><b>СЛ</b></td>
         <td><b>Время</b></td>
@@ -11634,590 +11421,590 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
         <td>Бросить подчинённого под огнем.</td>
         <td>-8</td>
       </tr></tbody></table>`},{id:"roles_9",name:"Корпо. Сотрудники",page:"roles",table:`<table id="roles_9"><caption>Корпо. Сотрудники</caption><tbody><tr>
-          <th colspan="12"><b>Телохранитель</b></th>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Прикрытие</b></td>
-          <td colspan="10">Личный тренер, эскорт</td>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Истинная&nbsp;работа</b></td>
-          <td colspan="10">Защищает вас в опасных ситуациях</td>
-        </tr>
-        <tr>
-          <td rowspan="3"><b>Навыки</b></td>
-          <td><b>+2</b></td>
-          <td colspan="10">Концентрация, Общение, Образование, Первая Помощь, Проницательность, Владение языками (Уличный Сленг), Знание Местности (Свой Район), Убеждение, Скрытность</td>
-        </tr>
-        <tr>
-          <td><b>+4</b></td>
-          <td colspan="10">Атлетика, Уклонение, Допрос, Внимательность, Сопротивление пыткам/Наркотикам, Тактика</td>
-        </tr>
-        <tr>
-          <td><b>+6</b></td>
-          <td colspan="10">Пистолеты, Рукопашный бой</td>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Киберимпланты</b></td>
-          <td colspan="10">Повышенные Антитела, Подкожная Броня (ОС 11), Набор Кибераудио, Встроенный Агент, Трекер маячка</td>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Снаряжение</b></td>
-          <td colspan="10">Агент, Лёгкая Бронезащита (ОС 11), Очень тяжелый Пистолет, Стандартные патроны для ОТ Пистолета х50</td>
-        </tr>
-        <tr>
-          <td colspan="2" rowspan="7"><b>Характеристики</b></td>
-          <td><b>1d6</b></td>
-          <td><b>ИНТ</b></td>
-          <td><b>РЕА</b></td>
-          <td><b>ЛВК</b></td>
-          <td><b>ТЕХ</b></td>
-          <td><b>ХАР</b></td>
-          <td><b>ВОЛЯ</b></td>
-          <td><b>СКО</b></td>
-          <td><b>ТЕЛ</b></td>
-          <td><b>ЭМП</b></td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>3</td>
-          <td>7</td>
-          <td>7</td>
-          <td>4</td>
-          <td>7</td>
-          <td>6</td>
-          <td>4</td>
-          <td>8</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>5</td>
-          <td>8</td>
-          <td>6</td>
-          <td>2</td>
-          <td>7</td>
-          <td>8</td>
-          <td>4</td>
-          <td>8</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>4</td>
-          <td>8</td>
-          <td>5</td>
-          <td>3</td>
-          <td>7</td>
-          <td>8</td>
-          <td>6</td>
-          <td>6</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>4</td>
-          <td>7</td>
-          <td>8</td>
-          <td>4</td>
-          <td>7</td>
-          <td>7</td>
-          <td>4</td>
-          <td>7</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>3</td>
-          <td>8</td>
-          <td>5</td>
-          <td>2</td>
-          <td>8</td>
-          <td>7</td>
-          <td>4</td>
-          <td>6</td>
-          <td>7</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>5</td>
-          <td>7</td>
-          <td>7</td>
-          <td>2</td>
-          <td>7</td>
-          <td>6</td>
-          <td>5</td>
-          <td>7</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <th colspan="12"><b>Оперативник под прикрытием</b></th>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Прикрытие</b></td>
-          <td colspan="10">Личный помощник, стилист</td>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Истинная работа</b></td>
-          <td colspan="10">Делает за вас грязную работу</td>
-        </tr>
-        <tr>
-          <td rowspan="3"><b>Навыки</b></td>
-          <td><b>+2</b></td>
-          <td colspan="10">Атлетика, Рукопашный бой, Концетрация, Общение, Образование, Первая Помощь, Владение языками (Уличный Сленг), Знание Местности (Свой Район), Внимательность, Убеждение</td>
-        </tr>
-        <tr>
-          <td><b>+4</b></td>
-          <td colspan="10">Подкуп, Бюрократия, Бизнес, Уклонение, Проницательность, Взлом Замков, Уличное Чутьё, Торговля, Гардероб и Стиль</td>
-        </tr>
-        <tr>
-          <td><b>+6</b></td>
-          <td colspan="10">Пистолеты, Скрытность</td>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Киберимпланты</b></td>
-          <td colspan="10">Два сопряженных Кибер-глаза с УФ/ИК Зрением, Сдвиг цвета, Кибер-рука с "Рукохватом", Выкидныморужиемдальнего боя (ОченьТяжелый пистолет), покрытие Realskinn™</td>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Снаряжение</b></td>
-          <td colspan="10">Агент, лёгкая бронезащита (ОС 11), Очень Тяжелый пистолет, Стандартные патроны для ОТ Пистолета х50</td>
-        </tr>
-        <tr>
-          <td colspan="2" rowspan="7"><b>Характеристики</b></td>
-          <td><b>1d6</b></td>
-          <td><b>ИНТ</b></td>
-          <td><b>РЕА</b></td>
-          <td><b>ЛВК</b></td>
-          <td><b>ТЕХ</b></td>
-          <td><b>ХАР</b></td>
-          <td><b>ВОЛЯ</b></td>
-          <td><b>СКО</b></td>
-          <td><b>ТЕЛ</b></td>
-          <td><b>ЭМП</b></td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>4</td>
-          <td>8</td>
-          <td>5</td>
-          <td>4</td>
-          <td>6</td>
-          <td>8</td>
-          <td>5</td>
-          <td>7</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>3</td>
-          <td>8</td>
-          <td>6</td>
-          <td>2</td>
-          <td>8</td>
-          <td>6</td>
-          <td>6</td>
-          <td>6</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>6</td>
-          <td>7</td>
-          <td>5</td>
-          <td>5</td>
-          <td>7</td>
-          <td>6</td>
-          <td>3</td>
-          <td>7</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-          <td>5</td>
-          <td>3</td>
-          <td>6</td>
-          <td>8</td>
-          <td>7</td>
-          <td>6</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>3</td>
-          <td>8</td>
-          <td>4</td>
-          <td>4</td>
-          <td>8</td>
-          <td>7</td>
-          <td>4</td>
-          <td>8</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>5</td>
-          <td>8</td>
-          <td>3</td>
-          <td>7</td>
-          <td>7</td>
-          <td>8</td>
-          <td>3</td>
-          <td>6</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <th colspan="12"><b>Водитель</b></th>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Прикрытие</b></td>
-          <td colspan="10">Лакей, личный водитель</td>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Истинная работа</b></td>
-          <td colspan="10">Водит, пилотирует, управляет ТС команды</td>
-        </tr>
-        <tr>
-          <td rowspan="3"><b>Навыки</b></td>
-          <td><b>+2</b></td>
-          <td colspan="10">Атлетика, Концентрация, Общение, Образование, Первая Помощь, Проницательность, Владение языками (Уличный Сленг), Знание Местности (Свой Район), Внимательность, Убеждение</td>
-        </tr>
-        <tr>
-          <td><b>+4</b></td>
-          <td colspan="10">Рукопашный бой, Выносливость, Уклонение, Автомеханик, Пилотирование, Судоходство, Судоремонт, Скрытность, Следопыт</td>
-        </tr>
-        <tr>
-          <td><b>+6</b></td>
-          <td colspan="10">Вождение, Пистолеты</td>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Киберимпланты</b></td>
-          <td colspan="10">Имплант Радар/Сонар, Набор Кибераудио, Встроенный Агент, Трекер маячка, Радар-Детектор</td>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Снаряжение</b></td>
-          <td colspan="10">Лёгкая Бронезащита (ОС 11), Очень Тяжелый пистолет, Автомобиль с улучшенными сиденьями, Базовые патроны для ОТ Пистолета х50</td>
-        </tr>
-        <tr>
-          <td colspan="2" rowspan="7"><b>Характеристики</b></td>
-          <td><b>1d6</b></td>
-          <td><b>ИНТ</b></td>
-          <td><b>РЕА</b></td>
-          <td><b>ЛВК</b></td>
-          <td><b>ТЕХ</b></td>
-          <td><b>ХАР</b></td>
-          <td><b>ВОЛЯ</b></td>
-          <td><b>СКО</b></td>
-          <td><b>ТЕЛ</b></td>
-          <td><b>ЭМП</b></td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>5</td>
-          <td>8</td>
-          <td>6</td>
-          <td>4</td>
-          <td>6</td>
-          <td>5</td>
-          <td>6</td>
-          <td>5</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>5</td>
-          <td>7</td>
-          <td>7</td>
-          <td>5</td>
-          <td>5</td>
-          <td>7</td>
-          <td>4</td>
-          <td>7</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>6</td>
-          <td>8</td>
-          <td>8</td>
-          <td>4</td>
-          <td>7</td>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>8</td>
-          <td>7</td>
-          <td>4</td>
-          <td>5</td>
-          <td>4</td>
-          <td>7</td>
-          <td>5</td>
-          <td>6</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>7</td>
-          <td>8</td>
-          <td>3</td>
-          <td>5</td>
-          <td>7</td>
-          <td>6</td>
-          <td>4</td>
-          <td>6</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>6</td>
-          <td>8</td>
-          <td>6</td>
-          <td>6</td>
-          <td>8</td>
-          <td>5</td>
-          <td>3</td>
-          <td>5</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <th colspan="12"><b>Нетраннер</b></th>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Прикрытие</b></td>
-          <td colspan="10">IТ-шник, исследователь</td>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Истинная работа</b></td>
-          <td colspan="10">Нетраннинг и сбор информации</td>
-        </tr>
-        <tr>
-          <td rowspan="3"><b>Навыки</b></td>
-          <td><b>+2</b></td>
-          <td colspan="10">Интерфейс (Ролевая Способность Нетраннера), Атлетика, Рукопашный бой, Концетрация, Общение, Уклонение, Первая Помощь, Проницательность, Владение языками (Уличный Сленг), Знание Местности (Свой Район), Внимательность, Убеждение</td>
-        </tr>
-        <tr>
-          <td><b>+4</b></td>
-          <td colspan="10">Техника, Криптография, Кибертехника, Образование, Электроника/Безопасность (х2), Фальсификация, Поиск Информации, Пистолеты, Скрытность</td>
-        </tr>
-        <tr>
-          <td><b>+6</b></td>
-          <td colspan="10"></td>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Киберимпланты</b></td>
-          <td colspan="10">Нейролинк, Разъём флешек, Регулятор Боли, Личный порт, Кибер-глаза с AR</td>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Снаряжение</b></td>
-          <td colspan="10">Агент, Лёгкая Бронезащита (ОС11), Кибердека (7 слотов: Меч, Меч, Убийца, Червь, Червь, Доспехи), Очень Тяжелый пистолет, Стандартные патроны для ОТ Пистолета х50</td>
-        </tr>
-        <tr>
-          <td colspan="2" rowspan="7"><b>Характеристики</b></td>
-          <td><b>1d6</b></td>
-          <td><b>ИНТ</b></td>
-          <td><b>РЕА</b></td>
-          <td><b>ЛВК</b></td>
-          <td><b>ТЕХ</b></td>
-          <td><b>ХАР</b></td>
-          <td><b>ВОЛЯ</b></td>
-          <td><b>СКО</b></td>
-          <td><b>ТЕЛ</b></td>
-          <td><b>ЭМП</b></td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>6</td>
-          <td>7</td>
-          <td>8</td>
-          <td>7</td>
-          <td>5</td>
-          <td>4</td>
-          <td>5</td>
-          <td>5</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>7</td>
-          <td>8</td>
-          <td>4</td>
-          <td>6</td>
-          <td>8</td>
-          <td>3</td>
-          <td>4</td>
-          <td>6</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>5</td>
-          <td>6</td>
-          <td>8</td>
-          <td>8</td>
-          <td>6</td>
-          <td>6</td>
-          <td>4</td>
-          <td>4</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>7</td>
-          <td>8</td>
-          <td>5</td>
-          <td>6</td>
-          <td>4</td>
-          <td>4</td>
-          <td>6</td>
-          <td>5</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>5</td>
-          <td>8</td>
-          <td>8</td>
-          <td>5</td>
-          <td>5</td>
-          <td>3</td>
-          <td>6</td>
-          <td>4</td>
-          <td>6</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>8</td>
-          <td>7</td>
-          <td>6</td>
-          <td>6</td>
-          <td>4</td>
-          <td>7</td>
-          <td>4</td>
-          <td>4</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <th colspan="12"><b>Техник</b></th>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Прикрытие</b></td>
-          <td colspan="10">IТ-шник, стажер</td>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Истинная работа</b></td>
-          <td colspan="10">Ремонторужия и снаряжения</td>
-        </tr>
-        <tr>
-          <td rowspan="3"><b>Навыки</b></td>
-          <td><b>+2</b></td>
-          <td colspan="10">Атлетика, Рукопашный бой, Концетрация, Общение, Уклонение, Первая Помощь, Проницательность, Владение языками (Уличный Сленг), Знание Местности (Свой Район), Внимательность, Убеждение, Скрытность</td>
-        </tr>
-        <tr>
-          <td><b>+4</b></td>
-          <td colspan="10">Образование, Пистолеты, Оружейник (х2)</td>
-        </tr>
-        <tr>
-          <td><b>+6</b></td>
-          <td colspan="10">Техника, Кибертехника, Электроника/Безопасность (х2)</td>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Киберимпланты</b></td>
-          <td colspan="10">Инструменты в руке, Набор Кибераудио, Встроенный Агент, ДетекторЖучков, Диктофон</td>
-        </tr>
-        <tr>
-          <td colspan="2"><b>Снаряжение</b></td>
-          <td colspan="10">Лёгкая Бронезащита (ОС 11), Очень Тяжелый пистолет, Стандартные патроны для ОТ Пистолета х50</td>
-        </tr>
-        <tr>
-          <td colspan="2" rowspan="7"><b>Характеристики</b></td>
-          <td><b>1d6</b></td>
-          <td><b>ИНТ</b></td>
-          <td><b>РЕА</b></td>
-          <td><b>ЛВК</b></td>
-          <td><b>ТЕХ</b></td>
-          <td><b>ХАР</b></td>
-          <td><b>ВОЛЯ</b></td>
-          <td><b>СКО</b></td>
-          <td><b>ТЕЛ</b></td>
-          <td><b>ЭМП</b></td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>8</td>
-          <td>8</td>
-          <td>5</td>
-          <td>7</td>
-          <td>3</td>
-          <td>4</td>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>8</td>
-          <td>7</td>
-          <td>6</td>
-          <td>8</td>
-          <td>3</td>
-          <td>5</td>
-          <td>5</td>
-          <td>4</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>8</td>
-          <td>6</td>
-          <td>5</td>
-          <td>8</td>
-          <td>4</td>
-          <td>3</td>
-          <td>3</td>
-          <td>7</td>
-          <td>6</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>8</td>
-          <td>8</td>
-          <td>5</td>
-          <td>7</td>
-          <td>4</td>
-          <td>4</td>
-          <td>4</td>
-          <td>5</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>7</td>
-          <td>7</td>
-          <td>3</td>
-          <td>7</td>
-          <td>5</td>
-          <td>3</td>
-          <td>6</td>
-          <td>6</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>7</td>
-          <td>8</td>
-          <td>5</td>
-          <td>8</td>
-          <td>6</td>
-          <td>3</td>
-          <td>3</td>
-          <td>5</td>
-          <td>5</td>
-        </tr></tbody></table>`},{id:"roles_10",name:"Кочевник. Автопарк семьи",page:"roles",table:`<table id="roles_10"><caption>Кочевник. Автопарк семьи</caption><tbody><tr>
+            <th colspan="12"><b>Телохранитель</b></th>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Прикрытие</b></td>
+            <td colspan="10">Личный тренер, эскорт</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Истинная&nbsp;работа</b></td>
+            <td colspan="10">Защищает вас в опасных ситуациях</td>
+          </tr>
+          <tr>
+            <td rowspan="3"><b>Навыки</b></td>
+            <td><b>+2</b></td>
+            <td colspan="10">Концентрация, Общение, Образование, Первая Помощь, Проницательность, Владение языками (Уличный Сленг), Знание Местности (Свой Район), Убеждение, Скрытность</td>
+          </tr>
+          <tr>
+            <td><b>+4</b></td>
+            <td colspan="10">Атлетика, Уклонение, Допрос, Внимательность, Сопротивление пыткам/Наркотикам, Тактика</td>
+          </tr>
+          <tr>
+            <td><b>+6</b></td>
+            <td colspan="10">Пистолеты, Рукопашный бой</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Киберимпланты</b></td>
+            <td colspan="10">Повышенные Антитела, Подкожная Броня (ОС 11), Набор Кибераудио, Встроенный Агент, Трекер маячка</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Снаряжение</b></td>
+            <td colspan="10">Агент, Лёгкая Бронезащита (ОС 11), Очень тяжелый Пистолет, Стандартные патроны для ОТ Пистолета х50</td>
+          </tr>
+          <tr>
+            <td colspan="2" rowspan="7"><b>Характеристики</b></td>
+            <td><b>1d6</b></td>
+            <td><b>ИНТ</b></td>
+            <td><b>РЕА</b></td>
+            <td><b>ЛВК</b></td>
+            <td><b>ТЕХ</b></td>
+            <td><b>ХАР</b></td>
+            <td><b>ВОЛЯ</b></td>
+            <td><b>СКО</b></td>
+            <td><b>ТЕЛ</b></td>
+            <td><b>ЭМП</b></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>3</td>
+            <td>7</td>
+            <td>7</td>
+            <td>4</td>
+            <td>7</td>
+            <td>6</td>
+            <td>4</td>
+            <td>8</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>5</td>
+            <td>8</td>
+            <td>6</td>
+            <td>2</td>
+            <td>7</td>
+            <td>8</td>
+            <td>4</td>
+            <td>8</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>4</td>
+            <td>8</td>
+            <td>5</td>
+            <td>3</td>
+            <td>7</td>
+            <td>8</td>
+            <td>6</td>
+            <td>6</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>4</td>
+            <td>7</td>
+            <td>8</td>
+            <td>4</td>
+            <td>7</td>
+            <td>7</td>
+            <td>4</td>
+            <td>7</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>3</td>
+            <td>8</td>
+            <td>5</td>
+            <td>2</td>
+            <td>8</td>
+            <td>7</td>
+            <td>4</td>
+            <td>6</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>5</td>
+            <td>7</td>
+            <td>7</td>
+            <td>2</td>
+            <td>7</td>
+            <td>6</td>
+            <td>5</td>
+            <td>7</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th colspan="12"><b>Оперативник под прикрытием</b></th>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Прикрытие</b></td>
+            <td colspan="10">Личный помощник, стилист</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Истинная работа</b></td>
+            <td colspan="10">Делает за вас грязную работу</td>
+          </tr>
+          <tr>
+            <td rowspan="3"><b>Навыки</b></td>
+            <td><b>+2</b></td>
+            <td colspan="10">Атлетика, Рукопашный бой, Концетрация, Общение, Образование, Первая Помощь, Владение языками (Уличный Сленг), Знание Местности (Свой Район), Внимательность, Убеждение</td>
+          </tr>
+          <tr>
+            <td><b>+4</b></td>
+            <td colspan="10">Подкуп, Бюрократия, Бизнес, Уклонение, Проницательность, Взлом Замков, Уличное Чутьё, Торговля, Гардероб и Стиль</td>
+          </tr>
+          <tr>
+            <td><b>+6</b></td>
+            <td colspan="10">Пистолеты, Скрытность</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Киберимпланты</b></td>
+            <td colspan="10">Два сопряженных Кибер-глаза с УФ/ИК Зрением, Сдвиг цвета, Кибер-рука с "Рукохватом", Выкидныморужиемдальнего боя (ОченьТяжелый пистолет), покрытие Realskinn™</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Снаряжение</b></td>
+            <td colspan="10">Агент, лёгкая бронезащита (ОС 11), Очень Тяжелый пистолет, Стандартные патроны для ОТ Пистолета х50</td>
+          </tr>
+          <tr>
+            <td colspan="2" rowspan="7"><b>Характеристики</b></td>
+            <td><b>1d6</b></td>
+            <td><b>ИНТ</b></td>
+            <td><b>РЕА</b></td>
+            <td><b>ЛВК</b></td>
+            <td><b>ТЕХ</b></td>
+            <td><b>ХАР</b></td>
+            <td><b>ВОЛЯ</b></td>
+            <td><b>СКО</b></td>
+            <td><b>ТЕЛ</b></td>
+            <td><b>ЭМП</b></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>4</td>
+            <td>8</td>
+            <td>5</td>
+            <td>4</td>
+            <td>6</td>
+            <td>8</td>
+            <td>5</td>
+            <td>7</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>3</td>
+            <td>8</td>
+            <td>6</td>
+            <td>2</td>
+            <td>8</td>
+            <td>6</td>
+            <td>6</td>
+            <td>6</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>6</td>
+            <td>7</td>
+            <td>5</td>
+            <td>5</td>
+            <td>7</td>
+            <td>6</td>
+            <td>3</td>
+            <td>7</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>5</td>
+            <td>3</td>
+            <td>6</td>
+            <td>8</td>
+            <td>7</td>
+            <td>6</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>3</td>
+            <td>8</td>
+            <td>4</td>
+            <td>4</td>
+            <td>8</td>
+            <td>7</td>
+            <td>4</td>
+            <td>8</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>5</td>
+            <td>8</td>
+            <td>3</td>
+            <td>7</td>
+            <td>7</td>
+            <td>8</td>
+            <td>3</td>
+            <td>6</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th colspan="12"><b>Водитель</b></th>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Прикрытие</b></td>
+            <td colspan="10">Лакей, личный водитель</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Истинная работа</b></td>
+            <td colspan="10">Водит, пилотирует, управляет ТС команды</td>
+          </tr>
+          <tr>
+            <td rowspan="3"><b>Навыки</b></td>
+            <td><b>+2</b></td>
+            <td colspan="10">Атлетика, Концентрация, Общение, Образование, Первая Помощь, Проницательность, Владение языками (Уличный Сленг), Знание Местности (Свой Район), Внимательность, Убеждение</td>
+          </tr>
+          <tr>
+            <td><b>+4</b></td>
+            <td colspan="10">Рукопашный бой, Выносливость, Уклонение, Автомеханик, Пилотирование, Судоходство, Судоремонт, Скрытность, Следопыт</td>
+          </tr>
+          <tr>
+            <td><b>+6</b></td>
+            <td colspan="10">Вождение, Пистолеты</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Киберимпланты</b></td>
+            <td colspan="10">Имплант Радар/Сонар, Набор Кибераудио, Встроенный Агент, Трекер маячка, Радар-Детектор</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Снаряжение</b></td>
+            <td colspan="10">Лёгкая Бронезащита (ОС 11), Очень Тяжелый пистолет, Автомобиль с улучшенными сиденьями, Базовые патроны для ОТ Пистолета х50</td>
+          </tr>
+          <tr>
+            <td colspan="2" rowspan="7"><b>Характеристики</b></td>
+            <td><b>1d6</b></td>
+            <td><b>ИНТ</b></td>
+            <td><b>РЕА</b></td>
+            <td><b>ЛВК</b></td>
+            <td><b>ТЕХ</b></td>
+            <td><b>ХАР</b></td>
+            <td><b>ВОЛЯ</b></td>
+            <td><b>СКО</b></td>
+            <td><b>ТЕЛ</b></td>
+            <td><b>ЭМП</b></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>5</td>
+            <td>8</td>
+            <td>6</td>
+            <td>4</td>
+            <td>6</td>
+            <td>5</td>
+            <td>6</td>
+            <td>5</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>5</td>
+            <td>7</td>
+            <td>7</td>
+            <td>5</td>
+            <td>5</td>
+            <td>7</td>
+            <td>4</td>
+            <td>7</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>6</td>
+            <td>8</td>
+            <td>8</td>
+            <td>4</td>
+            <td>7</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>8</td>
+            <td>7</td>
+            <td>4</td>
+            <td>5</td>
+            <td>4</td>
+            <td>7</td>
+            <td>5</td>
+            <td>6</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>7</td>
+            <td>8</td>
+            <td>3</td>
+            <td>5</td>
+            <td>7</td>
+            <td>6</td>
+            <td>4</td>
+            <td>6</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>6</td>
+            <td>8</td>
+            <td>6</td>
+            <td>6</td>
+            <td>8</td>
+            <td>5</td>
+            <td>3</td>
+            <td>5</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th colspan="12"><b>Нетраннер</b></th>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Прикрытие</b></td>
+            <td colspan="10">IТ-шник, исследователь</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Истинная работа</b></td>
+            <td colspan="10">Нетраннинг и сбор информации</td>
+          </tr>
+          <tr>
+            <td rowspan="3"><b>Навыки</b></td>
+            <td><b>+2</b></td>
+            <td colspan="10">Интерфейс (Ролевая Способность Нетраннера), Атлетика, Рукопашный бой, Концетрация, Общение, Уклонение, Первая Помощь, Проницательность, Владение языками (Уличный Сленг), Знание Местности (Свой Район), Внимательность, Убеждение</td>
+          </tr>
+          <tr>
+            <td><b>+4</b></td>
+            <td colspan="10">Техника, Криптография, Кибертехника, Образование, Электроника/Безопасность (х2), Фальсификация, Поиск Информации, Пистолеты, Скрытность</td>
+          </tr>
+          <tr>
+            <td><b>+6</b></td>
+            <td colspan="10"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Киберимпланты</b></td>
+            <td colspan="10">Нейролинк, Разъём флешек, Регулятор Боли, Личный порт, Кибер-глаза с AR</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Снаряжение</b></td>
+            <td colspan="10">Агент, Лёгкая Бронезащита (ОС11), Кибердека (7 слотов: Меч, Меч, Убийца, Червь, Червь, Доспехи), Очень Тяжелый пистолет, Стандартные патроны для ОТ Пистолета х50</td>
+          </tr>
+          <tr>
+            <td colspan="2" rowspan="7"><b>Характеристики</b></td>
+            <td><b>1d6</b></td>
+            <td><b>ИНТ</b></td>
+            <td><b>РЕА</b></td>
+            <td><b>ЛВК</b></td>
+            <td><b>ТЕХ</b></td>
+            <td><b>ХАР</b></td>
+            <td><b>ВОЛЯ</b></td>
+            <td><b>СКО</b></td>
+            <td><b>ТЕЛ</b></td>
+            <td><b>ЭМП</b></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>7</td>
+            <td>5</td>
+            <td>4</td>
+            <td>5</td>
+            <td>5</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>7</td>
+            <td>8</td>
+            <td>4</td>
+            <td>6</td>
+            <td>8</td>
+            <td>3</td>
+            <td>4</td>
+            <td>6</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>5</td>
+            <td>6</td>
+            <td>8</td>
+            <td>8</td>
+            <td>6</td>
+            <td>6</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>7</td>
+            <td>8</td>
+            <td>5</td>
+            <td>6</td>
+            <td>4</td>
+            <td>4</td>
+            <td>6</td>
+            <td>5</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>5</td>
+            <td>8</td>
+            <td>8</td>
+            <td>5</td>
+            <td>5</td>
+            <td>3</td>
+            <td>6</td>
+            <td>4</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>8</td>
+            <td>7</td>
+            <td>6</td>
+            <td>6</td>
+            <td>4</td>
+            <td>7</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th colspan="12"><b>Техник</b></th>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Прикрытие</b></td>
+            <td colspan="10">IТ-шник, стажер</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Истинная работа</b></td>
+            <td colspan="10">Ремонторужия и снаряжения</td>
+          </tr>
+          <tr>
+            <td rowspan="3"><b>Навыки</b></td>
+            <td><b>+2</b></td>
+            <td colspan="10">Атлетика, Рукопашный бой, Концетрация, Общение, Уклонение, Первая Помощь, Проницательность, Владение языками (Уличный Сленг), Знание Местности (Свой Район), Внимательность, Убеждение, Скрытность</td>
+          </tr>
+          <tr>
+            <td><b>+4</b></td>
+            <td colspan="10">Образование, Пистолеты, Оружейник (х2)</td>
+          </tr>
+          <tr>
+            <td><b>+6</b></td>
+            <td colspan="10">Техника, Кибертехника, Электроника/Безопасность (х2)</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Киберимпланты</b></td>
+            <td colspan="10">Инструменты в руке, Набор Кибераудио, Встроенный Агент, ДетекторЖучков, Диктофон</td>
+          </tr>
+          <tr>
+            <td colspan="2"><b>Снаряжение</b></td>
+            <td colspan="10">Лёгкая Бронезащита (ОС 11), Очень Тяжелый пистолет, Стандартные патроны для ОТ Пистолета х50</td>
+          </tr>
+          <tr>
+            <td colspan="2" rowspan="7"><b>Характеристики</b></td>
+            <td><b>1d6</b></td>
+            <td><b>ИНТ</b></td>
+            <td><b>РЕА</b></td>
+            <td><b>ЛВК</b></td>
+            <td><b>ТЕХ</b></td>
+            <td><b>ХАР</b></td>
+            <td><b>ВОЛЯ</b></td>
+            <td><b>СКО</b></td>
+            <td><b>ТЕЛ</b></td>
+            <td><b>ЭМП</b></td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>8</td>
+            <td>8</td>
+            <td>5</td>
+            <td>7</td>
+            <td>3</td>
+            <td>4</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>8</td>
+            <td>7</td>
+            <td>6</td>
+            <td>8</td>
+            <td>3</td>
+            <td>5</td>
+            <td>5</td>
+            <td>4</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>8</td>
+            <td>6</td>
+            <td>5</td>
+            <td>8</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>7</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>8</td>
+            <td>8</td>
+            <td>5</td>
+            <td>7</td>
+            <td>4</td>
+            <td>4</td>
+            <td>4</td>
+            <td>5</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>7</td>
+            <td>7</td>
+            <td>3</td>
+            <td>7</td>
+            <td>5</td>
+            <td>3</td>
+            <td>6</td>
+            <td>6</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>5</td>
+            <td>8</td>
+            <td>6</td>
+            <td>3</td>
+            <td>3</td>
+            <td>5</td>
+            <td>5</td>
+          </tr></tbody></table>`},{id:"roles_10",name:"Кочевник. Автопарк семьи",page:"roles",table:`<table id="roles_10"><caption>Кочевник. Автопарк семьи</caption><tbody><tr>
         <td><b>Ранг</b></td>
         <td><b>Семейный Транспорт</b></td>
       </tr>
@@ -13074,7 +12861,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             </tr>
             <tr>
               <td colspan="10">
-                <b>Киберимлпанты и СпецСнаряжение</b> Боеприпас для дробовика х25, Боеприпасы для Оч. Тяж. пистолета х25, Рация
+                <b>К-имлпанты и Спец-снаряжение</b> Боеприпас для дробовика х25, Боеприпасы для Оч. Тяж. пистолета х25, Рация
               </td>
             </tr></tbody></table>`},{id:"start_7",name:"Бустер (1:1)",page:"start",table:`<table id="start_7"><caption>Бустер (1:1)</caption><tbody><tr>
               <td>ИНТ<br>2</td>
@@ -13116,7 +12903,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             </tr>
             <tr>
               <td colspan="10">
-                <b>Киберимлпанты и СпецСнаряжение</b> Боеприпасы для Оч. тяж. пистолета х30, Одноразовый телефон, Потрошители, Техноволосы
+                <b>К-имлпанты и Спец-снаряжение</b> Боеприпасы для Оч. тяж. пистолета х30, Одноразовый телефон, Потрошители, Техноволосы
               </td>
             </tr></tbody></table>`},{id:"start_8",name:"Дорожный бандит (1:1)",page:"start",table:`<table id="start_8"><caption>Дорожный бандит (1:1)</caption><tbody><tr>
               <td>ИНТ<br>4</td>
@@ -13163,7 +12950,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             </tr>
             <tr>
               <td colspan="10">
-                <b>Киберимлпанты и СпецСнаряжение</b> Боеприпасы для Оч. тяж. пистолета х20, Стрелы х20, Веревка, Фонарик, Нейролинк (Личный порт)
+                <b>К-имлпанты и Спец-снаряжение</b> Боеприпасы для Оч. тяж. пистолета х20, Стрелы х20, Веревка, Фонарик, Нейролинк (Личный порт)
               </td>
             </tr></tbody></table>`},{id:"start_9",name:"Оперативник СБ (1:1)",page:"start",table:`<table id="start_9"><caption>Оперативник СБ (1:1)</caption><tbody><tr>
               <td>ИНТ<br>3</td>
@@ -13193,7 +12980,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
               <td>7ПЗ</td>
             </tr>
             <tr>
-              <td colspan="4">Очень тяжелый пистолет</td>
+              <td colspan="4">Оч.Тяж. Пистолет</td>
               <td>4d6</td>
               <td colspan="4">Тело</td>
               <td>7ПЗ</td>
@@ -13210,7 +12997,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             </tr>
             <tr>
               <td colspan="10">
-                <b>Киберимлпанты и СпецСнаряжение</b> Винтовочные патроны х40, Боеприпасы для Оч. тяж. пистолета х20, Рация
+                <b>К-имлпанты и Спец-снаряжение</b> Винтовочные патроны х40, Боеприпасы для Оч. тяж. пистолета х20, Рация
               </td>
             </tr></tbody></table>`},{id:"start_10",name:"Нетраннер (1:2)",page:"start",table:`<table id="start_10"><caption>Нетраннер (1:2)</caption><tbody><tr>
               <td>ИНТ<br>7</td>
@@ -13251,12 +13038,12 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             </tr>
             <tr>
               <td colspan="10">
-                <b>Киберимлпанты и СпецСнаряжение</b> Боеприпасы для Оч. тяж. пистолета х50, Фонарик, Очки виртуальности, Нейролинк (Личный порт)
+                <b>К-имлпанты и Спец-снаряжение</b> Боеприпасы для Оч. тяж. пистолета х50, Фонарик, Очки виртуальности, Нейролинк (Личный порт)
               </td>
             </tr>
             <tr>
               <td colspan="10">
-                <b>Киберимлпанты и СпецСнаряжение</b> Банхаммер, Декалом, Стиратель, Адская стрела, Щит, Меч, Червь
+                <b>К-имлпанты и Спец-снаряжение</b> Банхаммер, Декалом, Стиратель, Адская стрела, Щит, Меч, Червь
               </td>
             </tr></tbody></table>`},{id:"start_11",name:"Шеф реставраторов (1:2)",page:"start",table:`<table id="start_11"><caption>Шеф реставраторов (1:2)</caption><tbody><tr>
               <td>ИНТ<br>3</td>
@@ -13308,7 +13095,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             </tr>
             <tr>
               <td colspan="10">
-                <b>Киберимлпанты и СпецСнаряжение</b> Боеприпас для дробовика х25,БоеприпасдляТяж.пистолетах25,Агент,Пистолет-крюк,Рация, Палаткаи I оборудованиедля кемпинга, Назальные фильтры, Нейролинк (Разъем для флешек, Флешка тактильного усиления)
+                <b>К-имлпанты и Спец-снаряжение</b> Боеприпас для дробовика х25,БоеприпасдляТяж.пистолетах25,Агент,Пистолет-крюк,Рация, Палаткаи I оборудованиедля кемпинга, Назальные фильтры, Нейролинк (Разъем для флешек, Флешка тактильного усиления)
               </td>
             </tr></tbody></table>`},{id:"start_12",name:"Офицер СБ (1:2)",page:"start",table:`<table id="start_12"><caption>Офицер СБ (1:2)</caption><tbody><tr>
               <td>ИНТ<br>4</td>
@@ -13355,7 +13142,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             </tr>
             <tr>
               <td colspan="10">
-                <b>Киберимлпанты и СпецСнаряжение</b> Боеприпасы для штурм. винтовки х60, Боеприпасы для Оч. тяж. пистолета х40, НаручникиХ2,Трекер маячка, Комплект Кибераудио (Усиленный слух), Киберглаз (Тактический прицел, Телеоптика), Нейролинк I (Личный порт)
+                <b>К-имлпанты и Спец-снаряжение</b> Боеприпасы для штурм. винтовки х60, Боеприпасы для Оч. тяж. пистолета х40, НаручникиХ2,Трекер маячка, Комплект Кибераудио (Усиленный слух), Киберглаз (Тактический прицел, Телеоптика), Нейролинк I (Личный порт)
               </td>
             </tr></tbody></table>`},{id:"start_13",name:"Патрульный (1:3)",page:"start",table:`<table id="start_13"><caption>Патрульный (1:3)</caption><tbody><tr>
               <td>ИНТ<br>6</td>
@@ -13402,7 +13189,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             </tr>
             <tr>
               <td colspan="10">
-                <b>Киберимлпанты и СпецСнаряжение</b> Боеприпасы для штурм. винтовки х60, Боеприпасы для Оч. тяж. пистолета х40, НаручникиХ2,Трекер маячка, Комплект Кибераудио (Усиленный слух), Киберглаз (Тактический прицел, Телеоптика), Нейролинк I (Личный порт)
+                <b>К-имлпанты и Спец-снаряжение</b> Боеприпасы для штурм. винтовки х60, Боеприпасы для Оч. тяж. пистолета х40, НаручникиХ2,Трекер маячка, Комплект Кибераудио (Усиленный слух), Киберглаз (Тактический прицел, Телеоптика), Нейролинк I (Личный порт)
               </td>
             </tr></tbody></table>`},{id:"start_14",name:"Пиротехник (1:3)",page:"start",table:`<table id="start_14"><caption>Пиротехник (1:3)</caption><tbody><tr>
               <td>ИНТ<br>5</td>
@@ -13449,7 +13236,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             </tr>
             <tr>
               <td colspan="10">
-                <b>Киберимлпанты и СпецСнаряжение</b> Боеприпасы для огнемёта (Зажигательные Боеприпасы для дробовика) х8, Боеприпасы для Оч. тяж. пистолета х50, Зажигательная граната х1, Светошумовая граната х1, Комплект Кибераудио (Демпфер), Киберглазх2 (Анти-ослеплениех2), Назальныефильтры
+                <b>К-имлпанты и Спец-снаряжение</b> Боеприпасы для огнемёта (Зажигательные Боеприпасы для дробовика) х8, Боеприпасы для Оч. тяж. пистолета х50, Зажигательная граната х1, Светошумовая граната х1, Комплект Кибераудио (Демпфер), Киберглазх2 (Анти-ослеплениех2), Назальныефильтры
               </td>
             </tr></tbody></table>`},{id:"start_15",name:"Киберпсихопат (босс)",page:"start",table:`<table id="start_15"><caption>Киберпсихопат (босс)</caption><tbody><tr>
               <td>ИНТ<br>5</td>
@@ -13501,7 +13288,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
             </tr>
             <tr>
               <td colspan="10">
-                <b>Киберимлпанты и СпецСнаряжение</b> Бронебойная граната х2, Боеприпасы к тяж. пистолету х100, Киберрука х2 (Выкидной гранатомёт х2, Выкидной тяжелый ПП, Когти росомахи), Кибернога х2 (Прыжковый ускоритель х2), Киберзмея, Искусственные мышцыи усиленные кости, Нейролинк (Разъём для флешек, Редактор боли), Подкожная броня
+                <b>К-имлпанты и Спец-снаряжение</b> Бронебойная граната х2, Боеприпасы к тяж. пистолету х100, Киберрука х2 (Выкидной гранатомёт х2, Выкидной тяжелый ПП, Когти росомахи), Кибернога х2 (Прыжковый ускоритель х2), Киберзмея, Искусственные мышцыи усиленные кости, Нейролинк (Разъём для флешек, Редактор боли), Подкожная броня
               </td>
             </tr></tbody></table>`},{id:"traumateam_1",name:"Тяжесть Ранения",page:"traumateam",table:`<table id="traumateam_1"><caption>Тяжесть Ранения</caption><tbody><tr>
         <td><b>Тяжесть Ранения</b></td>
@@ -13863,7 +13650,7 @@ const pages = ["char","combat","economy","life","netrunning","nightcity","roles"
           <td><b>Стандартная Потеря Человечности</b></td>
           <td>Неделя интенсивной терапии, сочетающей в себе консультации по управлению гневом, гипноз и незначительное прямое перепрограммирование мозга с помощью препаратов в безопасном месте с помощью брейнданса.</td>
           <td>500€$ (Дорогое)</td>
-          <td>СЛ15 Материалов на 10О€$ (Премиум)</td>
+          <td>СЛ15 Материалов на 100€$ (Премиум)</td>
         </tr>
         <tr>
           <td colspan="4">
