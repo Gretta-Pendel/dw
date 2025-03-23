@@ -157,7 +157,7 @@ nav a.active {
 
 main {
   grid-area: main;
-  padding: 2rem 1.5rem 1rem;
+  padding: 2rem 1.5rem 2rem;
   max-width: calc(100vw - var(--left-menu-width) - 20px);
 }
 
