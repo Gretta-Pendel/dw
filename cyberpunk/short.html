@@ -11,17 +11,16 @@
       --left-menu-width: 160px;
     }
 
-    html,
     body {
-      height: 100%;
+      height: 100vh;
+      grid-template-areas: "head head" "aside main" "foot foot";
+      grid-template-rows: 2em auto 1.5em;
     }
 
-    body {
-      grid-template-rows: 2rem auto 2rem;
-    }
 
-    main {
-      padding-top: 0;
+    footer {
+      left: 0;
+      padding-left: var(--left-menu-width);
     }
 
     b {

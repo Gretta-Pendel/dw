@@ -97,7 +97,7 @@ levels.forEach((item) => {
   let sLi = document.createElement("div");
   sLi.setAttribute("class", item.tagName.toLowerCase());
   let sLink = document.createElement("a");
-  let text = ~item.innerText.indexOf("Таблица ") ? item.innerText.split("Таблица ")[1] : item.innerText;
+  let text = ~item.innerText.indexOf("Таблица ") ? item.innerText.split("Таблица ")[1] : item.hasAttribute("title") && item.getAttribute("title").length ? item.getAttribute("title") : item.innerText;
   text = text.replace(" — ", ": ");
   sLink.innerText = text;
   sLink.setAttribute("href", `#${item.id}`);
@@ -306,7 +306,7 @@ window.addEventListener("load", () => {
 
 // footer
 const footer = document.createElement("footer");
-footer.innerHTML = `<a href="">Terms</a> | <a href="tables.html">Tables</a> | <a href="poi.html">POI</a> | <a href="start.html">Start</a> | <a href="short.html">Short</a>`;
+footer.innerHTML = `<a href="short.html">Short</a> | <a href="tables.html">Tables</a> | <a href="poi.html">POI</a> | <a href="start.html">Start</a>`;
 pageurl !== "poi" ? main.after(footer) : undefined;
 // dictionary
 // let sections = {
