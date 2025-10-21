@@ -319,7 +319,8 @@ hr {
   font-size: clamp(0.95rem, 1.2vw, 1rem);
 }
 .poi-safety,
-.poi-rent {
+.poi-rent,
+.poi-oldlabel {
   font-size: clamp(0.85rem, 1vw, 0.9rem);
   color: #666;
 }

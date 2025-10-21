@@ -121,9 +121,6 @@ showTable = (param) => {
       district.innerText = p.district;
       location.append(area);
       location.append(district);
-      let desc = document.createElement("div");
-      desc.classList.add("poi-desc");
-      desc.innerHTML = p.descRu;
       box.append(title);
       box.append(titleEn);
       console.log(p.y && p.x);
@@ -136,7 +133,23 @@ showTable = (param) => {
       }
       box.append(type);
       box.append(location);
-      box.append(desc);
+      if (p.oldlabel) {
+        let oldlabel = document.createElement("div");
+        oldlabel.classList.add("poi-oldlabel");
+        oldlabel.innerHTML = `number from the poster: ${p.oldlabel}`;
+        box.append(oldlabel);
+      }
+      if (p.descRu) {
+        let desc = document.createElement("div");
+        desc.classList.add("poi-desc");
+        desc.innerHTML = p.descRu;
+        box.append(desc);
+      } else if (p.desc) {
+        let desc = document.createElement("div");
+        desc.classList.add("poi-desc");
+        desc.innerHTML = p.descRu;
+        box.append(desc);
+      }
 
       if (p.safety) {
         let safety = document.createElement("div");
